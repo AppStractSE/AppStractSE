@@ -1,0 +1,36 @@
+import "primeflex/primeflex.css";
+import "primeicons/primeicons.css";
+import "primereact/resources/primereact.min.css";
+import { useEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
+import Layout from "./Layout";
+import { useLanguage } from "./contexts/LanguageContext";
+import Contact from "./pages/contact/Contact";
+import Home from "./pages/home/Home";
+import ServicesSection from "./pages/home/sections/ServicesSection";
+import NotFound from "./pages/notfound/NotFound";
+import Service from "./pages/services/subpages/Service";
+
+const App = () => {
+  const { pathname } = useLocation();
+  const { translations } = useLanguage();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return (
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index path="/" element={<Home />} />
+        <Route path={translations.paths.services} element={<ServicesSection />} />
+        <Route path={translations.paths.webDevelopment} element={<Service />} />
+        <Route path={translations.paths.seo} element={<Service />} />
+        <Route path={translations.paths.appDevelopment} element={<Service />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
+  );
+};
+
+export default App;
