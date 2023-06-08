@@ -8,8 +8,10 @@ const NotFound = () => {
         <div className="container w-full m-auto pb-6">
           <div className="py-6"></div>
           <div className="col-12 md:col-6 text-center md:text-left py-4">
-            <h1 className="text-6xl font-bold">{translations.notFoundPage.title}</h1>
-            <h2 className="text-2xl font-bold" style={{whiteSpace: "pre-line"}}>{translations.notFoundPage.description}</h2>
+            <h1 className="text-6xl font-bold">{translations.notFound.title}</h1>
+            <h2 className="text-2xl font-bold" style={{ whiteSpace: "pre-line" }}>
+              {translations.notFound.description}
+            </h2>
           </div>
           <div className="py-6"></div>
         </div>

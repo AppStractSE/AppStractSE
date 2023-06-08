@@ -94,8 +94,7 @@ img {
   transform: translateY(-50%);
 }
 
-.xx {
-
+.demburger-menu {
   .p-dialog-header,
   .p-dialog-content {
     border-radius: 0 !important;
@@ -111,4 +110,9 @@ img {
   transition: box-shadow 0.3s;
   user-select: none;
   text-decoration: none;
+}
+.textarea {
+  max-height: 132px;
+  overflow-y: auto;
+  resize: none;
 }

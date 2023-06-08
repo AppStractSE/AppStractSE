@@ -14,7 +14,7 @@ const hamburgerMenuItems = [
   },
 ];
 
-const notFoundPage = {
+const notFound = {
   title: "Hoppsan! Något gick fel.",
   description: "Det ser ut som att du gått vilse.\nOroa dig inte, vi är här för att rädda dig!",
 };
@@ -29,7 +29,25 @@ const paths = {
   appDevelopment: "/tjanster/apputveckling",
 };
 
-const homePage = {
+const contact = {
+  title: "Ja, tack! Jag vill gärna bli kontaktad!",
+  name: "För- och efternamn",
+  email: "Email",
+  message: "Meddelande",
+  phone: "Telefonnummer",
+  info: "Genom att klicka på skicka godkänner du vår",
+  policy: "personuppgiftspolicy",
+};
+
+const buttons = {
+  help: "Så kan vi hjälpa dig",
+  contact: "Kontakta oss",
+  send: "Skicka",
+  back: "Tillbaka",
+  submit: "Skicka",
+};
+
+const home = {
   title: "Webbyrå i Borås",
   description:
     "AppStract erbjuder en IT-lösning för alla behov. Vårt mål är att hjälpa dig att lyckas med din verksamhet, och vi har verktygen för att göra det.",
@@ -80,6 +98,10 @@ const breadcrumbs = [
 const navBar = {
   menuItems: [
     {
+      label: "Kunder & projekt",
+      url: "/kunder-och-projekt",
+    },
+    {
       label: "Tjänster",
       url: "/tjanster",
     },
@@ -96,11 +118,13 @@ const navBar = {
 
 export const svTranslations = {
   navBar,
-  breadcrumbs,
-  paths,
-  notFoundPage,
-  homePage,
-  hamburgerMenuItems,
+  buttons,
   services,
+  paths,
+  breadcrumbs,
+  home,
+  notFound,
+  hamburgerMenuItems,
+  contact,
   hamburgerLanguage,
 };

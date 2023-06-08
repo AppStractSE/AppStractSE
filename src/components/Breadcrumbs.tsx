@@ -23,7 +23,7 @@ function Breadcrumbs() {
       if (isCurrentBreadcrumb) {
         return (
           <React.Fragment key={breadcrumb.path}>
-            {index > 0 && " / "}
+            {index > 0 && <span className="mx-1"> / </span>}
             <span className={className}>{breadcrumb.breadcrumb}</span>
           </React.Fragment>
         );
@@ -31,9 +31,9 @@ function Breadcrumbs() {
 
       return (
         <React.Fragment key={breadcrumb.path}>
-          {index > 0 && " / "}
-          <span>
-            <Link to={breadcrumb.path} className={`${className} text-link hover:text-primary-200`}>
+          {index > 0 && <span className="mx-1"> / </span>}
+          <span className={`${className}`}>
+            <Link to={breadcrumb.path} className="text-link hover:text-primary-200">
               {breadcrumb.breadcrumb}
             </Link>
           </span>

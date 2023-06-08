@@ -52,7 +52,7 @@ const Navbar = () => {
         modal={true}
         maximized={true}
         draggable={false}
-        className="scalein scaleout origin-top border-none xx bg-indigo-900"
+        className="scalein scaleout origin-top border-none demburger-menu bg-indigo-900"
         visible={sidebarVisible}
         onHide={() => setSidebarVisible(false)}
       >
