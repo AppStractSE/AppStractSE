@@ -1,74 +1,87 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-		<!--	created with www.mysitemapgenerator.com	-->
-		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 	<loc>https://www.appstract.se/</loc>
 	<lastmod>2023-06-10T00:18:11+01:00</lastmod>
+    <changefreq>daily</changefreq>
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://www.appstract.se/contact</loc>
 	<lastmod>2023-06-10T00:18:11+01:00</lastmod>
+    <changefreq>monthly</changefreq>
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://www.appstract.se/services</loc>
 	<lastmod>2023-06-10T00:18:11+01:00</lastmod>
+    <changefreq>monthly</changefreq>
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://www.appstract.se/services/web-development</loc>
 	<lastmod>2023-06-10T00:18:11+01:00</lastmod>
+    <changefreq>monthly</changefreq>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://www.appstract.se/services/seo</loc>
 	<lastmod>2023-06-10T00:18:11+01:00</lastmod>
+    <changefreq>monthly</changefreq>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://www.appstract.se/services/app-development</loc>
 	<lastmod>2023-06-10T00:18:11+01:00</lastmod>
+    <changefreq>monthly</changefreq>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://www.appstract.se/clients-and-cases</loc>
 	<lastmod>2023-06-10T00:18:11+01:00</lastmod>
+    <changefreq>monthly</changefreq>
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://www.appstract.se/404</loc>
 	<lastmod>2023-06-10T00:18:11+01:00</lastmod>
+    <changefreq>monthly</changefreq>
 	<priority>0.3</priority>
 </url>
 <url>
 	<loc>https://www.appstract.se/kontakt</loc>
 	<lastmod>2023-06-10T00:18:11+01:00</lastmod>
+    <changefreq>monthly</changefreq>
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://www.appstract.se/tjanster</loc>
 	<lastmod>2023-06-10T00:18:11+01:00</lastmod>
+    <changefreq>monthly</changefreq>
 	<priority>1.0</priority>
 </url>
 <url>
 	<loc>https://www.appstract.se/tjanster/webbutveckling</loc>
 	<lastmod>2023-06-10T00:18:11+01:00</lastmod>
+    <changefreq>monthly</changefreq>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://www.appstract.se/tjanster/seo</loc>
 	<lastmod>2023-06-10T00:18:11+01:00</lastmod>
+    <changefreq>monthly</changefreq>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://www.appstract.se/tjanster/apputveckling</loc>
 	<lastmod>2023-06-10T00:18:11+01:00</lastmod>
+    <changefreq>monthly</changefreq>
 	<priority>0.8</priority>
 </url>
 <url>
 	<loc>https://www.appstract.se/kunder-och-projekt</loc>
 	<lastmod>2023-06-10T00:18:11+01:00</lastmod>
+    <changefreq>weekly</changefreq>
 	<priority>1.0</priority>
 </url>
 </urlset>
