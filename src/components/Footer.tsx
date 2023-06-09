@@ -21,7 +21,7 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="mailto:hello@appstract.se?subject=Kontaktförfrågan&priority=high"
+                href="mailto:info@appstract.se?subject=Kontaktförfrågan&priority=high"
                 target="_blank"
               >
                 <AiOutlineMail
