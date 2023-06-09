@@ -2,7 +2,7 @@ import { Button } from "primereact/button";
 import { useLanguage } from "../../../contexts/LanguageContext";
 
 const HeroSection = () => {
-  const { toggleLanguage, translations } = useLanguage();
+  const { translations } = useLanguage();
   return (
     <section className="w-full">
       <div
@@ -15,8 +15,12 @@ const HeroSection = () => {
         <div className="container flex w-full m-auto">
           <div className="col-12 md:col-6 relative z-2">
             <div className="hidden md:py-8" />
-            <h1 className="text-6xl font-bold mb-1">{translations.home.title}</h1>
-            <p className="mt-0 mb-4 line-height-3">{translations.home.description}</p>
+            <h1 className="text-6xl font-bold mb-1">
+              {translations.home.title}
+            </h1>
+            <p className="mt-0 mb-4 line-height-3">
+              {translations.home.description}
+            </p>
             <div className="flex gap-4 md:flex-row flex-column justify-content-center md:justify-content-start">
               <div>
                 <Button
