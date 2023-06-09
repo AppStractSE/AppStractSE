@@ -20,7 +20,7 @@ const HeroSection = () => {
             <div className="flex gap-4 md:flex-row flex-column justify-content-center md:justify-content-start">
               <div>
                 <Button
-                  onClick={toggleLanguage}
+                  onClick={() => (location.href = "#contact")}
                   label={translations.buttons.contact}
                   type="button"
                   style={{ minWidth: 250 }}
