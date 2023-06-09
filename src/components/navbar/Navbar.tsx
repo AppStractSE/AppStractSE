@@ -69,7 +69,7 @@ const Navbar = () => {
         modal={true}
         maximized={true}
         draggable={false}
-        className="scalein scaleout origin-top border-none demburger-menu bg-indigo-900"
+        className="scalein scaleout origin-top border-none demburger-menu bg-dark"
         visible={sidebarVisible}
         onHide={() => setSidebarVisible(false)}
       >
@@ -83,7 +83,7 @@ const Navbar = () => {
             {translations.hamburgerMenuItems.map((item: any) => (
               <Link
                 key={item.label}
-                className="nav-link font-bold text-3xl hover:text-white"
+                className="nav-link text-primary-300 hover:text-primary font-bold text-3xl"
                 to={item.url}
                 onClick={() => setSidebarVisible(!sidebarVisible)}
               >
@@ -92,7 +92,7 @@ const Navbar = () => {
             ))}
             <Link
               to="/"
-              className="nav-link font-bold text-3xl hover:text-white"
+              className="nav-link text-primary-300 hover:text-primary font-bold text-3xl"
               onClick={toggleLanguage}
             >
               <span className="">{translations.hamburgerLanguage}</span>
