@@ -27,6 +27,10 @@ const paths = {
     link: "/clients-and-cases",
     label: "Clients & Cases",
   },
+  policy: {
+    link: "/privacy-policy",
+    label: "Privacy Policy",
+  },
   notFound: {
     link: "/404",
     label: "404",
@@ -117,12 +121,55 @@ export const services = [
   },
 ];
 
+const policy = {
+  title: "Privacy Policy",
+  subtitle: "AppStract's processing of your personal information",
+  description: "We value your privacy and strive to protect your personal information in the best possible way. This privacy policy describes how we collect, use, and protect your personal information when you visit our website. We comply with applicable data protection laws and aim to be transparent in our data collection and usage practices.",
+  sections: [
+    {
+      title: "Collection of Personal Information",
+      description:
+        "We collect personal information from you when you subscribe to our newsletter, submit inquiries through our contact form, make purchases of our products or services, or interact with our website in other ways. The personal information we may collect includes names, contact information (such as email address, phone number, and address), payment information, and other relevant details that you voluntarily provide to us.",
+    },
+    {
+      title: "Use of Personal Information",
+      description:
+        "We use your personal information to communicate with you and provide the services or products you have requested. We may also use your information to send you marketing materials related to our products and services, provided that you have given your consent.\n\nAdditionally, we may use personal information to improve and customize your experience on our website, analyze trends and behaviors of our users, and fulfill our legal obligations and protect our rights and interests.",
+    },
+    {
+      title: "Sharing of Personal Information",
+      description:
+        "We only share your personal information with third parties when necessary to provide our services and products to you. This may include sharing data with suppliers, payment processors, and logistics companies to facilitate order processing, payments, and deliveries.\n\nWe do not share your personal information with third parties for their own marketing purposes without your explicit consent, unless there is a legal exception.",
+    },
+    {
+      title: "Data Protection and Security",
+      description:
+        "We take appropriate technical and organizational measures to protect your personal information against accidental loss, misuse, or unauthorized access. We use encryption technology to secure the transmission of sensitive data and limit access to the personal information only to authorized personnel who need to use it for specific job tasks.",
+    },
+    {
+      title: "Your Rights",
+      description:
+        "You have the right to request access to the personal information we have about you and to request correction of any inaccurate information. You also have the right to request deletion of your information under certain circumstances, restriction of the processing of your information, and objection to certain processing of your information.\n\nIf you wish to exercise your rights or have any questions or complaints regarding our handling of your personal information, please contact us at",
+      subdescription: "info@appstract.se",
+    },
+    {
+      title: "Changes to the Privacy Policy",
+      description:
+        "We reserve the right to change this privacy policy at any time. Any changes will be posted on our website and will take effect immediately. We recommend that you regularly review the policy to stay informed about any updates and changes.",
+    },
+  ],
+};
+
 const breadcrumbs = [
   { path: paths.home.link, breadcrumb: paths.home.label },
   { path: paths.services.link, breadcrumb: paths.services.label },
   { path: paths.webDevelopment.link, breadcrumb: paths.webDevelopment.label },
   { path: paths.seo.link, breadcrumb: paths.seo.label },
   { path: paths.appDevelopment.link, breadcrumb: paths.appDevelopment.label },
+  { path: paths.clients.link, breadcrumb: paths.clients.label },
+  { path: paths.contact.link, breadcrumb: paths.contact.label },
+  { path: paths.policy.link, breadcrumb: paths.policy.label },
+  { path: paths.notFound.link, breadcrumb: paths.notFound.label },
 ];
 
 const nav = {
@@ -153,4 +200,5 @@ export const enTranslations = {
   hamburgerMenuItems,
   contact,
   hamburgerLanguage,
+  policy,
 };

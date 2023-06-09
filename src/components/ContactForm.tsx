@@ -2,6 +2,7 @@ import { Button } from "primereact/button";
 import { InputText } from "primereact/inputtext";
 import { InputTextarea } from "primereact/inputtextarea";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useLanguage } from "../contexts/LanguageContext";
 
 const ContactForm = () => {
@@ -58,9 +59,12 @@ const ContactForm = () => {
         <div className="flex align-items-center justify-content-between mb-4">
           <div className="text-600 font-medium line-height-1 text-xs md:text-sm">
             {translations.contact.info}{" "}
-            <span className="text-primary hover:text-white cursor-pointer">
+            <Link
+              className="nav-link p-0 text-primary hover:text-primary-300 cursor-pointer"
+              to={translations.paths.policy.link}
+            >
               {translations.contact.policy}
-            </span>
+            </Link>
           </div>
         </div>
         <Button

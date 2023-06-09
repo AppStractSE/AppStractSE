@@ -27,6 +27,10 @@ const paths = {
     link: "/kunder-och-projekt",
     label: "Kunder & projekt",
   },
+  policy: {
+    link: "/personuppgiftspolicy",
+    label: "Personuppgiftspolicy",
+  },
   notFound: {
     link: "/404",
     label: "404",
@@ -118,12 +122,54 @@ export const services = [
   },
 ];
 
+const policy = {
+  title: "Personuppgiftspolicy",
+  subtitle: "AppStract's behandling av dina personuppgifter",
+  description:
+    "Vi värnar om din integritet och strävar efter att skydda dina personuppgifter på bästa sätt. Denna personuppgiftspolicy beskriver hur vi samlar in, använder och skyddar dina personuppgifter när du besöker vår hemsida. Vi följer tillämpliga dataskyddslagar och strävar efter att vara transparenta i våra insamlings- och användningspraxis.",
+  sections: [
+    {
+      title: "Insamling av personuppgifter",
+      description:
+        "Vi samlar in personuppgifter från dig när du registrerar dig för vårt nyhetsbrev, skickar in förfrågningar via vårt kontaktformulär, genomför köp av våra produkter eller tjänster, eller interagerar med vår webbplats på annat sätt. De personuppgifter vi kan samla in inkluderar namn, kontaktinformation (såsom e-postadress, telefonnummer och adress), betalningsinformation och andra relevanta uppgifter som du frivilligt lämnar till oss.",
+    },
+    {
+      title: "Användning av personuppgifter",
+      description:
+        "Vi använder dina personuppgifter för att kommunicera med dig och tillhandahålla de tjänster eller produkter som du har begärt. Vi kan också använda dina uppgifter för att skicka dig marknadsföringsmaterial relaterat till våra produkter och tjänster, under förutsättning att du har gett ditt samtycke till detta.\n\nDessutom kan vi använda personuppgifter för att förbättra och anpassa din upplevelse på vår webbplats, analysera trender och beteenden hos våra användare, samt för att uppfylla våra rättsliga skyldigheter och skydda våra rättigheter och intressen.",
+    },
+    {
+      title: "Delning av personuppgifter",
+      description:
+        "Vi delar endast dina personuppgifter med tredje parter, i de fall det är nödvändigt för att tillhandahålla våra tjänster och produkter till dig. Det kan inkludera att dela uppgifter med leverantörer, betalningsprocessorer och logistikföretag för att möjliggöra hantering av beställningar, betalningar och leveranser.\n\nVi delar inte dina personuppgifter med tredje parter för deras egna marknadsföringsändamål utan ditt uttryckliga samtycke, om inget lagligt undantag föreligger.",
+    },
+    {
+      title: "Dataskydd och säkerhet",
+      description:
+        "Vi vidtar lämpliga tekniska och organisatoriska åtgärder för att skydda dina personuppgifter mot oavsiktlig förlust, missbruk eller obehörig åtkomst. Vi använder krypteringsteknik för att säkra överföring av känsliga uppgifter och begränsar tillgången till personuppgifterna endast till auktoriserad personal som behöver använda dem i syfte att utföra specifika arbetsuppgifter.",
+    },
+    {
+      title: "Dina rättigheter",
+      description:
+        "Du har rätt att begära åtkomst till de personuppgifter vi har om dig och att begära rättelse av eventuella felaktiga uppgifter. Du har även rätt att begära radering av dina uppgifter under vissa omständigheter, begränsning av behandlingen av dina uppgifter och invändning mot viss behandling av dina uppgifter.\n\nOm du vill utöva dina rättigheter eller har några frågor eller klagomål angående vår hantering av dina personuppgifter, vänligen kontakta oss på",
+      subdescription: "info@appstract.se",
+    },
+    {
+      title: "Ändringar av personuppgiftspolicy",
+      description:
+        "Vi förbehåller oss rätten att ändra denna personuppgiftspolicy när som helst. Eventuella ändringar kommer att publiceras på vår webbplats och träder i kraft omedelbart. Vi rekommenderar att du regelbundet granskar policyn för att hålla dig informerad om eventuella uppdateringar och ändringar.",
+    },
+  ],
+};
 const breadcrumbs = [
   { path: paths.home.link, breadcrumb: paths.home.label },
   { path: paths.services.link, breadcrumb: paths.services.label },
   { path: paths.webDevelopment.link, breadcrumb: paths.webDevelopment.label },
   { path: paths.seo.link, breadcrumb: paths.seo.label },
   { path: paths.appDevelopment.link, breadcrumb: paths.appDevelopment.label },
+  { path: paths.clients.link, breadcrumb: paths.clients.label },
+  { path: paths.contact.link, breadcrumb: paths.contact.label },
+  { path: paths.policy.link, breadcrumb: paths.policy.label },
 ];
 
 const nav = {
@@ -148,6 +194,7 @@ export const svTranslations = {
   buttons,
   services,
   paths,
+  policy,
   breadcrumbs,
   home,
   notFound,

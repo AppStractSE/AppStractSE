@@ -30,20 +30,6 @@ const Service = () => {
           </div>
         </div>
       </section>
-      {/* <section className="w-full -translate-y-50">
-        <div className="p-2 md:p-4 lg:px-6">
-          <div className="container m-auto w-full col-12">
-            <div>
-              <Button
-                label="Kontakta mig"
-                type="button"
-                style={{ minWidth: 250 }}
-                className="uppercase bg-purple-600 border-purple-600 shadow-3 hover:shadow-5 hover:bg-purple-700 hover:border-purple-700 text-white text-md p-3"
-              />
-            </div>
-          </div>
-        </div>
-      </section> */}
       <section className="w-full">
         <div className="p-2 md:p-4 lg:px-6">
           <div className="container m-auto w-full">
