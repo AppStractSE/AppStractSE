@@ -24,10 +24,13 @@ const Footer = () => {
                 href="mailto:hello@appstract.se?subject=Kontaktförfrågan&priority=high"
                 target="_blank"
               >
-                <AiOutlineMail className="text-primary hover:text-primary-400 cursor-pointer" size={42} />
+                <AiOutlineMail
+                  className="text-primary hover:text-primary-400 cursor-pointer"
+                  size={42}
+                />
               </a>
             </div>
-            <div className="col-12 flex md:col-6 justify-content-between">
+            {/* <div className="col-12 flex md:col-6 justify-content-between">
               <div className="col-6 md:col-4 flex justify-content-center md:block">
                 <div className="">
                   <div className="mb-3 text-primary font-bold">Links</div>
@@ -48,9 +51,11 @@ const Footer = () => {
                   <div>Länk 4</div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
-          <p className="col-12 md:col-6 text-right md:text-left text-xs mb-0">© 2023 Appstract</p>
+          <p className="col-12 md:col-6 text-right md:text-left text-xs mb-0">
+            © 2023 Appstract
+          </p>
         </div>
       </div>
     </footer>
