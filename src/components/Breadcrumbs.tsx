@@ -18,7 +18,7 @@ function Breadcrumbs() {
     .filter((breadcrumb) => location.pathname.startsWith(breadcrumb.path))
     .map((breadcrumb, index) => {
       const isCurrentBreadcrumb = location.pathname === breadcrumb.path;
-      const className = isCurrentBreadcrumb ? "text-white" : "text-primary";
+      const className = isCurrentBreadcrumb ? "text-white" : "text-primary-300";
 
       if (isCurrentBreadcrumb) {
         return (
@@ -33,7 +33,7 @@ function Breadcrumbs() {
         <React.Fragment key={breadcrumb.path}>
           {index > 0 && <span className="mx-1"> / </span>}
           <span className={`${className}`}>
-            <Link to={breadcrumb.path} className="text-link hover:text-primary-200">
+            <Link to={breadcrumb.path} className="text-link hover:text-primary">
               {breadcrumb.breadcrumb}
             </Link>
           </span>
