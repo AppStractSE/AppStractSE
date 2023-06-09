@@ -1,5 +1,6 @@
 import { Button } from "primereact/button";
 import { useLanguage } from "../../../contexts/LanguageContext";
+import TypeWriter from "../../../utils/TypeWriter";
 
 const HeroSection = () => {
   const { translations } = useLanguage();
@@ -13,15 +14,18 @@ const HeroSection = () => {
       >
         <div className="absolute backdrop z-1" />
         <div className="container flex w-full m-auto">
-          <div className="col-12 md:col-6 relative z-2">
+          <div className="col relative z-2">
             <div className="hidden md:py-8" />
-            <h1 className="text-6xl font-bold mb-1">
-              {translations.home.title}
-            </h1>
-            <p className="mt-0 mb-4 line-height-3">
+            <div className="text-center md:text-left block md:flex align-items-center gap-2 md:text-1xl lg:text-3xl">
+              <h1 className="font-bold m-0">{translations.home.phraseTitle}</h1>
+              <h1 className="m-0">
+                <TypeWriter phrases={translations.home.phrases} />
+              </h1>
+            </div>
+            <p className="text-center md:text-left my-4 line-height-3 col-12 md:col-6 p-0">
               {translations.home.description}
             </p>
-            <div className="flex gap-4 md:flex-row flex-column justify-content-center md:justify-content-start">
+            <div className="flex gap-4 md:flex-row flex-column align-items-center justify-content-center md:justify-content-start">
               <div>
                 <Button
                   onClick={() => (location.href = "#contact")}

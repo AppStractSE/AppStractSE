@@ -77,6 +77,17 @@ const home = {
   },
   serviceTitle: "Our Services",
   serviceDescription: "We offer a wide range of services to help you with your business.",
+  phraseTitle: "Your trusted partner for ",
+  phrases: [
+    "responsive web design",
+    "web applications",
+    "system development",
+    "tailored IT solutions",
+    "web design",
+    "SEO services",
+    "web development",
+    "app development",
+  ],
 };
 
 export const services = [

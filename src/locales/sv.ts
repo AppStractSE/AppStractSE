@@ -78,6 +78,17 @@ const home = {
   serviceTitle: "Våra tjänster",
   serviceDescription:
     "Vi erbjuder ett brett utbud av tjänster för att hjälpa dig med din verksamhet.",
+  phraseTitle: "Det pålitliga valet för ",
+  phrases: [
+    "responsiva designer",
+    "webbapplikationer",
+    "systemutveckling",
+    "webbdesign",
+    "skräddarsydda IT-lösningar",
+    "SEO-tjänster",
+    "webbutveckling",
+    "apputveckling",
+  ],
 };
 
 export const services = [
