@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  font-family: Dosis, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #1c1b22;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+img {
+  display: block;
+}
+
+.backdrop {
+  background: rgba(0, 0, 0, 0.25);
+  inset: 0;
+}
+
+.bg-transparent {
+  background: transparent;
+}
+
+.container {
+  max-width: 1360px;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.clip-left {
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+}
+
+.clip-right {
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+}
+
+@media screen and (max-width: 768px) {
+  .clip-left {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .clip-right {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+.curved-bg {
+  border-bottom-left-radius: 50% 2%;
+  border-bottom-right-radius: 50% 2%;
+}
+
+@media screen and (max-width: 768px) {
+  .curved-bg {
+    border-bottom-left-radius: 100% 2%;
+    border-bottom-right-radius: 100% 2%;
+  }
+}
+
+.dark-placeholder::placeholder {
+  color: #000;
+}
+
+.text-link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.break-word {
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.-translate-y-50 {
+  transform: translateY(-50%);
+}
+
+.demburger-menu {
+  .p-dialog-header,
+  .p-dialog-content {
+    border-radius: 0 !important;
+    border: 0 !important;
+    background: none !important;
+  }
+
+  border-radius: 0 !important;
+}
+
+.nav-link {
+  padding: 0.75rem 1rem;
+  transition: box-shadow 0.3s;
+  user-select: none;
+  text-decoration: none;
+}
+.textarea {
+  max-height: 132px;
+  overflow-y: auto;
+  resize: none;
+}
