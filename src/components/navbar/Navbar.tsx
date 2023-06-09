@@ -37,19 +37,21 @@ const Navbar = () => {
         >
           <div className="container px-2 flex w-full m-auto align-items-center justify-content-center">
             <div className="mr-auto">AppStract</div>
-            {translations.nav.menuItems.map((navItem: any) => (
-              <NavLink
-                key={navItem.url}
-                className={`nav-link font-bold text-xl ${
-                  isScrolled
-                    ? "text-primary hover:text-primary-300"
-                    : "text-primary-300 hover:text-primary"
-                }`}
-                to={navItem.url}
-              >
-                <span className="">{navItem.label}</span>
-              </NavLink>
-            ))}
+            <div className="hidden md:block">
+              {translations.nav.menuItems.map((navItem: any) => (
+                <NavLink
+                  key={navItem.url}
+                  className={`nav-link font-bold text-xl ${
+                    isScrolled
+                      ? "text-primary hover:text-primary-300"
+                      : "text-primary-300 hover:text-primary"
+                  }`}
+                  to={navItem.url}
+                >
+                  <span className="">{navItem.label}</span>
+                </NavLink>
+              ))}
+            </div>
             <div>
               <i
                 className={`text-primary-300 pi pi-bars text-4xl p-2 cursor-pointer ${
