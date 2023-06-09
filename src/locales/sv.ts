@@ -1,16 +1,21 @@
+const paths = {
+  home: "/",
+  contact: "/kontakt",
+  services: "/tjanster",
+  webDevelopment: "/tjanster/webbutveckling",
+  seo: "/tjanster/seo",
+  appDevelopment: "/tjanster/apputveckling",
+  clients: "/kunder-och-projekt",
+};
 const hamburgerLanguage = "English";
 const hamburgerMenuItems = [
   {
     label: "Tjänster",
-    url: "/tjanster",
-  },
-  {
-    label: "Om",
-    url: "/om",
+    url: paths.services,
   },
   {
     label: "Kontakt",
-    url: "/kontakt",
+    url: paths.contact,
   },
 ];
 
@@ -19,15 +24,6 @@ const notFound = {
   description: "Det ser ut som att du gått vilse.\nOroa dig inte, vi är här för att rädda dig!",
 };
 
-const paths = {
-  home: "/",
-  about: "/om",
-  contact: "/kontakt",
-  services: "/tjanster",
-  webDevelopment: "/tjanster/webbutveckling",
-  seo: "/tjanster/seo",
-  appDevelopment: "/tjanster/apputveckling",
-};
 
 const contact = {
   title: "Ja, tack! Jag vill gärna bli kontaktad!",
@@ -67,7 +63,7 @@ export const services = [
       "Vi hjälper er att bygga en hemsida som ni kan vara stolta över, och som era kunder kommer att älska.",
     image:
       "https://ezranking.s3.eu-west-2.amazonaws.com/blog/wp-content/uploads/2022/01/07063220/mobile-app-development-trends.png",
-    link: "/tjanster/webbutveckling",
+    link: paths.webDevelopment,
   },
   {
     title: "Sökmotoroptimering",
@@ -75,7 +71,7 @@ export const services = [
       "Vi hjälper er att synas bättre på internet, med hjälp av diverse tekniker så som SEO, SEM, och mer.",
     image:
       "https://ezranking.s3.eu-west-2.amazonaws.com/blog/wp-content/uploads/2022/01/07063220/mobile-app-development-trends.png",
-    link: "/tjanster/seo",
+    link: paths.seo,
   },
   {
     title: "Apputveckling",
@@ -83,35 +79,31 @@ export const services = [
       "Vi hjälper er att bygga en app som ni kan vara stolta över, och som era kunder kommer att älska.",
     image:
       "https://ezranking.s3.eu-west-2.amazonaws.com/blog/wp-content/uploads/2022/01/07063220/mobile-app-development-trends.png",
-    link: "/tjanster/apputveckling",
+    link: paths.appDevelopment,
   },
 ];
 
 const breadcrumbs = [
   { path: "/", breadcrumb: "Hem" },
-  { path: "/tjanster", breadcrumb: "Tjänster" },
-  { path: "/tjanster/webbutveckling", breadcrumb: "Webbutveckling" },
-  { path: "/tjanster/seo", breadcrumb: "SEO" },
-  { path: "/tjanster/apputveckling", breadcrumb: "Apputveckling" },
+  { path: paths.services, breadcrumb: "Tjänster" },
+  { path: paths.webDevelopment, breadcrumb: "Webbutveckling" },
+  { path: paths.seo, breadcrumb: "SEO" },
+  { path: paths.appDevelopment, breadcrumb: "Apputveckling" },
 ];
 
 const navBar = {
   menuItems: [
     {
       label: "Kunder & projekt",
-      url: "/kunder-och-projekt",
+      url: paths.clients,
     },
     {
       label: "Tjänster",
-      url: "/tjanster",
-    },
-    {
-      label: "Om",
-      url: "/om",
+      url: paths.services,
     },
     {
       label: "Kontakt",
-      url: "/kontakt",
+      url: paths.contact,
     },
   ],
 };

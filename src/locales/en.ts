@@ -1,16 +1,21 @@
+const paths = {
+  home: "/",
+  contact: "/contact",
+  services: "/services",
+  webDevelopment: "/services/web-development",
+  seo: "/services/seo",
+  appDevelopment: "/services/app-development",
+  clients: "/clients-and-cases"
+};
 const hamburgerLanguage = "Svenska";
 const hamburgerMenuItems = [
   {
     label: "Services",
-    url: "/services",
-  },
-  {
-    label: "About",
-    url: "/about",
+    url: paths.services,
   },
   {
     label: "Contact",
-    url: "/contact",
+    url: paths.contact,
   },
 ];
 
@@ -19,15 +24,6 @@ const notFound = {
   description: "Looks like you're lost.\nDon't worry though, we're here to save you!",
 };
 
-const paths = {
-  home: "/",
-  about: "/about",
-  contact: "/contact",
-  services: "/services",
-  webDevelopment: "/services/web-development",
-  seo: "/services/seo",
-  appDevelopment: "/services/app-development",
-};
 
 const contact = {
   title: "Yes, please! I'd like to be contacted!",
@@ -66,7 +62,7 @@ export const services = [
       "We help you build a website that you can be proud of, and that your customers will love.",
     image:
       "https://ezranking.s3.eu-west-2.amazonaws.com/blog/wp-content/uploads/2022/01/07063220/mobile-app-development-trends.png",
-    link: "/services/web-development",
+    link: paths.webDevelopment,
   },
   {
     title: "Search Engine Optimization",
@@ -74,7 +70,7 @@ export const services = [
       "We help you get better visibility on the internet, using various techniques such as SEO, SEM, and more.",
     image:
       "https://ezranking.s3.eu-west-2.amazonaws.com/blog/wp-content/uploads/2022/01/07063220/mobile-app-development-trends.png",
-    link: "/services/seo",
+    link: paths.seo,
   },
   {
     title: "App Development",
@@ -82,35 +78,31 @@ export const services = [
       "We help you build an app that your customers will love, and that will help you grow your business.",
     image:
       "https://ezranking.s3.eu-west-2.amazonaws.com/blog/wp-content/uploads/2022/01/07063220/mobile-app-development-trends.png",
-    link: "/services/app-development",
+    link: paths.appDevelopment,
   },
 ];
 
 const breadcrumbs = [
   { path: "/", breadcrumb: "Home" },
-  { path: "/services", breadcrumb: "Services" },
-  { path: "/services/web-development", breadcrumb: "Web Development" },
-  { path: "/services/seo", breadcrumb: "SEO" },
-  { path: "/services/app-development", breadcrumb: "App Development" },
+  { path: paths.services, breadcrumb: "Services" },
+  { path: paths.webDevelopment, breadcrumb: "Web Development" },
+  { path: paths.seo, breadcrumb: "SEO" },
+  { path: paths.appDevelopment, breadcrumb: "App Development" },
 ];
 
 const navBar = {
   menuItems: [
     {
       label: "Clients & cases",
-      url: "/clients-and-cases",
+      url: paths.clients,
     },
     {
       label: "Services",
-      url: "/services",
-    },
-    {
-      label: "About",
-      url: "/about",
+      url: paths.services,
     },
     {
       label: "Contact",
-      url: "/contact",
+      url: paths.contact,
     },
   ],
 };
