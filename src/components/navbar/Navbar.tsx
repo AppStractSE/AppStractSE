@@ -1,8 +1,7 @@
 import { Dialog } from "primereact/dialog";
-import { Menubar } from "primereact/menubar";
 import { useEffect, useState } from "react";
 import { FaEnvelope, FaFacebook, FaTwitter } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useLanguage } from "../../contexts/LanguageContext";
 
 const Navbar = () => {
@@ -38,12 +37,28 @@ const Navbar = () => {
         >
           <div className="container px-2 flex w-full m-auto align-items-center justify-content-center">
             <div className="mr-auto">AppStract</div>
-            <Menubar
-              model={translations.navBar.menuItems}
-              className="hidden bg-transparent lg:block hover:text-primary font-bold text-xl"
-            />
+            {translations.nav.menuItems.map((navItem: any) => (
+              <NavLink
+                key={navItem.url}
+                className={`nav-link font-bold text-xl ${
+                  isScrolled
+                    ? "text-primary hover:text-primary-300"
+                    : "text-primary-300 hover:text-primary"
+                }`}
+                to={navItem.url}
+              >
+                <span className="">{navItem.label}</span>
+              </NavLink>
+            ))}
             <div>
-              <i className={`pi pi-bars text-4xl p-2 cursor-pointer`} onClick={toggleSidebar} />
+              <i
+                className={`text-primary-300 pi pi-bars text-4xl p-2 cursor-pointer ${
+                  isScrolled
+                    ? "text-primary hover:text-primary-300"
+                    : "text-primary-300 hover:text-primary"
+                }`}
+                onClick={toggleSidebar}
+              />
             </div>
           </div>
         </div>
@@ -65,6 +80,7 @@ const Navbar = () => {
           <div className="col-12 md:col-4 flex flex-column align-items-start md:align-items-end">
             {translations.hamburgerMenuItems.map((item: any) => (
               <Link
+                key={item.label}
                 className="nav-link font-bold text-3xl hover:text-white"
                 to={item.url}
                 onClick={() => setSidebarVisible(!sidebarVisible)}

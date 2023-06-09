@@ -10,13 +10,13 @@ const Footer = () => {
             <div className="col-12 md:col-6 flex my-4 md:my-0 justify-content-end gap-2 md:gap-1">
               <a href="https://www.instagram.com/appstract.se/" target="_blank">
                 <AiOutlineInstagram
-                  className="text-primary hover:text-white cursor-pointer"
+                  className="text-primary hover:text-primary-400 cursor-pointer"
                   size={42}
                 />
               </a>
               <a href="https://www.instagram.com/appstract.se/" target="_blank">
                 <RiMessengerLine
-                  className="text-primary hover:text-white cursor-pointer"
+                  className="text-primary hover:text-primary-400 cursor-pointer"
                   size={42}
                 />
               </a>
@@ -24,7 +24,7 @@ const Footer = () => {
                 href="mailto:hello@appstract.se?subject=Kontaktförfrågan&priority=high"
                 target="_blank"
               >
-                <AiOutlineMail className="text-primary hover:text-white cursor-pointer" size={42} />
+                <AiOutlineMail className="text-primary hover:text-primary-400 cursor-pointer" size={42} />
               </a>
             </div>
             <div className="col-12 flex md:col-6 justify-content-between">

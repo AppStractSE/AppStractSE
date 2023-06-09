@@ -20,13 +20,13 @@ const App = () => {
   }, [pathname]);
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index path="/" element={<Home />} />
-        <Route path={translations.paths.services} element={<ServicesSection />} />
-        <Route path={translations.paths.webDevelopment} element={<Service />} />
-        <Route path={translations.paths.seo} element={<Service />} />
-        <Route path={translations.paths.appDevelopment} element={<Service />} />
-        <Route path="/contact" element={<Contact />} />
+      <Route path={translations.paths.home.link} element={<Layout />}>
+        <Route index path={translations.paths.home.link} element={<Home />} />
+        <Route path={translations.paths.services.link} element={<ServicesSection />} />
+        <Route path={translations.paths.webDevelopment.link} element={<Service />} />
+        <Route path={translations.paths.seo.link} element={<Service />} />
+        <Route path={translations.paths.appDevelopment.link} element={<Service />} />
+        <Route path={translations.paths.contact.link} element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

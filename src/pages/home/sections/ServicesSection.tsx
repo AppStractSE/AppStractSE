@@ -27,6 +27,7 @@ const ServicesSection = () => {
           <Grid>
             {translations.services.map((service: Service) => (
               <SlateCard
+                key={service.title}
                 className="col-12 md:col-4 flex"
                 title={service.title}
                 description={service.description}

@@ -1,21 +1,46 @@
 const paths = {
-  home: "/",
-  contact: "/kontakt",
-  services: "/tjanster",
-  webDevelopment: "/tjanster/webbutveckling",
-  seo: "/tjanster/seo",
-  appDevelopment: "/tjanster/apputveckling",
-  clients: "/kunder-och-projekt",
+  home: {
+    link: "/",
+    label: "Hem",
+  },
+  contact: {
+    link: "/kontakt",
+    label: "Kontakt",
+  },
+  services: {
+    link: "/tjanster",
+    label: "Tjänster",
+  },
+  webDevelopment: {
+    link: "/tjanster/webbutveckling",
+    label: "Webbutveckling",
+  },
+  seo: {
+    link: "/tjanster/seo",
+    label: "Sökmotoroptimering",
+  },
+  appDevelopment: {
+    link: "/tjanster/apputveckling",
+    label: "Apputveckling",
+  },
+  clients: {
+    link: "/kunder-och-projekt",
+    label: "Kunder & projekt",
+  },
+  notFound: {
+    link: "/404",
+    label: "404",
+  },
 };
 const hamburgerLanguage = "English";
 const hamburgerMenuItems = [
   {
-    label: "Tjänster",
-    url: paths.services,
+    label: paths.services.label,
+    url: paths.services.link,
   },
   {
-    label: "Kontakt",
-    url: paths.contact,
+    label: paths.contact.label,
+    url: paths.contact.link,
   },
 ];
 
@@ -23,7 +48,6 @@ const notFound = {
   title: "Hoppsan! Något gick fel.",
   description: "Det ser ut som att du gått vilse.\nOroa dig inte, vi är här för att rädda dig!",
 };
-
 
 const contact = {
   title: "Ja, tack! Jag vill gärna bli kontaktad!",
@@ -48,8 +72,8 @@ const home = {
   description:
     "AppStract erbjuder en IT-lösning för alla behov. Vårt mål är att hjälpa dig att lyckas med din verksamhet, och vi har verktygen för att göra det.",
   buttons: {
-    contact: "Kontakta oss",
-    help: "Så kan vi hjälpa dig",
+    contact: buttons.contact,
+    help: buttons.help,
   },
   serviceTitle: "Våra tjänster",
   serviceDescription:
@@ -58,58 +82,58 @@ const home = {
 
 export const services = [
   {
-    title: "Webbutveckling",
+    title: paths.webDevelopment.label,
     description:
       "Vi hjälper er att bygga en hemsida som ni kan vara stolta över, och som era kunder kommer att älska.",
     image:
       "https://ezranking.s3.eu-west-2.amazonaws.com/blog/wp-content/uploads/2022/01/07063220/mobile-app-development-trends.png",
-    link: paths.webDevelopment,
+    link: paths.webDevelopment.link,
   },
   {
-    title: "Sökmotoroptimering",
+    title: paths.seo.label,
     description:
       "Vi hjälper er att synas bättre på internet, med hjälp av diverse tekniker så som SEO, SEM, och mer.",
     image:
       "https://ezranking.s3.eu-west-2.amazonaws.com/blog/wp-content/uploads/2022/01/07063220/mobile-app-development-trends.png",
-    link: paths.seo,
+    link: paths.seo.link,
   },
   {
-    title: "Apputveckling",
+    title: paths.appDevelopment.label,
     description:
       "Vi hjälper er att bygga en app som ni kan vara stolta över, och som era kunder kommer att älska.",
     image:
       "https://ezranking.s3.eu-west-2.amazonaws.com/blog/wp-content/uploads/2022/01/07063220/mobile-app-development-trends.png",
-    link: paths.appDevelopment,
+    link: paths.appDevelopment.link,
   },
 ];
 
 const breadcrumbs = [
-  { path: "/", breadcrumb: "Hem" },
-  { path: paths.services, breadcrumb: "Tjänster" },
-  { path: paths.webDevelopment, breadcrumb: "Webbutveckling" },
-  { path: paths.seo, breadcrumb: "SEO" },
-  { path: paths.appDevelopment, breadcrumb: "Apputveckling" },
+  { path: paths.home.link, breadcrumb: paths.home.label },
+  { path: paths.services.link, breadcrumb: paths.services.label },
+  { path: paths.webDevelopment.link, breadcrumb: paths.webDevelopment.label },
+  { path: paths.seo.link, breadcrumb: paths.seo.label },
+  { path: paths.appDevelopment.link, breadcrumb: paths.appDevelopment.label },
 ];
 
-const navBar = {
+const nav = {
   menuItems: [
     {
-      label: "Kunder & projekt",
-      url: paths.clients,
+      label: paths.clients.label,
+      url: paths.clients.link,
     },
     {
-      label: "Tjänster",
-      url: paths.services,
+      label: paths.services.label,
+      url: paths.services.link,
     },
     {
-      label: "Kontakt",
-      url: paths.contact,
+      label: paths.contact.label,
+      url: paths.contact.link,
     },
   ],
 };
 
 export const svTranslations = {
-  navBar,
+  nav,
   buttons,
   services,
   paths,
