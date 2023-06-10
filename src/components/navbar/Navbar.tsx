@@ -52,7 +52,7 @@ const Navbar = () => {
                 </NavLink>
               ))}
             </div>
-            <div>
+            <div className="ml-4">
               <i
                 className={`text-primary-300 pi pi-bars text-4xl p-2 cursor-pointer ${
                   isScrolled
