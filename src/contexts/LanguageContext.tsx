@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useContext } from "react";
+import { createContext, ReactNode, useContext, useEffect } from "react";
 import { useLocalStorage } from "../hooks/useLocalStorage";
 import { enTranslations } from "../locales/en";
 import { svTranslations } from "../locales/sv";
@@ -27,6 +27,13 @@ const LanguageProvider = ({ children }: Props) => {
   };
 
   const translations = currentLanguage === "en" ? enTranslations : svTranslations;
+
+  useEffect(() => {
+    const userLanguage = navigator.languages;
+    if (!userLanguage.includes("sv")) {
+      setCurrentLanguage("en");
+    }
+  }, []);
 
   return (
     <LanguageContext.Provider value={{ language: currentLanguage, translations, toggleLanguage }}>
