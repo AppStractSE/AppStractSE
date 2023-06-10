@@ -45,6 +45,7 @@
     --highlight-bg: rgba(158, 173, 230, 0.16);
     --highlight-text-color: 9eade6;
     --bg-dark: #1c1b22;
+    --bg-overlay: rgba(0, 0, 0, 0.75);
     color-scheme: dark
 }
 
@@ -7941,4 +7942,11 @@ body {
 
 .transition-slow {
     transition: .5s ease all;
+}
+.bg-dialog {
+    background: var(--purple-800) !important;
+
+    @media screen and (max-width: 576px) {
+        background: var(--bg-overlay) !important;
+    }
 }

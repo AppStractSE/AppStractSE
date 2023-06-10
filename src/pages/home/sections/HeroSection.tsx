@@ -1,4 +1,5 @@
 import { Button } from "primereact/button";
+import { Link } from "react-router-dom";
 import { useLanguage } from "../../../contexts/LanguageContext";
 import TypeWriter from "../../../utils/TypeWriter";
 
@@ -36,12 +37,14 @@ const HeroSection = () => {
                 />
               </div>
               <div>
-                <Button
-                  label={translations.buttons.help}
-                  type="button"
-                  style={{ minWidth: 250 }}
-                  className="uppercase bg-primary-800 border-primary-800 shadow-5 hover:shadow-5 hover:bg-primary-900 hover:border-primary-900 text-white hover:text-yellow-200 text-md p-3"
-                />
+                <Link to={translations.paths.services.link}>
+                  <Button
+                    label={translations.buttons.help}
+                    type="button"
+                    style={{ minWidth: 250 }}
+                    className="uppercase bg-primary-800 border-primary-800 shadow-5 hover:shadow-5 hover:bg-primary-900 hover:border-primary-900 text-white hover:text-yellow-200 text-md p-3"
+                  />
+                </Link>
               </div>
             </div>
             <div className="hidden md:py-8"></div>

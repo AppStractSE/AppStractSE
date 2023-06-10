@@ -1,16 +1,22 @@
 import { Button } from "primereact/button";
+import { Dialog } from "primereact/dialog";
+import { useState } from "react";
 import Breadcrumbs from "../../../components/Breadcrumbs";
+import ContactForm from "../../../components/ContactForm";
 
 const Service = () => {
+  const [modalVisible, setModalVisible] = useState(false);
   return (
     <>
       <section className="w-full">
         <div className="p-2 md:p-4 lg:p-6 bg-blue-800">
-          <div className="container w-full m-auto pt-8 pb-4">
+          <div className="container w-full m-auto pt-8 pb-2">
             <Breadcrumbs />
-            <div className="col-12 md:col-8 mb-8">
+            <div className="col-12 md:col-6 mb-4">
               <div>
-                <div className="block text-6xl font-bold line-height-1 mb-4">Webbutveckling</div>
+                <div className="block text-5xl md:text-7xl font-bold line-height-1 mb-4">
+                  Webbutveckling
+                </div>
                 <div className="text-2xl mt-0 mb-4 line-height-3">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget risus porta,
                   tincidunt turpis at, interdum tortor. Vestibulum ante ipsum primis in faucibus
@@ -19,12 +25,13 @@ const Service = () => {
                 </div>
               </div>
             </div>
-            <div className="col-12 md:col-8 text-right">
+            <div className="col-12 md:col-6 text-center md:text-right">
               <Button
                 label="Kontakta mig"
                 type="button"
                 style={{ minWidth: 250 }}
                 className="uppercase bg-blue-500 border-blue-500 shadow-3 hover:shadow-5 hover:bg-blue-700 hover:border-blue-700 text-white text-md p-3"
+                onClick={() => setModalVisible(!modalVisible)}
               />
             </div>
           </div>
@@ -54,6 +61,20 @@ const Service = () => {
           </div>
         </div>
       </section>
+      <Dialog
+        contentClassName="p-0 sm:p-2 flex justify-content-center align-items-center bg-dialog"
+        headerClassName="p-2 bg-dialog"
+        dismissableMask={true}
+        modal={true}
+        draggable={false}
+        blockScroll={true}
+        resizable={false}
+        className="fadein scaleout origin-top border-none shadow-3 w-screen sm:max-w-max h-screen sm:h-auto"
+        visible={modalVisible}
+        onHide={() => setModalVisible(false)}
+      >
+        <ContactForm openPolicyInNewTab={true} />
+      </Dialog>
     </>
   );
 };

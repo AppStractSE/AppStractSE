@@ -5,7 +5,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../contexts/LanguageContext";
 
-const ContactForm = () => {
+interface Props {
+  openPolicyInNewTab?: boolean;
+}
+
+const ContactForm = ({ openPolicyInNewTab }: Props) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -14,8 +18,8 @@ const ContactForm = () => {
 
   return (
     <div className="flex align-items-center justify-content-center">
-      <div className="p-3 md:p-2 xl:px-4 w-full md:w-8 xl:w-5" style={{ maxWidth: 440 }}>
-        <div className="flex justify-content-center mb-4">
+      <div className="p-1 md:p-3" style={{ maxWidth: 440 }}>
+        <div className="flex justify-content-center mb-2 md:mb-4">
           <div
             style={{ width: "fit-content" }}
             className="text-center text-900 text-2xl md:text-3xl font-medium"
@@ -57,9 +61,10 @@ const ContactForm = () => {
           className="w-full mb-3 shadow-3 py-3 bg-primary-200 text-black-alpha-90 border-none hover:shadow-6 dark-placeholder textarea"
         />
         <div className="flex align-items-center justify-content-between mb-4">
-          <div className="text-600 font-medium line-height-1 text-xs md:text-sm">
+          <div className="text-600 font-medium line-height-2 text-xs md:text-sm">
             {translations.contact.info}{" "}
             <Link
+              target={openPolicyInNewTab ? "_blank" : "_self"}
               className="nav-link p-0 text-primary hover:text-primary-300 cursor-pointer"
               to={translations.paths.policy.link}
             >
