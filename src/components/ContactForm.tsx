@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button } from "primereact/button";
 import { InputText } from "primereact/inputtext";
 import { InputTextarea } from "primereact/inputtextarea";
@@ -15,6 +16,29 @@ const ContactForm = ({ openPolicyInNewTab }: Props) => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const { translations } = useLanguage();
+
+  const encode = (data: any) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
+  const handleSubmit = (e: any) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": "contact",
+        ...{ name, email, phone, message },
+      }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
+
+    e.preventDefault();
+  };
 
   return (
     <div className="flex align-items-center justify-content-center">
@@ -74,10 +98,11 @@ const ContactForm = ({ openPolicyInNewTab }: Props) => {
           </div>
         </div>
         <Button
+          onClick={handleSubmit}
           label={translations.buttons.submit}
           className="w-full mb-3 shadow-3 hover:shadow-6 py-3"
-          type="submit"
         />
+
         <form hidden name="contact" method="POST" data-netlify="true">
           <input type="hidden" name="contact-form" value="contact" />
           <input type="text" name="name" value={name} />
