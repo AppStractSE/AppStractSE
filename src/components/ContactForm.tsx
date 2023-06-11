@@ -44,7 +44,7 @@ const ContactForm = ({ openPolicyInNewTab }: Props) => {
 
         <form
           onSubmit={handleSubmit}
-          name="contact"
+          name="contact-form"
           method="POST"
           data-netlify="true"
         >
@@ -103,7 +103,6 @@ const ContactForm = ({ openPolicyInNewTab }: Props) => {
             label={translations.buttons.submit}
             className="w-full mb-3 shadow-3 hover:shadow-6 py-3"
           />
-          <input type="hidden" name="form-name" value="contact" />
         </form>
       </div>
     </div>
