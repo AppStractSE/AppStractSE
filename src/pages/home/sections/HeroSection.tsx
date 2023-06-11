@@ -37,7 +37,7 @@ const HeroSection = () => {
                 />
               </div>
               <div>
-                <Link to={translations.paths.services.link}>
+                <Link to={translations.paths.services.link} className="decoration-none">
                   <Button
                     label={translations.buttons.help}
                     type="button"

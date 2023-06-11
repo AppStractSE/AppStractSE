@@ -7946,7 +7946,11 @@ body {
 .bg-dialog {
     background: var(--purple-800) !important;
 
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 575px) {
         background: var(--bg-overlay) !important;
     }
+}
+
+.decoration-none {
+    text-decoration: none !important;
 }
