@@ -78,6 +78,7 @@ const ContactForm = ({ openPolicyInNewTab }: Props) => {
             className="w-full mb-3 shadow-3 hover:shadow-6 py-3"
             type="submit"
           />
+          <input type="hidden" name="contact" value="contact" />
         </form>
       </div>
     </div>
