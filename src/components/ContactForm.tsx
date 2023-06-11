@@ -17,25 +17,15 @@ const ContactForm = ({ openPolicyInNewTab }: Props) => {
   const [message, setMessage] = useState("");
   const { translations } = useLanguage();
 
-  const encode = (data: any) => {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  };
-
   const handleSubmit = (e: any) => {
+    const form = e.target;
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": "contact",
-        ...{ name, email, phone, message },
-      }),
+      body: new URLSearchParams(new FormData(form).toString()),
     })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
+      .then(() => console.log("Form successfully submitted"))
+      .catch((error) => console.log(error));
 
     e.preventDefault();
   };
@@ -60,6 +50,7 @@ const ContactForm = ({ openPolicyInNewTab }: Props) => {
         >
           <InputText
             id="name"
+            name="name"
             type="text"
             placeholder={translations.contact.name}
             value={name}
@@ -69,7 +60,8 @@ const ContactForm = ({ openPolicyInNewTab }: Props) => {
           <div className="flex gap-3">
             <InputText
               id="email"
-              type="text"
+              name="email"
+              type="email"
               placeholder={translations.contact.email}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -77,6 +69,7 @@ const ContactForm = ({ openPolicyInNewTab }: Props) => {
             />
             <InputText
               id="phone"
+              name="phone"
               type="text"
               placeholder={translations.contact.phone}
               value={phone}
@@ -86,6 +79,8 @@ const ContactForm = ({ openPolicyInNewTab }: Props) => {
           </div>
           <InputTextarea
             value={message}
+            id="message"
+            name="message"
             rows={5}
             placeholder={translations.contact.message}
             onChange={(e) => setMessage(e.target.value)}
