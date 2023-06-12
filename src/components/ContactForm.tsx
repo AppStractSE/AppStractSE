@@ -48,6 +48,8 @@ const ContactForm = ({ openPolicyInNewTab }: Props) => {
           method="POST"
           data-netlify="true"
         >
+          <input type="hidden" name="contact-form" value="contact-form" />
+
           <InputText
             id="name"
             name="name"
