@@ -42,13 +42,8 @@ const ContactForm = ({ openPolicyInNewTab }: Props) => {
           </div>
         </div>
 
-        <form
-          onSubmit={handleSubmit}
-          name="contact-form"
-          method="POST"
-          data-netlify="true"
-        >
-          <input type="hidden" name="contact-form" value="contact-form" />
+        <form onSubmit={handleSubmit} name="contact-form">
+          <input type="hidden" name="contact-form" value="contactForm" />
 
           <InputText
             id="name"
