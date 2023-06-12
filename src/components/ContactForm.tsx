@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button } from "primereact/button";
 import { InputText } from "primereact/inputtext";
 import { InputTextarea } from "primereact/inputtextarea";
@@ -16,6 +17,19 @@ const ContactForm = ({ openPolicyInNewTab }: Props) => {
   const [message, setMessage] = useState("");
   const { translations } = useLanguage();
 
+  const handleSubmit = (e: any) => {
+    const form = e.target;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(new FormData(form).toString()),
+    })
+      .then(() => console.log("Form successfully submitted"))
+      .catch((error) => console.log(error));
+
+    e.preventDefault();
+  };
+
   return (
     <div className="flex align-items-center justify-content-center">
       <div className="p-1 md:p-3" style={{ maxWidth: 440 }}>
@@ -27,9 +41,16 @@ const ContactForm = ({ openPolicyInNewTab }: Props) => {
             {translations.contact.title}
           </div>
         </div>
-        <form name="contact" method="POST" data-netlify="true">
+
+        <form
+          onSubmit={handleSubmit}
+          name="contact-form"
+          method="POST"
+          data-netlify="true"
+        >
           <InputText
             id="name"
+            name="name"
             type="text"
             placeholder={translations.contact.name}
             value={name}
@@ -39,7 +60,8 @@ const ContactForm = ({ openPolicyInNewTab }: Props) => {
           <div className="flex gap-3">
             <InputText
               id="email"
-              type="text"
+              name="email"
+              type="email"
               placeholder={translations.contact.email}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -47,6 +69,7 @@ const ContactForm = ({ openPolicyInNewTab }: Props) => {
             />
             <InputText
               id="phone"
+              name="phone"
               type="text"
               placeholder={translations.contact.phone}
               value={phone}
@@ -56,6 +79,8 @@ const ContactForm = ({ openPolicyInNewTab }: Props) => {
           </div>
           <InputTextarea
             value={message}
+            id="message"
+            name="message"
             rows={5}
             placeholder={translations.contact.message}
             onChange={(e) => setMessage(e.target.value)}
@@ -74,9 +99,9 @@ const ContactForm = ({ openPolicyInNewTab }: Props) => {
             </div>
           </div>
           <Button
+            type="submit"
             label={translations.buttons.submit}
             className="w-full mb-3 shadow-3 hover:shadow-6 py-3"
-            type="submit"
           />
         </form>
       </div>
