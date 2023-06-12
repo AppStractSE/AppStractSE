@@ -17,16 +17,25 @@ const ContactForm = ({ openPolicyInNewTab }: Props) => {
   const [message, setMessage] = useState("");
   const { translations } = useLanguage();
 
+  const encode = (data: any) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
   const handleSubmit = (e: any) => {
-    const form = e.target;
-    fetch("/", {
+    fetch("/index.html", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(new FormData(form).toString()),
+      body: encode({
+        "form-name": "contactForm",
+        ...{ name, email, phone, message },
+      }),
     })
       .then(() => console.log("Form successfully submitted"))
       .catch((error) => console.log(error));
-
     e.preventDefault();
   };
 
@@ -43,7 +52,7 @@ const ContactForm = ({ openPolicyInNewTab }: Props) => {
         </div>
 
         <form onSubmit={handleSubmit} name="contact-form">
-          <input type="hidden" name="contact-form" value="contactForm" />
+          <input type="hidden" name="form-name" value="contactForm" />
 
           <InputText
             id="name"
