@@ -36,6 +36,7 @@ const paths = {
     label: "404",
   },
 };
+
 const hamburgerLanguage = "English";
 const hamburgerMenuItems = [
   {
@@ -66,6 +67,7 @@ const contact = {
 const buttons = {
   help: "Så kan vi hjälpa dig",
   contact: "Kontakta oss",
+  contactme: "Kontakta mig",
   send: "Skicka",
   back: "Tillbaka",
   submit: "Skicka",
@@ -189,8 +191,65 @@ const nav = {
   ],
 };
 
+const servicepages = {
+  webdevelopment: {
+    herodescription:
+      "Vi samlar alla delar som behövs för att skapa en välfungerande webbplats, inklusive skräddarsydd utveckling och placering av innehåll. Målet är att förbättra konverteringsgraden och stärka ert varumärke.",
+    introtitle: "En anpassad webbplats som förverkligar din vision",
+    introsubtitle: "Vi förstår vikten av att förvandla din vision till verklighet.",
+    introdescription:
+      "Genom noggrann utveckling och nära samarbete med dig som kund, skapar vi en webbplats som är anpassad efter dina behov och önskemål. Oavsett om du behöver en enkel företagshemsida, en avancerad e-handelsplattform eller en interaktiv webbapplikation, kan vi leverera en lösning som passar just dig.",
+    parts: [
+      {
+        title: "Planering och analys",
+        hovertext: "Läs mer",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-red-700",
+        subtitle:
+          "Vår första och viktigaste fas är att förstå din vision och målsättningar för webbplatsen.",
+        description:
+          "Vi genomför noggranna diskussioner och workshops för att fånga upp alla dina önskemål och behov. Vi analyserar även din målgrupp, marknadstrender och konkurrens för att skapa en strategi som kommer att vara framgångsrik på lång sikt. Med hjälp av vår erfarenhet och expertis i webbutveckling ger vi dig även råd och rekommendationer för att optimera din webbplats.",
+      },
+      {
+        title: "Design och gränssnitt",
+        hovertext: "Läs mer",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-blue-500",
+        subtitle: "Efter att vi har en tydlig plan fortsätter vi till designfasen.",
+        description:
+          "Vi skapar visuella koncept som representerar din varumärkesidentitet och samtidigt tilltalar din målgrupp. Vi fokuserar på att skapa en användarvänlig och estetiskt tilltalande webbplats genom att skapa intuitiva navigeringsstrukturer och en attraktiv visuell design. Vi ser till att din webbplats är responsiv och anpassar sig till olika skärmstorlekar för att ge en konsekvent upplevelse på alla enheter.",
+      },
+      {
+        title: "Utveckling och implementation",
+        hovertext: "Läs mer",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-orange-600",
+        subtitle:
+          "När designen är godkänd börjar vårt arbeta för att omsätta designen till en fungerande webbplats.",
+        description:
+          "Vi använder de senaste teknologierna och ramverken för att bygga en stabil och säker webbplats. Vi fokuserar på att skapa skalbara och flexibla lösningar för att underlätta framtida uppgraderingar och anpassningar. Under hela utvecklingsprocessen har vi en öppen kommunikation och regelbundna avstämningar för att säkerställa att resultatet är i linje med dina förväntningar.",
+      },
+      {
+        title: "Testning och lansering",
+        hovertext: "Läs mer",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-green-600",
+        subtitle:
+          "Innan vi släpper din webbplats för allmänheten genomför vi en rigorös testningsfas för att säkerställa att allt fungerar korrekt och att eventuella buggar eller felaktigheter åtgärdas.",
+        description:
+          "Vi testar webbplatsen på olika plattformar, webbläsare och enheter för att säkerställa en smidig användarupplevelse överallt. När vi är nöjda med testresultaten och du är nöjd med resultatet är det dags för lansering.\n\nVi hjälper dig med att sätta upp webbplatsen på din valda webbserver och säkerställer att allt är konfigurerat korrekt för att ge en sömlös lansering. Med vår passion för webbutveckling och vårt engagemang för att förverkliga din vision är vi redo att skapa en anpassad webbplats som överträffar dina förväntningar. Kontakta oss idag för att inleda samarbetet och ta din vision till nästa nivå!",
+      },
+    ],
+  },
+};
+
 export const svTranslations = {
   nav,
+  servicepages,
   buttons,
   services,
   paths,
