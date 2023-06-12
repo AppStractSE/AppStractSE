@@ -1,6 +1,7 @@
 import React from "react";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import { useLanguage } from "../../contexts/LanguageContext";
+import { PolicySection } from "../../types/types";
 
 const Policy = () => {
   const { translations } = useLanguage();
@@ -19,7 +20,7 @@ const Policy = () => {
               </div>
               <div className="text-2xl mb-6 line-height-3">{translations.policy.description}</div>
 
-              {translations.policy.sections.map((section: any) => (
+              {translations.policy.sections.map((section: PolicySection) => (
                 <React.Fragment key={section.title}>
                   <div className="text-3xl md:text-4xl font-bold line-height-1 mb-4">
                     {section.title}

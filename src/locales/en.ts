@@ -1,4 +1,18 @@
-const paths = {
+import {
+  Breadcrumb,
+  Buttons,
+  Contact,
+  HamburgerMenuItem,
+  Home,
+  Nav,
+  NotFound,
+  Paths,
+  Policy,
+  Service,
+  ServicePage,
+} from "../types/types";
+
+const paths: Paths = {
   home: {
     link: "/",
     label: "Home",
@@ -37,7 +51,7 @@ const paths = {
   },
 };
 const hamburgerLanguage = "Svenska";
-const hamburgerMenuItems = [
+const hamburgerMenuItems: HamburgerMenuItem[] = [
   {
     label: paths.services.label,
     url: paths.services.link,
@@ -48,12 +62,12 @@ const hamburgerMenuItems = [
   },
 ];
 
-const notFound = {
+const notFound: NotFound = {
   title: "Oops! Something went wrong.",
   description: "Looks like you're lost.\nDon't worry though, we're here to save you!",
 };
 
-const contact = {
+const contact: Contact = {
   title: "Yes, please! I'd like to be contacted!",
   name: "First and last name",
   email: "Email",
@@ -63,15 +77,16 @@ const contact = {
   policy: "privacy policy",
 };
 
-const buttons = {
+const buttons: Buttons = {
   help: "How we can help you",
   contact: "Contact us",
+  contactme: "Contact me",
   send: "Send",
   back: "Back",
   submit: "Submit",
 };
 
-const home = {
+const home: Home = {
   title: "Web Agency in Borås",
   description:
     "AppStract offers an IT solution for all needs. Our goal is to help you succeed in your business, and we have the tools to do it.",
@@ -94,7 +109,7 @@ const home = {
   ],
 };
 
-export const services = [
+export const services: Service[] = [
   {
     title: paths.webDevelopment.label,
     description:
@@ -121,10 +136,11 @@ export const services = [
   },
 ];
 
-const policy = {
+const policy: Policy = {
   title: "Privacy Policy",
   subtitle: "AppStract's processing of your personal information",
-  description: "We value your privacy and strive to protect your personal information in the best possible way. This privacy policy describes how we collect, use, and protect your personal information when you visit our website. We comply with applicable data protection laws and aim to be transparent in our data collection and usage practices.",
+  description:
+    "We value your privacy and strive to protect your personal information in the best possible way. This privacy policy describes how we collect, use, and protect your personal information when you visit our website. We comply with applicable data protection laws and aim to be transparent in our data collection and usage practices.",
   sections: [
     {
       title: "Collection of Personal Information",
@@ -160,7 +176,7 @@ const policy = {
   ],
 };
 
-const breadcrumbs = [
+const breadcrumbs: Breadcrumb[] = [
   { path: paths.home.link, breadcrumb: paths.home.label },
   { path: paths.services.link, breadcrumb: paths.services.label },
   { path: paths.webDevelopment.link, breadcrumb: paths.webDevelopment.label },
@@ -172,7 +188,7 @@ const breadcrumbs = [
   { path: paths.notFound.link, breadcrumb: paths.notFound.label },
 ];
 
-const nav = {
+const nav: Nav = {
   menuItems: [
     {
       label: paths.clients.label,
@@ -189,8 +205,65 @@ const nav = {
   ],
 };
 
+const servicepages: ServicePage = {
+  webdevelopment: {
+    herodescription:
+      "We bring together all the elements needed to create a well-functioning website, including customized development and content placement. Our goal is to improve conversion rates and strengthen your brand.",
+    introtitle: "A customized website that actualizes your vision",
+    introsubtitle: "We understand the importance of turning your vision into reality.",
+    introdescription:
+      "Through meticulous development and close collaboration with you as the client, we create a website tailored to your needs and preferences. Whether you need a simple business website, an advanced e-commerce platform, or an interactive web application, we can deliver a solution that suits you perfectly.",
+    parts: [
+      {
+        title: "Planning and Analysis",
+        hovertext: "Read More",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-red-700",
+        subtitle:
+          "Our first and most crucial phase is to understand your vision and goals for the website.",
+        description:
+          "We conduct thorough discussions and workshops to capture all your desires and requirements. We also analyze your target audience, market trends, and competition to create a strategy that will be successful in the long term. With our experience and expertise in web development, we also provide advice and recommendations to optimize your website.",
+      },
+      {
+        title: "Design and Interface",
+        hovertext: "Read More",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-blue-500",
+        subtitle: "Once we have a clear plan, we move on to the design phase.",
+        description:
+          "We create visual concepts that represent your brand identity while appealing to your target audience. We focus on creating a user-friendly and aesthetically pleasing website by designing intuitive navigation structures and an attractive visual design. We ensure that your website is responsive and adapts to different screen sizes to provide a consistent experience on all devices.",
+      },
+      {
+        title: "Development and Implementation",
+        hovertext: "Read More",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-orange-600",
+        subtitle:
+          "When the design is approved, we begin the process of translating the design into a functional website.",
+        description:
+          "We utilize the latest technologies and frameworks to build a stable and secure website. We prioritize creating scalable and flexible solutions to facilitate future upgrades and customizations. Throughout the development process, we maintain open communication and regular checkpoints to ensure that the outcome aligns with your expectations.",
+      },
+      {
+        title: "Testing and Launching",
+        hovertext: "Read More",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-green-600",
+        subtitle:
+          "Before releasing your website to the public, we conduct rigorous testing to ensure everything functions correctly and address any bugs or issues.",
+        description:
+          "We test the website on various platforms, browsers, and devices to ensure a seamless user experience everywhere. Once we are satisfied with the test results and you are happy with the outcome, it's time for the launch. We assist you in setting up the website on your chosen web server and ensure that everything is configured correctly for a smooth launch. With our passion for web development and our commitment to realizing your vision, we are ready to create a custom website that exceeds your expectations. Contact us today to initiate the collaboration and take your vision to the next level!",
+      },
+    ],
+  },
+};
+
 export const enTranslations = {
   nav,
+  servicepages,
   buttons,
   services,
   paths,
