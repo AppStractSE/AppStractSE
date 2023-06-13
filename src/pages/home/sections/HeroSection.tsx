@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "../../../contexts/LanguageContext";
 import TypeWriter from "../../../utils/TypeWriter";
 
-const HeroSection = () => {
+interface Props {
+  scrollToContact: () => void;
+}
+
+const HeroSection = ({ scrollToContact }: Props) => {
   const { translations } = useLanguage();
   return (
     <section className="w-full">
@@ -29,7 +33,7 @@ const HeroSection = () => {
             <div className="flex gap-4 md:flex-row flex-column align-items-center justify-content-center md:justify-content-start">
               <div>
                 <Button
-                  onClick={() => (location.href = "#contact")}
+                  onClick={scrollToContact}
                   label={translations.buttons.contact}
                   type="button"
                   style={{ minWidth: 250 }}

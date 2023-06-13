@@ -1,12 +1,21 @@
+import { useRef } from "react";
 import ContactSection from "./sections/ContactSection";
 import HeroSection from "./sections/HeroSection";
 import ServicesSection from "./sections/ServicesSection";
+
 const Home = () => {
+  const contactRef = useRef<HTMLDivElement>(null);
+
+  const scrolltoContact = () => {
+    if (contactRef.current) {
+      contactRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
-      <HeroSection />
+      <HeroSection scrollToContact={scrolltoContact} />
       <ServicesSection />
-      <ContactSection />
+      <ContactSection scrollRef={contactRef} />
     </>
   );
 };
