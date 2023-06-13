@@ -2,6 +2,8 @@ import "primeflex/primeflex.css";
 import "primeicons/primeicons.css";
 import "primereact/resources/primereact.min.css";
 import { Route, Routes } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Layout from "./Layout";
 import { useLanguage } from "./contexts/LanguageContext";
 import Contact from "./pages/contact/Contact";
@@ -30,6 +32,17 @@ const App = () => {
         </Route>
       </Routes>
       <ScrollToTop />
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
     </>
   );
 };

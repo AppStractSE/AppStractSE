@@ -77,6 +77,11 @@ const contact: Contact = {
   policy: "privacy policy",
 };
 
+const toasts = {
+  success: "Message sent! We will get back to you as soon as possible.",
+  error: "Something went wrong. Please try again later.",
+};
+
 const buttons: Buttons = {
   help: "How we can help you",
   contact: "Contact us",
@@ -273,5 +278,6 @@ export const enTranslations = {
   hamburgerMenuItems,
   contact,
   hamburgerLanguage,
+  toasts,
   policy,
 };

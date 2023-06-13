@@ -142,7 +142,7 @@ const Service = () => {
         visible={modalVisible}
         onHide={() => setModalVisible(false)}
       >
-        <ContactForm openPolicyInNewTab={true} />
+        <ContactForm openPolicyInNewTab={true} inModalOnSend={() => setModalVisible(!modalVisible)} />
       </Dialog>
     </>
   );

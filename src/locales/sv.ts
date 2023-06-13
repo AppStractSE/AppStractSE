@@ -64,6 +64,11 @@ const contact = {
   policy: "personuppgiftspolicy",
 };
 
+const toasts = {
+  success: "Meddelandet har skickats! Vi hör av oss så snart vi kan.",
+  error: "Något gick fel, försök igen senare.",
+};
+
 const buttons = {
   help: "Så kan vi hjälpa dig",
   contact: "Kontakta oss",
@@ -255,6 +260,7 @@ export const svTranslations = {
   paths,
   policy,
   breadcrumbs,
+  toasts,
   home,
   notFound,
   hamburgerMenuItems,
