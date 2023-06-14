@@ -41,7 +41,7 @@ const ContactForm = ({
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": "contact-form",
-        ...{ name, email, phone, message, location },
+        ...{ name, email, phone, message, type },
       }),
     })
       .then(() => {
