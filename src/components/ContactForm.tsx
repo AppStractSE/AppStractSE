@@ -36,7 +36,7 @@ const ContactForm = ({
   const handleSubmit = (e: any) => {
     setLoading(true);
     const formType = location ?? "Home";
-    fetch("/index.html", {
+    fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
