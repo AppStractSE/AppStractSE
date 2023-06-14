@@ -31,7 +31,7 @@ const ContactForm = ({ openPolicyInNewTab, inModalOnSend }: Props) => {
 
   const handleSubmit = (e: any) => {
     setLoading(true);
-    const formType = "Home";
+    const formType = "home";
     fetch("/index.html", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -72,7 +72,6 @@ const ContactForm = ({ openPolicyInNewTab, inModalOnSend }: Props) => {
 
         <form onSubmit={handleSubmit} name="contact-form">
           <input type="hidden" name="form-name" value="contactForm" />
-          <input type="text" name="formType" value="home" hidden />
           <InputText
             id="name"
             name="name"
@@ -123,6 +122,7 @@ const ContactForm = ({ openPolicyInNewTab, inModalOnSend }: Props) => {
               </Link>
             </div>
           </div>
+          <input type="text" name="formType" value="home" hidden />
           <Button
             disabled={loading ? true : false}
             type="submit"
