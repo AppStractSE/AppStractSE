@@ -11,42 +11,46 @@ import {
   Service,
   ServicePage,
 } from "../types/types";
+import { common } from "./common";
 
+const general = {
+  read_more: "Read more"
+}
 const paths: Paths = {
   home: {
-    link: "/",
+    link: common.paths.home,
     label: "Home",
   },
   contact: {
-    link: "/contact",
+    link: common.paths.contact,
     label: "Contact",
   },
   services: {
-    link: "/services",
+    link: common.paths.services,
     label: "Services",
   },
   webDevelopment: {
-    link: "/services/web-development",
+    link: common.paths.webDevelopment,
     label: "Web Development",
   },
   seo: {
-    link: "/services/seo",
+    link: common.paths.seo,
     label: "Search Engine Optimization",
   },
   appDevelopment: {
-    link: "/services/app-development",
+    link: common.paths.appDevelopment,
     label: "App Development",
   },
   clients: {
-    link: "/clients-and-cases",
+    link: common.paths.clients,
     label: "Clients & Cases",
   },
   policy: {
-    link: "/privacy-policy",
+    link: common.paths.policy,
     label: "Privacy Policy",
   },
   notFound: {
-    link: "/404",
+    link: common.paths.notFound,
     label: "404",
   },
 };
@@ -221,7 +225,7 @@ const servicepages: ServicePage = {
     parts: [
       {
         title: "Planning and Analysis",
-        hovertext: "Read More",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-red-700",
@@ -232,7 +236,7 @@ const servicepages: ServicePage = {
       },
       {
         title: "Design and Interface",
-        hovertext: "Read More",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-blue-500",
@@ -242,7 +246,7 @@ const servicepages: ServicePage = {
       },
       {
         title: "Development and Implementation",
-        hovertext: "Read More",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-orange-600",
@@ -253,7 +257,7 @@ const servicepages: ServicePage = {
       },
       {
         title: "Testing and Launching",
-        hovertext: "Read More",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-green-600",
@@ -274,7 +278,7 @@ const servicepages: ServicePage = {
     parts: [
       {
         title: "Keyword Research",
-        hovertext: "Read More",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-purple-500",
@@ -285,7 +289,7 @@ const servicepages: ServicePage = {
       },
       {
         title: "On-Page Optimization",
-        hovertext: "Read More",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-orange-600",
@@ -296,7 +300,7 @@ const servicepages: ServicePage = {
       },
       {
         title: "Link Building",
-        hovertext: "Read More",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-blue-600",
@@ -307,7 +311,7 @@ const servicepages: ServicePage = {
       },
       {
         title: "Technical SEO",
-        hovertext: "Read More",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-green-600",
@@ -328,7 +332,7 @@ const servicepages: ServicePage = {
     parts: [
       {
         title: "Conceptualization and Planning",
-        hovertext: "Read More",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-purple-500",
@@ -339,7 +343,7 @@ const servicepages: ServicePage = {
       },
       {
         title: "Design and User Interface",
-        hovertext: "Read More",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-orange-600",
@@ -350,7 +354,7 @@ const servicepages: ServicePage = {
       },
       {
         title: "Development and Testing",
-        hovertext: "Read More",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-blue-600",
@@ -361,7 +365,7 @@ const servicepages: ServicePage = {
       },
       {
         title: "Deployment and Maintenance",
-        hovertext: "Read More",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-green-600",
@@ -378,6 +382,7 @@ export const enTranslations = {
   nav,
   servicepages,
   buttons,
+  general,
   services,
   paths,
   breadcrumbs,

@@ -1,38 +1,43 @@
+import { common } from "./common";
+
+const general = {
+  read_more: "Läs mer"
+}
 const paths = {
   home: {
-    link: "/",
+    link: common.paths.home,
     label: "Hem",
   },
   contact: {
-    link: "/kontakt",
+    link: common.paths.contact,
     label: "Kontakt",
   },
   services: {
-    link: "/tjanster",
+    link: common.paths.services,
     label: "Tjänster",
   },
   webDevelopment: {
-    link: "/tjanster/webbutveckling",
+    link: common.paths.webDevelopment,
     label: "Webbutveckling",
   },
   seo: {
-    link: "/tjanster/seo",
+    link: common.paths.seo,
     label: "Sökmotoroptimering",
   },
   appDevelopment: {
-    link: "/tjanster/apputveckling",
+    link: common.paths.appDevelopment,
     label: "Apputveckling",
   },
   clients: {
-    link: "/kunder-och-projekt",
+    link: common.paths.clients,
     label: "Kunder & projekt",
   },
   policy: {
-    link: "/personuppgiftspolicy",
+    link: common.paths.policy,
     label: "Personuppgiftspolicy",
   },
   notFound: {
-    link: "/404",
+    link: common.paths.notFound,
     label: "404",
   },
 };
@@ -70,7 +75,7 @@ const toasts = {
 };
 
 const buttons = {
-  help: "Så kan vi hjälpa dig",
+  help: "Hur vi kan hjälpa dig",
   contact: "Kontakta oss",
   contactme: "Kontakta mig",
   send: "Skicka",
@@ -207,7 +212,7 @@ const servicepages = {
     parts: [
       {
         title: "Planering och analys",
-        hovertext: "Läs mer",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-red-700",
@@ -218,7 +223,7 @@ const servicepages = {
       },
       {
         title: "Design och gränssnitt",
-        hovertext: "Läs mer",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-blue-500",
@@ -228,7 +233,7 @@ const servicepages = {
       },
       {
         title: "Utveckling och implementation",
-        hovertext: "Läs mer",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-orange-600",
@@ -239,7 +244,7 @@ const servicepages = {
       },
       {
         title: "Testning och lansering",
-        hovertext: "Läs mer",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-green-600",
@@ -260,7 +265,7 @@ const servicepages = {
     parts: [
       {
         title: "Sökordsanalys",
-        hovertext: "Läs mer",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-purple-500",
@@ -271,7 +276,7 @@ const servicepages = {
       },
       {
         title: "Optimering på sidan",
-        hovertext: "Läs mer",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-orange-600",
@@ -282,7 +287,7 @@ const servicepages = {
       },
       {
         title: "Länkbyggande",
-        hovertext: "Läs mer",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-blue-600",
@@ -293,7 +298,7 @@ const servicepages = {
       },
       {
         title: "Teknisk SEO",
-        hovertext: "Läs mer",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-green-600",
@@ -314,7 +319,7 @@ const servicepages = {
     parts: [
       {
         title: "Konceptualisering och Planering",
-        hovertext: "Läs mer",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-purple-500",
@@ -325,7 +330,7 @@ const servicepages = {
       },
       {
         title: "Design och Användargränssnitt",
-        hovertext: "Läs mer",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-orange-600",
@@ -336,7 +341,7 @@ const servicepages = {
       },
       {
         title: "Utveckling och Testning",
-        hovertext: "Läs mer",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-blue-600",
@@ -347,7 +352,7 @@ const servicepages = {
       },
       {
         title: "Distribution och Underhåll",
-        hovertext: "Läs mer",
+        hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         background: "bg-green-600",
