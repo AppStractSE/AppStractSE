@@ -35,13 +35,13 @@ const ContactForm = ({
 
   const handleSubmit = (e: any) => {
     setLoading(true);
-    const type = location ?? "Home";
+    const formType = location ?? "Home";
     fetch("/index.html", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": "contact-form",
-        ...{ name, email, phone, message, type },
+        ...{ name, email, phone, message, formType },
       }),
     })
       .then(() => {
@@ -76,7 +76,7 @@ const ContactForm = ({
 
         <form onSubmit={handleSubmit} name="contact-form">
           <input type="hidden" name="form-name" value="contactForm" />
-          <input type="hidden" name="type" value="Home" />
+          <input type="hidden" name="formType" value="home" />
           <InputText
             id="name"
             name="name"
