@@ -72,7 +72,7 @@ const ContactForm = ({ openPolicyInNewTab, inModalOnSend }: Props) => {
 
         <form onSubmit={handleSubmit} name="contact-form">
           <input type="hidden" name="form-name" value="contactForm" />
-          <input type="hidden" name="formType" value="home" />
+          <input type="text" name="formType" value="home" hidden />
           <InputText
             id="name"
             name="name"
