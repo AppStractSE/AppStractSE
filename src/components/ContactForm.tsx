@@ -14,7 +14,11 @@ interface Props {
   location?: string;
 }
 
-const ContactForm = ({ openPolicyInNewTab, inModalOnSend }: Props) => {
+const ContactForm = ({
+  openPolicyInNewTab,
+  inModalOnSend,
+  location,
+}: Props) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -31,7 +35,7 @@ const ContactForm = ({ openPolicyInNewTab, inModalOnSend }: Props) => {
 
   const handleSubmit = (e: any) => {
     setLoading(true);
-    const formType = "home";
+    const formType = location ?? "home";
     fetch("/index.html", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
