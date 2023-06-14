@@ -264,6 +264,60 @@ const servicepages: ServicePage = {
       },
     ],
   },
+  seo: {
+    herodescription:
+      "Improve your website's visibility and rankings on search engines with our SEO services. We optimize your website's content, structure, and performance to attract organic traffic and increase conversions.",
+    introtitle: "Boost your online presence with effective SEO strategies",
+    introsubtitle: "Unlock the potential of your website with our SEO expertise.",
+    introdescription:
+      "Our SEO services focus on enhancing your website's visibility in search engine results. By implementing proven strategies and techniques, we help you reach a wider audience and drive targeted traffic to your website. Whether you need on-page optimization, keyword research, link building, or technical SEO, our team of experts is ready to assist you.",
+    parts: [
+      {
+        title: "Keyword Research",
+        hovertext: "Read More",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-purple-500",
+        subtitle:
+          "We conduct thorough keyword research to identify the most relevant and valuable keywords for your business.",
+        description:
+          "Our team utilizes various tools and techniques to determine the keywords that your target audience is using to find products or services similar to yours. By incorporating these keywords strategically into your website's content and metadata, we can improve your website's visibility and attract more qualified traffic.",
+      },
+      {
+        title: "On-Page Optimization",
+        hovertext: "Read More",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-orange-600",
+        subtitle:
+          "We optimize your website's structure and content for improved search engine visibility.",
+        description:
+          "Our team analyzes your website's structure, URLs, headings, and content to ensure they align with SEO best practices. We optimize your website's meta tags, image alt tags, internal linking, and other on-page elements to improve search engine crawlers' understanding of your website's content.",
+      },
+      {
+        title: "Link Building",
+        hovertext: "Read More",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-blue-600",
+        subtitle:
+          "We build high-quality backlinks to improve your website's authority and rankings.",
+        description:
+          "Our team employs effective link building strategies to acquire authoritative and relevant backlinks to your website. By earning these backlinks from reputable sources, your website's authority and credibility increase, leading to improved search engine rankings and organic traffic.",
+      },
+      {
+        title: "Technical SEO",
+        hovertext: "Read More",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-green-600",
+        subtitle:
+          "We optimize your website's technical aspects to improve its performance and search engine crawlability.",
+        description:
+          "Our team addresses technical issues that may hinder your website's search engine visibility. We optimize website speed, ensure mobile-friendliness, fix broken links, and implement structured data markup, among other technical optimizations. By providing a seamless user experience and meeting search engine guidelines, your website's visibility and rankings can improve significantly.",
+      },
+    ],
+  },
 };
 
 export const enTranslations = {

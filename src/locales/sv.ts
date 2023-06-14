@@ -250,6 +250,60 @@ const servicepages = {
       },
     ],
   },
+  seo: {
+    herodescription:
+      "Förbättra din webbplatsens synlighet och placeringar på sökmotorer med våra SEO-tjänster. Vi optimerar din webbplatsens innehåll, struktur och prestanda för att attrahera organisk trafik och öka konverteringar.",
+    introtitle: "Förstärk din online-närvaro med effektiva SEO-strategier",
+    introsubtitle: "Uppnå din webbplats potential med vår SEO-expertis.",
+    introdescription:
+      "Våra SEO-tjänster fokuserar på att förbättra din webbplats synlighet i sökmotorresultat. Genom att implementera beprövade strategier och tekniker hjälper vi dig att nå en bredare publik och driva riktad trafik till din webbplats. Oavsett om du behöver optimering på sidan, sökordsanalys, länkbyggande eller teknisk SEO, står vårt team av experter redo att assistera dig.",
+    parts: [
+      {
+        title: "Sökordsanalys",
+        hovertext: "Läs mer",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-purple-500",
+        subtitle:
+          "Vi utför noggrann sökordsanalys för att identifiera de mest relevanta och värdefulla sökorden för ditt företag.",
+        description:
+          "Vårt team använder olika verktyg och tekniker för att fastställa vilka sökord din målgrupp använder för att hitta produkter eller tjänster liknande dina. Genom att strategiskt integrera dessa sökord i din webbplatsens innehåll och metadata kan vi förbättra din webbplats synlighet och attrahera mer kvalificerad trafik.",
+      },
+      {
+        title: "Optimering på sidan",
+        hovertext: "Läs mer",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-orange-600",
+        subtitle:
+          "Vi optimerar din webbplatsens struktur och innehåll för förbättrad synlighet i sökmotorer.",
+        description:
+          "Vårt team analyserar din webbplatsens struktur, URL:er, rubriker och innehåll för att säkerställa att de överensstämmer med bästa SEO-praxis. Vi optimerar din webbplatsens meta-taggar, bildalternativtexter, intern länkning och andra element på sidan för att förbättra sökmotorers förståelse av din webbplatsens innehåll.",
+      },
+      {
+        title: "Länkbyggande",
+        hovertext: "Läs mer",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-blue-600",
+        subtitle:
+          "Vi bygger högkvalitativa bakåtlänkar för att förbättra din webbplatsens auktoritet och placeringar.",
+        description:
+          "Vårt team använder effektiva strategier för länkbyggande för att skaffa auktoritativa och relevanta bakåtlänkar till din webbplats. Genom att förtjäna dessa länkar från pålitliga källor ökar din webbplats auktoritet och trovärdighet, vilket leder till förbättrade placeringar på sökmotorer och organisk trafik.",
+      },
+      {
+        title: "Teknisk SEO",
+        hovertext: "Läs mer",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-green-600",
+        subtitle:
+          "Vi optimerar din webbplatsens tekniska aspekter för att förbättra prestanda och sökmotorers indexering.",
+        description:
+          "Vårt team åtgärdar tekniska problem som kan påverka din webbplats synlighet på sökmotorer. Vi optimerar webbplatsens hastighet, säkerställer mobilvänlighet, fixar trasiga länkar och implementerar strukturerad data, bland andra tekniska optimeringar. Genom att erbjuda en smidig användarupplevelse och uppfylla sökmotorers riktlinjer kan din webbplats synlighet och placeringar förbättras avsevärt.",
+      },
+    ],
+  },
 };
 
 export const svTranslations = {
