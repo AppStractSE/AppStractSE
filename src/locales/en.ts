@@ -318,6 +318,60 @@ const servicepages: ServicePage = {
       },
     ],
   },
+  appdevelopment: {
+    herodescription:
+      "Improve your app's visibility and reach on app stores with our ASO services. We optimize your app's metadata, keywords, and performance to attract organic downloads and increase conversions.",
+    introtitle: "Boost your app's presence with effective ASO strategies",
+    introsubtitle: "Unlock the potential of your app with our ASO expertise.",
+    introdescription:
+      "Our ASO services focus on enhancing your app's visibility in app store search results. By implementing proven strategies and techniques, we help you reach a wider audience and drive targeted downloads to your app. Whether you need app store optimization, keyword research, localization, or app performance optimization, our team of experts is ready to assist you.",
+    parts: [
+      {
+        title: "Conceptualization and Planning",
+        hovertext: "Read More",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-purple-500",
+        subtitle:
+          "Define the app's purpose, target audience, and plan its features and functionality.",
+        description:
+          "In this initial phase, we brainstorm ideas, identify the target audience, and define the goals and objectives of your app. We plan its features, functionality, and user experience. This step involves market research, competitor analysis, and creating wireframes or prototypes to visualize the app's structure and flow.",
+      },
+      {
+        title: "Design and User Interface",
+        hovertext: "Read More",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-orange-600",
+        subtitle:
+          "Create an appealing and user-friendly design that aligns with your app's brand and purpose.",
+        description:
+          "During this phase, you design the visual elements of your app, including its layout, color scheme, typography, and icons. The goal is to create an intuitive and visually appealing user interface (UI) that reflects your app's brand identity.",
+      },
+      {
+        title: "Development and Testing",
+        hovertext: "Read More",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-blue-600",
+        subtitle:
+          "Build the app's backend, frontend, and conduct thorough testing to ensure its functionality and performance.",
+        description:
+          "In this stage, developers write code to implement the app's features and functionality. The backend development involves setting up servers, databases, and APIs to handle data and business logic. The frontend development focuses on building the user interface and integrating it with the backend. Thorough testing is conducted at each step to identify and fix bugs, ensuring the app's functionality, usability, and performance.",
+      },
+      {
+        title: "Deployment and Maintenance",
+        hovertext: "Read More",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-green-600",
+        subtitle:
+          "Deploy the app to app stores or platforms and provide ongoing maintenance and updates.",
+        description:
+          "Once the app is developed and tested, it is ready for deployment. This involves publishing it to app stores like the Apple App Store or Google Play Store, or deploying it to relevant platforms.\n\nAfter deployment, it's crucial to monitor user feedback, fix any issues, and release updates to enhance the app's functionality and address user needs. Ongoing maintenance, performance optimization, and regular updates ensure the app's longevity and user satisfaction.",
+      },
+    ],
+  },
 };
 
 export const enTranslations = {

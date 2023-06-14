@@ -304,6 +304,60 @@ const servicepages = {
       },
     ],
   },
+  appdevelopment: {
+    herodescription:
+      "Förbättra synligheten och räckvidden för din app i appbutiker med våra ASO-tjänster. Vi optimerar din apps metadata, nyckelord och prestanda för att attrahera organiska nedladdningar och öka konverteringar.",
+    introtitle: "Stärk din apps närvaro med effektiva ASO-strategier",
+    introsubtitle: "Lås upp potentialen i din app med vår ASO-expertis.",
+    introdescription:
+      "Våra ASO-tjänster fokuserar på att förbättra din apps synlighet i appbutikens sökresultat. Genom att implementera beprövade strategier och tekniker hjälper vi dig att nå en bredare publik och driva målinriktade nedladdningar till din app. Oavsett om du behöver appbutiksoptimering, nyckelordsundersökning, lokalisering eller optimering av appens prestanda, finns vårt expertteam redo att hjälpa dig.",
+    parts: [
+      {
+        title: "Konceptualisering och Planering",
+        hovertext: "Läs mer",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-purple-500",
+        subtitle:
+          "Definiera appens syfte, målgrupp och planera dess funktioner och funktionalitet.",
+        description:
+          "I detta inledande skede brainstormar vi idéer, identifierar målgruppen och definierar mål och syften för din app. Vi planerar dess funktioner, funktionalitet och användarupplevelse. Detta steg innefattar marknadsundersökning, konkurrentanalys och skapande av wireframes eller prototyper för att visualisera appens struktur och flöde.",
+      },
+      {
+        title: "Design och Användargränssnitt",
+        hovertext: "Läs mer",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-orange-600",
+        subtitle:
+          "Skapa en tilltalande och användarvänlig design som överensstämmer med din apps varumärke och syfte.",
+        description:
+          "Under denna fas designar vi appens visuella element, inklusive layout, färgscheman, typografi och ikoner. Målet är att skapa en intuitiv och visuellt tilltalande användargränssnitt (UI) som återspeglar din apps varumärkesidentitet.",
+      },
+      {
+        title: "Utveckling och Testning",
+        hovertext: "Läs mer",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-blue-600",
+        subtitle:
+          "Bygg appens backend, frontend och genomför grundlig testning för att säkerställa funktionalitet och prestanda.",
+        description:
+          "I detta skede skriver utvecklare kod för att implementera appens funktioner och funktionalitet. Utvecklingen av backend innebär att sätta upp servrar, databaser och API:er för att hantera data och affärslogik. Utvecklingen av frontend fokuserar på att bygga användargränssnittet och integrera det med backend. Grundlig testning utförs vid varje steg för att identifiera och fixa buggar, och säkerställa appens funktionalitet, användbarhet och prestanda.",
+      },
+      {
+        title: "Distribution och Underhåll",
+        hovertext: "Läs mer",
+        image:
+          "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        background: "bg-green-600",
+        subtitle:
+          "Distribuera appen till appbutiker eller plattformar och tillhandahåll kontinuerligt underhåll och uppdateringar.",
+        description:
+          "När appen är utvecklad och testad är den redo för distribution. Detta innebär att publicera den i appbutiker som Apple App Store eller Google Play Store, eller distribuera den till relevanta plattformar.\n\nEfter distributionen är det viktigt att övervaka användarfeedback, fixa eventuella problem och släppa uppdateringar för att förbättra appens funktionalitet och tillgodose användarnas behov. Kontinuerligt underhåll, prestandaoptimering och regelbundna uppdateringar säkerställer appens långsiktiga hållbarhet och användarnöjdhet.",
+      },
+    ],
+  },
 };
 
 export const svTranslations = {

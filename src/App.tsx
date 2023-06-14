@@ -11,9 +11,10 @@ import Home from "./pages/home/Home";
 import ServicesSection from "./pages/home/sections/ServicesSection";
 import NotFound from "./pages/notfound/NotFound";
 import Policy from "./pages/policy/Policy";
+import AppDevelopment from "./pages/services/subpages/AppDevelopment";
+import SEO from "./pages/services/subpages/SEO";
 import WebDevelopment from "./pages/services/subpages/WebDevelopment";
 import ScrollToTop from "./utils/ScrollToTop";
-import SEO from "./pages/services/subpages/SEO";
 
 const App = () => {
   const { translations } = useLanguage();
@@ -26,7 +27,7 @@ const App = () => {
           <Route path={translations.paths.services.link} element={<ServicesSection />} />
           <Route path={translations.paths.webDevelopment.link} element={<WebDevelopment />} />
           <Route path={translations.paths.seo.link} element={<SEO />} />
-          <Route path={translations.paths.appDevelopment.link} element={<WebDevelopment />} />
+          <Route path={translations.paths.appDevelopment.link} element={<AppDevelopment />} />
           <Route path={translations.paths.contact.link} element={<Contact />} />
           <Route path={translations.paths.policy.link} element={<Policy />} />
           <Route path="*" element={<NotFound />} />
