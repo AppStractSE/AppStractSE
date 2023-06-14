@@ -11,9 +11,14 @@ import { useLanguage } from "../contexts/LanguageContext";
 interface Props {
   openPolicyInNewTab?: boolean;
   inModalOnSend?: () => void;
+  location?: string;
 }
 
-const ContactForm = ({ openPolicyInNewTab, inModalOnSend }: Props) => {
+const ContactForm = ({
+  openPolicyInNewTab,
+  inModalOnSend,
+  location,
+}: Props) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -22,7 +27,9 @@ const ContactForm = ({ openPolicyInNewTab, inModalOnSend }: Props) => {
   const [loading, setLoading] = useState(false);
   const encode = (data: any) => {
     return Object.keys(data)
-      .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
       .join("&");
   };
 
@@ -32,7 +39,7 @@ const ContactForm = ({ openPolicyInNewTab, inModalOnSend }: Props) => {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "form-name": "contactForm",
+        "form-name": location ?? "Home",
         ...{ name, email, phone, message },
       }),
     })
@@ -47,7 +54,7 @@ const ContactForm = ({ openPolicyInNewTab, inModalOnSend }: Props) => {
         inModalOnSend && inModalOnSend();
       })
       .catch((error) => {
-        console.log(error)
+        console.log(error);
         setLoading(false);
         toast.error(translations.toasts.error);
       });
@@ -67,8 +74,6 @@ const ContactForm = ({ openPolicyInNewTab, inModalOnSend }: Props) => {
         </div>
 
         <form onSubmit={handleSubmit} name="contact-form">
-          <input type="hidden" name="form-name" value="contactForm" />
-
           <InputText
             id="name"
             name="name"
@@ -127,7 +132,11 @@ const ContactForm = ({ openPolicyInNewTab, inModalOnSend }: Props) => {
           />
           <div style={{ height: 6 }}>
             {loading ? (
-              <ProgressBar className="shadow-3" mode="indeterminate" style={{ height: "100%" }} />
+              <ProgressBar
+                className="shadow-3"
+                mode="indeterminate"
+                style={{ height: "100%" }}
+              />
             ) : null}
           </div>
         </form>

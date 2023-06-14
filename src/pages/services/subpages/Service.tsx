@@ -17,7 +17,8 @@ const Service = () => {
       const contentContainer = scrollRefs.current[index];
 
       if (contentContainer) {
-        const topOffset = contentContainer.getBoundingClientRect().top + window.pageYOffset;
+        const topOffset =
+          contentContainer.getBoundingClientRect().top + window.pageYOffset;
         window.scrollTo({ top: topOffset - 50, behavior: "smooth" });
       }
     }
@@ -94,7 +95,7 @@ const Service = () => {
                     bg={part.background}
                     onClick={() => handleRefScroll(index)}
                   />
-                ),
+                )
               )}
             </Grid>
           </div>
@@ -119,15 +120,20 @@ const Service = () => {
                     <div className={`mt-2 pt-1 ${part.background} w-10rem`} />
                   </div>
                   <div className="col-12 lg:col-7">
-                    <div className="text-xl font-bold mb-2">{part.subtitle}</div>
-                    <div className="text-1xl font" style={{ whiteSpace: "pre-line" }}>
+                    <div className="text-xl font-bold mb-2">
+                      {part.subtitle}
+                    </div>
+                    <div
+                      className="text-1xl font"
+                      style={{ whiteSpace: "pre-line" }}
+                    >
                       {part.description}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          ),
+          )
         )}
       </section>
       <Dialog
@@ -142,7 +148,11 @@ const Service = () => {
         visible={modalVisible}
         onHide={() => setModalVisible(false)}
       >
-        <ContactForm openPolicyInNewTab={true} inModalOnSend={() => setModalVisible(!modalVisible)} />
+        <ContactForm
+          openPolicyInNewTab={true}
+          inModalOnSend={() => setModalVisible(!modalVisible)}
+          location={window.location.pathname.split("/")[2]}
+        />
       </Dialog>
     </>
   );
