@@ -76,6 +76,7 @@ const ContactForm = ({
 
         <form onSubmit={handleSubmit} name="contact-form">
           <input type="hidden" name="form-name" value="contactForm" />
+          <input type="hidden" name="type" value="Home" />
           <InputText
             id="name"
             name="name"
