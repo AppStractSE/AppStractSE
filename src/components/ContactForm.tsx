@@ -36,7 +36,7 @@ const ContactForm = ({ openPolicyInNewTab, inModalOnSend }: Props) => {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "form-name": "contact-form",
+        "form-name": "contactForm",
         ...{ name, email, phone, message, formType },
       }),
     })
