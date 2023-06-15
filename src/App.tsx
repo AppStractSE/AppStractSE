@@ -8,9 +8,9 @@ import Layout from "./Layout";
 import { useLanguage } from "./contexts/LanguageContext";
 import Contact from "./pages/contact/Contact";
 import Home from "./pages/home/Home";
-import ServicesSection from "./pages/home/sections/ServicesSection";
 import NotFound from "./pages/notfound/NotFound";
 import Policy from "./pages/policy/Policy";
+import Services from "./pages/services/Services";
 import AppDevelopment from "./pages/services/subpages/AppDevelopment";
 import SEO from "./pages/services/subpages/SEO";
 import WebDevelopment from "./pages/services/subpages/WebDevelopment";
@@ -24,7 +24,7 @@ const App = () => {
       <Routes>
         <Route path={translations.paths.home.link} element={<Layout />}>
           <Route index path={translations.paths.home.link} element={<Home />} />
-          <Route path={translations.paths.services.link} element={<ServicesSection />} />
+          <Route path={translations.paths.services.link} element={<Services />} />
           <Route path={translations.paths.webDevelopment.link} element={<WebDevelopment />} />
           <Route path={translations.paths.seo.link} element={<SEO />} />
           <Route path={translations.paths.appDevelopment.link} element={<AppDevelopment />} />
