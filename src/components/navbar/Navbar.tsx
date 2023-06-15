@@ -90,13 +90,12 @@ const Navbar = () => {
                 <span className="">{item.label}</span>
               </Link>
             ))}
-            <Link
-              to="/"
+            <div
               className="nav-link text-primary-300 hover:text-primary font-bold text-3xl"
               onClick={toggleLanguage}
             >
               <span className="">{translations.hamburgerLanguage}</span>
-            </Link>
+            </div>
           </div>
         </div>
       </Dialog>
