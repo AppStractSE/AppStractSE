@@ -2,13 +2,14 @@ interface Props {
   title: string;
   subtitle: string;
   description: string;
+  bg?: string;
 }
 
-const ServiceIntro = ({ title, subtitle, description }: Props) => {
+const ServiceIntro = ({ title, subtitle, description, bg }: Props) => {
   return (
-    <section className="w-full my-6 md:my-8">
-      <div className="p-2 md:p-4 lg:px-6">
-        <div className="container m-auto w-full">
+    <section className="w-full">
+      <div className={`p-2 md:p-4 lg:p-6 ${bg ? bg : "surface-0"}`}>
+        <div className="container m-auto w-full py-6">
           <div className="flex flex-wrap justify-content-center align-items-start">
             <div className="col-12 lg:col-6 text-3xl lg:text-4xl xl:text-5xl font-bold break-word">
               {title}

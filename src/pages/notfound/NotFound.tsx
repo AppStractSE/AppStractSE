@@ -4,7 +4,7 @@ const NotFound = () => {
   const { translations } = useLanguage();
   return (
     <section className="w-full">
-      <div className="md:p-4 lg:p-6 text-800 bg-bluegray-900 curved-bg">
+      <div className="md:p-4 lg:p-6 bg-bluegray-900 curved-bg">
         <div className="container w-full m-auto pb-6">
           <div className="py-6"></div>
           <div className="col-12 md:col-6 text-center md:text-left py-4">

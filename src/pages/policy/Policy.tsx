@@ -7,7 +7,7 @@ const Policy = () => {
   const { translations } = useLanguage();
   return (
     <>
-      <section className="w-full text-800 surface-0">
+      <section className="w-full surface-0">
         <div className="p-2 md:p-4 lg:p-6">
           <div className="container w-full m-auto pt-8 pb-4">
             <Breadcrumbs />

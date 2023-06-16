@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import ContactSection from "./sections/ContactSection";
+import ContactSection from "../../components/sections/ContactSection";
 import HeroSection from "./sections/HeroSection";
 import ServicesSection from "./sections/ServicesSection";
 
@@ -15,7 +15,7 @@ const Home = () => {
     <>
       <HeroSection scrollToContact={scrolltoContact} />
       <ServicesSection />
-      <ContactSection scrollRef={contactRef} />
+      <ContactSection curved gradient bg={["blue-800", "bluegray-600"]} scrollRef={contactRef} />
     </>
   );
 };

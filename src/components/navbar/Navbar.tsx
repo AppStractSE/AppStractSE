@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { FaEnvelope, FaFacebook, FaTwitter } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import { useLanguage } from "../../contexts/LanguageContext";
+import { HamburgerMenuItem, NavMenuItem } from "../../types/types";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,23 +33,23 @@ const Navbar = () => {
       <header className="w-full">
         <div
           className={`transition-slow p-menubar col-12 fixed rounded-none top-0 z-5 px-4 lg:px-6 ${
-            isScrolled ? "surface-50 text-primary" : "text-800 bg-transparent"
+            isScrolled ? "surface-50 text-primary" : "text-500 bg-transparent"
           }`}
         >
           <div className="container px-2 flex w-full m-auto align-items-center justify-content-center">
             <div className="mr-auto">AppStract</div>
             <div className="hidden md:block">
-              {translations.nav.menuItems.map((navItem: any) => (
+              {translations.nav.menuItems.map((navItem: NavMenuItem) => (
                 <NavLink
                   key={navItem.url}
                   className={`nav-link font-bold text-xl ${
                     isScrolled
-                      ? "text-primary hover:text-primary-300"
-                      : "text-primary-300 hover:text-primary"
+                      ? "text-primary-500 hover:text-primary-300"
+                      : "text-primary-200 hover:text-primary"
                   }`}
                   to={navItem.url}
                 >
-                  <span className="">{navItem.label}</span>
+                  <span>{navItem.label}</span>
                 </NavLink>
               ))}
             </div>
@@ -80,21 +81,21 @@ const Navbar = () => {
             <FaEnvelope className="mr-2" size={20} />
           </div>
           <div className="col-12 md:col-4 flex flex-column align-items-start md:align-items-end">
-            {translations.hamburgerMenuItems.map((item: any) => (
+            {translations.hamburgerMenuItems.map((item: HamburgerMenuItem) => (
               <Link
                 key={item.label}
                 className="nav-link text-primary-300 hover:text-primary font-bold text-3xl"
                 to={item.url}
                 onClick={() => setSidebarVisible(!sidebarVisible)}
               >
-                <span className="">{item.label}</span>
+                <span>{item.label}</span>
               </Link>
             ))}
             <div
-              className="nav-link text-primary-300 hover:text-primary font-bold text-3xl"
+              className="nav-link text-primary-300 hover:text-primary font-bold text-3xl cursor-pointer"
               onClick={toggleLanguage}
             >
-              <span className="">{translations.hamburgerLanguage}</span>
+              <span>{translations.hamburgerLanguage}</span>
             </div>
           </div>
         </div>

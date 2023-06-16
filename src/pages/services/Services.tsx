@@ -21,7 +21,10 @@ const Services = () => {
                   {translations.home.serviceDescription}
                 </p>
               </div>
-              <Grid>
+              {/* <Grid> */}
+              <div className="col-12 flex">
+
+
                 {translations.services.map((service: Service) => (
                   <SlateCard
                     key={service.title}
@@ -30,15 +33,16 @@ const Services = () => {
                     description={service.description}
                     image={service.image}
                     link={service.link}
-                  />
-                ))}
-              </Grid>
+                    />
+                    ))}
+                    </div>
+              {/* </Grid> */}
             </div>
           </div>
         </div>
       </section>
       <section className="w-full">
-        <div className="p-2 md:p-4 lg:p-6 text-800">
+        <div className="p-2 md:p-4 lg:p-6">
           <div className="container w-full m-auto pb-6">
             <div className="flex flex-wrap justify-content-center align-items-start">
               <div className="col-12 lg:col-6 text-3xl lg:text-4xl xl:text-5xl font-bold break-word">

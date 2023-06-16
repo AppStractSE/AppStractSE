@@ -8,14 +8,22 @@ import ContactForm from "../ContactForm";
 interface Props {
   title: string;
   description: string;
+  bg?: string[];
+  gradient?: boolean;
 }
 
-const ServiceHero = ({ title, description }: Props) => {
+const ServiceHero = ({ title, description, bg, gradient }: Props) => {
   const [modalVisible, setModalVisible] = useState(false);
   const { translations } = useLanguage();
   return (
     <section className="w-full">
-      <div className="p-2 md:p-4 lg:p-6 bg-blue-800">
+      <div
+        className={`p-2 md:p-4 lg:p-6 ${bg ? `bg-${bg[0]}` : "bg-blue-800"}`}
+        style={{
+          backgroundImage:
+            gradient && bg ? `linear-gradient(69deg, var(--${bg[0]}), var(--${bg[1]}))` : undefined,
+        }}
+      >
         <div className="container w-full m-auto pt-8 pb-2">
           <Breadcrumbs />
           <div className="flex-column-reverse flex-wrap flex lg:flex-row">

@@ -13,7 +13,7 @@ const SlateCardChild = ({ image, bg, description, title }: ChildProps) => {
     <div
       className={`border-round overflow-hidden ${
         bg ? bg : "bg-primary-900"
-      } shadow-3 hover:shadow-5 cursor-pointer ${styles.container}`}
+      } shadow-4 hover:shadow-5 cursor-pointer ${styles.container}`}
     >
       <div className="relative">
         <div className={`${styles.img_container}`}>
