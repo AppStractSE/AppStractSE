@@ -1,17 +1,9 @@
-import { useRef } from "react";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import SlateCard from "../../components/cards/SlateCard/SlateCard";
 import Grid from "../../components/grid/Grid";
 import ContactSection from "../../components/sections/ContactSection";
 
 const Clients = () => {
-  const contactRef = useRef<HTMLSpanElement>(null);
-  const scrolltoContact = () => {
-    if (contactRef.current) {
-      contactRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <>
       <section className="w-full">
@@ -38,10 +30,10 @@ const Clients = () => {
         <div className="px-2 md:px-4 lg:px-6">
           <div className="container w-full m-auto pb-6">
             <div className="col-12 flex gap-4 text-3xl font-bold mb-4">
-            <div className="text-primary">Visa alla</div>
-            <div className="text-primary-500">Appar</div>
-            <div className="text-primary-500">Webbapplikationer</div>
-            <div className="text-primary-500">Alla</div>
+              <div className="text-primary">Visa alla</div>
+              <div className="text-primary-500">Appar</div>
+              <div className="text-primary-500">Webbapplikationer</div>
+              <div className="text-primary-500">Alla</div>
             </div>
             <Grid>
               <SlateCard
@@ -91,7 +83,7 @@ const Clients = () => {
         </div>
       </section>
 
-      <ContactSection curved bg={["purple-800", "indigo-700"]} gradient scrollRef={contactRef} />
+      <ContactSection curved bg={["purple-800", "indigo-700"]} gradient />
     </>
   );
 };
