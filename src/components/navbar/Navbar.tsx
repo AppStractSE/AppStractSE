@@ -17,7 +17,8 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
       setIsScrolled(scrollTop > 0);
     };
 
@@ -37,7 +38,9 @@ const Navbar = () => {
           }`}
         >
           <div className="container px-2 flex w-full m-auto align-items-center justify-content-center">
-            <div className="mr-auto">AppStract</div>
+            <NavLink className="nav-link" to="/">
+              <div className="mr-auto">AppStract</div>
+            </NavLink>
             <div className="hidden md:block">
               {translations.nav.menuItems.map((navItem: NavMenuItem) => (
                 <NavLink
