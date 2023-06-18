@@ -1,5 +1,6 @@
 import Breadcrumbs from "../../components/Breadcrumbs";
 import SlateCard from "../../components/cards/SlateCard/SlateCard";
+import Grid from "../../components/grid/Grid";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { Service } from "../../types/types";
 
@@ -20,7 +21,7 @@ const Services = () => {
                   {translations.home.serviceDescription}
                 </p>
               </div>
-              <div className="col-12 flex">
+              <Grid>
                 {translations.services.map((service: Service) => (
                   <SlateCard
                     key={service.title}
@@ -31,7 +32,7 @@ const Services = () => {
                     link={service.link}
                   />
                 ))}
-              </div>
+              </Grid>
             </div>
           </div>
         </div>
