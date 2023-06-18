@@ -31,7 +31,7 @@ const SlateCardChild = ({ image, bg, description, title }: ChildProps) => {
         <div className="font-bold text-2xl flex-fill flex-grow flex-1">{title}</div>
         {description ? (
           <div
-            className={`mt-2 ${styles.card_text} text-md md:text-xl mb-4 md:mb-0 text-700 line-height-2 flex-fill flex-grow flex-1`}
+            className={`mt-2 ${styles.card_text} text-md md:text-xl md:mb-0 text-700 line-height-2 flex-fill flex-grow flex-1`}
           >
             {description}
           </div>

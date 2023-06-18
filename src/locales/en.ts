@@ -224,7 +224,7 @@ const servicepages: ServicePage = {
       "Through meticulous development and close collaboration with you as the client, we create a website tailored to your needs and preferences. Whether you need a simple business website, an advanced e-commerce platform, or an interactive web application, we can deliver a solution that suits you perfectly.",
     parts: [
       {
-        title: "Planning and Analysis",
+        title: "Planning & analysis",
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
@@ -235,7 +235,7 @@ const servicepages: ServicePage = {
           "We conduct thorough discussions and workshops to capture all your desires and requirements. We also analyze your target audience, market trends, and competition to create a strategy that will be successful in the long term. With our experience and expertise in web development, we also provide advice and recommendations to optimize your website.",
       },
       {
-        title: "Design and Interface",
+        title: "Design & interface",
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
@@ -245,7 +245,7 @@ const servicepages: ServicePage = {
           "We create visual concepts that represent your brand identity while appealing to your target audience. We focus on creating a user-friendly and aesthetically pleasing website by designing intuitive navigation structures and an attractive visual design. We ensure that your website is responsive and adapts to different screen sizes to provide a consistent experience on all devices.",
       },
       {
-        title: "Development and Implementation",
+        title: "Development",
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
@@ -256,7 +256,7 @@ const servicepages: ServicePage = {
           "We utilize the latest technologies and frameworks to build a stable and secure website. We prioritize creating scalable and flexible solutions to facilitate future upgrades and customizations. Throughout the development process, we maintain open communication and regular checkpoints to ensure that the outcome aligns with your expectations.",
       },
       {
-        title: "Testing and Launching",
+        title: "Testing & launching",
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
@@ -277,7 +277,7 @@ const servicepages: ServicePage = {
       "Our SEO services focus on enhancing your website's visibility in search engine results. By implementing proven strategies and techniques, we help you reach a wider audience and drive targeted traffic to your website. Whether you need on-page optimization, keyword research, link building, or technical SEO, our team of experts is ready to assist you.",
     parts: [
       {
-        title: "Keyword Research",
+        title: "Keyword research",
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
@@ -288,7 +288,7 @@ const servicepages: ServicePage = {
           "Our team utilizes various tools and techniques to determine the keywords that your target audience is using to find products or services similar to yours. By incorporating these keywords strategically into your website's content and metadata, we can improve your website's visibility and attract more qualified traffic.",
       },
       {
-        title: "On-Page Optimization",
+        title: "On-page optimization",
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
@@ -299,7 +299,7 @@ const servicepages: ServicePage = {
           "Our team analyzes your website's structure, URLs, headings, and content to ensure they align with SEO best practices. We optimize your website's meta tags, image alt tags, internal linking, and other on-page elements to improve search engine crawlers' understanding of your website's content.",
       },
       {
-        title: "Link Building",
+        title: "Link building",
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
@@ -331,7 +331,7 @@ const servicepages: ServicePage = {
       "Our ASO services focus on enhancing your app's visibility in app store search results. By implementing proven strategies and techniques, we help you reach a wider audience and drive targeted downloads to your app. Whether you need app store optimization, keyword research, localization, or app performance optimization, our team of experts is ready to assist you.",
     parts: [
       {
-        title: "Conceptualization and Planning",
+        title: "Conceptualization",
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
@@ -342,7 +342,7 @@ const servicepages: ServicePage = {
           "In this initial phase, we brainstorm ideas, identify the target audience, and define the goals and objectives of your app. We plan its features, functionality, and user experience. This step involves market research, competitor analysis, and creating wireframes or prototypes to visualize the app's structure and flow.",
       },
       {
-        title: "Design and User Interface",
+        title: "Design & user interface",
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
@@ -353,7 +353,7 @@ const servicepages: ServicePage = {
           "During this phase, you design the visual elements of your app, including its layout, color scheme, typography, and icons. The goal is to create an intuitive and visually appealing user interface (UI) that reflects your app's brand identity.",
       },
       {
-        title: "Development and Testing",
+        title: "Development & testing",
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
@@ -364,7 +364,7 @@ const servicepages: ServicePage = {
           "In this stage, developers write code to implement the app's features and functionality. The backend development involves setting up servers, databases, and APIs to handle data and business logic. The frontend development focuses on building the user interface and integrating it with the backend. Thorough testing is conducted at each step to identify and fix bugs, ensuring the app's functionality, usability, and performance.",
       },
       {
-        title: "Deployment and Maintenance",
+        title: "Deployment & maintenance",
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",

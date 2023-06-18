@@ -6,6 +6,8 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Layout from "./Layout";
 import { useLanguage } from "./contexts/LanguageContext";
+import { common } from "./locales/common";
+import Clients from "./pages/clients-and-cases/Clients";
 import Contact from "./pages/contact/Contact";
 import Home from "./pages/home/Home";
 import NotFound from "./pages/notfound/NotFound";
@@ -22,14 +24,15 @@ const App = () => {
   return (
     <>
       <Routes>
-        <Route path={translations.paths.home.link} element={<Layout />}>
-          <Route index path={translations.paths.home.link} element={<Home />} />
-          <Route path={translations.paths.services.link} element={<Services />} />
-          <Route path={translations.paths.webDevelopment.link} element={<WebDevelopment />} />
-          <Route path={translations.paths.seo.link} element={<SEO />} />
-          <Route path={translations.paths.appDevelopment.link} element={<AppDevelopment />} />
-          <Route path={translations.paths.contact.link} element={<Contact />} />
-          <Route path={translations.paths.policy.link} element={<Policy />} />
+        <Route path={common.paths.home} element={<Layout />}>
+          <Route index path={common.paths.home} element={<Home />} />
+          <Route path={common.paths.services} element={<Services />} />
+          <Route path={common.paths.webDevelopment} element={<WebDevelopment />} />
+          <Route path={common.paths.seo} element={<SEO />} />
+          <Route path={common.paths.appDevelopment} element={<AppDevelopment />} />
+          <Route path={common.paths.contact} element={<Contact />} />
+          <Route path={common.paths.policy} element={<Policy />} />
+          <Route path={common.paths.clients} element={<Clients />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

@@ -211,7 +211,7 @@ const servicepages = {
       "Genom noggrann utveckling och nära samarbete med dig som kund, skapar vi en webbplats som är anpassad efter dina behov och önskemål. Oavsett om du behöver en enkel företagshemsida, en avancerad e-handelsplattform eller en interaktiv webbapplikation, kan vi leverera en lösning som passar just dig.",
     parts: [
       {
-        title: "Planering och analys",
+        title: "Planering & analys",
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
@@ -222,7 +222,7 @@ const servicepages = {
           "Vi genomför noggranna diskussioner och workshops för att fånga upp alla dina önskemål och behov. Vi analyserar även din målgrupp, marknadstrender och konkurrens för att skapa en strategi som kommer att vara framgångsrik på lång sikt. Med hjälp av vår erfarenhet och expertis i webbutveckling ger vi dig även råd och rekommendationer för att optimera din webbplats.",
       },
       {
-        title: "Design och gränssnitt",
+        title: "Design & gränssnitt",
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
@@ -232,7 +232,7 @@ const servicepages = {
           "Vi skapar visuella koncept som representerar din varumärkesidentitet och samtidigt tilltalar din målgrupp. Vi fokuserar på att skapa en användarvänlig och estetiskt tilltalande webbplats genom att skapa intuitiva navigeringsstrukturer och en attraktiv visuell design. Vi ser till att din webbplats är responsiv och anpassar sig till olika skärmstorlekar för att ge en konsekvent upplevelse på alla enheter.",
       },
       {
-        title: "Utveckling och implementation",
+        title: "Utveckling & implementation",
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
@@ -243,7 +243,7 @@ const servicepages = {
           "Vi använder de senaste teknologierna och ramverken för att bygga en stabil och säker webbplats. Vi fokuserar på att skapa skalbara och flexibla lösningar för att underlätta framtida uppgraderingar och anpassningar. Under hela utvecklingsprocessen har vi en öppen kommunikation och regelbundna avstämningar för att säkerställa att resultatet är i linje med dina förväntningar.",
       },
       {
-        title: "Testning och lansering",
+        title: "Testning & lansering",
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",

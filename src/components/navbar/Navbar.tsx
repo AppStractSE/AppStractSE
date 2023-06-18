@@ -38,8 +38,8 @@ const Navbar = () => {
           }`}
         >
           <div className="container px-2 flex w-full m-auto align-items-center justify-content-center">
-            <NavLink className="nav-link" to="/">
-              <div className="mr-auto">AppStract</div>
+            <NavLink className="nav-link mr-auto" to="/">
+              <span>AppStract</span>
             </NavLink>
             <div className="hidden md:block">
               {translations.nav.menuItems.map((navItem: NavMenuItem) => (
