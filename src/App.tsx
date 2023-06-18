@@ -5,7 +5,6 @@ import { Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Layout from "./Layout";
-import { useLanguage } from "./contexts/LanguageContext";
 import { common } from "./locales/common";
 import Clients from "./pages/clients-and-cases/Clients";
 import Contact from "./pages/contact/Contact";
@@ -19,8 +18,6 @@ import WebDevelopment from "./pages/services/subpages/WebDevelopment";
 import ScrollToTop from "./utils/ScrollToTop";
 
 const App = () => {
-  const { translations } = useLanguage();
-
   return (
     <>
       <Routes>
