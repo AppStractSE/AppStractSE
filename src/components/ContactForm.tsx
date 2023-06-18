@@ -68,7 +68,7 @@ const ContactForm = ({
         <div className="flex justify-content-center mb-2 md:mb-4">
           <div
             style={{ width: "fit-content" }}
-            className="text-center text-900 text-2xl md:text-3xl font-medium"
+            className="text-center text-2xl md:text-3xl font-medium"
           >
             {translations.contact.title}
           </div>
@@ -83,7 +83,7 @@ const ContactForm = ({
             placeholder={translations.contact.name}
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-full mb-3 shadow-3 py-3 bg-primary-200 text-black-alpha-90 border-none hover:shadow-6 dark-placeholder"
+            className="w-full mb-3 shadow-3 py-3 bg-primary text-black-alpha-90 border-none hover:shadow-6 dark-placeholder"
           />
           <div className="flex gap-3">
             <InputText
@@ -93,7 +93,7 @@ const ContactForm = ({
               placeholder={translations.contact.email}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full mb-3 shadow-3 py-3 bg-primary-200 text-black-alpha-90 border-none hover:shadow-6 dark-placeholder"
+              className="w-full mb-3 shadow-3 py-3 bg-primary text-black-alpha-90 border-none hover:shadow-6 dark-placeholder"
             />
             <InputText
               id="phone"
@@ -102,7 +102,7 @@ const ContactForm = ({
               placeholder={translations.contact.phone}
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              className="w-full mb-3 shadow-3 py-3 bg-primary-200 text-black-alpha-90 border-none hover:shadow-6 dark-placeholder"
+              className="w-full mb-3 shadow-3 py-3 bg-primary text-black-alpha-90 border-none hover:shadow-6 dark-placeholder"
             />
           </div>
           <InputTextarea
@@ -112,7 +112,7 @@ const ContactForm = ({
             rows={5}
             placeholder={translations.contact.message}
             onChange={(e) => setMessage(e.target.value)}
-            className="w-full mb-3 shadow-3 py-3 bg-primary-200 text-black-alpha-90 border-none hover:shadow-6 dark-placeholder textarea"
+            className="w-full mb-3 shadow-3 py-3 bg-primary text-black-alpha-90 border-none hover:shadow-6 dark-placeholder textarea"
           />
           <div className="flex align-items-center justify-content-between mb-4">
             <div className="text-600 font-medium line-height-2 text-xs md:text-sm">
@@ -135,11 +135,7 @@ const ContactForm = ({
           />
           <div style={{ height: 6 }}>
             {loading ? (
-              <ProgressBar
-                className="shadow-3"
-                mode="indeterminate"
-                style={{ height: "100%" }}
-              />
+              <ProgressBar className="shadow-3" mode="indeterminate" style={{ height: "100%" }} />
             ) : null}
           </div>
         </form>

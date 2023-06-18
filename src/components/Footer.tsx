@@ -1,5 +1,4 @@
-import { AiOutlineInstagram, AiOutlineMail } from "react-icons/ai";
-import { RiMessengerLine } from "react-icons/ri";
+import Socials from "./socials/Socials";
 
 const Footer = () => {
   return (
@@ -8,27 +7,7 @@ const Footer = () => {
         <div className="container m-auto px-4 md:px-0">
           <div className="flex flex-wrap md:flex-row-reverse md:justify-content-start mb-2">
             <div className="col-12 md:col-6 flex my-4 md:my-0 justify-content-end gap-2 md:gap-1">
-              <a href="https://www.instagram.com/appstract.se/" target="_blank">
-                <AiOutlineInstagram
-                  className="text-primary hover:text-primary-400 cursor-pointer"
-                  size={42}
-                />
-              </a>
-              <a href="https://www.instagram.com/appstract.se/" target="_blank">
-                <RiMessengerLine
-                  className="text-primary hover:text-primary-400 cursor-pointer"
-                  size={42}
-                />
-              </a>
-              <a
-                href="mailto:info@appstract.se?subject=Kontaktförfrågan&priority=high"
-                target="_blank"
-              >
-                <AiOutlineMail
-                  className="text-primary hover:text-primary-400 cursor-pointer"
-                  size={42}
-                />
-              </a>
+              <Socials />
             </div>
             {/* <div className="col-12 flex md:col-6 justify-content-between">
               <div className="col-6 md:col-4 flex justify-content-center md:block">
@@ -53,9 +32,7 @@ const Footer = () => {
               </div>
             </div> */}
           </div>
-          <p className="col-12 md:col-6 text-right md:text-left text-xs mb-0">
-            © 2023 Appstract
-          </p>
+          <p className="col-12 md:col-6 text-right md:text-left text-xs mb-0">© 2023 Appstract</p>
         </div>
       </div>
     </footer>

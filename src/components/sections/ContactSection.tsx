@@ -1,7 +1,7 @@
 import ContactForm from "../ContactForm";
 
 interface Props {
-  scrollRef?: React.RefObject<HTMLDivElement>;
+  scrollRef?: React.RefObject<HTMLElement>;
   bg?: string[];
   curved?: boolean;
   gradient?: boolean;
