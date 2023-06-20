@@ -38,7 +38,7 @@ const Navbar = () => {
           }`}
         >
           <div className="container px-2 flex w-full m-auto align-items-center justify-content-center">
-            <NavLink className="nav-link mr-auto" to="/">
+            <NavLink className="nav-link mr-auto p-0" to="/">
               <span>AppStract</span>
             </NavLink>
             <div className="hidden md:block">

@@ -6,6 +6,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Layout from "./Layout";
 import { common } from "./locales/common";
+import ClientDetails from "./pages/clients-and-cases/ClientDetails";
 import Clients from "./pages/clients-and-cases/Clients";
 import Contact from "./pages/contact/Contact";
 import Home from "./pages/home/Home";
@@ -30,6 +31,7 @@ const App = () => {
           <Route path={common.paths.contact} element={<Contact />} />
           <Route path={common.paths.policy} element={<Policy />} />
           <Route path={common.paths.clients} element={<Clients />} />
+          <Route path={`${common.paths.clients}/:clientName`} element={<ClientDetails />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

@@ -40,6 +40,10 @@ const paths = {
     link: common.paths.notFound,
     label: "404",
   },
+  client: {
+    link: common.paths.client,
+    label: "Client",
+  },
 };
 
 const hamburgerLanguage = "English";
@@ -182,6 +186,7 @@ const breadcrumbs = [
   { path: paths.clients.link, breadcrumb: paths.clients.label },
   { path: paths.contact.link, breadcrumb: paths.contact.label },
   { path: paths.policy.link, breadcrumb: paths.policy.label },
+  { path: paths.client.link, breadcrumb: paths.client.label },
 ];
 
 const nav = {

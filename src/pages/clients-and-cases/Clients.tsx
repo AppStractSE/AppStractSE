@@ -1,9 +1,16 @@
+import { useState } from "react";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import SlateCard from "../../components/cards/SlateCard/SlateCard";
 import Grid from "../../components/grid/Grid";
 import ContactSection from "../../components/sections/ContactSection";
+import { common } from "../../locales/common";
 
 const Clients = () => {
+  const [selectedTag, setSelectedTag] = useState<string>(common.clientTags.showAll);
+  const filteredClients =
+    selectedTag === common.clientTags.showAll
+      ? common.clients
+      : common.clients.filter((client) => client.tags.includes(selectedTag));
   return (
     <>
       <section className="w-full">
@@ -30,54 +37,30 @@ const Clients = () => {
         <div className="px-2 md:px-4 lg:px-6">
           <div className="container w-full m-auto pb-6">
             <div className="col-12 flex gap-4 text-3xl font-bold mb-4">
-              <div className="text-primary">Visa alla</div>
-              <div className="text-primary-500">Appar</div>
-              <div className="text-primary-500">Webbapplikationer</div>
-              <div className="text-primary-500">Alla</div>
+              {Object.values(common.clientTags).map((tag) => (
+                <div
+                  key={tag}
+                  className={`cursor-pointer hover:text-primary-300 ${
+                    tag === selectedTag ? "text-primary" : "text-primary-500"
+                  }`}
+                  onClick={() => setSelectedTag(tag)}
+                >
+                  {tag}
+                </div>
+              ))}
             </div>
             <Grid>
-              <SlateCard
-                className="col-12 md:col-6 lg:col-3 flex"
-                title="Client 1"
-                description="Client 1 info"
-                image="https://s29814.pcdn.co/wp-content/uploads/2022/10/Shutterstock_749265139-1.png"
-                bg="bg-primary-900"
-              />
-              <SlateCard
-                className="col-12 md:col-6 lg:col-3 flex"
-                title="Client 2"
-                description="Client 2 info"
-                image="https://c0.wallpaperflare.com/preview/484/389/259/drink-glass-hand-party.jpg"
-                bg="bg-primary-900"
-              />
-              <SlateCard
-                className="col-12 md:col-6 lg:col-3 flex"
-                title="Client 3"
-                description="Client 3 info"
-                image="https://c0.wallpaperflare.com/preview/484/389/259/drink-glass-hand-party.jpg"
-                bg="bg-primary-900"
-              />
-              <SlateCard
-                className="col-12 md:col-6 lg:col-3 flex"
-                title="Client 4"
-                description="Client 4 info"
-                image="https://c0.wallpaperflare.com/preview/484/389/259/drink-glass-hand-party.jpg"
-                bg="bg-primary-900"
-              />
-              <SlateCard
-                className="col-12 md:col-6 lg:col-3 flex"
-                title="Client 5"
-                description="Client 5 info"
-                image="https://c0.wallpaperflare.com/preview/484/389/259/drink-glass-hand-party.jpg"
-                bg="bg-primary-900"
-              />
-              <SlateCard
-                className="col-12 md:col-6 lg:col-3 flex"
-                title="Client 6"
-                description="Client 6 info"
-                image="https://c0.wallpaperflare.com/preview/484/389/259/drink-glass-hand-party.jpg"
-                bg="bg-primary-900"
-              />
+              {filteredClients.map((client) => (
+                <SlateCard
+                  key={client.slug}
+                  link={`${common.paths.clients}/${client.slug}`}
+                  className="col-12 md:col-6 lg:col-3 flex transition-opacity duration-500"
+                  title={client.title}
+                  description={client.subtitle}
+                  image={client.image}
+                  bg="bg-primary-900"
+                />
+              ))}
             </Grid>
           </div>
         </div>
