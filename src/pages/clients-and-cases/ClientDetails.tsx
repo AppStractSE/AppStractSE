@@ -2,19 +2,13 @@ import { useParams } from "react-router-dom";
 import ClientHero from "../../components/client/ClientHero";
 import ContactSection from "../../components/sections/ContactSection";
 import { common } from "../../locales/common";
-
-export interface Client {
-  title: string;
-  subtitle: string;
-  image: string;
-  description: string;
-  logo: string;
-  link: string;
-}
+import { Client } from "../../types/types";
+import NotFound from "../notfound/NotFound";
 
 const ClientDetails = () => {
   const name = useParams().clientName;
   const client = common.clients.find((c) => c.slug === name) as Client;
+  if (!client) return <NotFound />;
   return (
     <>
       <ClientHero bg={["purple-900", "bluegray-600"]} gradient client={client} />
@@ -24,10 +18,14 @@ const ClientDetails = () => {
             <div className="flex-column-reverse flex-wrap flex md:flex-row">
               <div className="col-12 md:col-5 flex flex-column justify-content-between">
                 <div>
-                  <div className="block text-3xl break-word md:text-4xl lg:text-5xl font-bold line-height-1 my-4 lg:mt-0 lg:mb-4">
-                    En helhetslösning från västkusten till hela världen
+                  <div className="block text-3xl break-word md:text-4xl lg:text-5xl font-bold line-height-1 mb-4">
+                    Skapar effektiv fastighetsadministration
                   </div>
-                  <div className="text-xl md:text-2xl mt-0 line-height-2">{client.description}</div>
+                  <div className="text-xl md:text-2xl mt-0 line-height-2">
+                    PropertEase är en innovativ plattform som förenklar och effektiviserar
+                    fastighetsadministrationen. Med våra verktyg och funktioner kan du hantera
+                    hyresgäster, underhållsärenden och transaktioner på ett smidigt sätt.
+                  </div>
                 </div>
               </div>
               <div className="col-12 md:col-7 lg:col-5 lg:col-offset-2">
@@ -54,10 +52,15 @@ const ClientDetails = () => {
               </div>
               <div className="col-12 md:col-6 lg:col-5 lg:col-offset-2 flex flex-column justify-content-between">
                 <div>
-                  <div className="block text-3xl break-word md:text-4xl lg:text-5xl font-bold line-height-1 lg:mt-0 lg:mb-4">
-                    En helhetslösning från västkusten till hela världen
+                  <div className="block text-3xl break-word md:text-4xl lg:text-5xl font-bold line-height-1 mb-4">
+                    Optimerar fastighetsaffärer och transaktioner
                   </div>
-                  <div className="text-xl md:text-2xl mt-0 line-height-2">{client.description}</div>
+                  <div className="text-xl md:text-2xl mt-0 line-height-2">
+                    Med PropertEase kan du optimera dina fastighetsaffärer och transaktioner. Vår
+                    plattform erbjuder dig en sömlös upplevelse för att hantera försäljningar,
+                    förvaltning av dokumentation och genomföra juridiska processer, vilket sparar
+                    tid och minskar risken för felaktigheter.
+                  </div>
                 </div>
               </div>
             </div>

@@ -26,13 +26,13 @@ const clientTags = {
 
 const clients = [
   {
-    title: "Client1",
-    subtitle: "A swedish bank that provides online financial services.",
+    title: "PropertEase",
+    subtitle: "Property management made easy",
     logo: "https://justifiedcoding.org/wp-content/uploads/2019/01/Client-Logo-Placeholder.png",
     image:
       "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
     description:
-      "Client1 is a Swedish bank that provides online financial services such as payment solutions for online storefronts, direct payments, post purchase payments and more.",
+      "PropertEase revolutionerar fastighetsadministration genom att erbjuda effektiva verktyg för hantering av fastigheter och hyresgäster, vilket resulterar i en smidigare och mer lönsam process.",
     link: "https://appstract.se",
     slug: "client-one",
     tags: [clientTags.apps],

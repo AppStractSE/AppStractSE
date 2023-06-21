@@ -22,13 +22,13 @@ const ServiceSteps = ({ parts }: Props) => {
   return (
     <>
       <section className="w-full">
-        <div className="p-2 md:p-4 lg:p-6 bg-bluegray-900">
+        <div className="p-2 md:p-4 lg:py-0 lg:px-6 bg-bluegray-900">
           <div className="container m-auto w-full">
             <Grid>
               {parts.map((part: ServicePagePart, index: number) => (
                 <SlateCard
                   key={index}
-                  className="col-12 md:col-6 lg:col-3 flex"
+                  className="col-6 lg:col-3 flex"
                   title={part.title}
                   description={part.hovertext}
                   image={part.image}

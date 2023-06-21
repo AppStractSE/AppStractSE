@@ -131,3 +131,13 @@ export interface ServicePagePart {
   subtitle: string;
   description: string;
 }
+
+export interface Client {
+  title: string;
+  subtitle: string;
+  image: string;
+  description: string;
+  logo: string;
+  link: string;
+  slug: string;
+}

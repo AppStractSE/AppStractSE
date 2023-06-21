@@ -36,7 +36,7 @@ const Clients = () => {
       <section className="w-full">
         <div className="px-2 md:px-4 lg:px-6">
           <div className="container w-full m-auto pb-6">
-            <div className="col-12 flex gap-4 text-3xl font-bold mb-4">
+            <div className="col-12 flex gap-4 text-2xl md:text-3xl font-bold mb-4 white-space-nowrap" style={{overflowX: "auto"}}>
               {Object.values(common.clientTags).map((tag) => (
                 <div
                   key={tag}

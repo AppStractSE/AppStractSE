@@ -2,15 +2,17 @@ import React from "react";
 import { IoHome } from "react-icons/io5";
 import { Link, useLocation } from "react-router-dom";
 import { useLanguage } from "../contexts/LanguageContext";
+import { Client } from "../pages/clients-and-cases/ClientDetails";
+import { Breadcrumb } from "../types/types";
 
-function Breadcrumbs() {
+interface Props {
+  client?: Client;
+}
+
+const Breadcrumbs = ({ client }: Props) => {
   const location = useLocation();
   const { translations } = useLanguage();
 
-  interface Breadcrumb {
-    breadcrumb: string;
-    path: string;
-  }
   // Define your breadcrumb data
   const breadcrumbs: Breadcrumb[] = translations.breadcrumbs;
 
@@ -43,11 +45,19 @@ function Breadcrumbs() {
                 {breadcrumb.breadcrumb}
               </Link>
             </span>
+            {client && <span> / </span>}
+            {client && (
+              <span className="text-primary">
+                <Link to={location.pathname} className="text-link hover:text-primary">
+                  {client.title}
+                </Link>
+              </span>
+            )}
           </React.Fragment>
         );
     });
 
   return <nav className="col-12 py-4 flex gap-1">{renderedBreadcrumbs}</nav>;
-}
+};
 
 export default Breadcrumbs;

@@ -33,11 +33,11 @@ const Navbar = () => {
     <>
       <header className="w-full">
         <div
-          className={`transition-slow p-menubar col-12 fixed rounded-none top-0 z-5 px-4 lg:px-6 ${
+          className={`transition-slow p-menubar col-12 fixed rounded-none top-0 z-5 px-2 md:px-4 lg:px-6 ${
             isScrolled ? "surface-50 text-primary" : "text-500 bg-transparent"
           }`}
         >
-          <div className="container px-2 flex w-full m-auto align-items-center justify-content-center">
+          <div className="container p-2 flex w-full m-auto align-items-center justify-content-center">
             <NavLink className="nav-link mr-auto p-0" to="/">
               <span>AppStract</span>
             </NavLink>
@@ -56,9 +56,9 @@ const Navbar = () => {
                 </NavLink>
               ))}
             </div>
-            <div className="ml-4">
+            <div className="md:ml-4">
               <i
-                className={`text-primary-300 pi pi-bars text-4xl p-2 cursor-pointer ${
+                className={`text-primary-300 pi pi-bars text-4xl cursor-pointer ${
                   isScrolled
                     ? "text-primary hover:text-primary-300"
                     : "text-primary-300 hover:text-primary"

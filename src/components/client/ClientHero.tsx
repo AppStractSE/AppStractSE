@@ -1,4 +1,4 @@
-import { Client } from "../../pages/clients-and-cases/ClientDetails";
+import { Client } from "../../types/types";
 import Breadcrumbs from "../Breadcrumbs";
 
 interface Props {
@@ -22,7 +22,7 @@ const ClientHero = ({ scrollRef, bg, curved, gradient, client }: Props) => {
         }}
       >
         <div className="container w-full m-auto pt-8 pb-2">
-          <Breadcrumbs />
+          <Breadcrumbs client={client} />
           <div className="flex-column-reverse flex-wrap flex md:flex-row">
             <div className="col-12 md:col-8 flex flex-column justify-content-between">
               <div>
