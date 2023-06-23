@@ -2,8 +2,7 @@ import React from "react";
 import { IoHome } from "react-icons/io5";
 import { Link, useLocation } from "react-router-dom";
 import { useLanguage } from "../contexts/LanguageContext";
-import { Client } from "../pages/clients-and-cases/ClientDetails";
-import { Breadcrumb } from "../types/types";
+import { Breadcrumb, Client } from "../types/types";
 
 interface Props {
   client?: Client;

@@ -41,7 +41,7 @@ const Navbar = () => {
             <NavLink className="nav-link mr-auto p-0" to="/">
               <span>AppStract</span>
             </NavLink>
-            <div className="hidden md:block">
+            <div className="hidden md:flex">
               {translations.nav.menuItems.map((navItem: NavMenuItem) => (
                 <NavLink
                   key={navItem.url}
@@ -55,10 +55,20 @@ const Navbar = () => {
                   <span>{navItem.label}</span>
                 </NavLink>
               ))}
+              <div
+                className={`nav-link font-bold text-xl cursor-pointer ${
+                  isScrolled
+                    ? "text-primary-500 hover:text-primary-300"
+                    : "text-primary-200 hover:text-primary"
+                }`}
+                onClick={toggleLanguage}
+              >
+                <span className="uppercase">{translations.general.short_lang}</span>
+              </div>
             </div>
             <div className="md:ml-4">
               <i
-                className={`text-primary-300 pi pi-bars text-4xl cursor-pointer ${
+                className={`block text-primary-300 pi pi-bars text-4xl cursor-pointer ${
                   isScrolled
                     ? "text-primary hover:text-primary-300"
                     : "text-primary-300 hover:text-primary"

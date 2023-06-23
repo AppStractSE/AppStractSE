@@ -32,7 +32,7 @@ const App = () => {
           <Route path={common.paths.policy} element={<Policy />} />
           <Route path={common.paths.clients} element={<Clients />} />
           <Route path={`${common.paths.clients}/:clientName`} element={<ClientDetails />} />
-          <Route path="*/*" element={<NotFound />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
       <ScrollToTop />

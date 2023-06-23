@@ -1,8 +1,9 @@
 import { common } from "./common";
 
 const general = {
-  read_more: "Läs mer"
-}
+  read_more: "Läs mer",
+  short_lang: "en",
+};
 const paths = {
   home: {
     link: common.paths.home,
@@ -384,4 +385,5 @@ export const svTranslations = {
   hamburgerMenuItems,
   contact,
   hamburgerLanguage,
+  general,
 };
