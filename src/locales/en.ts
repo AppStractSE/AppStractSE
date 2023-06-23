@@ -14,7 +14,8 @@ import {
 import { common } from "./common";
 
 const general = {
-  read_more: "Read more"
+  read_more: "Read more",
+  short_lang: "sv",
 }
 const paths: Paths = {
   home: {
