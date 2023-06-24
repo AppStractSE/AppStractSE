@@ -23,10 +23,10 @@ const HeroSection = ({ scrollToContact }: Props) => {
           <div className="col relative z-2">
             <div className="hidden md:py-8" />
             <div className="text-center md:text-left block md:flex align-items-center gap-2 md:text-1xl lg:text-3xl">
-              <Text size="h2" className="font-bold">
+              <Text size="h2" as="h1" className="font-bold">
                 {translations.home.phraseTitle}
               </Text>
-              <Text size="h2">
+              <Text size="h2" as="h1">
                 <TypeWriter phrases={translations.home.phrases} />
               </Text>
             </div>
