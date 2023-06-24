@@ -4,12 +4,12 @@ import { FaEnvelope, FaFacebook, FaTwitter } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { HamburgerMenuItem, NavMenuItem } from "../../types/types";
+import LargeLogo from "../logo/LargeLogo";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [sidebarVisible, setSidebarVisible] = useState(false);
   const { translations, toggleLanguage } = useLanguage();
-  console.log(isScrolled);
 
   const toggleSidebar = () => {
     setSidebarVisible(!sidebarVisible);
@@ -17,9 +17,8 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
-      setIsScrolled(scrollTop > 0);
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      setIsScrolled(scrollTop > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -31,15 +30,19 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="w-full">
+      <header className="w-full fixed top-0 z-5">
         <div
-          className={`transition-slow p-menubar col-12 fixed rounded-none top-0 z-5 px-2 md:px-4 lg:px-6 ${
+          className={`transition-slow p-menubar col-12 rounded-none px-2 md:px-4 lg:px-6 ${
             isScrolled ? "surface-50 text-primary" : "text-500 bg-transparent"
           }`}
         >
-          <div className="container p-2 flex w-full m-auto align-items-center justify-content-center">
-            <NavLink className="nav-link mr-auto p-0" to="/">
-              <span>AppStract</span>
+          <div
+            className={`container ${
+              isScrolled ? "py-2 md:py-0" : "py-2"
+            } px-2 transition-slow flex w-full m-auto align-items-center justify-content-center`}
+          >
+            <NavLink className="nav-link mr-auto p-0 flex" to="/">
+              <LargeLogo isScrolled={isScrolled} height={isScrolled ? 40 : 70} className="transition-slow" />
             </NavLink>
             <div className="hidden md:flex">
               {translations.nav.menuItems.map((navItem: NavMenuItem) => (
