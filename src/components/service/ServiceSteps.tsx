@@ -32,7 +32,7 @@ const ServiceSteps = ({ parts }: Props) => {
                   title={part.title}
                   description={part.hovertext}
                   image={part.image}
-                  bg={part.background}
+                  bg={[part.background]}
                   onClick={() => handleRefScroll(index)}
                 />
               ))}
@@ -54,7 +54,7 @@ const ServiceSteps = ({ parts }: Props) => {
               <div className="flex flex-wrap justify-content-center align-items-start">
                 <div className="col-12 lg:col-5 text-2xl lg:text-4xl xl:text-5xl font-bold break-word">
                   <div>{part.title}</div>
-                  <div className={`mt-2 pt-1 ${part.background} w-10rem`} />
+                  <div className={`mt-2 pt-1 bg-${part.background} w-10rem`} />
                 </div>
                 <div className="col-12 lg:col-7">
                   <div className="text-xl font-bold mb-2">{part.subtitle}</div>

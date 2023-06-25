@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Text from "../../../components/text/Text";
 import { useLanguage } from "../../../contexts/LanguageContext";
 import TypeWriter from "../../../utils/TypeWriter";
+import { HiArrowLongRight } from "react-icons/hi2";
 
 interface Props {
   scrollToContact: () => void;
@@ -52,7 +53,9 @@ const HeroSection = ({ scrollToContact }: Props) => {
                     type="button"
                     style={{ minWidth: 250 }}
                     className="uppercase bg-primary-800 border-primary-800 shadow-5 hover:shadow-5 hover:bg-primary-900 hover:border-primary-900 text-white hover:text-yellow-200 text-md p-3"
-                  />
+                  >
+                    <HiArrowLongRight className="text-xl" />
+                  </Button>
                 </Link>
               </div>
             </div>

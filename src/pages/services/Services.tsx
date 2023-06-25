@@ -20,7 +20,7 @@ const Services = () => {
             <div className="flex-column-reverse flex-wrap flex lg:flex-row">
               <div className="col-12 lg:col-6 flex flex-column justify-content-between">
                 <div className="block text-5xl break-word md:text-6xl lg:text-7xl font-bold line-height-1 my-4 lg:mt-0 lg:mb-4">
-                  Våra tjänster
+                {translations.home.serviceTitle}
                 </div>
                 <p className="mt-0 mb-4 text-700 line-height-3">
                   {translations.home.serviceDescription}
@@ -30,6 +30,8 @@ const Services = () => {
                 {translations.services.map((service: Service) => (
                   <SlateCard
                     key={service.title}
+                    bg={service.bg}
+                    gradient
                     className="col-12 md:col-4 flex"
                     title={service.title}
                     description={service.description}

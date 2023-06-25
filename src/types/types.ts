@@ -84,6 +84,7 @@ export interface Service {
   description: string;
   image: string;
   link: string;
+  bg: string[];
 }
 
 export interface PolicySection {

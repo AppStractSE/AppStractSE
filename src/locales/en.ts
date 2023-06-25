@@ -127,6 +127,7 @@ export const services: Service[] = [
     image:
       "https://ezranking.s3.eu-west-2.amazonaws.com/blog/wp-content/uploads/2022/01/07063220/mobile-app-development-trends.png",
     link: paths.webDevelopment.link,
+    bg: ["blue-800", "blue-600"],
   },
   {
     title: paths.seo.label,
@@ -135,6 +136,7 @@ export const services: Service[] = [
     image:
       "https://ezranking.s3.eu-west-2.amazonaws.com/blog/wp-content/uploads/2022/01/07063220/mobile-app-development-trends.png",
     link: paths.seo.link,
+    bg: ["bluegray-800", "indigo-600"],
   },
   {
     title: paths.appDevelopment.label,
@@ -143,6 +145,7 @@ export const services: Service[] = [
     image:
       "https://ezranking.s3.eu-west-2.amazonaws.com/blog/wp-content/uploads/2022/01/07063220/mobile-app-development-trends.png",
     link: paths.appDevelopment.link,
+    bg: ["cyan-800", "teal-600"],
   },
 ];
 
@@ -229,7 +232,7 @@ const servicepages: ServicePage = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-red-700",
+        background: "red-700",
         subtitle:
           "Our first and most crucial phase is to understand your vision and goals for the website.",
         description:
@@ -240,7 +243,7 @@ const servicepages: ServicePage = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-blue-500",
+        background: "blue-500",
         subtitle: "Once we have a clear plan, we move on to the design phase.",
         description:
           "We create visual concepts that represent your brand identity while appealing to your target audience. We focus on creating a user-friendly and aesthetically pleasing website by designing intuitive navigation structures and an attractive visual design. We ensure that your website is responsive and adapts to different screen sizes to provide a consistent experience on all devices.",
@@ -250,7 +253,7 @@ const servicepages: ServicePage = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-orange-600",
+        background: "orange-600",
         subtitle:
           "When the design is approved, we begin the process of translating the design into a functional website.",
         description:
@@ -261,7 +264,7 @@ const servicepages: ServicePage = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-green-600",
+        background: "green-600",
         subtitle:
           "Before releasing your website to the public, we conduct rigorous testing to ensure everything functions correctly and address any bugs or issues.",
         description:
@@ -282,7 +285,7 @@ const servicepages: ServicePage = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-purple-500",
+        background: "purple-500",
         subtitle:
           "We conduct thorough keyword research to identify the most relevant and valuable keywords for your business.",
         description:
@@ -293,7 +296,7 @@ const servicepages: ServicePage = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-orange-600",
+        background: "orange-600",
         subtitle:
           "We optimize your website's structure and content for improved search engine visibility.",
         description:
@@ -304,7 +307,7 @@ const servicepages: ServicePage = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-blue-600",
+        background: "blue-600",
         subtitle:
           "We build high-quality backlinks to improve your website's authority and rankings.",
         description:
@@ -315,7 +318,7 @@ const servicepages: ServicePage = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-green-600",
+        background: "green-600",
         subtitle:
           "We optimize your website's technical aspects to improve its performance and search engine crawlability.",
         description:
@@ -336,7 +339,7 @@ const servicepages: ServicePage = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-purple-500",
+        background: "purple-500",
         subtitle:
           "Define the app's purpose, target audience, and plan its features and functionality.",
         description:
@@ -347,7 +350,7 @@ const servicepages: ServicePage = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-orange-600",
+        background: "orange-600",
         subtitle:
           "Create an appealing and user-friendly design that aligns with your app's brand and purpose.",
         description:
@@ -358,7 +361,7 @@ const servicepages: ServicePage = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-blue-600",
+        background: "blue-600",
         subtitle:
           "Build the app's backend, frontend, and conduct thorough testing to ensure its functionality and performance.",
         description:
@@ -369,7 +372,7 @@ const servicepages: ServicePage = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-green-600",
+        background: "green-600",
         subtitle:
           "Deploy the app to app stores or platforms and provide ongoing maintenance and updates.",
         description:

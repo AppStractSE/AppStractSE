@@ -5,15 +5,14 @@ interface ChildProps {
   title: string;
   description?: string;
   image: string;
-  bg?: string;
+  bg?: string[];
+  gradient?: boolean;
 }
 
-const SlateCardChild = ({ image, bg, description, title }: ChildProps) => {
+const SlateCardChild = ({ image, bg, description, title, gradient }: ChildProps) => {
   return (
     <div
-      className={`border-round overflow-hidden ${
-        bg ? bg : "bg-primary-900"
-      } shadow-4 hover:shadow-5 cursor-pointer ${styles.container}`}
+      className={`border-round overflow-hidden shadow-4 hover:shadow-5 cursor-pointer ${styles.container}`}
     >
       <div className="relative">
         <div className={`${styles.img_container}`}>
@@ -27,11 +26,25 @@ const SlateCardChild = ({ image, bg, description, title }: ChildProps) => {
           />
         </div>
       </div>
-      <div className={`p-2 md:px-3 flex flex-column h-100 ${styles.card_content}`}>
-        <div className="font-bold text-xl md:text-2xl flex-fill flex-grow flex-1">{title}</div>
+      <div
+        className={`pb-3 px-2 pt-4 w-100 absolute left-0 ${bg ? `bg-${bg[0]}` : "bg-blue-800"} ${styles.clippath}`}
+        style={{
+          width: "100%",
+          bottom: "-2px",
+          backgroundImage:
+            gradient && bg ? `linear-gradient(69deg, var(--${bg[0]}), var(--${bg[1]}))` : undefined,
+        }}
+      >
+        <div
+          className="font-bold text-xl md:text-2xl flex-fill flex-grow flex-1 relative"
+          style={{ zIndex: 99999 }}
+        >
+          {title}
+        </div>
         {description ? (
           <div
-            className={`my-2 ${styles.card_text} hidden md:block text-md md:text-xl md:mb-0 text-700 line-height-2 flex-fill flex-grow flex-1`}
+            className={`my-2 ${styles.card_text} text-md md:text-xl md:mb-0 line-height-2 flex-fill flex-grow flex-1`}
+            style={{ zIndex: 999999 }}
           >
             {description}
           </div>
