@@ -2,14 +2,9 @@ import SlateCard from "../../../components/cards/SlateCard/SlateCard";
 import Grid from "../../../components/grid/Grid";
 import { useLanguage } from "../../../contexts/LanguageContext";
 import Text from "../../../components/text/Text"
+import { Service } from "../../../types/types";
 
 const ServicesSection = () => {
-  interface Service {
-    title: string;
-    description: string;
-    image: string;
-    link: string;
-  }
   const { translations } = useLanguage();
   return (
     <section className="w-full">
@@ -27,7 +22,9 @@ const ServicesSection = () => {
             {translations.services.map((service: Service) => (
               <SlateCard
                 key={service.title}
-                className="col-4 flex"
+                className="col-12 md:col-6 lg:col-4 flex"
+                bg={service.bg}
+                gradient
                 title={service.title}
                 description={service.description}
                 image={service.image}

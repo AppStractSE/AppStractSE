@@ -131,7 +131,7 @@ const ContactForm = ({
             disabled={loading ? true : false}
             type="submit"
             label={translations.buttons.submit}
-            className="w-full mb-3 shadow-3 hover:shadow-6 py-3"
+            className="w-full mb-3 shadow-3 hover:shadow-6 py-3 uppercase"
           />
           <div style={{ height: 6 }}>
             {loading ? (

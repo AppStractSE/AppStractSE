@@ -15,7 +15,12 @@ const Home = () => {
     <>
       <HeroSection scrollToContact={scrolltoContact} />
       <ServicesSection />
-      <ContactSection curved gradient bg={["blue-800", "bluegray-600"]} scrollRef={contactRef} />
+      <ContactSection
+        curved
+        gradient
+        bg={["blue-800", "bluegray-600"]}
+        scrollRef={contactRef}
+      />
     </>
   );
 };

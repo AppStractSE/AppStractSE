@@ -1,5 +1,53 @@
 import { common } from "./common";
 
+const metadescriptions = [
+  {
+    path: common.paths.home,
+    title: "Webbyrå i Borås | Appstract",
+    description: "AppStract erbjuder en IT-lösning för alla behov. Vårt mål är att hjälpa dig att lyckas med din verksamhet, och vi har verktygen för att göra det.",
+  },
+  {
+    path: common.paths.contact,
+    title: "Kontakta oss | Appstract",
+    description: "Kontakta oss för att få hjälp med din verksamhet.",
+  },
+  {
+    path: common.paths.services,
+    title: "Tjänster | Appstract",
+    description: "Vi erbjuder ett brett utbud av tjänster för att hjälpa dig med din verksamhet.",
+  },
+  {
+    path: common.paths.webDevelopment,
+    title: "Webbutveckling | Appstract",
+    description: "Vi hjälper er att bygga en hemsida som ni kan vara stolta över, och som era kunder kommer att älska.",
+  },
+  {
+    path: common.paths.seo,
+    title: "Sökmotoroptimering | Appstract",
+    description: "Vi hjälper er att synas bättre på internet, med hjälp av diverse tekniker så som SEO, SEM, och mer.",
+  },
+  {
+    path: common.paths.appDevelopment,
+    title: "Apputveckling | Appstract",
+    description: "Vi hjälper er att bygga en app som ni kan vara stolta över, och som era kunder kommer att älska.",
+  },
+  { 
+    path: common.paths.clients,
+    title: "Kunder & projekt | Appstract",
+    description: "Vi har hjälpt många kunder med deras projekt, och vi kan hjälpa dig med ditt.",
+  },
+  {
+    path: common.paths.policy,
+    title: "Personuppgiftspolicy | Appstract",
+    description: "Vi värnar om din integritet, och vi vill att du ska veta hur vi hanterar dina personuppgifter.",
+  },
+  {
+    path: common.paths.notFound,
+    title: "Hoppsan! Något gick fel | Appstract",
+    description: "Det ser ut som att du gått vilse.\nOroa dig inte, vi är här för att rädda dig!",
+  },
+];
+
 const general = {
   read_more: "Läs mer",
   short_lang: "en",
@@ -120,6 +168,7 @@ export const services = [
     image:
       "https://ezranking.s3.eu-west-2.amazonaws.com/blog/wp-content/uploads/2022/01/07063220/mobile-app-development-trends.png",
     link: paths.webDevelopment.link,
+    bg: ["blue-800", "blue-600"],
   },
   {
     title: paths.seo.label,
@@ -128,6 +177,7 @@ export const services = [
     image:
       "https://ezranking.s3.eu-west-2.amazonaws.com/blog/wp-content/uploads/2022/01/07063220/mobile-app-development-trends.png",
     link: paths.seo.link,
+    bg: ["bluegray-800", "indigo-600"],
   },
   {
     title: paths.appDevelopment.label,
@@ -136,6 +186,7 @@ export const services = [
     image:
       "https://ezranking.s3.eu-west-2.amazonaws.com/blog/wp-content/uploads/2022/01/07063220/mobile-app-development-trends.png",
     link: paths.appDevelopment.link,
+    bg: ["cyan-800", "teal-600"],
   },
 ];
 
@@ -221,7 +272,7 @@ const servicepages = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-red-700",
+        background: "red-700",
         subtitle:
           "Vår första och viktigaste fas är att förstå din vision och målsättningar för webbplatsen.",
         description:
@@ -232,7 +283,7 @@ const servicepages = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-blue-500",
+        background: "blue-500",
         subtitle: "Efter att vi har en tydlig plan fortsätter vi till designfasen.",
         description:
           "Vi skapar visuella koncept som representerar din varumärkesidentitet och samtidigt tilltalar din målgrupp. Vi fokuserar på att skapa en användarvänlig och estetiskt tilltalande webbplats genom att skapa intuitiva navigeringsstrukturer och en attraktiv visuell design. Vi ser till att din webbplats är responsiv och anpassar sig till olika skärmstorlekar för att ge en konsekvent upplevelse på alla enheter.",
@@ -242,7 +293,7 @@ const servicepages = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-orange-600",
+        background: "orange-600",
         subtitle:
           "När designen är godkänd börjar vårt arbeta för att omsätta designen till en fungerande webbplats.",
         description:
@@ -253,7 +304,7 @@ const servicepages = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-green-600",
+        background: "green-600",
         subtitle:
           "Innan vi släpper din webbplats för allmänheten genomför vi en rigorös testningsfas för att säkerställa att allt fungerar korrekt och att eventuella buggar eller felaktigheter åtgärdas.",
         description:
@@ -274,7 +325,7 @@ const servicepages = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-purple-500",
+        background: "purple-500",
         subtitle:
           "Vi utför noggrann sökordsanalys för att identifiera de mest relevanta och värdefulla sökorden för ditt företag.",
         description:
@@ -285,7 +336,7 @@ const servicepages = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-orange-600",
+        background: "orange-600",
         subtitle:
           "Vi optimerar din webbplatsens struktur och innehåll för förbättrad synlighet i sökmotorer.",
         description:
@@ -296,7 +347,7 @@ const servicepages = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-blue-600",
+        background: "blue-600",
         subtitle:
           "Vi bygger högkvalitativa bakåtlänkar för att förbättra din webbplatsens auktoritet och placeringar.",
         description:
@@ -307,7 +358,7 @@ const servicepages = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-green-600",
+        background: "green-600",
         subtitle:
           "Vi optimerar din webbplatsens tekniska aspekter för att förbättra prestanda och sökmotorers indexering.",
         description:
@@ -328,7 +379,7 @@ const servicepages = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-purple-500",
+        background: "purple-500",
         subtitle:
           "Definiera appens syfte, målgrupp och planera dess funktioner och funktionalitet.",
         description:
@@ -339,7 +390,7 @@ const servicepages = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-orange-600",
+        background: "orange-600",
         subtitle:
           "Skapa en tilltalande och användarvänlig design som överensstämmer med din apps varumärke och syfte.",
         description:
@@ -350,7 +401,7 @@ const servicepages = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-blue-600",
+        background: "blue-600",
         subtitle:
           "Bygg appens backend, frontend och genomför grundlig testning för att säkerställa funktionalitet och prestanda.",
         description:
@@ -361,7 +412,7 @@ const servicepages = {
         hovertext: general.read_more,
         image:
           "https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-        background: "bg-green-600",
+        background: "green-600",
         subtitle:
           "Distribuera appen till appbutiker eller plattformar och tillhandahåll kontinuerligt underhåll och uppdateringar.",
         description:
@@ -386,4 +437,5 @@ export const svTranslations = {
   contact,
   hamburgerLanguage,
   general,
+  metadescriptions
 };
