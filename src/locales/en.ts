@@ -13,6 +13,55 @@ import {
 } from "../types/types";
 import { common } from "./common";
 
+const metadescriptions = [
+  {
+    path: common.paths.home,
+title: "Web Agency in Borås | AppStract",
+description: "AppStract is a web agency in Borås that offers IT solutions for all needs. Our goal is to help you succeed in your business, and we have the tools to do it.",
+  },
+  {
+    path: common.paths.contact,
+title: "Contact | AppStract",
+description: "Contact us today and we will help you with your IT needs. We offer a wide range of services to help you with your business.",
+
+  },
+  {
+    path: common.paths.services,
+title: "Services | AppStract",
+description: "We offer a wide range of services to help you with your business. We offer a wide range of services to help you with your business.",
+  },  
+  {
+    path: common.paths.webDevelopment,
+title: "Web Development | AppStract",
+description: "We help you build a website that you can be proud of, and that your customers will love.",
+  },
+  {
+    path: common.paths.seo,
+title: "Search Engine Optimization | AppStract",
+description: "We help you get better visibility on the internet, using various techniques such as SEO, SEM, and more.",
+  },
+  {
+    path: common.paths.appDevelopment,
+title: "App Development | AppStract",
+description: "We help you build an app that your customers will love, and that will help you grow your business.",
+  },
+  {
+    path: common.paths.clients,
+title: "Clients & Cases | AppStract",
+description: "We have helped many clients with their IT needs. Here are some of our cases.",
+  },
+  {
+    path: common.paths.policy,
+title: "Privacy Policy | AppStract",
+description: "We take your privacy seriously. Read our privacy policy to learn more.",
+  },
+  {
+    path: common.paths.notFound,
+title: "404 | AppStract",
+description: "Oops! Something went wrong. Looks like you're lost. Don't worry though, we're here to save you!",
+  },
+];
+
 const general = {
   read_more: "Read more",
   short_lang: "sv",
@@ -396,5 +445,6 @@ export const enTranslations = {
   contact,
   hamburgerLanguage,
   toasts,
+  metadescriptions,
   policy,
 };

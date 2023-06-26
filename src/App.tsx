@@ -1,10 +1,12 @@
 import "primeflex/primeflex.css";
 import "primeicons/primeicons.css";
 import "primereact/resources/primereact.min.css";
-import { Route, Routes } from "react-router-dom";
+import { Helmet } from "react-helmet";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Layout from "./Layout";
+import { useLanguage } from "./contexts/LanguageContext";
 import { common } from "./locales/common";
 import ClientDetails from "./pages/clients-and-cases/ClientDetails";
 import Clients from "./pages/clients-and-cases/Clients";
@@ -19,8 +21,19 @@ import WebDevelopment from "./pages/services/subpages/WebDevelopment";
 import ScrollToTop from "./utils/ScrollToTop";
 
 const App = () => {
+  const page = useLocation();  
+  const {translations} = useLanguage();
   return (
     <>
+          <Helmet>
+        <title>
+          {translations.metadescriptions.find((meta: any) => meta.path === page.pathname)?.title}
+        </title>
+        <meta
+          name="description"
+          content={translations.metadescriptions.find((meta: any) => meta.path === page.pathname)?.description}
+        />
+      </Helmet>
       <Routes>
         <Route path={common.paths.home} element={<Layout />}>
           <Route index path={common.paths.home} element={<Home />} />

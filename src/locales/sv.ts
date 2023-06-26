@@ -1,5 +1,53 @@
 import { common } from "./common";
 
+const metadescriptions = [
+  {
+    path: common.paths.home,
+    title: "Webbyrå i Borås | Appstract",
+    description: "AppStract erbjuder en IT-lösning för alla behov. Vårt mål är att hjälpa dig att lyckas med din verksamhet, och vi har verktygen för att göra det.",
+  },
+  {
+    path: common.paths.contact,
+    title: "Kontakta oss | Appstract",
+    description: "Kontakta oss för att få hjälp med din verksamhet.",
+  },
+  {
+    path: common.paths.services,
+    title: "Tjänster | Appstract",
+    description: "Vi erbjuder ett brett utbud av tjänster för att hjälpa dig med din verksamhet.",
+  },
+  {
+    path: common.paths.webDevelopment,
+    title: "Webbutveckling | Appstract",
+    description: "Vi hjälper er att bygga en hemsida som ni kan vara stolta över, och som era kunder kommer att älska.",
+  },
+  {
+    path: common.paths.seo,
+    title: "Sökmotoroptimering | Appstract",
+    description: "Vi hjälper er att synas bättre på internet, med hjälp av diverse tekniker så som SEO, SEM, och mer.",
+  },
+  {
+    path: common.paths.appDevelopment,
+    title: "Apputveckling | Appstract",
+    description: "Vi hjälper er att bygga en app som ni kan vara stolta över, och som era kunder kommer att älska.",
+  },
+  { 
+    path: common.paths.clients,
+    title: "Kunder & projekt | Appstract",
+    description: "Vi har hjälpt många kunder med deras projekt, och vi kan hjälpa dig med ditt.",
+  },
+  {
+    path: common.paths.policy,
+    title: "Personuppgiftspolicy | Appstract",
+    description: "Vi värnar om din integritet, och vi vill att du ska veta hur vi hanterar dina personuppgifter.",
+  },
+  {
+    path: common.paths.notFound,
+    title: "Hoppsan! Något gick fel | Appstract",
+    description: "Det ser ut som att du gått vilse.\nOroa dig inte, vi är här för att rädda dig!",
+  },
+];
+
 const general = {
   read_more: "Läs mer",
   short_lang: "en",
@@ -389,4 +437,5 @@ export const svTranslations = {
   contact,
   hamburgerLanguage,
   general,
+  metadescriptions
 };

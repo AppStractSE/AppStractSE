@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import { Helmet } from "react-helmet";
 import ContactSection from "../../components/sections/ContactSection";
 import HeroSection from "./sections/HeroSection";
 import ServicesSection from "./sections/ServicesSection";
@@ -14,13 +13,6 @@ const Home = () => {
   };
   return (
     <>
-      <Helmet>
-        <title>Learning React Helmet - Home</title>
-        <meta
-          name="description"
-          content="Beginner friendly page for learning React Helmet."
-        />
-      </Helmet>
       <HeroSection scrollToContact={scrolltoContact} />
       <ServicesSection />
       <ContactSection

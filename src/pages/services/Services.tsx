@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet';
 import Breadcrumbs from "../../components/Breadcrumbs";
 import SlateCard from "../../components/cards/SlateCard/SlateCard";
 import Grid from "../../components/grid/Grid";
@@ -9,10 +8,6 @@ const Services = () => {
   const { translations } = useLanguage();
   return (
     <>
-    <Helmet>
-<title>Learning React Helmet!</title>
-<meta name='description' content='Beginner friendly page for learning React Helmet.' />
-</Helmet>
       <section className="w-full">
         <div className="p-2 md:p-4 lg:p-6 bg-blue-800">
           <div className="container w-full m-auto pt-8 pb-2">
