@@ -54,11 +54,11 @@ const Clients = () => {
                 <SlateCard
                   key={client.slug}
                   link={`${common.paths.clients}/${client.slug}`}
-                  className="col-12 md:col-6 lg:col-3 flex transition-opacity duration-500"
+                  className="col-12 md:col-6 lg:col-4 flex transition-opacity duration-500"
                   title={client.title}
                   description={client.subtitle}
                   image={client.image}
-                  bg="bg-primary-900"
+                  bg={["indigo-600"]}
                 />
               ))}
             </Grid>

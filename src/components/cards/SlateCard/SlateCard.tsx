@@ -29,7 +29,7 @@ const SlateCardChild = ({ image, bg, description, title, gradient }: ChildProps)
       <div
         className={`pb-3 px-2 pt-4 w-100 absolute left-0 ${bg ? `bg-${bg[0]}` : "bg-blue-800"} ${styles.clippath}`}
         style={{
-          width: "100%",
+          width: "101%",
           bottom: "-2px",
           backgroundImage:
             gradient && bg ? `linear-gradient(69deg, var(--${bg[0]}), var(--${bg[1]}))` : undefined,
