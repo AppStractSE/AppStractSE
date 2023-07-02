@@ -33,6 +33,8 @@ const App = () => {
           name="description"
           content={translations.metadescriptions.find((meta: any) => meta.path === page.pathname)?.description}
         />
+        <meta name="keywords" content="web development, web design, seo, app development, digital marketing" />
+        <html lang={translations.general.current_lang} />
       </Helmet>
       <Routes>
         <Route path={common.paths.home} element={<Layout />}>
