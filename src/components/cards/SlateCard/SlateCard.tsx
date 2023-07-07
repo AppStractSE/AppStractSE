@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Text from "../../text/Text";
 import styles from "./styling.module.scss";
 
 interface ChildProps {
@@ -11,9 +12,7 @@ interface ChildProps {
 
 const SlateCardChild = ({ image, bg, description, title, gradient }: ChildProps) => {
   return (
-    <div
-      className={`border-round overflow-hidden shadow-4 hover:shadow-5 cursor-pointer ${styles.container}`}
-    >
+    <div className={`border-round overflow-hidden shadow-4 cursor-pointer ${styles.container}`}>
       <div className="relative">
         <div className={`${styles.img_container}`}>
           <img
@@ -27,27 +26,28 @@ const SlateCardChild = ({ image, bg, description, title, gradient }: ChildProps)
         </div>
       </div>
       <div
-        className={`pb-3 px-2 pt-4 w-100 absolute left-0 ${bg ? `bg-${bg[0]}` : "bg-blue-800"} ${styles.clippath}`}
+        className={`md:px-3 py-2 md:py-3 w-100 absolute left-0 right-0 ${bg ? `bg-${bg[0]}` : "bg-blue-800"} ${
+          styles.clippath
+        }`}
         style={{
-          width: "101%",
+          width: "100%",
           bottom: "-2px",
           backgroundImage:
             gradient && bg ? `linear-gradient(69deg, var(--${bg[0]}), var(--${bg[1]}))` : undefined,
         }}
       >
-        <div
-          className="font-bold text-xl md:text-2xl flex-fill flex-grow flex-1 relative"
-          style={{ zIndex: 99999 }}
+        <Text size="p"
+          className="font-bold flex-fill flex-grow flex-1 relative"
         >
           {title}
-        </div>
+        </Text>
         {description ? (
-          <div
-            className={`my-2 ${styles.card_text} text-md md:text-xl md:mb-0 line-height-2 flex-fill flex-grow flex-1`}
-            style={{ zIndex: 999999 }}
+          <Text
+            size="p"
+            className={`${styles.card_text} text-md text-sm md:text-xl md:mb-0 line-height-2 flex-fill flex-grow flex-1`}
           >
             {description}
-          </div>
+          </Text>
         ) : null}
       </div>
     </div>

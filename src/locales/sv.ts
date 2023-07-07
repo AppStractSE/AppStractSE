@@ -1,10 +1,12 @@
+import { General, MetaDescription, Paths } from "../types/types";
 import { common } from "./common";
 
-const metadescriptions = [
+const metadescriptions: MetaDescription[] = [
   {
     path: common.paths.home,
     title: "Webbyrå i Borås | Appstract",
-    description: "AppStract erbjuder en IT-lösning för alla behov. Vårt mål är att hjälpa dig att lyckas med din verksamhet, och vi har verktygen för att göra det.",
+    description:
+      "AppStract erbjuder en IT-lösning för alla behov. Vårt mål är att hjälpa dig att lyckas med din verksamhet, och vi har verktygen för att göra det.",
   },
   {
     path: common.paths.contact,
@@ -19,19 +21,22 @@ const metadescriptions = [
   {
     path: common.paths.webDevelopment,
     title: "Webbutveckling | Appstract",
-    description: "Vi hjälper er att bygga en hemsida som ni kan vara stolta över, och som era kunder kommer att älska.",
+    description:
+      "Vi hjälper er att bygga en hemsida som ni kan vara stolta över, och som era kunder kommer att älska.",
   },
   {
     path: common.paths.seo,
     title: "Sökmotoroptimering | Appstract",
-    description: "Vi hjälper er att synas bättre på internet, med hjälp av diverse tekniker så som SEO, SEM, och mer.",
+    description:
+      "Vi hjälper er att synas bättre på internet, med hjälp av diverse tekniker så som SEO, SEM, och mer.",
   },
   {
     path: common.paths.appDevelopment,
     title: "Apputveckling | Appstract",
-    description: "Vi hjälper er att bygga en app som ni kan vara stolta över, och som era kunder kommer att älska.",
+    description:
+      "Vi hjälper er att bygga en app som ni kan vara stolta över, och som era kunder kommer att älska.",
   },
-  { 
+  {
     path: common.paths.clients,
     title: "Kunder & projekt | Appstract",
     description: "Vi har hjälpt många kunder med deras projekt, och vi kan hjälpa dig med ditt.",
@@ -39,7 +44,8 @@ const metadescriptions = [
   {
     path: common.paths.policy,
     title: "Personuppgiftspolicy | Appstract",
-    description: "Vi värnar om din integritet, och vi vill att du ska veta hur vi hanterar dina personuppgifter.",
+    description:
+      "Vi värnar om din integritet, och vi vill att du ska veta hur vi hanterar dina personuppgifter.",
   },
   {
     path: common.paths.notFound,
@@ -48,11 +54,12 @@ const metadescriptions = [
   },
 ];
 
-const general = {
+const general: General = {
   read_more: "Läs mer",
+  current_lang: "sv",
   short_lang: "en",
 };
-const paths = {
+const paths: Paths = {
   home: {
     link: common.paths.home,
     label: "Hem",
@@ -437,5 +444,5 @@ export const svTranslations = {
   contact,
   hamburgerLanguage,
   general,
-  metadescriptions
+  metadescriptions,
 };

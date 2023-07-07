@@ -2,8 +2,10 @@ import {
   Breadcrumb,
   Buttons,
   Contact,
+  General,
   HamburgerMenuItem,
   Home,
+  MetaDescription,
   Nav,
   NotFound,
   Paths,
@@ -13,59 +15,66 @@ import {
 } from "../types/types";
 import { common } from "./common";
 
-const metadescriptions = [
+const metadescriptions: MetaDescription[] = [
   {
     path: common.paths.home,
-title: "Web Agency in Borås | AppStract",
-description: "AppStract is a web agency in Borås that offers IT solutions for all needs. Our goal is to help you succeed in your business, and we have the tools to do it.",
+    title: "Web Agency in Borås | AppStract",
+    description:
+      "AppStract is a web agency in Borås that offers IT solutions for all needs. Our goal is to help you succeed in your business, and we have the tools to do it.",
   },
   {
     path: common.paths.contact,
-title: "Contact | AppStract",
-description: "Contact us today and we will help you with your IT needs. We offer a wide range of services to help you with your business.",
-
+    title: "Contact | AppStract",
+    description:
+      "Contact us today and we will help you with your IT needs. We offer a wide range of services to help you with your business.",
   },
   {
     path: common.paths.services,
-title: "Services | AppStract",
-description: "We offer a wide range of services to help you with your business. We offer a wide range of services to help you with your business.",
-  },  
+    title: "Services | AppStract",
+    description:
+      "We offer a wide range of services to help you with your business. We offer a wide range of services to help you with your business.",
+  },
   {
     path: common.paths.webDevelopment,
-title: "Web Development | AppStract",
-description: "We help you build a website that you can be proud of, and that your customers will love.",
+    title: "Web Development | AppStract",
+    description:
+      "We help you build a website that you can be proud of, and that your customers will love.",
   },
   {
     path: common.paths.seo,
-title: "Search Engine Optimization | AppStract",
-description: "We help you get better visibility on the internet, using various techniques such as SEO, SEM, and more.",
+    title: "Search Engine Optimization | AppStract",
+    description:
+      "We help you get better visibility on the internet, using various techniques such as SEO, SEM, and more.",
   },
   {
     path: common.paths.appDevelopment,
-title: "App Development | AppStract",
-description: "We help you build an app that your customers will love, and that will help you grow your business.",
+    title: "App Development | AppStract",
+    description:
+      "We help you build an app that your customers will love, and that will help you grow your business.",
   },
   {
     path: common.paths.clients,
-title: "Clients & Cases | AppStract",
-description: "We have helped many clients with their IT needs. Here are some of our cases.",
+    title: "Clients & Cases | AppStract",
+    description: "We have helped many clients with their IT needs. Here are some of our cases.",
   },
   {
     path: common.paths.policy,
-title: "Privacy Policy | AppStract",
-description: "We take your privacy seriously. Read our privacy policy to learn more.",
+    title: "Privacy Policy | AppStract",
+    description: "We take your privacy seriously. Read our privacy policy to learn more.",
   },
   {
     path: common.paths.notFound,
-title: "404 | AppStract",
-description: "Oops! Something went wrong. Looks like you're lost. Don't worry though, we're here to save you!",
+    title: "404 | AppStract",
+    description:
+      "Oops! Something went wrong. Looks like you're lost. Don't worry though, we're here to save you!",
   },
 ];
 
-const general = {
+const general: General = {
   read_more: "Read more",
+  current_lang: "en",
   short_lang: "sv",
-}
+};
 const paths: Paths = {
   home: {
     link: common.paths.home,

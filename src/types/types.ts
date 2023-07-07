@@ -141,4 +141,28 @@ export interface Client {
   logo: string;
   link: string;
   slug: string;
+  tags: string[];
+}
+
+export interface Path {
+  [key: string]: string;
+}
+export interface ClientTags {
+  [key: string]: string;
+}
+
+export interface Socials {
+  facebook: string;
+  mail: string;
+  instagram: string;
+}
+
+export interface MetaDescription {
+  path: string;
+  title: string;
+  description: string;
+}
+
+export interface General {
+  [key: string]: string;
 }

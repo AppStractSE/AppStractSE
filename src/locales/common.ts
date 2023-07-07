@@ -1,4 +1,6 @@
-const paths = {
+import { Client, ClientTags, Path, Socials } from "../types/types";
+
+const paths: Path = {
   home: "/",
   contact: "/contact",
   services: "/services",
@@ -11,20 +13,20 @@ const paths = {
   client: "/clients-and-cases/:clientName",
 };
 
-const socials = {
+const socials: Socials = {
   facebook: "https://m.me/appstract",
   mail: "mailto:info@appstract.se?subject=Kontaktförfrågan&priority=high",
   instagram: "https://www.instagram.com/appstract.se/",
 };
 
-const clientTags = {
+const clientTags: ClientTags = {
   showAll: "Visa alla",
   apps: "Appar",
   webapps: "Webbapplikationer",
   seo: "SEO",
 };
 
-const clients = [
+const clients: Client[] = [
   {
     title: "PropertEase",
     subtitle: "Property management made easy",
