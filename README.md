@@ -1,15 +1,3 @@
-En bra README för ditt projekt kan innehålla följande delar:
-
----
-
-# Appstract
-
-
-
-Självklart, här är ett exempel på en fullständig README för ditt projekt:
-
----
-
 # AppStractSE
 
 Detta är kodbasen för Appstract's webbsida för visa vilka tjänster vi erbjuder inom webb- och apputveckling, SEO och digital marknadsföring. 
