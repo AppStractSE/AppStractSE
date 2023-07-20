@@ -1,14 +1,14 @@
-import { Button } from "primereact/button";
-import { Link, useParams } from "react-router-dom";
-import ContentSection from "../../components/ContentSection";
-import SlateCard from "../../components/cards/SlateCard/SlateCard";
-import ClientHero from "../../components/client/ClientHero";
-import Grid from "../../components/grid/Grid";
-import ContactSection from "../../components/sections/ContactSection";
-import Text from "../../components/text/Text";
-import { common } from "../../locales/common";
-import { Client } from "../../types/types";
-import NotFound from "../notfound/NotFound";
+import { Button } from 'primereact/button';
+import { Link, useParams } from 'react-router-dom';
+import ContentSection from '../../components/ContentSection';
+import SlateCard from '../../components/cards/SlateCard/SlateCard';
+import ClientHero from '../../components/client/ClientHero';
+import Grid from '../../components/grid/Grid';
+import ContactSection from '../../components/sections/ContactSection';
+import Text from '../../components/text/Text';
+import { common } from '../../locales/common';
+import { Client } from '../../types/types';
+import NotFound from '../notfound/NotFound';
 
 const ClientDetails = () => {
   const name = useParams().clientName;
@@ -16,7 +16,7 @@ const ClientDetails = () => {
   if (!client) return <NotFound />;
   return (
     <>
-      <ClientHero bg={["purple-900", "bluegray-600"]} gradient client={client} />
+      <ClientHero bg={['purple-900', 'bluegray-600']} gradient client={client} />
       <ContentSection>
         <div className="flex-column-reverse flex-wrap flex md:flex-row">
           <div className="col-12 md:col-5">
@@ -24,9 +24,9 @@ const ClientDetails = () => {
               Skapar effektiv fastighetsadministration
             </Text>
             <Text size="h6" as="p" lineheight={3}>
-              PropertEase är en innovativ plattform som förenklar och effektiviserar
-              fastighetsadministrationen. Med våra verktyg och funktioner kan du hantera
-              hyresgäster, underhållsärenden och transaktioner på ett smidigt sätt.
+              PropertEase är en innovativ plattform som förenklar och effektiviserar fastighetsadministrationen. Med
+              våra verktyg och funktioner kan du hantera hyresgäster, underhållsärenden och transaktioner på ett smidigt
+              sätt.
             </Text>
           </div>
           <div className="col-12 md:col-7 lg:col-6 lg:col-offset-1">
@@ -53,10 +53,9 @@ const ClientDetails = () => {
               Optimerar fastighetsaffärer och transaktioner
             </Text>
             <Text size="h6" as="p" lineheight={3}>
-              Med PropertEase kan du optimera dina fastighetsaffärer och transaktioner. Vår
-              plattform erbjuder dig en sömlös upplevelse för att hantera försäljningar, förvaltning
-              av dokumentation och genomföra juridiska processer, vilket sparar tid och minskar
-              risken för felaktigheter.
+              Med PropertEase kan du optimera dina fastighetsaffärer och transaktioner. Vår plattform erbjuder dig en
+              sömlös upplevelse för att hantera försäljningar, förvaltning av dokumentation och genomföra juridiska
+              processer, vilket sparar tid och minskar risken för felaktigheter.
             </Text>
           </div>
         </div>
@@ -101,7 +100,7 @@ const ClientDetails = () => {
         </div>
       </ContentSection>
 
-      <ContactSection curved bg={["purple-800", "indigo-700"]} gradient />
+      <ContactSection curved bg={['purple-800', 'indigo-700']} gradient />
     </>
   );
 };

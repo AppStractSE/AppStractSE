@@ -1,5 +1,5 @@
-import { RiMessengerLine } from "react-icons/ri";
-import { common } from "../../locales/common";
+import { RiMessengerLine } from 'react-icons/ri';
+import { common } from '../../locales/common';
 
 interface Props {
   size?: number;

@@ -1,14 +1,14 @@
-import { useRef } from "react";
-import Breadcrumbs from "../../components/Breadcrumbs";
-import ContactSection from "../../components/sections/ContactSection";
-import Socials from "../../components/socials/Socials";
-import { common } from "../../locales/common";
+import { useRef } from 'react';
+import Breadcrumbs from '../../components/Breadcrumbs';
+import ContactSection from '../../components/sections/ContactSection';
+import Socials from '../../components/socials/Socials';
+import { common } from '../../locales/common';
 
 const Contact = () => {
   const contactRef = useRef<HTMLSpanElement>(null);
   const scrolltoContact = () => {
     if (contactRef.current) {
-      contactRef.current.scrollIntoView({ behavior: "smooth" });
+      contactRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -24,38 +24,25 @@ const Contact = () => {
                   Kom i kontakt med oss
                 </div>
                 <p className="mt-0 mb-4 line-height-3">
-                  Vi på Appstract kan det mesta inom digitala och webbaserade lösningar och kan
-                  därmed hjälpa er med en rad olika behov. Oavsett om ni behöver utveckla en app,
-                  designa en hemsida eller implementera en anpassad mjukvarulösning, är vi här för
-                  att hjälpa er.
+                  Vi på Appstract kan det mesta inom digitala och webbaserade lösningar och kan därmed hjälpa er med en
+                  rad olika behov. Oavsett om ni behöver utveckla en app, designa en hemsida eller implementera en
+                  anpassad mjukvarulösning, är vi här för att hjälpa er.
                   <br />
                   <br />
-                  För att kontakta oss kan ni skicka ett{" "}
-                  <a
-                    className="nav-link p-0 text-primary-200 hover:text-primary-400"
-                    href={common.socials.mail}
-                  >
+                  För att kontakta oss kan ni skicka ett{' '}
+                  <a className="nav-link p-0 text-primary-200 hover:text-primary-400" href={common.socials.mail}>
                     mail
-                  </a>{" "}
-                  eller meddelande via{" "}
-                  <a
-                    className="nav-link p-0 text-primary-200 hover:text-primary-400"
-                    href={common.socials.facebook}
-                  >
+                  </a>{' '}
+                  eller meddelande via{' '}
+                  <a className="nav-link p-0 text-primary-200 hover:text-primary-400" href={common.socials.facebook}>
                     Facebook
-                  </a>{" "}
-                  eller{" "}
-                  <a
-                    className="nav-link p-0 text-primary-200 hover:text-primary-400"
-                    href={common.socials.instagram}
-                  >
+                  </a>{' '}
+                  eller{' '}
+                  <a className="nav-link p-0 text-primary-200 hover:text-primary-400" href={common.socials.instagram}>
                     Instagram
                   </a>
-                  , där ni beskriver era behov. Ni kan även fylla i vårt{" "}
-                  <span
-                    onClick={scrolltoContact}
-                    className="text-primary-200 cursor-pointer hover:text-primary-400"
-                  >
+                  , där ni beskriver era behov. Ni kan även fylla i vårt{' '}
+                  <span onClick={scrolltoContact} className="text-primary-200 cursor-pointer hover:text-primary-400">
                     kontaktformulär
                   </span>
                   .
@@ -68,7 +55,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <ContactSection curved bg={["purple-800", "indigo-700"]} gradient scrollRef={contactRef} />
+      <ContactSection curved bg={['purple-800', 'indigo-700']} gradient scrollRef={contactRef} />
     </>
   );
 };

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from 'react';
 
 interface Props {
   phrases: string[];
@@ -15,7 +15,7 @@ const Typewriter = ({
   pauseDuration = 2000,
   cursorBlinkSpeed = 500,
 }: Props) => {
-  const [displayText, setDisplayText] = useState("");
+  const [displayText, setDisplayText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [isPhraseComplete, setIsPhraseComplete] = useState(false);
@@ -56,16 +56,7 @@ const Typewriter = ({
     return () => {
       clearTimeout(timerRef.current);
     };
-  }, [
-    displayText,
-    isDeleting,
-    isPhraseComplete,
-    phraseIndex,
-    phrases,
-    deletingDelay,
-    pauseDuration,
-    typingDelay,
-  ]);
+  }, [displayText, isDeleting, isPhraseComplete, phraseIndex, phrases, deletingDelay, pauseDuration, typingDelay]);
 
   useEffect(() => {
     timerRef.current = window.setInterval(() => {
@@ -87,7 +78,7 @@ const Typewriter = ({
   return (
     <>
       <span className="text-primary-200">{displayText}</span>
-      {isCursorVisible && <span className="blink">{" _"} </span>}
+      {isCursorVisible && <span className="blink">{' _'} </span>}
     </>
   );
 };

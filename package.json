@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "test": "echo \"No tests available yet.\""
+    "test": "echo \"No tests available yet.\"",
+    "format": "npx prettier --write ."
   },
   "dependencies": {
     "primeflex": "^3.3.0",
@@ -32,6 +33,7 @@
     "eslint": "^8.38.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
+    "prettier": "^3.0.0",
     "typescript": "^5.0.2",
     "vite": "^4.3.2"
   }

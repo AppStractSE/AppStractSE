@@ -1,5 +1,5 @@
-import ContentSection from "./components/ContentSection";
-import Text from "./components/text/Text";
+import ContentSection from './components/ContentSection';
+import Text from './components/text/Text';
 
 const Playground = () => {
   return (

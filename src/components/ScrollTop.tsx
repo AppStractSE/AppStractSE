@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { BsArrowUpCircleFill } from "react-icons/bs";
+import { useEffect, useState } from 'react';
+import { BsArrowUpCircleFill } from 'react-icons/bs';
 
 const ScrollTop = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -12,23 +12,23 @@ const ScrollTop = () => {
       setPrevScrollPos(currentScrollPos);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [prevScrollPos]);
 
   const scrollToTop = () => {
     if (scrollButtonVisible) {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 
   return (
     <div
-      className={`${scrollButtonVisible && "cursor-pointer"} ${
-        scrollButtonVisible ? "opacity-100" : "opacity-0"
+      className={`${scrollButtonVisible && 'cursor-pointer'} ${
+        scrollButtonVisible ? 'opacity-100' : 'opacity-0'
       } scrolltop hover:text-primary-300`}
     >
       <BsArrowUpCircleFill size={48} onClick={scrollToTop} />

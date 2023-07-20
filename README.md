@@ -1,6 +1,6 @@
 # AppStractSE
 
-Detta är kodbasen för Appstract's webbsida för visa vilka tjänster vi erbjuder inom webb- och apputveckling, SEO och digital marknadsföring. 
+Detta är kodbasen för Appstract's webbsida för visa vilka tjänster vi erbjuder inom webb- och apputveckling, SEO och digital marknadsföring.
 Vi använder moderna webbteknologier för att skapa en effektiv och användarvänlig webbplats för våra kunder.
 
 ## Funktioner
@@ -25,19 +25,19 @@ AppStractSE är byggd med följande teknologier:
 
 För att installera och köra projektet lokalt, följ dessa steg:
 
-1. Klona repot: 
+1. Klona repot:
 
 ```bash
 git clone https://github.com/AppStractSE/AppStractSE.git
 ```
 
-2. Installera beroenden: 
+2. Installera beroenden:
 
 ```bash
 npm install
 ```
 
-3. Starta projektet: 
+3. Starta projektet:
 
 ```bash
 npm run dev

@@ -1,9 +1,9 @@
-import { useState } from "react";
-import Breadcrumbs from "../../components/Breadcrumbs";
-import SlateCard from "../../components/cards/SlateCard/SlateCard";
-import Grid from "../../components/grid/Grid";
-import ContactSection from "../../components/sections/ContactSection";
-import { common } from "../../locales/common";
+import { useState } from 'react';
+import Breadcrumbs from '../../components/Breadcrumbs';
+import SlateCard from '../../components/cards/SlateCard/SlateCard';
+import Grid from '../../components/grid/Grid';
+import ContactSection from '../../components/sections/ContactSection';
+import { common } from '../../locales/common';
 
 const Clients = () => {
   const [selectedTag, setSelectedTag] = useState<string>(common.clientTags.showAll);
@@ -23,10 +23,9 @@ const Clients = () => {
                   Klienter och cases
                 </div>
                 <p className="mt-0 mb-4 line-height-3">
-                  Vi på Appstract är stolta över att ha arbetat med en mångfald av kunder och
-                  projekt. Vi älskar den variation som vår bransch erbjuder och att få möjligheten
-                  att bidra till olika branscher och projekt. Nedan kan du se ett urval av våra
-                  senaste projekt.
+                  Vi på Appstract är stolta över att ha arbetat med en mångfald av kunder och projekt. Vi älskar den
+                  variation som vår bransch erbjuder och att få möjligheten att bidra till olika branscher och projekt.
+                  Nedan kan du se ett urval av våra senaste projekt.
                 </p>
               </div>
             </div>
@@ -36,12 +35,15 @@ const Clients = () => {
       <section className="w-full">
         <div className="px-2 md:px-4 lg:px-6">
           <div className="container w-full m-auto pb-6">
-            <div className="col-12 flex gap-4 text-2xl md:text-3xl font-bold mb-4 white-space-nowrap" style={{overflowX: "auto"}}>
+            <div
+              className="col-12 flex gap-4 text-2xl md:text-3xl font-bold mb-4 white-space-nowrap"
+              style={{ overflowX: 'auto' }}
+            >
               {Object.values(common.clientTags).map((tag) => (
                 <div
                   key={tag}
                   className={`cursor-pointer hover:text-primary-300 ${
-                    tag === selectedTag ? "text-primary" : "text-primary-500"
+                    tag === selectedTag ? 'text-primary' : 'text-primary-500'
                   }`}
                   onClick={() => setSelectedTag(tag)}
                 >
@@ -58,7 +60,7 @@ const Clients = () => {
                   title={client.title}
                   description={client.subtitle}
                   image={client.image}
-                  bg={["indigo-600"]}
+                  bg={['indigo-600']}
                 />
               ))}
             </Grid>
@@ -66,7 +68,7 @@ const Clients = () => {
         </div>
       </section>
 
-      <ContactSection curved bg={["purple-800", "indigo-700"]} gradient />
+      <ContactSection curved bg={['purple-800', 'indigo-700']} gradient />
     </>
   );
 };
