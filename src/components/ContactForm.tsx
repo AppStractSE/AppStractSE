@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Button } from "primereact/button";
-import { InputText } from "primereact/inputtext";
-import { InputTextarea } from "primereact/inputtextarea";
-import { ProgressBar } from "primereact/progressbar";
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { toast } from "react-toastify";
-import { useLanguage } from "../contexts/LanguageContext";
+import { Button } from 'primereact/button';
+import { InputText } from 'primereact/inputtext';
+import { InputTextarea } from 'primereact/inputtextarea';
+import { ProgressBar } from 'primereact/progressbar';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import { useLanguage } from '../contexts/LanguageContext';
 
 interface Props {
   openPolicyInNewTab?: boolean;
@@ -14,44 +14,38 @@ interface Props {
   location?: string;
 }
 
-const ContactForm = ({
-  openPolicyInNewTab,
-  inModalOnSend,
-  location,
-}: Props) => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
+const ContactForm = ({ openPolicyInNewTab, inModalOnSend, location }: Props) => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState('');
   const { translations } = useLanguage();
   const [loading, setLoading] = useState(false);
   const encode = (data: any) => {
     return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
+      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&');
   };
 
   const handleSubmit = (e: any) => {
     setLoading(true);
-    const formType = location ?? "home";
-    fetch("/index.html", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    const formType = location ?? 'home';
+    fetch('/index.html', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
-        "form-name": "contactForm",
+        'form-name': 'contactForm',
         ...{ name, email, phone, message, formType },
       }),
     })
       .then(() => {
-        console.log("Form successfully submitted");
+        console.log('Form successfully submitted');
         setLoading(false);
         toast.success(translations.toasts.success);
-        setName("");
-        setEmail("");
-        setPhone("");
-        setMessage("");
+        setName('');
+        setEmail('');
+        setPhone('');
+        setMessage('');
         inModalOnSend && inModalOnSend();
       })
       .catch((error) => {
@@ -66,10 +60,7 @@ const ContactForm = ({
     <div className="flex align-items-center justify-content-center">
       <div className="p-1 md:p-3" style={{ maxWidth: 440 }}>
         <div className="flex justify-content-center mb-2 md:mb-4">
-          <div
-            style={{ width: "fit-content" }}
-            className="text-center text-2xl md:text-3xl font-medium"
-          >
+          <div style={{ width: 'fit-content' }} className="text-center text-2xl md:text-3xl font-medium">
             {translations.contact.title}
           </div>
         </div>
@@ -116,9 +107,9 @@ const ContactForm = ({
           />
           <div className="flex align-items-center justify-content-between mb-4">
             <div className="text-600 font-medium line-height-2 text-xs md:text-sm">
-              {translations.contact.info}{" "}
+              {translations.contact.info}{' '}
               <Link
-                target={openPolicyInNewTab ? "_blank" : "_self"}
+                target={openPolicyInNewTab ? '_blank' : '_self'}
                 className="nav-link p-0 text-primary hover:text-primary-300 cursor-pointer"
                 to={translations.paths.policy.link}
               >
@@ -134,9 +125,7 @@ const ContactForm = ({
             className="w-full mb-3 shadow-3 hover:shadow-6 py-3 uppercase"
           />
           <div style={{ height: 6 }}>
-            {loading ? (
-              <ProgressBar className="shadow-3" mode="indeterminate" style={{ height: "100%" }} />
-            ) : null}
+            {loading ? <ProgressBar className="shadow-3" mode="indeterminate" style={{ height: '100%' }} /> : null}
           </div>
         </form>
       </div>

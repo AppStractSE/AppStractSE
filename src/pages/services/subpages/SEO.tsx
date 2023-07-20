@@ -1,15 +1,15 @@
-import ContactSection from "../../../components/sections/ContactSection";
-import ServiceHero from "../../../components/service/ServiceHero";
-import ServiceIntro from "../../../components/service/ServiceIntro";
-import ServiceSteps from "../../../components/service/ServiceSteps";
-import { useLanguage } from "../../../contexts/LanguageContext";
+import ContactSection from '../../../components/sections/ContactSection';
+import ServiceHero from '../../../components/service/ServiceHero';
+import ServiceIntro from '../../../components/service/ServiceIntro';
+import ServiceSteps from '../../../components/service/ServiceSteps';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const SEO = () => {
   const { translations } = useLanguage();
   return (
     <>
       <ServiceHero
-        bg={["bluegray-800", "indigo-600"]}
+        bg={['bluegray-800', 'indigo-600']}
         gradient
         title={translations.paths.seo.label}
         description={translations.servicepages.seo.herodescription}
@@ -21,7 +21,7 @@ const SEO = () => {
         description={translations.servicepages.seo.introdescription}
       />
       <ServiceSteps parts={translations.servicepages.seo.parts} />
-      <ContactSection curved gradient bg={["bluegray-800", "indigo-600"]} />
+      <ContactSection curved gradient bg={['bluegray-800', 'indigo-600']} />
     </>
   );
 };

@@ -1,5 +1,5 @@
-import { AiOutlineInstagram } from "react-icons/ai";
-import { common } from "../../locales/common";
+import { AiOutlineInstagram } from 'react-icons/ai';
+import { common } from '../../locales/common';
 
 interface Props {
   size?: number;
@@ -8,10 +8,7 @@ interface Props {
 const Instagram = ({ size }: Props) => {
   return (
     <a href={common.socials.instagram} target="_blank">
-      <AiOutlineInstagram
-        className="text-primary hover:text-primary-400 cursor-pointer"
-        size={size}
-      />
+      <AiOutlineInstagram className="text-primary hover:text-primary-400 cursor-pointer" size={size} />
     </a>
   );
 };

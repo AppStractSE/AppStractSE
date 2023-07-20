@@ -1,6 +1,6 @@
-import { Client } from "../../types/types";
-import Breadcrumbs from "../Breadcrumbs";
-import Text from "../text/Text";
+import { Client } from '../../types/types';
+import Breadcrumbs from '../Breadcrumbs';
+import Text from '../text/Text';
 
 interface Props {
   scrollRef?: React.RefObject<HTMLElement>;
@@ -12,14 +12,12 @@ interface Props {
 
 const ClientHero = ({ scrollRef, bg, curved, gradient, client }: Props) => {
   return (
-    <section className={`w-full ${curved ? "curved-bg overflow-hidden" : ""}`} ref={scrollRef}>
+    <section className={`w-full ${curved ? 'curved-bg overflow-hidden' : ''}`} ref={scrollRef}>
       <div
-        className={`p-2 md:p-4 lg:p-6 ${bg ? `bg-${bg[0]}` : "bg-bluegray-900"}`}
+        className={`p-2 md:p-4 lg:p-6 ${bg ? `bg-${bg[0]}` : 'bg-bluegray-900'}`}
         style={{
           backgroundImage:
-            gradient && bg && bg.length > 1
-              ? `linear-gradient(69deg, var(--${bg[0]}), var(--${bg[1]}))`
-              : "",
+            gradient && bg && bg.length > 1 ? `linear-gradient(69deg, var(--${bg[0]}), var(--${bg[1]}))` : '',
         }}
       >
         <div className="container w-full m-auto pt-8 pb-2">

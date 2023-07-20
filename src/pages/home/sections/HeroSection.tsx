@@ -1,9 +1,9 @@
-import { Button } from "primereact/button";
-import { Link } from "react-router-dom";
-import Text from "../../../components/text/Text";
-import { useLanguage } from "../../../contexts/LanguageContext";
-import TypeWriter from "../../../utils/TypeWriter";
-import { HiArrowLongRight } from "react-icons/hi2";
+import { Button } from 'primereact/button';
+import { Link } from 'react-router-dom';
+import Text from '../../../components/text/Text';
+import { useLanguage } from '../../../contexts/LanguageContext';
+import TypeWriter from '../../../utils/TypeWriter';
+import { HiArrowLongRight } from 'react-icons/hi2';
 
 interface Props {
   scrollToContact: () => void;

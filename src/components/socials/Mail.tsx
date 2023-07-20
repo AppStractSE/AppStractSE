@@ -1,5 +1,5 @@
-import { AiOutlineMail } from "react-icons/ai";
-import { common } from "../../locales/common";
+import { AiOutlineMail } from 'react-icons/ai';
+import { common } from '../../locales/common';
 
 interface Props {
   size?: number;

@@ -1,15 +1,15 @@
-import ContactSection from "../../../components/sections/ContactSection";
-import ServiceHero from "../../../components/service/ServiceHero";
-import ServiceIntro from "../../../components/service/ServiceIntro";
-import ServiceSteps from "../../../components/service/ServiceSteps";
-import { useLanguage } from "../../../contexts/LanguageContext";
+import ContactSection from '../../../components/sections/ContactSection';
+import ServiceHero from '../../../components/service/ServiceHero';
+import ServiceIntro from '../../../components/service/ServiceIntro';
+import ServiceSteps from '../../../components/service/ServiceSteps';
+import { useLanguage } from '../../../contexts/LanguageContext';
 
 const AppDevelopment = () => {
   const { translations } = useLanguage();
   return (
     <>
       <ServiceHero
-        bg={["cyan-800", "teal-600"]}
+        bg={['cyan-800', 'teal-600']}
         gradient
         title={translations.paths.appDevelopment.label}
         description={translations.servicepages.appdevelopment.herodescription}
@@ -21,7 +21,7 @@ const AppDevelopment = () => {
         description={translations.servicepages.appdevelopment.introdescription}
       />
       <ServiceSteps parts={translations.servicepages.appdevelopment.parts} />
-      <ContactSection curved gradient bg={["cyan-800", "teal-600"]} />
+      <ContactSection curved gradient bg={['cyan-800', 'teal-600']} />
     </>
   );
 };

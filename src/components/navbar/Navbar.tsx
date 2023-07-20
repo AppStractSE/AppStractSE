@@ -1,10 +1,10 @@
-import { Dialog } from "primereact/dialog";
-import { useEffect, useState } from "react";
-import { FaEnvelope, FaFacebook, FaTwitter } from "react-icons/fa";
-import { Link, NavLink } from "react-router-dom";
-import { useLanguage } from "../../contexts/LanguageContext";
-import { HamburgerMenuItem, NavMenuItem } from "../../types/types";
-import LargeLogo from "../logo/LargeLogo";
+import { Dialog } from 'primereact/dialog';
+import { useEffect, useState } from 'react';
+import { FaEnvelope, FaFacebook, FaTwitter } from 'react-icons/fa';
+import { Link, NavLink } from 'react-router-dom';
+import { useLanguage } from '../../contexts/LanguageContext';
+import { HamburgerMenuItem, NavMenuItem } from '../../types/types';
+import LargeLogo from '../logo/LargeLogo';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,10 +21,10 @@ const Navbar = () => {
       setIsScrolled(scrollTop > 10);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -33,12 +33,12 @@ const Navbar = () => {
       <header className="w-full fixed top-0 z-5">
         <div
           className={`transition-slow p-menubar col-12 rounded-none px-2 md:px-4 lg:px-6 ${
-            isScrolled ? "surface-50 text-primary" : "text-500 bg-transparent"
+            isScrolled ? 'surface-50 text-primary' : 'text-500 bg-transparent'
           }`}
         >
           <div
             className={`container ${
-              isScrolled ? "py-2 md:py-0" : "py-2"
+              isScrolled ? 'py-2 md:py-0' : 'py-2'
             } px-2 transition-slow flex w-full m-auto align-items-center justify-content-center`}
           >
             <NavLink className="nav-link mr-auto p-0 flex" to="/">
@@ -49,9 +49,7 @@ const Navbar = () => {
                 <NavLink
                   key={navItem.url}
                   className={`nav-link font-bold text-xl ${
-                    isScrolled
-                      ? "text-primary-500 hover:text-primary-300"
-                      : "text-primary-200 hover:text-primary"
+                    isScrolled ? 'text-primary-500 hover:text-primary-300' : 'text-primary-200 hover:text-primary'
                   }`}
                   to={navItem.url}
                 >
@@ -60,9 +58,7 @@ const Navbar = () => {
               ))}
               <div
                 className={`nav-link font-bold text-xl cursor-pointer ${
-                  isScrolled
-                    ? "text-primary-500 hover:text-primary-300"
-                    : "text-primary-200 hover:text-primary"
+                  isScrolled ? 'text-primary-500 hover:text-primary-300' : 'text-primary-200 hover:text-primary'
                 }`}
                 onClick={toggleLanguage}
               >
@@ -72,9 +68,7 @@ const Navbar = () => {
             <div className="md:ml-4">
               <i
                 className={`block text-primary-300 pi pi-bars text-4xl cursor-pointer ${
-                  isScrolled
-                    ? "text-primary hover:text-primary-300"
-                    : "text-primary-300 hover:text-primary"
+                  isScrolled ? 'text-primary hover:text-primary-300' : 'text-primary-300 hover:text-primary'
                 }`}
                 onClick={toggleSidebar}
               />
