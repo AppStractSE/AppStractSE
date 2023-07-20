@@ -1,11 +1,8 @@
-<<<<<<< HEAD
-import SeoImage from "../assets/home-page/SEO.webp";
-import { General, MetaDescription, Paths } from "../types/types";
-import { common } from "./common";
-=======
+import SeoImage from '../assets/home-page/SEO.webp';
+import AppdDvelopment from '../assets/home-page/app-development.webp';
+import WebDevelopment from '../assets/home-page/webb-development.webp';
 import { General, MetaDescription, Paths } from '../types/types';
 import { common } from './common';
->>>>>>> main
 
 const metadescriptions: MetaDescription[] = [
   {
@@ -168,15 +165,13 @@ export const services = [
   {
     title: paths.webDevelopment.label,
     description: 'Vi hjälper er att bygga en hemsida som ni kan vara stolta över, och som era kunder kommer att älska.',
-    image:
-      'https://ezranking.s3.eu-west-2.amazonaws.com/blog/wp-content/uploads/2022/01/07063220/mobile-app-development-trends.png',
+    image: WebDevelopment,
     link: paths.webDevelopment.link,
     bg: ['blue-800', 'blue-600'],
   },
   {
     title: paths.seo.label,
-    description:
-      "Vi hjälper er att synas bättre på internet, med hjälp av diverse tekniker så som SEO, SEM, och mer.",
+    description: 'Vi hjälper er att synas bättre på internet, med hjälp av diverse tekniker så som SEO, SEM, och mer.',
     image: SeoImage,
     link: paths.seo.link,
     bg: ['bluegray-800', 'indigo-600'],
@@ -184,8 +179,7 @@ export const services = [
   {
     title: paths.appDevelopment.label,
     description: 'Vi hjälper er att bygga en app som ni kan vara stolta över, och som era kunder kommer att älska.',
-    image:
-      'https://ezranking.s3.eu-west-2.amazonaws.com/blog/wp-content/uploads/2022/01/07063220/mobile-app-development-trends.png',
+    image: AppdDvelopment,
     link: paths.appDevelopment.link,
     bg: ['cyan-800', 'teal-600'],
   },
