@@ -1,3 +1,4 @@
+import SeoImage from "../assets/home-page/SEO.webp";
 import { General, MetaDescription, Paths } from "../types/types";
 import { common } from "./common";
 
@@ -177,8 +178,7 @@ export const services = [
     title: paths.seo.label,
     description:
       "Vi hjälper er att synas bättre på internet, med hjälp av diverse tekniker så som SEO, SEM, och mer.",
-    image:
-      "https://ezranking.s3.eu-west-2.amazonaws.com/blog/wp-content/uploads/2022/01/07063220/mobile-app-development-trends.png",
+    image: SeoImage,
     link: paths.seo.link,
     bg: ["bluegray-800", "indigo-600"],
   },
