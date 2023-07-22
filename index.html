@@ -16,13 +16,15 @@
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JX7NBJQ28X"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+    document.addEventListener('DOMContentLoaded', function () {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-    gtag('config', 'G-JX7NBJQ28X');
+      gtag('config', 'G-JX7NBJQ28X');
+    });
   </script>
   <body>
     <div id="root"></div>
