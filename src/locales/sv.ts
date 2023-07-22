@@ -1,4 +1,18 @@
-import { General, MetaDescription, Paths } from '../types/types';
+import {
+  General,
+  Paths,
+  Breadcrumb,
+  Buttons,
+  Contact,
+  HamburgerMenuItem,
+  Home,
+  MetaDescription,
+  Nav,
+  NotFound,
+  Policy,
+  Service,
+  ServicePage,
+} from '../types/types';
 import { common } from './common';
 
 const metadescriptions: MetaDescription[] = [
@@ -95,7 +109,7 @@ const paths: Paths = {
 };
 
 const hamburgerLanguage = 'English';
-const hamburgerMenuItems = [
+const hamburgerMenuItems: HamburgerMenuItem[] = [
   {
     label: paths.services.label,
     url: paths.services.link,
@@ -106,12 +120,12 @@ const hamburgerMenuItems = [
   },
 ];
 
-const notFound = {
+const notFound: NotFound = {
   title: 'Hoppsan! Något gick fel.',
   description: 'Det ser ut som att du gått vilse.\nOroa dig inte, vi är här för att rädda dig!',
 };
 
-const contact = {
+const contact: Contact = {
   title: 'Ja, tack! Jag vill gärna bli kontaktad!',
   name: 'För- och efternamn',
   email: 'Email',
@@ -126,7 +140,7 @@ const toasts = {
   error: 'Något gick fel, försök igen senare.',
 };
 
-const buttons = {
+const buttons: Buttons = {
   help: 'Hur vi kan hjälpa dig',
   contact: 'Kontakta oss',
   contactme: 'Kontakta mig',
@@ -135,7 +149,7 @@ const buttons = {
   submit: 'Skicka',
 };
 
-const home = {
+const home: Home = {
   title: 'Webbyrå i Borås',
   description:
     'AppStract erbjuder en IT-lösning för alla behov. Vårt mål är att hjälpa dig att lyckas med din verksamhet, och vi har verktygen för att göra det.',
@@ -158,7 +172,7 @@ const home = {
   ],
 };
 
-export const services = [
+export const services: Service[] = [
   {
     title: paths.webDevelopment.label,
     description: 'Vi hjälper er att bygga en hemsida som ni kan vara stolta över, och som era kunder kommer att älska.',
@@ -185,7 +199,7 @@ export const services = [
   },
 ];
 
-const policy = {
+const policy: Policy = {
   title: 'Personuppgiftspolicy',
   subtitle: "AppStract's behandling av dina personuppgifter",
   description:
@@ -224,7 +238,7 @@ const policy = {
     },
   ],
 };
-const breadcrumbs = [
+const breadcrumbs: Breadcrumb[] = [
   { path: paths.home.link, breadcrumb: paths.home.label },
   { path: paths.services.link, breadcrumb: paths.services.label },
   { path: paths.webDevelopment.link, breadcrumb: paths.webDevelopment.label },
@@ -236,7 +250,7 @@ const breadcrumbs = [
   { path: paths.notFound.link, breadcrumb: paths.notFound.label },
 ];
 
-const nav = {
+const nav: Nav = {
   menuItems: [
     {
       label: paths.clients.label,
@@ -253,7 +267,7 @@ const nav = {
   ],
 };
 
-const servicepages = {
+const servicepages: ServicePage = {
   webdevelopment: {
     herodescription:
       'Vi samlar alla delar som behövs för att skapa en välfungerande webbplats, inklusive skräddarsydd utveckling och placering av innehåll. Målet är att förbättra konverteringsgraden och stärka ert varumärke.',
