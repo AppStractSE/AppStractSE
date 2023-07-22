@@ -16,7 +16,7 @@ const HeroSection = ({ scrollToContact }: Props) => {
       <div
         className="flex relative align-items-center text-center sm:text-left p-2 md:p-4 lg:p-6 h-screen bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://wallpaperaccess.com/full/1657858.jpg')`,
+          backgroundImage: `url('/images/home-background.webp')`,
         }}
       >
         <div className="absolute backdrop z-1" />
