@@ -1,11 +1,11 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
 interface Props {
   title: string;
   description: ReactNode;
   image: string;
   buttons: ReactNode;
-  order?: "rtl" | "ltr";
+  order?: 'rtl' | 'ltr';
   clipPath?: boolean;
 }
 
@@ -14,17 +14,13 @@ const BigCard = ({ title, description, image, buttons, order, clipPath }: Props)
     <div className="col-12 text-left flex align-items-center mb-4">
       <div
         className={`p-card overflow-hidden col-12 flex flex-wrap p-0 ${
-          order === "ltr" ? "flex-row" : "flex-row-reverse"
+          order === 'ltr' ? 'flex-row' : 'flex-row-reverse'
         }`}
       >
         <div className="col-12 md:col-7 m-0 p-0">
           <div
             className={`${
-              clipPath && order === "ltr"
-                ? "clip-right"
-                : clipPath && order === "rtl"
-                ? "clip-left"
-                : ""
+              clipPath && order === 'ltr' ? 'clip-right' : clipPath && order === 'rtl' ? 'clip-left' : ''
             } h-full`}
           >
             <img alt="Card" width="100%" height="100%" src={image} />

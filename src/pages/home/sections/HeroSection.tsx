@@ -1,11 +1,9 @@
 import { Button } from "primereact/button";
 import { Link } from "react-router-dom";
-import Text from "../../../components/text/Text";
-import { useLanguage } from "../../../contexts/LanguageContext";
-import TypeWriter from "../../../utils/TypeWriter";
-import { HiArrowLongRight } from "react-icons/hi2";
 import SlateCard from "../../../components/cards/SlateCard/SlateCard";
 import Grid from "../../../components/grid/Grid";
+import Text from "../../../components/text/Text";
+import { useLanguage } from "../../../contexts/LanguageContext";
 import { Service } from "../../../types/types";
 
 interface Props {

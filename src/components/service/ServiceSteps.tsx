@@ -1,7 +1,7 @@
-import { useRef } from "react";
-import { ServicePagePart } from "../../types/types";
-import SlateCard from "../cards/SlateCard/SlateCard";
-import Grid from "../grid/Grid";
+import { useRef } from 'react';
+import { ServicePagePart } from '../../types/types';
+import SlateCard from '../cards/SlateCard/SlateCard';
+import Grid from '../grid/Grid';
 
 interface Props {
   parts: ServicePagePart[];
@@ -15,7 +15,7 @@ const ServiceSteps = ({ parts }: Props) => {
 
       if (contentContainer) {
         const topOffset = contentContainer.getBoundingClientRect().top + window.pageYOffset;
-        window.scrollTo({ top: topOffset - 50, behavior: "smooth" });
+        window.scrollTo({ top: topOffset - 50, behavior: 'smooth' });
       }
     }
   };
@@ -43,7 +43,7 @@ const ServiceSteps = ({ parts }: Props) => {
       <section className="w-full">
         {parts.map((part: ServicePagePart, index: number) => (
           <div
-            style={{ scrollSnapAlign: "start" }}
+            style={{ scrollSnapAlign: 'start' }}
             className="p-2 md:p-4 lg:p-6 bg-bluegray-900"
             key={index}
             ref={(ref) => {
@@ -58,7 +58,7 @@ const ServiceSteps = ({ parts }: Props) => {
                 </div>
                 <div className="col-12 lg:col-7">
                   <div className="text-xl font-bold mb-2">{part.subtitle}</div>
-                  <div className="text-1xl font" style={{ whiteSpace: "pre-line" }}>
+                  <div className="text-1xl font" style={{ whiteSpace: 'pre-line' }}>
                     {part.description}
                   </div>
                 </div>

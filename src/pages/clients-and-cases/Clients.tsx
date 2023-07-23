@@ -1,6 +1,5 @@
 import { Tag } from "primereact/tag";
 import { useEffect, useState } from "react";
-import Breadcrumbs from "../../components/Breadcrumbs";
 import HeroSection from "../../components/HeroSection";
 import SlateCard from "../../components/cards/SlateCard/SlateCard";
 import Grid from "../../components/grid/Grid";
@@ -63,7 +62,7 @@ const Clients = () => {
         </div>
       </section>
 
-      <ContactSection curved bg={["purple-800", "indigo-700"]} gradient />
+      <ContactSection curved bg={['purple-800', 'indigo-700']} gradient />
     </>
   );
 };

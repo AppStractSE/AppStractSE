@@ -1,9 +1,9 @@
-import { Button } from "primereact/button";
-import { Dialog } from "primereact/dialog";
-import { useState } from "react";
-import { useLanguage } from "../../contexts/LanguageContext";
-import Breadcrumbs from "../Breadcrumbs";
-import ContactForm from "../ContactForm";
+import { Button } from 'primereact/button';
+import { Dialog } from 'primereact/dialog';
+import { useState } from 'react';
+import { useLanguage } from '../../contexts/LanguageContext';
+import Breadcrumbs from '../Breadcrumbs';
+import ContactForm from '../ContactForm';
 
 interface Props {
   title: string;
@@ -18,10 +18,9 @@ const ServiceHero = ({ title, description, bg, gradient }: Props) => {
   return (
     <section className="w-full">
       <div
-        className={`p-2 md:p-4 lg:p-6 ${bg ? `bg-${bg[0]}` : "bg-blue-800"}`}
+        className={`p-2 md:p-4 lg:p-6 ${bg ? `bg-${bg[0]}` : 'bg-blue-800'}`}
         style={{
-          backgroundImage:
-            gradient && bg ? `linear-gradient(69deg, var(--${bg[0]}), var(--${bg[1]}))` : undefined,
+          backgroundImage: gradient && bg ? `linear-gradient(69deg, var(--${bg[0]}), var(--${bg[1]}))` : undefined,
         }}
       >
         <div className="container w-full m-auto pt-8 pb-2">
@@ -66,10 +65,7 @@ const ServiceHero = ({ title, description, bg, gradient }: Props) => {
         visible={modalVisible}
         onHide={() => setModalVisible(false)}
       >
-        <ContactForm
-          openPolicyInNewTab={true}
-          inModalOnSend={() => setModalVisible(!modalVisible)}
-        />
+        <ContactForm openPolicyInNewTab={true} inModalOnSend={() => setModalVisible(!modalVisible)} />
       </Dialog>
     </section>
   );

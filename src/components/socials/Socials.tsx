@@ -1,6 +1,6 @@
-import Facebook from "./Facebook";
-import Instagram from "./Instagram";
-import Mail from "./Mail";
+import Facebook from './Facebook';
+import Instagram from './Instagram';
+import Mail from './Mail';
 
 const Socials = () => {
   return (

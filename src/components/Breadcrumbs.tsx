@@ -1,8 +1,8 @@
-import React from "react";
-import { IoHome } from "react-icons/io5";
-import { Link, useLocation } from "react-router-dom";
-import { useLanguage } from "../contexts/LanguageContext";
-import { Breadcrumb } from "../types/types";
+import React from 'react';
+import { IoHome } from 'react-icons/io5';
+import { Link, useLocation } from 'react-router-dom';
+import { useLanguage } from '../contexts/LanguageContext';
+import { Breadcrumb } from '../types/types';
 
 interface Props {
   client?: string;
@@ -20,16 +20,13 @@ const Breadcrumbs = ({ client }: Props) => {
     .filter((breadcrumb) => location.pathname.startsWith(breadcrumb.path))
     .map((breadcrumb, index) => {
       const isCurrentBreadcrumb = location.pathname === breadcrumb.path;
-      const className = isCurrentBreadcrumb ? "text-white" : "text-primary-300";
+      const className = isCurrentBreadcrumb ? 'text-white' : 'text-primary-300';
 
       if (breadcrumb.breadcrumb === translations.paths.home.label) {
         return (
           <React.Fragment key={breadcrumb.path}>
             <span className={`${className} flex align-items-center`}>
-              <Link
-                to={breadcrumb.path}
-                className="text-link hover:text-primary flex align-items-center"
-              >
+              <Link to={breadcrumb.path} className="text-link hover:text-primary flex align-items-center">
                 <IoHome size={24} />
               </Link>
             </span>
