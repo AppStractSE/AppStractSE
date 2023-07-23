@@ -1,4 +1,4 @@
-import { General, MetaDescription, Paths } from "../types/types";
+import { Client, ClientTags, General, MetaDescription, Paths } from "../types/types";
 import { common } from "./common";
 
 const metadescriptions: MetaDescription[] = [
@@ -163,7 +163,7 @@ const home = {
   ],
 };
 
-export const services = [
+const services = [
   {
     title: paths.webDevelopment.label,
     description:
@@ -425,6 +425,50 @@ const servicepages = {
   },
 };
 
+const clientTags: ClientTags = {
+  showAll: "Visa alla",
+  apps: "Appar",
+  webapps: "Webbapplikationer",
+  seo: "SEO",
+};
+
+const cases: Client[] = [
+  {
+    title: "PropertEase",
+    subtitle:
+      "Propertease is a comprehensive property management platform that provides users with essential tools for managing properties.",
+    logo: "https://justifiedcoding.org/wp-content/uploads/2019/01/Client-Logo-Placeholder.png",
+    image:
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
+    description:
+      "PropertEase revolutionerar fastighetsadministration genom att erbjuda effektiva verktyg för hantering av fastigheter och kunder, vilket resulterar i en smidigare och mer lönsam process.",
+    link: "https://appstract.se",
+    slug: "propertease",
+    tags: [clientTags.apps, clientTags.webapps],
+    active: true,
+    bg: ["indigo-500"],
+  },
+  {
+    title: "En vanlig sommelier",
+    subtitle: "Kommer snart",
+    logo: "https://justifiedcoding.org/wp-content/uploads/2019/01/Client-Logo-Placeholder.png",
+    image:
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
+    description: "Kommer snart",
+    link: "https://envanligsommelier.se",
+    slug: "en-vanlig-sommelier",
+    tags: [clientTags.webapps],
+    active: false,
+    bg: ["red-600"],
+  },
+];
+
+const clients = {
+  description:
+    "Vi på Appstract är stolta över att ha arbetat med en mångfald av kunder och projekt. Vi älskar den variation som vår bransch erbjuder och att få möjligheten att bidra till olika branscher och projekt. Nedan kan du se ett urval av våra senaste projekt.",
+  cases: cases,
+};
+
 export const svTranslations = {
   nav,
   servicepages,
@@ -441,4 +485,6 @@ export const svTranslations = {
   hamburgerLanguage,
   general,
   metadescriptions,
+  clients,
+  clientTags,
 };

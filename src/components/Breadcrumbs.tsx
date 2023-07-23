@@ -2,10 +2,10 @@ import React from "react";
 import { IoHome } from "react-icons/io5";
 import { Link, useLocation } from "react-router-dom";
 import { useLanguage } from "../contexts/LanguageContext";
-import { Breadcrumb, Client } from "../types/types";
+import { Breadcrumb } from "../types/types";
 
 interface Props {
-  client?: Client;
+  client?: string;
 }
 
 const Breadcrumbs = ({ client }: Props) => {
@@ -48,7 +48,7 @@ const Breadcrumbs = ({ client }: Props) => {
             {client && (
               <span className="text-primary">
                 <Link to={location.pathname} className="text-link hover:text-primary">
-                  {client.title}
+                  {client}
                 </Link>
               </span>
             )}

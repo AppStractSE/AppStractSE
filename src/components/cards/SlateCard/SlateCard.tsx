@@ -26,7 +26,7 @@ const SlateCardChild = ({ image, bg, description, title, gradient }: ChildProps)
         </div>
       </div>
       <div
-        className={`md:px-3 py-2 md:py-3 w-100 absolute left-0 right-0 ${bg ? `bg-${bg[0]}` : "bg-blue-800"} ${
+        className={`p-2 md:p-3 w-100 absolute left-0 right-0 ${bg ? `bg-${bg[0]}` : "bg-blue-800"} ${
           styles.clippath
         }`}
         style={{

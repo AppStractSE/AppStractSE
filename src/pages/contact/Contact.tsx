@@ -14,6 +14,7 @@ const Contact = () => {
 
   return (
     <>
+      
       <section className="w-full">
         <div className="p-2 md:p-4 lg:p-6">
           <div className="container w-full m-auto pt-8 pb-2">

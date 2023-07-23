@@ -14,7 +14,6 @@ const Home = () => {
   return (
     <>
       <HeroSection scrollToContact={scrolltoContact} />
-      <ServicesSection />
       <ContactSection
         curved
         gradient

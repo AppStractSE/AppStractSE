@@ -10,7 +10,7 @@ const ServicesSection = () => {
     <section className="w-full">
       <div className="p-2 md:p-4 lg:p-6">
         <div className="container w-full m-auto pb-6">
-          <div className="col-12 md:col-6 text-center sm:text-left flex align-items-center ">
+          <div className="col-12 md:col-6 text-center sm:text-left flex align-items-center">
             <div>
               <Text size="h2" bold className="mb-4">{translations.home.serviceTitle}</Text>
               <Text size="p" className="mb-4 text-800">
