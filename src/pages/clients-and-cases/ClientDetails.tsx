@@ -6,17 +6,6 @@ import Text from "../../components/text/Text";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { Client } from "../../types/types";
 import NotFound from "../notfound/NotFound";
-import { Button } from 'primereact/button';
-import { Link, useParams } from 'react-router-dom';
-import ContentSection from '../../components/ContentSection';
-import SlateCard from '../../components/cards/SlateCard/SlateCard';
-import ClientHero from '../../components/client/ClientHero';
-import Grid from '../../components/grid/Grid';
-import ContactSection from '../../components/sections/ContactSection';
-import Text from '../../components/text/Text';
-import { common } from '../../locales/common';
-import { Client } from '../../types/types';
-import NotFound from '../notfound/NotFound';
 
 const ClientDetails = () => {
   const name = useParams().clientName;
