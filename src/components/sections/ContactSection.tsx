@@ -14,7 +14,7 @@ const ContactSection = ({ scrollRef, bg, curved, gradient }: Props) => {
         className={`p-2 md:p-4 lg:p-6 ${bg ? `bg-${bg[0]}` : 'bg-bluegray-900'}`}
         style={{
           backgroundImage:
-            gradient && bg && bg.length > 1 ? `linear-gradient(69deg, var(--${bg[0]}), var(--${bg[1]}))` : undefined,
+            gradient && bg && bg.length > 1 ? `linear-gradient(0deg, var(--${bg[0]}), var(--${bg[1]}))` : undefined,
         }}
       >
         <div className="container w-full m-auto py-6">

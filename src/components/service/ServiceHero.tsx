@@ -20,7 +20,7 @@ const ServiceHero = ({ title, description, bg, gradient }: Props) => {
       <div
         className={`p-2 md:p-4 lg:p-6 ${bg ? `bg-${bg[0]}` : 'bg-blue-800'}`}
         style={{
-          backgroundImage: gradient && bg ? `linear-gradient(69deg, var(--${bg[0]}), var(--${bg[1]}))` : undefined,
+          backgroundImage: gradient && bg ? `linear-gradient(0deg, var(--${bg[0]}), var(--${bg[1]}))` : undefined,
         }}
       >
         <div className="container w-full m-auto pt-8 pb-2">
@@ -38,7 +38,7 @@ const ServiceHero = ({ title, description, bg, gradient }: Props) => {
                   label={translations.buttons.contactme}
                   type="button"
                   style={{ minWidth: 250 }}
-                  className="uppercase bg-orange-500 border-orange-500 shadow-3 hover:shadow-5 hover:bg-orange-700 hover:border-orange-700 text-white text-md p-3"
+                  className="bg-orange-500 border-orange-500 shadow-3 hover:shadow-5 hover:bg-orange-700 hover:border-orange-700 text-white text-md p-3"
                   onClick={() => setModalVisible(!modalVisible)}
                 />
               </div>

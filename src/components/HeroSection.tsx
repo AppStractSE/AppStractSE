@@ -17,7 +17,7 @@ const HeroSection = ({ bg, gradient, title, description, image, isClient }: Prop
         className={`p-2 md:p-4 lg:p-6 ${bg ? `bg-${bg[0]}` : 'bg-bluegray-900'}`}
         style={{
           backgroundImage:
-            gradient && bg && bg.length > 1 ? `linear-gradient(69deg, var(--${bg[0]}), var(--${bg[1]}))` : '',
+            gradient && bg && bg.length > 1 ? `linear-gradient(0deg, var(--${bg[0]}), var(--${bg[1]}))` : '',
         }}
       >
         <div className="container w-full m-auto pt-8 pb-2">

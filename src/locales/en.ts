@@ -129,7 +129,7 @@ const notFound: NotFound = {
   description: "Looks like you're lost.\nDon't worry though, we're here to save you!",
 };
 
-const contact: Contact = {
+const contactForm: Contact = {
   title: "Yes, please! I'd like to be contacted!",
   name: 'First and last name',
   email: 'Email',
@@ -473,8 +473,14 @@ const servicepages: ServicePage = {
   },
 };
 
+const contact = {
+  title: "Get in touch with us",
+  description: "We at Appstract know most things in digital and web-based solutions and can thus help you with a range of different needs. Whether you need to develop an app, design a website or implement a custom software solution, we are here to help.",
+}
+
 export const enTranslations = {
   nav,
+  contact,
   servicepages,
   buttons,
   general,
@@ -484,7 +490,7 @@ export const enTranslations = {
   home,
   notFound,
   hamburgerMenuItems,
-  contact,
+  contactForm,
   hamburgerLanguage,
   toasts,
   metadescriptions,

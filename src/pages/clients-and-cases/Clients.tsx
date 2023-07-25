@@ -25,7 +25,6 @@ const Clients = () => {
       <HeroSection
         title={translations.paths.clients.label}
         description={translations.clients.description}
-        // image={client.image}
         bg={["purple-900", "indigo-600"]}
         gradient
       />

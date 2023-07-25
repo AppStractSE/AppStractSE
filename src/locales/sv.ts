@@ -111,7 +111,7 @@ const notFound = {
   description: 'Det ser ut som att du gått vilse.\nOroa dig inte, vi är här för att rädda dig!',
 };
 
-const contact = {
+const contactForm = {
   title: 'Ja, tack! Jag vill gärna bli kontaktad!',
   name: 'För- och efternamn',
   email: 'Email',
@@ -455,6 +455,12 @@ const clients = {
   cases: cases,
 };
 
+const contact = {
+  title: "Kom i kontakt med oss",
+  description: "Vi på Appstract kan det mesta inom digitala och webbaserade lösningar och kan därmed hjälpa er med en rad olika behov. Oavsett om ni behöver utveckla en app, designa en hemsida eller implementera en anpassad mjukvarulösning, är vi här för att hjälpa er.",
+}
+
+
 export const svTranslations = {
   nav,
   servicepages,
@@ -473,4 +479,5 @@ export const svTranslations = {
   metadescriptions,
   clients,
   clientTags,
+  contactForm
 };

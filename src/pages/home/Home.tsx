@@ -16,7 +16,7 @@ const Home = () => {
       <ContactSection
         curved
         gradient
-        bg={["blue-800", "bluegray-600"]}
+        bg={["indigo-600", "purple-900"]}
         scrollRef={contactRef}
       />
     </>

@@ -25,7 +25,7 @@ const SlateCardChild = ({ image, bg, description, title, gradient }: ChildProps)
         style={{
           width: '100%',
           bottom: '-2px',
-          backgroundImage: gradient && bg ? `linear-gradient(69deg, var(--${bg[0]}), var(--${bg[1]}))` : undefined,
+          backgroundImage: gradient && bg ? `linear-gradient(0deg, var(--${bg[0]}), var(--${bg[1]}))` : undefined,
         }}
       >
         <Text size="p" className="font-bold flex-fill flex-grow flex-1 relative">

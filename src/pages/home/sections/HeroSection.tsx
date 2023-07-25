@@ -16,7 +16,7 @@ const HeroSection = ({ scrollToContact }: Props) => {
     <>
     
     <section className="w-full">
-        <div className="p-2 md:p-4 lg:p-6 bg-blue-800" style={{backgroundImage: "linear-gradient(69deg, var(--purple-900), var(--indigo-600))"}}>
+        <div className="p-2 md:p-4 lg:p-6 bg-blue-800" style={{backgroundImage: "linear-gradient(0deg, var(--purple-900), var(--indigo-600))"}}>
           <div className="container w-full m-auto pb-6">
             <div className="col-12" style={{paddingTop: 250}}>
               <Text size="h1" as="h1">
@@ -35,7 +35,7 @@ const HeroSection = ({ scrollToContact }: Props) => {
                   label={translations.buttons.contact}
                   type="button"
                   style={{ minWidth: 200 }}
-                  className="bg-blue-500 border-blue-500 shadow-3 hover:shadow-5 hover:bg-blue-700 hover:border-blue-700 text-white hover:text-yellow-200 text-lg p-3"
+                  className="bg-black shadow-3 text-white border-transparent hover:shadow-5 hover:bg-yellow-500 hover:text-0 text-lg p-3"
                 />
               </div>
               <div>
@@ -44,7 +44,8 @@ const HeroSection = ({ scrollToContact }: Props) => {
                     label={translations.buttons.help}
                     type="button"
                     style={{ minWidth: 200 }}
-                    className="bg-primary-800 border-primary-800 shadow-5 hover:shadow-5 hover:bg-primary-900 hover:border-primary-900 text-white hover:text-yellow-200 text-lg p-3"
+                    className="bg-white shadow-3 text-0 border-transparent hover:shadow-5 hover:bg-red-500 hover:text-white text-lg p-3"
+                    // className="bg-primary-800 border-primary-800 shadow-5 hover:shadow-5 hover:bg-primary-900 hover:border-primary-900 text-white hover:text-yellow-200 text-lg p-3"
                   >
                   </Button>
                 </Link>
