@@ -13,7 +13,8 @@ const Contact = () => {
         bg={["indigo-900", "purple-500"]}
         gradient
       />
-      <ContactSection curved bg={['purple-800', 'indigo-700']} gradient />
+      <ContactSection bg={['indigo-800']} />
+      <ContactSection curved bg={['bg-dark', 'indigo-900']} gradient />
     </>
   );
 };
