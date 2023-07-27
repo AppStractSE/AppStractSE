@@ -16,5 +16,23 @@
   margin-top: 0 !important;
 }
 .active {
-  color: #fff !important;
+  color: #ffffff !important;
+  mix-blend-mode: difference;
+}
+
+nav > .active {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    background: #ffffff;
+    mix-blend-mode: difference;
+    bottom: 0;
+    left: 18px;
+    right: 18px;
+    height: 2px;
+  }
+  &:hover {
+    color: inherit !important;
+  }
 }

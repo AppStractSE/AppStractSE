@@ -33,7 +33,7 @@ const Navbar = () => {
       <header className="w-full fixed top-0 z-5">
         <div
           className={`transition-slow p-menubar col-12 rounded-none px-2 md:px-4 lg:px-6 ${
-            isScrolled ? 'bg-black' : 'bg-transparent'
+            isScrolled ? 'bg-white' : 'bg-transparent'
           }`}
         >
           <div
@@ -44,12 +44,12 @@ const Navbar = () => {
             <NavLink className="nav-link mr-auto p-0 flex" to="/">
               <LargeLogo isScrolled={isScrolled} height={isScrolled ? 40 : 70} className="transition-slow" />
             </NavLink>
-            <div className="hidden md:flex">
+            <nav className="hidden md:flex">
               {translations.nav.menuItems.map((navItem: NavMenuItem) => (
                 <NavLink
                   key={navItem.url}
                   className={`nav-link font-bold text-xl ${
-                    isScrolled ? 'text-primary-300 hover:text-white' : 'text-primary-200 hover:text-white'
+                    isScrolled ? 'text-black-alpha-70 hover:text-primary-600' : 'text-primary-200 hover:text-white'
                   }`}
                   to={navItem.url}
                 >
@@ -58,17 +58,17 @@ const Navbar = () => {
               ))}
               <div
                 className={`nav-link font-bold text-xl cursor-pointer ${
-                  isScrolled ? 'text-primary-300 hover:text-white' : 'text-primary-200 hover:text-white'
+                  isScrolled ? 'text-black-alpha-70 hover:text-primary-600' : 'text-primary-200 hover:text-white'
                 }`}
                 onClick={toggleLanguage}
               >
                 <span className="uppercase">{translations.general.short_lang}</span>
               </div>
-            </div>
+            </nav>
             <div className="md:ml-4">
               <i
                 className={`block text-primary-300 pi pi-bars text-4xl cursor-pointer ${
-                  isScrolled ? 'text-primary-300 hover:text-white' : 'text-primary-300 hover:text-white'
+                  isScrolled ? 'text-black-alpha-70 hover:text-primary-600' : 'text-primary-200 hover:text-white'
                 }`}
                 onClick={toggleSidebar}
               />
