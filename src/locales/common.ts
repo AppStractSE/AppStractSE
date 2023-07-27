@@ -1,4 +1,4 @@
-import { Path, Socials } from "../types/types";
+import { Path, Socials } from '../types/types';
 
 const paths: Path = {
   home: '/',

@@ -33,11 +33,11 @@ const Navbar = () => {
       <header className="w-full fixed top-0 z-5">
         <div
           className={`transition-slow p-menubar col-12 rounded-none px-2 md:px-4 lg:px-6 ${
-            isScrolled ? 'bg-white' : 'bg-transparent'
+            isScrolled ? 'bg-black' : 'bg-transparent'
           }`}
         >
           <div
-            className={`container ${
+            className={`${
               isScrolled ? 'py-2 md:py-0' : 'py-2'
             } px-2 transition-slow flex w-full m-auto align-items-center justify-content-center`}
           >
@@ -49,7 +49,7 @@ const Navbar = () => {
                 <NavLink
                   key={navItem.url}
                   className={`nav-link font-bold text-xl ${
-                    isScrolled ? 'text-black-alpha-70 hover:text-primary-600' : 'text-primary-200 hover:text-white'
+                    isScrolled ? 'text-white hover:text-primary-600' : 'text-primary-200 hover:text-white'
                   }`}
                   to={navItem.url}
                 >
@@ -58,7 +58,7 @@ const Navbar = () => {
               ))}
               <div
                 className={`nav-link font-bold text-xl cursor-pointer ${
-                  isScrolled ? 'text-black-alpha-70 hover:text-primary-600' : 'text-primary-200 hover:text-white'
+                  isScrolled ? 'text-white hover:text-primary-600' : 'text-primary-200 hover:text-white'
                 }`}
                 onClick={toggleLanguage}
               >
@@ -68,7 +68,7 @@ const Navbar = () => {
             <div className="md:ml-4">
               <i
                 className={`block text-primary-300 pi pi-bars text-4xl cursor-pointer ${
-                  isScrolled ? 'text-black-alpha-70 hover:text-primary-600' : 'text-primary-200 hover:text-white'
+                  isScrolled ? 'text-white hover:text-primary-600' : 'text-primary-200 hover:text-white'
                 }`}
                 onClick={toggleSidebar}
               />

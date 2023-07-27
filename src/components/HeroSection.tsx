@@ -1,5 +1,5 @@
-import Breadcrumbs from "./Breadcrumbs";
-import Text from "./text/Text";
+import Breadcrumbs from './Breadcrumbs';
+import Text from './text/Text';
 
 interface Props {
   bg?: string[];
@@ -18,13 +18,13 @@ const HeroSection = ({ bg, gradient, title, description, image, isClient, conten
         className={`p-2 md:p-4 lg:p-6 ${bg ? `bg-${bg[0]}` : 'bg-bluegray-900'}`}
         style={{
           backgroundImage:
-          gradient && bg && bg.length > 1 ? `linear-gradient(0deg, var(--${bg[0]}), var(--${bg[1]}))` : '',
+            gradient && bg && bg.length > 1 ? `linear-gradient(0deg, var(--${bg[0]}), var(--${bg[1]}))` : '',
         }}
       >
         <div className="container w-full m-auto pt-8 pb-2">
           <Breadcrumbs client={isClient ? title : undefined} />
           <div className="flex-column-reverse flex-wrap flex md:flex-row">
-            <div className={`col-12 md:col-8 flex flex-column justify-content-between ${content ? "mb-8" : ""}`}>
+            <div className={`col-12 md:col-8 flex flex-column justify-content-between ${content ? 'mb-8' : ''}`}>
               <div>
                 <Text size="h1" bold className="break-word my-4 lg:mt-0 lg:mb-4">
                   {title}
@@ -41,7 +41,7 @@ const HeroSection = ({ bg, gradient, title, description, image, isClient, conten
           {content ? content : null}
         </div>
       </div>
-      </section>
+    </section>
   );
 };
 

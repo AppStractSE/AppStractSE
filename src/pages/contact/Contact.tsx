@@ -10,7 +10,7 @@ const Contact = () => {
       <HeroSection
         title={translations.contact.title}
         description={translations.contact.description}
-        bg={["indigo-900", "purple-500"]}
+        bg={['indigo-900', 'purple-500']}
         gradient
       />
       <ContactSection bg={['indigo-800']} />

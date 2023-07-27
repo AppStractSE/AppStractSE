@@ -176,45 +176,45 @@ const home: Home = {
   ],
 };
 const clientTags: ClientTags = {
-  showAll: "Show all",
-  apps: "Apps",
-  webapps: "Web apps",
-  seo: "SEO",
+  showAll: 'Show all',
+  apps: 'Apps',
+  webapps: 'Web apps',
+  seo: 'SEO',
 };
 const cases: Client[] = [
   {
-    title: "PropertEase",
+    title: 'PropertEase',
     subtitle:
-      "Propertease is a comprehensive property management platform that provides users with essential tools for managing properties.",
-    logo: "https://justifiedcoding.org/wp-content/uploads/2019/01/Client-Logo-Placeholder.png",
+      'Propertease is a comprehensive property management platform that provides users with essential tools for managing properties.',
+    logo: 'https://justifiedcoding.org/wp-content/uploads/2019/01/Client-Logo-Placeholder.png',
     image:
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
+      'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80',
     description:
-      "PropertEase revolutionerar fastighetsadministration genom att erbjuda effektiva verktyg för hantering av fastigheter och kunder, vilket resulterar i en smidigare och mer lönsam process.",
-    link: "https://appstract.se",
-    slug: "propertease",
+      'PropertEase revolutionerar fastighetsadministration genom att erbjuda effektiva verktyg för hantering av fastigheter och kunder, vilket resulterar i en smidigare och mer lönsam process.',
+    link: 'https://appstract.se',
+    slug: 'propertease',
     tags: [clientTags.apps, clientTags.webapps],
     active: true,
-    bg: ["indigo-500"],
+    bg: ['indigo-500'],
   },
   {
-    title: "En vanlig sommelier",
-    subtitle: "Coming soon",
-    logo: "https://justifiedcoding.org/wp-content/uploads/2019/01/Client-Logo-Placeholder.png",
+    title: 'En vanlig sommelier',
+    subtitle: 'Coming soon',
+    logo: 'https://justifiedcoding.org/wp-content/uploads/2019/01/Client-Logo-Placeholder.png',
     image:
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
-    description: "Coming soon",
-    link: "https://envanligsommelier.se",
-    slug: "en-vanlig-sommelier",
+      'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80',
+    description: 'Coming soon',
+    link: 'https://envanligsommelier.se',
+    slug: 'en-vanlig-sommelier',
     tags: [clientTags.webapps],
     active: false,
-    bg: ["red-600"],
+    bg: ['red-600'],
   },
 ];
 
 const clients = {
   description:
-    "We at Appstract are proud to have worked with a diverse range of clients and projects. We love the variety that our industry offers and the opportunity to contribute to different sectors and projects. Below you can see a selection of our recent projects.",
+    'We at Appstract are proud to have worked with a diverse range of clients and projects. We love the variety that our industry offers and the opportunity to contribute to different sectors and projects. Below you can see a selection of our recent projects.',
   cases: cases,
 };
 
@@ -474,9 +474,10 @@ const servicepages: ServicePage = {
 };
 
 const contact = {
-  title: "Get in touch with us",
-  description: "We at Appstract know most things in digital and web-based solutions and can thus help you with a range of different needs. Whether you need to develop an app, design a website or implement a custom software solution, we are here to help.",
-}
+  title: 'Get in touch with us',
+  description:
+    'We at Appstract know most things in digital and web-based solutions and can thus help you with a range of different needs. Whether you need to develop an app, design a website or implement a custom software solution, we are here to help.',
+};
 
 export const enTranslations = {
   nav,

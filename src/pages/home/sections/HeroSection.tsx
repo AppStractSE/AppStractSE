@@ -1,10 +1,10 @@
-import { Button } from "primereact/button";
-import { Link } from "react-router-dom";
-import SlateCard from "../../../components/cards/SlateCard/SlateCard";
-import Grid from "../../../components/grid/Grid";
-import Text from "../../../components/text/Text";
-import { useLanguage } from "../../../contexts/LanguageContext";
-import { Service } from "../../../types/types";
+import { Button } from 'primereact/button';
+import { Link } from 'react-router-dom';
+import SlateCard from '../../../components/cards/SlateCard/SlateCard';
+import Grid from '../../../components/grid/Grid';
+import Text from '../../../components/text/Text';
+import { useLanguage } from '../../../contexts/LanguageContext';
+import { Service } from '../../../types/types';
 
 interface Props {
   scrollToContact: () => void;
@@ -14,11 +14,13 @@ const HeroSection = ({ scrollToContact }: Props) => {
   const { translations } = useLanguage();
   return (
     <>
-    
-    <section className="w-full">
-        <div className="p-2 md:p-4 lg:p-6 bg-blue-800" style={{backgroundImage: "linear-gradient(0deg, var(--purple-900), var(--indigo-600))"}}>
+      <section className="w-full">
+        <div
+          className="p-2 md:p-4 lg:p-6 bg-blue-800"
+          style={{ backgroundImage: 'linear-gradient(0deg, var(--purple-900), var(--indigo-600))' }}
+        >
           <div className="container w-full m-auto pb-6">
-            <div className="col-12" style={{paddingTop: 250}}>
+            <div className="col-12" style={{ paddingTop: 250 }}>
               <Text size="h1" as="h1">
                 Webbyrå i Borås & Skövde
               </Text>
@@ -28,7 +30,7 @@ const HeroSection = ({ scrollToContact }: Props) => {
                 {translations.home.description}
               </Text>
             </div>
-            <div className="col-12 flex gap-4 md:flex-row flex-column" style={{marginBottom: 200}}>
+            <div className="col-12 flex gap-4 md:flex-row flex-column" style={{ marginBottom: 200 }}>
               <div>
                 <Button
                   onClick={scrollToContact}
@@ -46,29 +48,28 @@ const HeroSection = ({ scrollToContact }: Props) => {
                     style={{ minWidth: 200 }}
                     className="bg-white shadow-3 text-0 border-transparent hover:shadow-5 hover:bg-red-500 hover:text-white text-lg p-3"
                     // className="bg-primary-800 border-primary-800 shadow-5 hover:shadow-5 hover:bg-primary-900 hover:border-primary-900 text-white hover:text-yellow-200 text-lg p-3"
-                  >
-                  </Button>
+                  ></Button>
                 </Link>
               </div>
             </div>
             <Grid>
-            {translations.services.map((service: Service) => (
-              <SlateCard
-                key={service.title}
-                className="col-12 md:col-6 lg:col-4 flex"
-                bg={service.bg}
-                gradient
-                title={service.title}
-                description={service.description}
-                image={service.image}
-                link={service.link}
-              />
-            ))}
-          </Grid>
+              {translations.services.map((service: Service) => (
+                <SlateCard
+                  key={service.title}
+                  className="col-12 md:col-6 lg:col-4 flex"
+                  bg={service.bg}
+                  gradient
+                  title={service.title}
+                  description={service.description}
+                  image={service.image}
+                  link={service.link}
+                />
+              ))}
+            </Grid>
+          </div>
         </div>
-      </div>
       </section>
-    {/* <section className="w-full">
+      {/* <section className="w-full">
       <div
         className="flex relative align-items-center text-center sm:text-left p-2 md:p-4 lg:p-6 h-screen bg-cover bg-center bg-no-repeat bg-purple-700"
       >
@@ -117,7 +118,7 @@ const HeroSection = ({ scrollToContact }: Props) => {
         </div>
       </div>
       </section> */}
-      </>
+    </>
   );
 };
 

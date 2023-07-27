@@ -1,11 +1,11 @@
-import { useParams } from "react-router-dom";
-import ContentSection from "../../components/ContentSection";
-import HeroSection from "../../components/HeroSection";
-import ContactSection from "../../components/sections/ContactSection";
-import Text from "../../components/text/Text";
-import { useLanguage } from "../../contexts/LanguageContext";
-import { Client } from "../../types/types";
-import NotFound from "../notfound/NotFound";
+import { useParams } from 'react-router-dom';
+import ContentSection from '../../components/ContentSection';
+import HeroSection from '../../components/HeroSection';
+import ContactSection from '../../components/sections/ContactSection';
+import Text from '../../components/text/Text';
+import { useLanguage } from '../../contexts/LanguageContext';
+import { Client } from '../../types/types';
+import NotFound from '../notfound/NotFound';
 
 const ClientDetails = () => {
   const name = useParams().clientName;
@@ -18,7 +18,7 @@ const ClientDetails = () => {
         title={client.title}
         description={client.description}
         image={client.image}
-        bg={["purple-900", "bluegray-600"]}
+        bg={['purple-900', 'bluegray-600']}
         gradient
         isClient
       />
@@ -73,9 +73,8 @@ const ClientDetails = () => {
               Vårt uppdrag
             </Text>
             <Text size="h6" as="p" lineheight={3}>
-              Vårt uppdrag är att skapa en plattform som förenklar och effektiviserar
-              fastighetsadministrationen. Vi vill att du ska kunna hantera hyresgäster,
-              underhållsärenden och transaktioner på ett smidigt sätt.
+              Vårt uppdrag är att skapa en plattform som förenklar och effektiviserar fastighetsadministrationen. Vi
+              vill att du ska kunna hantera hyresgäster, underhållsärenden och transaktioner på ett smidigt sätt.
             </Text>
           </div>
           <div className="col-12 md:col-7 lg:col-6 lg:col-offset-1">
@@ -83,9 +82,8 @@ const ClientDetails = () => {
               Vårt uppdrag
             </Text>
             <Text size="h6" as="p" lineheight={3}>
-              Vårt uppdrag är att skapa en plattform som förenklar och effektiviserar
-              fastighetsadministrationen. Vi vill att du ska kunna hantera hyresgäster,
-              underhållsärenden och transaktioner på ett smidigt sätt.
+              Vårt uppdrag är att skapa en plattform som förenklar och effektiviserar fastighetsadministrationen. Vi
+              vill att du ska kunna hantera hyresgäster, underhållsärenden och transaktioner på ett smidigt sätt.
             </Text>
           </div>
         </div>
