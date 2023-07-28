@@ -30,26 +30,18 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="w-full fixed top-0 z-5">
-        <div
-          className={`transition-slow p-menubar col-12 rounded-none px-2 md:px-4 lg:px-6 py-0 ${
+      <header           className={`w-full fixed top-0 z-5 transition-slow px-2 md:px-4 lg:px-6 py-0 ${
             isScrolled ? 'bg-black' : 'bg-transparent'
-          }`}
-        >
-          <div
-            className={`${
-              isScrolled ? 'py-2 md:py-0' : 'py-2'
-            } px-2 transition-slow flex w-full m-auto align-items-center justify-content-center`}
-          >
+          }`}>
             <NavLink className="nav-link mr-auto p-0 flex" to="/">
               <LargeLogo isScrolled={isScrolled} height={isScrolled ? 40 : 70} className="transition-slow" />
             </NavLink>
-            <nav className="hidden md:flex">
+            <nav className={`hidden md:flex transition-slow ${isScrolled ? "" : "py-4"}`}>
               {translations.nav.menuItems.map((navItem: NavMenuItem) => (
                 <NavLink
                   key={navItem.url}
                   className={`nav-link font-bold text-xl transition-slow ${
-                    isScrolled ? 'p-3 text-white hover:text-primary-600' : 'p-4 text-primary-200 hover:text-white'
+                    isScrolled ? 'p-3 text-white hover:text-primary-600' : 'p-3 text-primary-200 hover:text-white'
                   }`}
                   to={navItem.url}
                 >
@@ -58,23 +50,21 @@ const Navbar = () => {
               ))}
               <div
                 className={`nav-link font-bold text-xl cursor-pointer transition-slow ${
-                  isScrolled ? 'p-3 text-white hover:text-primary-600' : 'p-4 text-primary-200 hover:text-white'
+                  isScrolled ? 'p-3 text-white hover:text-primary-600' : 'p-3 text-primary-200 hover:text-white'
                 }`}
                 onClick={toggleLanguage}
               >
                 <span className="uppercase">{translations.general.short_lang}</span>
               </div>
-            </nav>
             <div className="md:ml-4">
               <i
                 className={`block text-primary-300 pi pi-bars text-4xl cursor-pointer ${
-                  isScrolled ? 'p-3 text-white hover:text-primary-600' : 'p-4 text-primary-200 hover:text-white'
+                  isScrolled ? 'p-3 text-white hover:text-primary-600' : 'p-3 text-primary-200 hover:text-white'
                 }`}
                 onClick={toggleSidebar}
-              />
+                />
             </div>
-          </div>
-        </div>
+                </nav>
       </header>
       <Dialog
         modal={true}
