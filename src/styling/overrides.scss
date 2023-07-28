@@ -27,12 +27,25 @@ nav > .active {
     position: absolute;
     background: #ffffff;
     mix-blend-mode: difference;
-    bottom: 8px;
+    bottom: 0px;
     left: 16px;
     right: 16px;
     height: 2px;
   }
   &:hover {
     color: inherit !important;
+  }
+}
+
+.active-tag {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    background: #ffffff;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 2px;
   }
 }

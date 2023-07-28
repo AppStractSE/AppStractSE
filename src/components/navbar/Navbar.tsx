@@ -33,7 +33,7 @@ const Navbar = () => {
       <header className="w-full fixed top-0 z-5">
         <div
           className={`transition-slow p-menubar col-12 rounded-none px-2 md:px-4 lg:px-6 ${
-            isScrolled ? 'bg-black' : 'bg-transparent'
+            isScrolled ? 'py-2 bg-black' : 'bg-transparent'
           }`}
         >
           <div

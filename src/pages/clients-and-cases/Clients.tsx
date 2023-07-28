@@ -1,4 +1,3 @@
-import { Tag } from 'primereact/tag';
 import { useEffect, useState } from 'react';
 import HeroSection from '../../components/HeroSection';
 import SlateCard from '../../components/cards/SlateCard/SlateCard';
@@ -29,17 +28,15 @@ const Clients = () => {
         gradient
         content={
           <>
-            <div className="col-12 flex gap-2 font-bold mb-4 flex-wrap justify-content-center md:justify-content-start">
+            <div className="col-12 flex gap-4 font-bold mb-4 flex-wrap justify-content-center md:justify-content-start">
               {Object.values(translations.clientTags).map((tag: any) => (
-                <Tag
+                <div
                   key={tag}
-                  value={tag}
-                  rounded
                   onClick={() => setSelectedTag(tag)}
-                  className={`bg-primary-800 text-xl px-4 cursor-pointer hover:text-primary-300 ${
-                    tag === selectedTag ? 'text-primary' : 'text-primary-500'
+                  className={`text-2xl py-2 cursor-pointer ${
+                    tag === selectedTag ? 'active-tag' : ''
                   }`}
-                />
+                >{tag}</div>
               ))}
             </div>
             <Grid>
