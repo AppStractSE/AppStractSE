@@ -32,8 +32,8 @@ const Navbar = () => {
     <>
       <header className="w-full fixed top-0 z-5">
         <div
-          className={`transition-slow p-menubar col-12 rounded-none px-2 md:px-4 lg:px-6 ${
-            isScrolled ? 'py-2 bg-black' : 'bg-transparent'
+          className={`transition-slow p-menubar col-12 rounded-none px-2 md:px-4 lg:px-6 py-0 ${
+            isScrolled ? 'bg-black' : 'bg-transparent'
           }`}
         >
           <div
@@ -48,8 +48,8 @@ const Navbar = () => {
               {translations.nav.menuItems.map((navItem: NavMenuItem) => (
                 <NavLink
                   key={navItem.url}
-                  className={`nav-link font-bold text-xl ${
-                    isScrolled ? 'text-white hover:text-primary-600' : 'text-primary-200 hover:text-white'
+                  className={`nav-link font-bold text-xl transition-slow ${
+                    isScrolled ? 'p-3 text-white hover:text-primary-600' : 'p-4 text-primary-200 hover:text-white'
                   }`}
                   to={navItem.url}
                 >
@@ -57,8 +57,8 @@ const Navbar = () => {
                 </NavLink>
               ))}
               <div
-                className={`nav-link font-bold text-xl cursor-pointer ${
-                  isScrolled ? 'text-white hover:text-primary-600' : 'text-primary-200 hover:text-white'
+                className={`nav-link font-bold text-xl cursor-pointer transition-slow ${
+                  isScrolled ? 'p-3 text-white hover:text-primary-600' : 'p-4 text-primary-200 hover:text-white'
                 }`}
                 onClick={toggleLanguage}
               >
@@ -68,7 +68,7 @@ const Navbar = () => {
             <div className="md:ml-4">
               <i
                 className={`block text-primary-300 pi pi-bars text-4xl cursor-pointer ${
-                  isScrolled ? 'text-white hover:text-primary-600' : 'text-primary-200 hover:text-white'
+                  isScrolled ? 'p-3 text-white hover:text-primary-600' : 'p-4 text-primary-200 hover:text-white'
                 }`}
                 onClick={toggleSidebar}
               />
