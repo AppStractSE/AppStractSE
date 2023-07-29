@@ -19,7 +19,7 @@ const SlateCardChild = ({ image, bg, description, title, gradient }: ChildProps)
         </div>
       </div>
       <div
-        className={`md:px-3 py-2 md:py-3 w-100 absolute left-0 right-0 ${bg ? `bg-${bg[0]}` : 'bg-blue-800'} ${
+        className={`p-2 md:px-3 py-2 md:py-3 w-100 absolute left-0 right-0 ${bg ? `bg-${bg[0]}` : 'bg-blue-800'} ${
           styles.clippath
         }`}
         style={{
@@ -34,7 +34,7 @@ const SlateCardChild = ({ image, bg, description, title, gradient }: ChildProps)
         {description ? (
           <Text
             size="p"
-            className={`${styles.card_text} text-md text-sm md:text-xl md:mb-0 line-height-2 flex-fill flex-grow flex-1`}
+            className={`${styles.card_text} text-sm md:text-xl md:mb-0 line-height-2 flex-fill flex-grow flex-1`}
           >
             {description}
           </Text>

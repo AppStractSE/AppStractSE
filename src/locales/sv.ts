@@ -136,7 +136,7 @@ const buttons: Buttons = {
 };
 
 const home = {
-  title: 'Webbyrå i Borås',
+  title: 'Fullservicebyrå i Borås & Skövde',
   description:
     'AppStract erbjuder en IT-lösning för alla behov. Vårt mål är att hjälpa dig att lyckas med din verksamhet, och vi har verktygen för att göra det.',
   buttons: {

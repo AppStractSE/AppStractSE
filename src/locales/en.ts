@@ -154,7 +154,7 @@ const buttons: Buttons = {
 };
 
 const home: Home = {
-  title: 'Web Agency in Borås',
+  title: 'Full service agency in Borås & Skövde',
   description:
     'AppStract offers an IT solution for all needs. Our goal is to help you succeed in your business, and we have the tools to do it.',
   buttons: {

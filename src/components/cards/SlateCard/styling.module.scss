@@ -1,6 +1,7 @@
 .container {
   position: relative;
   overflow: hidden;
+  scroll-snap-align: start;
   &:hover {
     .card_text {
       opacity: 1;

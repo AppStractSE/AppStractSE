@@ -226,3 +226,27 @@ p {
 .bg-black {
   background: #000 !important;
 }
+
+.hero-content {
+  margin-bottom: 160px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 80px;
+  }
+
+  @media screen and (max-width: 576px) {
+    margin-bottom: 40px;
+  }
+}
+
+.hero-header {
+  padding-top: 250px;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 200px;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding-top: 150px;
+  }
+}
