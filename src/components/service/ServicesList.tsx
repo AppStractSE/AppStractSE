@@ -11,7 +11,7 @@ const ServicesList = () => {
         {translations.services.map((service: Service) => (
           <SlateCard
             key={service.title}
-            className="col-11 md:col-7 lg:col-4 flex"
+            className="col-11 sm:col-8 md:col-7 lg:col-4 flex"
             bg={service.bg}
             gradient
             title={service.title}
