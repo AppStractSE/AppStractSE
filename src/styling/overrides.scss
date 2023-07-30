@@ -49,3 +49,8 @@ nav > .active {
     height: 2px;
   }
 }
+
+.Toastify__toast-body {
+  font-size: 18px !important;
+  font-family: var(--font-family) !important;
+}

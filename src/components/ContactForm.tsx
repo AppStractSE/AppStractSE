@@ -122,7 +122,7 @@ const ContactForm = ({ openPolicyInNewTab, inModalOnSend, location }: Props) => 
             disabled={loading ? true : false}
             type="submit"
             label={translations.buttons.submit}
-            className="w-full mb-3 shadow-3 hover:shadow-6 py-3 bg-black border-transparent text-white hover:text-0 hover:bg-white"
+            className="w-full mb-3 shadow-3 hover:shadow-6 py-3 bg-black border-transparent text-white hover:text-0 hover:bg-blue-400"
           />
           <div style={{ height: 6 }}>
             {loading ? <ProgressBar className="shadow-3" mode="indeterminate" style={{ height: '100%' }} /> : null}

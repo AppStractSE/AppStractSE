@@ -54,14 +54,14 @@ const ServiceHero = ({ title, description, bg, gradient }: Props) => {
         </div>
       </div>
       <Dialog
-        contentClassName="p-0 sm:p-2 flex justify-content-center align-items-center bg-dialog"
+        contentClassName="p-2 flex justify-content-center align-items-center bg-dialog"
         headerClassName="p-2 bg-dialog"
         dismissableMask={true}
         modal={true}
         draggable={false}
         blockScroll={true}
         resizable={false}
-        className="fadein scaleout origin-top border-none shadow-3 w-screen sm:max-w-max h-screen sm:h-auto"
+        className="fadein scaleout origin-top border-none shadow-3 m-2"
         visible={modalVisible}
         onHide={() => setModalVisible(false)}
       >
