@@ -142,6 +142,8 @@ export interface Client {
   link: string;
   slug: string;
   tags: string[];
+  active: boolean;
+  bg: string[];
 }
 
 export interface Path {

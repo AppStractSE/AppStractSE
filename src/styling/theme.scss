@@ -8155,7 +8155,7 @@ body {
 }
 
 .p-button .p-button-label {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .p-buttonset .p-button-label,
@@ -8293,12 +8293,27 @@ body {
 .transition-slow {
   transition: 0.5s ease all;
 }
-.bg-dialog {
-  background: var(--bg-dark) !important;
 
-  @media screen and (max-width: 575px) {
-    background: var(--bg-overlay) !important;
-  }
+.bg-dialog {
+  background: var(--primary-color) !important;
+    input,
+    textarea {
+      box-shadow: none !important;
+      border: 1px solid var(--bluegray-200) !important;
+  
+      &:hover {
+        box-shadow: none !important;
+      }
+    }
+  
+    div {
+      color: #000 !important;
+    }
+  
+    .nav-link {
+      color: var(--bluegray-800) !important;
+      border-bottom: 1px solid var(--bluegray-800);
+    }
 }
 
 .decoration-none {

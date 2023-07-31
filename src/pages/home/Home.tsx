@@ -1,7 +1,6 @@
 import { useRef } from 'react';
 import ContactSection from '../../components/sections/ContactSection';
 import HeroSection from './sections/HeroSection';
-import ServicesSection from './sections/ServicesSection';
 
 const Home = () => {
   const contactRef = useRef<HTMLDivElement>(null);
@@ -14,8 +13,7 @@ const Home = () => {
   return (
     <>
       <HeroSection scrollToContact={scrolltoContact} />
-      <ServicesSection />
-      <ContactSection curved gradient bg={['blue-800', 'bluegray-600']} scrollRef={contactRef} />
+      <ContactSection curved gradient bg={['indigo-600', 'purple-900']} scrollRef={contactRef} />
     </>
   );
 };

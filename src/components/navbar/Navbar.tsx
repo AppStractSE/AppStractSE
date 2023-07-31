@@ -30,51 +30,42 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="w-full fixed top-0 z-5">
-        <div
-          className={`transition-slow p-menubar col-12 rounded-none px-2 md:px-4 lg:px-6 ${
-            isScrolled ? 'surface-50 text-primary' : 'text-500 bg-transparent'
-          }`}
-        >
-          <div
-            className={`container ${
-              isScrolled ? 'py-2 md:py-0' : 'py-2'
-            } px-2 transition-slow flex w-full m-auto align-items-center justify-content-center`}
-          >
-            <NavLink className="nav-link mr-auto p-0 flex" to="/">
-              <LargeLogo isScrolled={isScrolled} height={isScrolled ? 40 : 70} className="transition-slow" />
+      <header
+        className={`w-full fixed top-0 z-5 transition-slow px-2 md:px-4 lg:px-6 py-0 flex align-items-center ${
+          isScrolled ? 'bg-black' : 'bg-transparent'
+        }`}
+      >
+        <NavLink className="nav-link mr-auto p-0 flex" to="/">
+          <LargeLogo isScrolled={isScrolled} height={isScrolled ? 40 : 70} className="transition-slow" />
+        </NavLink>
+        <nav className={`flex transition-slow ${isScrolled ? '' : 'py-4'}`}>
+          {translations.nav.menuItems.map((navItem: NavMenuItem) => (
+            <NavLink
+              key={navItem.url}
+              className={`hidden md:block nav-link font-bold text-xl transition-slow ${
+                isScrolled ? 'p-3 text-white hover:text-primary-600' : 'p-3 text-primary-200 hover:text-white'
+              }`}
+              to={navItem.url}
+            >
+              <span>{navItem.label}</span>
             </NavLink>
-            <div className="hidden md:flex">
-              {translations.nav.menuItems.map((navItem: NavMenuItem) => (
-                <NavLink
-                  key={navItem.url}
-                  className={`nav-link font-bold text-xl ${
-                    isScrolled ? 'text-primary-500 hover:text-primary-300' : 'text-primary-200 hover:text-primary'
-                  }`}
-                  to={navItem.url}
-                >
-                  <span>{navItem.label}</span>
-                </NavLink>
-              ))}
-              <div
-                className={`nav-link font-bold text-xl cursor-pointer ${
-                  isScrolled ? 'text-primary-500 hover:text-primary-300' : 'text-primary-200 hover:text-primary'
-                }`}
-                onClick={toggleLanguage}
-              >
-                <span className="uppercase">{translations.general.short_lang}</span>
-              </div>
-            </div>
-            <div className="md:ml-4">
-              <i
-                className={`block text-primary-300 pi pi-bars text-4xl cursor-pointer ${
-                  isScrolled ? 'text-primary hover:text-primary-300' : 'text-primary-300 hover:text-primary'
-                }`}
-                onClick={toggleSidebar}
-              />
-            </div>
+          ))}
+          <div
+            className={`hidden md:block nav-link font-bold text-xl cursor-pointer transition-slow ${
+              isScrolled ? 'p-3 text-white hover:text-primary-600' : 'p-3 text-primary-200 hover:text-white'
+            }`}
+            onClick={toggleLanguage}
+          >
+            <span className="uppercase">{translations.general.short_lang}</span>
           </div>
-        </div>
+          <div
+            className={` ${
+              isScrolled ? 'p-3 text-white hover:text-primary-600' : 'p-3 text-primary-200 hover:text-white'
+            }`}
+          >
+            <i className="block pi pi-bars text-4xl cursor-pointer" onClick={toggleSidebar} />
+          </div>
+        </nav>
       </header>
       <Dialog
         modal={true}

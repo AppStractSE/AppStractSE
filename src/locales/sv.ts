@@ -1,4 +1,4 @@
-import { General, Paths, Buttons, MetaDescription } from '../types/types';
+import { Buttons, Client, ClientTags, General, MetaDescription, Paths } from '../types/types';
 import { common } from './common';
 
 const metadescriptions: MetaDescription[] = [
@@ -111,7 +111,7 @@ const notFound = {
   description: 'Det ser ut som att du gått vilse.\nOroa dig inte, vi är här för att rädda dig!',
 };
 
-const contact = {
+const contactForm = {
   title: 'Ja, tack! Jag vill gärna bli kontaktad!',
   name: 'För- och efternamn',
   email: 'Email',
@@ -136,7 +136,7 @@ const buttons: Buttons = {
 };
 
 const home = {
-  title: 'Webbyrå i Borås',
+  title: 'Fullservicebyrå i Borås & Skövde',
   description:
     'AppStract erbjuder en IT-lösning för alla behov. Vårt mål är att hjälpa dig att lyckas med din verksamhet, och vi har verktygen för att göra det.',
   buttons: {
@@ -158,7 +158,7 @@ const home = {
   ],
 };
 
-export const services = [
+const services = [
   {
     title: paths.webDevelopment.label,
     description: 'Vi hjälper er att bygga en hemsida som ni kan vara stolta över, och som era kunder kommer att älska.',
@@ -411,6 +411,56 @@ const servicepages = {
   },
 };
 
+const clientTags: ClientTags = {
+  showAll: 'Visa alla',
+  apps: 'Appar',
+  webapps: 'Webbapplikationer',
+  seo: 'SEO',
+};
+
+const cases: Client[] = [
+  {
+    title: 'PropertEase',
+    subtitle:
+      'Kommer snart',
+    logo: 'https://justifiedcoding.org/wp-content/uploads/2019/01/Client-Logo-Placeholder.png',
+    image:
+      'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80',
+    description:
+      'PropertEase revolutionerar fastighetsadministration genom att erbjuda effektiva verktyg för hantering av fastigheter och kunder, vilket resulterar i en smidigare och mer lönsam process.',
+    link: 'https://appstract.se',
+    slug: 'propertease',
+    tags: [clientTags.apps, clientTags.webapps],
+    active: false,
+    bg: ['indigo-500'],
+  },
+  {
+    title: 'En vanlig sommelier',
+    subtitle: 'Kommer snart',
+    logo: 'https://justifiedcoding.org/wp-content/uploads/2019/01/Client-Logo-Placeholder.png',
+    image:
+      'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80',
+    description: 'Kommer snart',
+    link: 'https://envanligsommelier.se',
+    slug: 'en-vanlig-sommelier',
+    tags: [clientTags.webapps],
+    active: false,
+    bg: ['red-600'],
+  },
+];
+
+const clients = {
+  description:
+    'Vi på Appstract är stolta över att ha arbetat med en mångfald av kunder och projekt. Vi älskar den variation som vår bransch erbjuder och att få möjligheten att bidra till olika branscher och projekt. Nedan kan du se ett urval av våra senaste projekt.',
+  cases: cases,
+};
+
+const contact = {
+  title: 'Kom i kontakt med oss',
+  description:
+    'Vi på Appstract kan det mesta inom digitala och webbaserade lösningar och kan därmed hjälpa er med en rad olika behov. Oavsett om ni behöver utveckla en app, designa en hemsida eller implementera en anpassad mjukvarulösning, är vi här för att hjälpa er.',
+};
+
 export const svTranslations = {
   nav,
   servicepages,
@@ -427,4 +477,7 @@ export const svTranslations = {
   hamburgerLanguage,
   general,
   metadescriptions,
+  clients,
+  clientTags,
+  contactForm,
 };

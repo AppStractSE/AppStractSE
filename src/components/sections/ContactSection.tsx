@@ -2,7 +2,7 @@ import ContactForm from '../ContactForm';
 
 interface Props {
   scrollRef?: React.RefObject<HTMLElement>;
-  bg?: string[];
+  bg?: string[] | string;
   curved?: boolean;
   gradient?: boolean;
 }
@@ -13,8 +13,8 @@ const ContactSection = ({ scrollRef, bg, curved, gradient }: Props) => {
       <div
         className={`p-2 md:p-4 lg:p-6 ${bg ? `bg-${bg[0]}` : 'bg-bluegray-900'}`}
         style={{
-          backgroundImage:
-            gradient && bg && bg.length > 1 ? `linear-gradient(69deg, var(--${bg[0]}), var(--${bg[1]}))` : undefined,
+          background:
+            gradient && bg && bg.length > 1 ? `linear-gradient(0deg, var(--${bg[0]}), var(--${bg[1]}))` : `var(--${bg})`,
         }}
       >
         <div className="container w-full m-auto py-6">

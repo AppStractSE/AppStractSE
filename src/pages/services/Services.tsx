@@ -1,8 +1,6 @@
 import Breadcrumbs from '../../components/Breadcrumbs';
-import SlateCard from '../../components/cards/SlateCard/SlateCard';
-import Grid from '../../components/grid/Grid';
+import ServicesList from '../../components/service/ServicesList';
 import { useLanguage } from '../../contexts/LanguageContext';
-import { Service } from '../../types/types';
 
 const Services = () => {
   const { translations } = useLanguage();
@@ -12,29 +10,16 @@ const Services = () => {
         <div className="p-2 md:p-4 lg:p-6 bg-blue-800">
           <div className="container w-full m-auto pt-8 pb-2">
             <Breadcrumbs />
-            <div className="flex-column-reverse flex-wrap flex lg:flex-row">
+            <div className="flex-wrap flex">
               <div className="col-12 lg:col-6 flex flex-column justify-content-between">
                 <div className="block text-5xl break-word md:text-6xl lg:text-7xl font-bold line-height-1 my-4 lg:mt-0 lg:mb-4">
                   {translations.home.serviceTitle}
                 </div>
                 <p className="mt-0 mb-4 text-700 line-height-3">{translations.home.serviceDescription}</p>
               </div>
-              <Grid>
-                {translations.services.map((service: Service) => (
-                  <SlateCard
-                    key={service.title}
-                    bg={service.bg}
-                    gradient
-                    className="col-12 md:col-4 flex"
-                    title={service.title}
-                    description={service.description}
-                    image={service.image}
-                    link={service.link}
-                  />
-                ))}
-              </Grid>
             </div>
           </div>
+          <ServicesList />
         </div>
       </section>
       <section className="w-full">

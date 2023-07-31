@@ -1,6 +1,8 @@
 import {
   Breadcrumb,
   Buttons,
+  Client,
+  ClientTags,
   Contact,
   General,
   HamburgerMenuItem,
@@ -127,7 +129,7 @@ const notFound: NotFound = {
   description: "Looks like you're lost.\nDon't worry though, we're here to save you!",
 };
 
-const contact: Contact = {
+const contactForm: Contact = {
   title: "Yes, please! I'd like to be contacted!",
   name: 'First and last name',
   email: 'Email',
@@ -152,7 +154,7 @@ const buttons: Buttons = {
 };
 
 const home: Home = {
-  title: 'Web Agency in Borås',
+  title: 'Full service agency in Borås & Skövde',
   description:
     'AppStract offers an IT solution for all needs. Our goal is to help you succeed in your business, and we have the tools to do it.',
   buttons: {
@@ -172,6 +174,48 @@ const home: Home = {
     'web development',
     'app development',
   ],
+};
+const clientTags: ClientTags = {
+  showAll: 'Show all',
+  apps: 'Apps',
+  webapps: 'Web apps',
+  seo: 'SEO',
+};
+const cases: Client[] = [
+  {
+    title: 'PropertEase',
+    subtitle:
+      'Coming soon',
+    logo: 'https://justifiedcoding.org/wp-content/uploads/2019/01/Client-Logo-Placeholder.png',
+    image:
+      'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80',
+    description:
+      'PropertEase revolutionerar fastighetsadministration genom att erbjuda effektiva verktyg för hantering av fastigheter och kunder, vilket resulterar i en smidigare och mer lönsam process.',
+    link: 'https://appstract.se',
+    slug: 'propertease',
+    tags: [clientTags.apps, clientTags.webapps],
+    active: false,
+    bg: ['indigo-500'],
+  },
+  {
+    title: 'En vanlig sommelier',
+    subtitle: 'Coming soon',
+    logo: 'https://justifiedcoding.org/wp-content/uploads/2019/01/Client-Logo-Placeholder.png',
+    image:
+      'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80',
+    description: 'Coming soon',
+    link: 'https://envanligsommelier.se',
+    slug: 'en-vanlig-sommelier',
+    tags: [clientTags.webapps],
+    active: false,
+    bg: ['red-600'],
+  },
+];
+
+const clients = {
+  description:
+    'We at Appstract are proud to have worked with a diverse range of clients and projects. We love the variety that our industry offers and the opportunity to contribute to different sectors and projects. Below you can see a selection of our recent projects.',
+  cases: cases,
 };
 
 export const services: Service[] = [
@@ -429,8 +473,15 @@ const servicepages: ServicePage = {
   },
 };
 
+const contact = {
+  title: 'Get in touch with us',
+  description:
+    'We at Appstract know most things in digital and web-based solutions and can thus help you with a range of different needs. Whether you need to develop an app, design a website or implement a custom software solution, we are here to help.',
+};
+
 export const enTranslations = {
   nav,
+  contact,
   servicepages,
   buttons,
   general,
@@ -440,9 +491,11 @@ export const enTranslations = {
   home,
   notFound,
   hamburgerMenuItems,
-  contact,
+  contactForm,
   hamburgerLanguage,
   toasts,
   metadescriptions,
   policy,
+  clients,
+  clientTags,
 };
