@@ -1,3 +1,6 @@
+import { AiOutlineInstagram, AiOutlineMail } from 'react-icons/ai';
+import { FaFacebookF } from 'react-icons/fa';
+import { RiMessengerLine } from 'react-icons/ri';
 import { Buttons, Client, ClientTags, General, MetaDescription, Paths } from '../types/types';
 import { common } from './common';
 
@@ -421,8 +424,7 @@ const clientTags: ClientTags = {
 const cases: Client[] = [
   {
     title: 'PropertEase',
-    subtitle:
-      'Kommer snart',
+    subtitle: 'Kommer snart',
     logo: 'https://justifiedcoding.org/wp-content/uploads/2019/01/Client-Logo-Placeholder.png',
     image:
       'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80',
@@ -456,9 +458,81 @@ const clients = {
 };
 
 const contact = {
-  title: 'Kom i kontakt med oss',
+  title: 'Kom i kontakt med oss!',
   description:
     'Vi på Appstract kan det mesta inom digitala och webbaserade lösningar och kan därmed hjälpa er med en rad olika behov. Oavsett om ni behöver utveckla en app, designa en hemsida eller implementera en anpassad mjukvarulösning, är vi här för att hjälpa er.',
+  links: [
+    {
+      title: 'Allmänna frågor',
+      addresses: [
+        {
+          text: 'Skicka mail',
+          link: 'mailto:info@appstract.se',
+          icon: AiOutlineMail,
+        },
+      ],
+    },
+    {
+      title: 'Support',
+      addresses: [
+        {
+          text: 'Skicka mail',
+          link: 'mailto:support@appstract.se',
+          icon: AiOutlineMail,
+        },
+      ],
+    },
+    {
+      title: 'Försäljning',
+      addresses: [
+        {
+          text: 'Skicka mail',
+          link: 'mailto:sales@appstract.se',
+          icon: AiOutlineMail,
+        },
+      ],
+    },
+    {
+      title: 'Social media',
+      addresses: [
+        {
+          text: 'Instagram',
+          link: 'https://www.instagram.com/appstract.se/',
+          icon: AiOutlineInstagram,
+        },
+        {
+          text: 'Messenger',
+          link: 'https://m.me/appstract',
+          icon: RiMessengerLine,
+        },
+        {
+          text: 'Facebook',
+          link: 'https://www.facebook.com/appstract',
+          icon: FaFacebookF,
+        },
+      ],
+    },
+    {
+      title: 'Samarbeten',
+      addresses: [
+        {
+          text: 'Workshop & utbildning',
+          link: 'mailto:info@appstract.se',
+          icon: AiOutlineMail,
+        },
+        {
+          text: 'Joint Ventures',
+          link: 'mailto:info@appstract.se',
+          icon: AiOutlineMail,
+        },
+        {
+          text: 'Produktsamarbete',
+          link: 'mailto:info@appstract.se',
+          icon: AiOutlineMail,
+        },
+      ],
+    },
+  ],
 };
 
 export const svTranslations = {

@@ -1,3 +1,6 @@
+import { AiOutlineInstagram, AiOutlineMail } from 'react-icons/ai';
+import { FaFacebookF } from 'react-icons/fa';
+import { RiMessengerLine } from 'react-icons/ri';
 import {
   Breadcrumb,
   Buttons,
@@ -135,7 +138,7 @@ const contactForm: Contact = {
   email: 'Email',
   message: 'Message',
   phone: 'Phone number',
-  info: 'By clicking send you agree to our',
+  info: 'By clicking submit you agree to our',
   policy: 'privacy policy',
 };
 
@@ -184,8 +187,7 @@ const clientTags: ClientTags = {
 const cases: Client[] = [
   {
     title: 'PropertEase',
-    subtitle:
-      'Coming soon',
+    subtitle: 'Coming soon',
     logo: 'https://justifiedcoding.org/wp-content/uploads/2019/01/Client-Logo-Placeholder.png',
     image:
       'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80',
@@ -474,11 +476,82 @@ const servicepages: ServicePage = {
 };
 
 const contact = {
-  title: 'Get in touch with us',
+  title: 'Get in touch with us!',
   description:
     'We at Appstract know most things in digital and web-based solutions and can thus help you with a range of different needs. Whether you need to develop an app, design a website or implement a custom software solution, we are here to help.',
+  links: [
+    {
+      title: 'General inquiries',
+      addresses: [
+        {
+          text: 'Send email',
+          link: 'mailto:info@appstract.se',
+          icon: AiOutlineMail,
+        },
+      ],
+    },
+    {
+      title: 'Support',
+      addresses: [
+        {
+          text: 'Send email',
+          link: 'mailto:support@appstract.se',
+          icon: AiOutlineMail,
+        },
+      ],
+    },
+    {
+      title: 'Sales',
+      addresses: [
+        {
+          text: 'Send email',
+          link: 'mailto:sales@appstract.se',
+          icon: AiOutlineMail,
+        },
+      ],
+    },
+    {
+      title: 'Social media',
+      addresses: [
+        {
+          text: 'Instagram',
+          link: 'https://www.instagram.com/appstract.se/',
+          icon: AiOutlineInstagram,
+        },
+        {
+          text: 'Messenger',
+          link: 'https://m.me/appstract',
+          icon: RiMessengerLine,
+        },
+        {
+          text: 'Facebook',
+          link: 'https://www.facebook.com/appstract',
+          icon: FaFacebookF,
+        },
+      ],
+    },
+    {
+      title: 'Collabs',
+      addresses: [
+        {
+          text: 'Workshop & education',
+          link: 'mailto:info@appstract.se',
+          icon: AiOutlineMail,
+        },
+        {
+          text: 'Joint Ventures',
+          link: 'mailto:info@appstract.se',
+          icon: AiOutlineMail,
+        },
+        {
+          text: 'Product collab',
+          link: 'mailto:info@appstract.se',
+          icon: AiOutlineMail,
+        },
+      ],
+    },
+  ],
 };
-
 export const enTranslations = {
   nav,
   contact,

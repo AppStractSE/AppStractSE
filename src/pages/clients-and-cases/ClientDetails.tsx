@@ -28,7 +28,7 @@ const ClientDetails = () => {
             <Text size="h3" bold className="break-word mb-4">
               Skapar effektiv fastighetsadministration
             </Text>
-            <Text size="h6" as="p" lineheight={3}>
+            <Text size="h5" as="p" lineheight={3}>
               PropertEase är en innovativ plattform som förenklar och effektiviserar fastighetsadministrationen. Med
               våra verktyg och funktioner kan du hantera hyresgäster, underhållsärenden och transaktioner på ett smidigt
               sätt.
@@ -57,7 +57,7 @@ const ClientDetails = () => {
             <Text size="h3" bold className="break-word mb-4">
               Optimerar fastighetsaffärer och transaktioner
             </Text>
-            <Text size="h6" as="p" lineheight={3}>
+            <Text size="h5" as="p" lineheight={3}>
               Med PropertEase kan du optimera dina fastighetsaffärer och transaktioner. Vår plattform erbjuder dig en
               sömlös upplevelse för att hantera försäljningar, förvaltning av dokumentation och genomföra juridiska
               processer, vilket sparar tid och minskar risken för felaktigheter.
@@ -72,7 +72,7 @@ const ClientDetails = () => {
             <Text size="h3" bold className="break-word mb-4">
               Vårt uppdrag
             </Text>
-            <Text size="h6" as="p" lineheight={3}>
+            <Text size="h5" as="p" lineheight={3}>
               Vårt uppdrag är att skapa en plattform som förenklar och effektiviserar fastighetsadministrationen. Vi
               vill att du ska kunna hantera hyresgäster, underhållsärenden och transaktioner på ett smidigt sätt.
             </Text>
@@ -81,7 +81,7 @@ const ClientDetails = () => {
             <Text size="h3" bold className="break-word mb-4">
               Vårt uppdrag
             </Text>
-            <Text size="h6" as="p" lineheight={3}>
+            <Text size="h5" as="p" lineheight={3}>
               Vårt uppdrag är att skapa en plattform som förenklar och effektiviserar fastighetsadministrationen. Vi
               vill att du ska kunna hantera hyresgäster, underhållsärenden och transaktioner på ett smidigt sätt.
             </Text>
