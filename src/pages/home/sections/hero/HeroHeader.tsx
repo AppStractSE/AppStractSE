@@ -13,11 +13,11 @@ const HeroHeader = ({ scrollToContact }: Props) => {
     <div className="container w-full m-auto hero-header">
       <div className="col-12">
         <Text size="h1" as="h1">
-        {translations.home.title}
+          {translations.home.title}
         </Text>
       </div>
       <div className="col-12 sm:col-10 md:col-6">
-        <Text size="h6" lineheight={3} className="my-4">
+        <Text size="h5" as="h2" lineheight={3} className="my-4">
           {translations.home.description}
         </Text>
       </div>

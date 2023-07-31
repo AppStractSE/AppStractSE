@@ -1,6 +1,6 @@
 interface Props {
-  size: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p';
-  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p';
+  size: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h5' | 'h6' | 'p';
+  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h5' | 'p';
   children: React.ReactNode;
   className?: string;
   bold?: boolean;
