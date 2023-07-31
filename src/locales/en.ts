@@ -185,7 +185,7 @@ const cases: Client[] = [
   {
     title: 'PropertEase',
     subtitle:
-      'Propertease is a comprehensive property management platform that provides users with essential tools for managing properties.',
+      'Coming soon',
     logo: 'https://justifiedcoding.org/wp-content/uploads/2019/01/Client-Logo-Placeholder.png',
     image:
       'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80',
@@ -194,7 +194,7 @@ const cases: Client[] = [
     link: 'https://appstract.se',
     slug: 'propertease',
     tags: [clientTags.apps, clientTags.webapps],
-    active: true,
+    active: false,
     bg: ['indigo-500'],
   },
   {

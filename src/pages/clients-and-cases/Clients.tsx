@@ -28,12 +28,12 @@ const Clients = () => {
         gradient
         content={
           <>
-            <div className="col-12 flex gap-4 font-bold mb-4 flex-wrap justify-content-center md:justify-content-start">
+            <div className="col-12 flex gap-4 font-bold mb-4 flex-wrap">
               {Object.values(translations.clientTags).map((tag: any) => (
                 <div
                   key={tag}
                   onClick={() => setSelectedTag(tag)}
-                  className={`text-2xl py-2 cursor-pointer ${
+                  className={`text-lg md:text-2xl py-2 cursor-pointer ${
                     tag === selectedTag ? 'active-tag' : ''
                   }`}
                 >{tag}</div>
@@ -44,7 +44,7 @@ const Clients = () => {
                 <SlateCard
                   key={client.slug}
                   link={client.active ? `${common.paths.clients}/${client.slug}` : undefined}
-                  className="col-12 md:col-6 lg:col-4 flex transition-opacity duration-500"
+                  className="col-6 lg:col-4 flex transition-opacity duration-500"
                   title={client.title}
                   description={client.subtitle}
                   image={client.image}
