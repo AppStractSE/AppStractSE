@@ -449,6 +449,19 @@ const cases: Client[] = [
     active: false,
     bg: ['red-600'],
   },
+  {
+    title: 'Pågående klient',
+    subtitle: 'Kommer inom kort',
+    logo: 'https://justifiedcoding.org/wp-content/uploads/2019/01/Client-Logo-Placeholder.png',
+    image:
+      'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80',
+    description: 'Kommer snart',
+    link: 'https://appstract.se',
+    slug: 'inom-kort',
+    tags: [clientTags.webapps],
+    active: false,
+    bg: ['green-600'],
+  },
 ];
 
 const clients = {
