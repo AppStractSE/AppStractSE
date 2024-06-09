@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-pagination-bullet {
+    transition: all 0.3s ease-in-out !important;
+    width: 13px !important;
+    height: 13px !important;
+    border-radius: 10px !important;
+    background: #6a789e !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #6a789e !important;
+    width: 41px !important;
+    height: 13px !important;
+    border-radius: 999px !important;
+}
