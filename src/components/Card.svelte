@@ -9,29 +9,30 @@
 </script>
 
 <a {href}>
-	<!-- svelte-ignore a11y-missing-attribute -->
-	<div class="overflow-hidden">
-		<img src={image} />
+	<div class="overflow-hidden aspect-[4/3]">
+		<img src={image} alt={title} />
 	</div>
-	<div class="flex flex-col flex-1 gap-4 px-8 pt-12 pb-8">
+	<div class="flex flex-col flex-1 gap-4 px-8 pt-12 pb-8 2xl:px-6 2xl xl lg:py-6">
 		<h2>
 			{title}
 		</h2>
-		<p class="flex-1">
+		<p>
 			{description}
 		</p>
-		<div class="mt-8">
-			<Button title="Läs mer" variation="outline" size="sm" />
+		<div class="block mt-6 md:flex">
+			<Button variation="outline" title="Läs mer" href="/" size="md" />
 		</div>
 	</div>
 </a>
 
 <style lang="scss">
 	img {
-		@apply transition-all duration-200 aspect-square;
+		aspect-ratio: 4/3;
+		height: 100%;
+		@apply transition-all duration-200 object-cover;
 	}
 	a {
-		@apply flex flex-col overflow-hidden bg-white border rounded-md;
+		@apply flex flex-col overflow-hidden bg-white border rounded-md h-full;
 		&:hover {
 			img {
 				@apply scale-105;
@@ -49,7 +50,7 @@
 	}
 
 	p {
-		@apply text-sm tracking-wide;
+		@apply text-sm tracking-wide flex-1 text-balance;
 		font-family: var(--font-esteban);
 	}
 </style>

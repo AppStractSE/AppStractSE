@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    box-sizing: border-box;
+}
+
 .swiper-pagination-bullet {
     transition: all 0.3s ease-in-out !important;
     width: 13px !important;

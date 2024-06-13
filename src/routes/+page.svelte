@@ -3,6 +3,7 @@
 	import HeroSection from '../components/sections/HeroSection.svelte';
 	import ProjectsSection from '../components/sections/ProjectsSection.svelte';
 	import ServicesSection from '../components/sections/ServicesSection.svelte';
+	import ContactSection from '../components/sections/ContactSection.svelte';
 	register();
 </script>
 
@@ -14,3 +15,4 @@
 <HeroSection />
 <ServicesSection />
 <ProjectsSection />
+<ContactSection />

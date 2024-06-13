@@ -87,12 +87,12 @@
 		@apply uppercase tracking-wider text-xxs;
 	}
 	h3 {
-		font-family: var(--font-esteban);
+		font-family: var(--font-varela);
 	}
 
 	h4,
 	p {
-		font-family: var(--font-varela);
+		font-family: var(--font-esteban);
 	}
 	h3 {
 		@apply text-2xl font-bold;

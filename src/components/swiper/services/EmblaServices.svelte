@@ -1,0 +1,170 @@
+<script lang="ts">
+	import AutoScroll from 'embla-carousel-auto-scroll';
+	import emblaCarouselSvelte from 'embla-carousel-svelte';
+	import Card from '../../Card.svelte';
+
+	$: innerWidth = 0;
+	$: smScreen = innerWidth < 1024;
+	let mobilePlugins: any[] = [];
+	let desktopPlugins: any[] = [
+		AutoScroll({ speed: 0.5, stopOnInteraction: false, stopOnMouseEnter: true })
+	];
+	$: plugins = smScreen ? mobilePlugins : desktopPlugins;
+	const slides = [
+		{
+			title: 'Webbutveckling',
+			href: '/',
+			description:
+				'Moderna och responsiva unika webbplatser som engagerar och konverterar, med fokus på användarupplevelse och prestanda.',
+			image: 'https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg'
+		},
+		{
+			title: 'Hosting och drift',
+			href: '/',
+			description:
+				'Säkra och pålitliga hostinglösningar för att hålla din webbplats uppe och snabbrörlig.',
+			image: 'https://images.pexels.com/photos/209151/pexels-photo-209151.jpeg'
+		},
+		{
+			title: 'Apputveckling',
+			href: '/',
+			description: 'Skräddarsydda appar för iOS och Android som är användarvänliga och effektiva.',
+			image: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg'
+		},
+		{
+			title: 'Förbättrad design med AI',
+			href: '/',
+			description: 'Vi hjälper er lyfta er nuvarande design med hjälp av AI.',
+			image: 'https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg'
+		},
+		{
+			title: 'UI / UX Design',
+			href: '/',
+			description:
+				'Designa användargränssnitt som är både vackra och intuitiva för en bättre användarupplevelse.',
+			image: 'https://images.pexels.com/photos/3585088/pexels-photo-3585088.jpeg'
+		},
+		{
+			title: 'Digital marknadsföring',
+			href: '/',
+			description: 'Strategiska kampanjer för att öka din online-närvaro och driva konverteringar.',
+			image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg'
+		},
+		{
+			title: 'E-maildesign',
+			href: '/',
+			description: 'Effektiva och engagerande e-postkampanjer som når din målgrupp.',
+			image: 'https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg'
+		},
+		{
+			title: 'SEO',
+			href: '/',
+			description:
+				'Få hjälp med att optimera din webbplats för att ranka högre på sökmotorer och på så sätt nå fler kunder.',
+			image: 'https://images.pexels.com/photos/218717/pexels-photo-218717.jpeg'
+		},
+		{
+			title: 'Sociala medier',
+			href: '/',
+			description:
+				'Bygg och hantera en stark närvaro på sociala medier för att engagera din publik.',
+			image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg'
+		}
+	];
+
+	let emblaApi: any;
+	let options: any = {
+		loop: true,
+		dragFree: false,
+		breakpoints: {
+			'(min-width: 1024px)': { dragFree: true }
+		}
+	};
+	function onInit(event: CustomEvent) {
+		emblaApi = event.detail;
+		currentSlide = emblaApi.selectedScrollSnap();
+		emblaApi.on('select', () => {
+			currentSlide = emblaApi.selectedScrollSnap();
+		});
+	}
+	const scrollTo = (index: number) => {
+		currentSlide = index;
+		if (emblaApi) emblaApi.scrollTo(currentSlide);
+	};
+	$: currentSlide = emblaApi && emblaApi.selectedScrollSnap();
+</script>
+
+<svelte:window bind:innerWidth />
+
+<div class="embla" use:emblaCarouselSvelte={{ options, plugins }} on:emblaInit={onInit}>
+	<div class="embla__container">
+		{#each slides as slide, index}
+			<div class="embla__slide">
+				<Card
+					title={slide.title}
+					href={slide.href}
+					description={slide.description}
+					image={slide.image}
+				/>
+			</div>
+		{/each}
+	</div>
+	{#if smScreen}
+		<div class="embla__dots">
+			{#each slides as _, index}
+				<div
+					role="button"
+					tabindex="0"
+					class="embla__dot {index === currentSlide ? 'embla__dot-active' : ''}"
+					on:keydown={() => scrollTo(index)}
+					on:click={() => scrollTo(index)}
+				/>
+			{/each}
+		</div>
+	{/if}
+</div>
+
+<style lang="scss">
+	.embla {
+		@apply my-12 overflow-hidden;
+	}
+	.embla__container {
+		@apply px-4 items-stretch gap-4 flex;
+	}
+
+	.embla__slide {
+		flex: 0 0 100%;
+		min-width: 0;
+		height: unset;
+
+		@media (min-width: 640px) {
+			flex: 0 0 50%;
+		}
+		@media (min-width: 768px) {
+			flex: 0 0 45%;
+		}
+		@media (min-width: 1024px) {
+			flex: 0 0 30%;
+		}
+		@media (min-width: 1280px) {
+			flex: 0 0 20%;
+		}
+		@media (min-width: 1536px) {
+			flex: 0 0 17.5%;
+		}
+	}
+
+	.embla__dots {
+		@apply flex gap-2 mt-8 justify-center;
+	}
+
+	.embla__dot {
+		@apply transition-all duration-300 ease-in-out w-3 h-3;
+		border-radius: 10px !important;
+		background: #6a789e !important;
+	}
+
+	.embla__dot-active {
+		@apply w-10 rounded-full;
+	}
+</style>
