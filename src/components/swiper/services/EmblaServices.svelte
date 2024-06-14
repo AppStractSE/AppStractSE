@@ -126,6 +126,13 @@
 
 <style lang="scss">
 	.embla {
+		background: linear-gradient(
+			180deg,
+			rgba(243, 241, 255, 0) 0%,
+			rgba(220, 214, 255, 1) 45%,
+			rgba(220, 214, 255, 1) 55%,
+			rgba(243, 241, 255, 0) 100%
+		);
 		@apply my-12 overflow-hidden;
 	}
 	.embla__container {

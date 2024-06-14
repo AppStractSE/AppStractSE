@@ -1,57 +1,68 @@
 <script lang="ts">
-	import Icon from '@iconify/svelte';
+	import { page } from '$app/stores';
+	import { onDestroy, onMount } from 'svelte';
 	import Drawer from '../components/Drawer.svelte';
-	import { navigation } from '../data/navigation';
 	let isOpen: boolean = false;
 	const handleToggle = () => {
 		isOpen = !isOpen;
-		console.log('isOpen', isOpen);
 	};
 	let y = 0;
 	$: isScroll = y > 0;
-	$: isScrollClasses = isScroll ? 'bg-[#ece9ff]' : 'bg-transparent';
-	$: headerClasses = 'transition-all duration-200 z-50 left-0 right-0 sticky top-0 py-4';
+	$: isScrollClasses =
+		isScroll || isOpen ? 'bg-[#ece9ff] backdrop-blur-md bg-opacity-80' : 'bg-transparent';
 	$: innerWidth = 0;
 	$: smScreen = innerWidth < 768;
+	$: $page.route.id, (isOpen = false);
+	let mounted = false;
+	onMount(() => {
+		setTimeout(() => {
+			mounted = true;
+		}, 1000);
+	});
+	onDestroy(() => {
+		mounted = false;
+	});
 </script>
 
 <Drawer {isOpen} on:clickAway={handleToggle} on:closeButton={handleToggle} />
-<header class={headerClasses}>
-	<nav
-		class="flex items-center justify-between mx-auto backdrop-blur-md bg-opacity-80 max-w-[1312px] rounded px-4 transition-all duration-200 py-2 {isScrollClasses}"
-	>
-		<a href="/" class="flex items-center gap-4">
-			<img src="../../src/lib/images/appstract_logo_black.png" alt="Appstract" class="w-full h-8" />
-			<h2 class="text-3xl md:text-4xl font-bold text-[#292929]">Appstract</h2>
+<header
+	class="duration-500 transition-all ease-in-out {mounted
+		? 'translate-y-0 opacity-100'
+		: '-translate-y-12 opacity-0'}"
+>
+	<nav class={isScrollClasses}>
+		<a href="/" on:click={() => (isOpen = false)}>
+			<img src="../../src/lib/images/appstract_logo_black.png" alt="Appstract" />
+			<h2>Appstract</h2>
 		</a>
-		{#if smScreen}
-			<a href="/" class="text-3xl text-[#292929]">
-				<Icon icon="heroicons-outline:menu-alt-3" />
-			</a>
-		{:else}
-			<!-- svelte-ignore a11y-click-events-have-key-events -->
-			<ul class="flex items-center gap-12 p-0 list-none">
-				{#each navigation as { text, href }}
-					<li>
-						<a class="text-xs transition-all decoration-0 hover:underline" {href}>{text}</a>
-					</li>
-				{/each}
-				<span class="divider"></span>
-				<!-- svelte-ignore a11y-click-events-have-key-events -->
-				<!-- svelte-ignore a11y-no-static-element-interactions -->
-				<span class="text-lg text-[#292929] hover:cursor-pointer" on:click={handleToggle}>
-					<Icon icon="heroicons-outline:menu-alt-3" />
-				</span>
-			</ul>
-		{/if}
+		<button on:click={handleToggle}>
+			{isOpen ? 'Stäng' : 'Meny'}
+		</button>
 	</nav>
 </header>
 
 <svelte:window bind:innerWidth bind:scrollY={y} />
 
-<style>
+<style lang="scss">
+	img {
+		@apply w-full h-8;
+	}
+	a {
+		@apply flex items-center gap-4;
+	}
+	header {
+		@apply transition-all duration-1000 z-[999] left-0 right-0 sticky top-0 p-0 xl:py-4 md:py-2 md:px-2 max-w-[1328px] mx-auto;
+	}
+	nav {
+		@apply flex items-center justify-between md:rounded px-4 transition-all duration-200 py-2;
+	}
 	h2 {
+		@apply text-3xl md:text-4xl font-bold text-[#292929];
 		font-family: var(--font-bebas);
+	}
+	button {
+		@apply hover:underline-offset-4 hover:underline uppercase text-base transition-all duration-200 ease-in-out text-[#292929];
+		font-family: var(--font-varela);
 	}
 
 	.divider {
