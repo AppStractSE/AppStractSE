@@ -54,25 +54,14 @@
 		@apply transition-all duration-1000 z-[999] left-0 right-0 sticky top-0 p-0 xl:py-4 md:py-2 md:px-2 max-w-[1328px] mx-auto;
 	}
 	nav {
-		@apply flex items-center justify-between md:rounded px-4 transition-all duration-200 py-2;
+		@apply flex items-center justify-between md:rounded px-4 transition-all duration-200 py-4;
 	}
 	h2 {
-		@apply text-3xl md:text-4xl font-bold text-[#292929];
-		font-family: var(--font-bebas);
+		@apply text-lg md:text-xl lowercase font-bold text-[#292929];
+		font-family: var(--font-varela);
 	}
 	button {
 		@apply hover:underline-offset-4 hover:underline uppercase text-base transition-all duration-200 ease-in-out text-[#292929];
 		font-family: var(--font-varela);
-	}
-
-	.divider {
-		display: flex;
-	}
-
-	.divider::after {
-		content: '';
-		width: 2px;
-		height: 1.2em;
-		background-color: #474747;
 	}
 </style>

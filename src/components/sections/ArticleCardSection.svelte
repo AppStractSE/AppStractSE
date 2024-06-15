@@ -32,7 +32,7 @@
 
 <style lang="scss">
 	.card {
-		@apply mx-auto max-w-screen-xl;
+		@apply mx-auto max-w-screen-xl px-4 xl:px-0;
 	}
 	.card-content {
 		@apply flex gap-4 md:gap-8 lg:gap-16;
