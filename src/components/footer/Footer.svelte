@@ -1,9 +1,13 @@
 <script lang="ts"></script>
 
 <footer>
-	<img src="../../src/lib/images/appstract_text.png" alt="Appstract" class="w-full max-w-screen-xl px-4 mx-auto xl:px-0" />
+	<img
+		src="../../src/lib/images/appstract_text.png"
+		alt="Appstract"
+		class="w-full max-w-screen-xl px-4 mx-auto xl:px-2"
+	/>
 	<div class="content">
-		<div class="max-w-screen-xl px-4 mx-auto space-y-4 xl:px-0">
+		<div class="max-w-screen-xl px-4 mx-auto space-y-4 xl:px-2">
 			<div class="flex items-center justify-between">
 				<div>
 					<p>© 2024 All rights reserved</p>

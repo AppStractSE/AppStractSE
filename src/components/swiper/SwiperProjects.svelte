@@ -72,7 +72,7 @@
 
 <style lang="scss">
 	.swiper-slide {
-		@apply px-4 xl:px-0;
+		@apply px-4 xl:px-2;
 	}
 	.swiper-slide-content {
 		@apply flex flex-col max-w-screen-xl gap-6 mt-2 sm:gap-12 lg:gap-16 md:flex-row;

@@ -3,7 +3,7 @@
 </script>
 
 <section>
-	<div class="px-4 py-12 mx-auto space-y-8 xl:px-0">
+	<div class="px-4 py-12 mx-auto space-y-8 xl:px-2">
 		<div class="max-w-screen-xl mx-auto">
 			<div class="grid gap-12 md:grid-cols-2">
 				<div class="w-full space-y-4">

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { onDestroy, onMount } from 'svelte';
-	import Drawer from '../components/Drawer.svelte';
+	import Drawer from './Drawer.svelte';
 	let isOpen: boolean = false;
 	const handleToggle = () => {
 		isOpen = !isOpen;
@@ -51,7 +51,7 @@
 		@apply flex items-center gap-4;
 	}
 	header {
-		@apply transition-all duration-1000 z-[999] left-0 right-0 sticky top-0 p-0 xl:py-4 md:py-2 md:px-2 max-w-[1328px] mx-auto;
+		@apply transition-all duration-1000 z-[999] left-0 right-0 fixed top-0 p-0 xl:py-4 md:py-2 md:px-2 max-w-[1328px] mx-auto;
 	}
 	nav {
 		@apply flex items-center justify-between md:rounded px-4 transition-all duration-200 py-4;

@@ -25,6 +25,7 @@
 		? 'translate-y-0 opacity-100'
 		: 'translate-y-12 opacity-0'}"
 >
+	<div class="spacer"></div>
 	<HeroSection />
 	<ThreeColumnsSection />
 	<ServicesSection />

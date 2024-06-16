@@ -1,10 +1,10 @@
 <script lang="ts">
 	import Button from '../button/Button.svelte';
-	import EmblaCarousel from '../swiper/services/EmblaServices.svelte';
+	import EmblaServices from '../swiper/services/EmblaServices.svelte';
 </script>
 
 <section>
-	<div class="max-w-screen-lg px-4 mx-auto space-y-4 text-center xl:px-0">
+	<div class="max-w-screen-lg px-4 mx-auto space-y-4 text-center xl:px-2">
 		<h2>En komplett lösning för alla behov</h2>
 		<p>
 			Appstract erbjuder en rad olika tjänster som passar alla behov. Allt från skräddarsydd
@@ -12,8 +12,8 @@
 			nivå.
 		</p>
 	</div>
-	<EmblaCarousel />
-	<div class="px-4 mx-auto space-y-4 xl:px-0 w-fit">
+	<EmblaServices />
+	<div class="px-4 mx-auto space-y-4 xl:px-2 w-fit">
 		<Button title="Se alla tjänster vi erbjuder" href="/tjanster" variation="primary" size="lg" />
 	</div>
 </section>
