@@ -1,12 +1,13 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
 	import emblaCarouselSvelte from 'embla-carousel-svelte';
+	import { WheelGesturesPlugin } from 'embla-carousel-wheel-gestures';
 	export let data;
 
 	$: innerWidth = 0;
 	$: smScreen = innerWidth < 1024;
 	let mobilePlugins: any[] = [];
-	let desktopPlugins: any[] = [];
+	let desktopPlugins: any[] = [WheelGesturesPlugin()];
 	$: plugins = smScreen ? mobilePlugins : desktopPlugins;
 	const slides = [
 		{
@@ -72,7 +73,7 @@
 
 	let emblaApi: any;
 	let options: any = {
-		loop: false,
+		loop: true,
 		axis: 'y'
 	};
 	function onInit(event: CustomEvent) {
