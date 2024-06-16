@@ -45,7 +45,7 @@
 
 <style lang="scss">
 	img {
-		@apply w-full h-8;
+		@apply w-8 md:w-12 h-full;
 	}
 	a {
 		@apply flex items-center gap-4;
