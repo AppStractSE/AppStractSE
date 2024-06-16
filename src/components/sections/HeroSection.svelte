@@ -19,7 +19,7 @@
 			</div>
 		</div>
 		<div class="max-h-[40rem] w-full shadow-xl rounded-xl overflow-hidden border">
-			<video autoplay muted loop id="myVideo">
+			<video autoplay muted loop playsinline id="myVideo">
 				<source
 					src="https://videos.pexels.com/video-files/4884233/4884233-hd_1280_720_30fps.mp4"
 					type="video/mp4"
