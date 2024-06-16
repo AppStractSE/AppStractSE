@@ -49,7 +49,7 @@
 	</div>
 </section>
 <section>
-	<div class="max-w-screen-lg px-4 mx-auto text-center xl:px-2">
+	<div class="max-w-screen-lg px-4 mx-auto mb-12 text-center xl:px-2">
 		<h2>Vår process</h2>
 	</div>
 	<EmblaProcessCarousel data={service.what_we_do} />
@@ -70,7 +70,7 @@
 <style lang="scss">
 	section:first-of-type {
 		min-height: 450px;
-		background: url('../../src/lib/images/hero.png');
+		background: url('/images/hero.png');
 		background-size: 100% 100%;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -79,6 +79,9 @@
 	}
 	.hero {
 		@apply max-w-screen-xl px-4 py-12 mx-auto space-y-12 lg:px-0 lg:py-32;
+		h2 {
+			@apply text-4xl;
+		}
 		h2,
 		p {
 			@apply lg:text-center;

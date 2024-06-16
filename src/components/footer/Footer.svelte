@@ -2,7 +2,7 @@
 
 <footer>
 	<img
-		src="../../src/lib/images/appstract_text.png"
+		src="/images/appstract_text.png"
 		alt="Appstract"
 		class="w-full max-w-screen-xl px-4 mx-auto xl:px-2"
 	/>

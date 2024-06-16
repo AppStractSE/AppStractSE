@@ -32,7 +32,7 @@
 >
 	<nav class={isScrollClasses}>
 		<a href="/" on:click={() => (isOpen = false)}>
-			<img src="../../src/lib/images/appstract_logo_black.png" alt="Appstract" />
+			<img src="/images/appstract_logo_black.png" alt="Appstract" />
 			<h2>Appstract</h2>
 		</a>
 		<button on:click={handleToggle}>

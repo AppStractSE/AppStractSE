@@ -32,7 +32,7 @@
 
 <style lang="scss">
 	section {
-		background-image: url('../../src/lib/images/clouds.png');
+		background-image: url('/images/clouds.png');
 		background-position: 100% 0%;
 		background-size: contain;
 		background-repeat: no-repeat;
