@@ -7,7 +7,7 @@
 	import ServicesSection from '../../../components/sections/ServicesSection.svelte';
 	export let data;
 	console.log(data);
-	const { service } = data;
+	$: service = data.service;
 </script>
 
 <svelte:head>
