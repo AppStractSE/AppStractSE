@@ -8,7 +8,7 @@
 	export let href = '';
 </script>
 
-<a {href}>
+<a {href} data-sveltekit-prefetch>
 	<div class="overflow-hidden aspect-[4/3]">
 		<img src={image} alt={title} />
 	</div>

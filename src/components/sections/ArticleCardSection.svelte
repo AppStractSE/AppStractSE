@@ -3,8 +3,8 @@
 
 	export let title;
 	export let description;
-	export let link;
-	export let href;
+	export let link = '';
+	export let href = '';
 	export let image;
 	export let rtl = false;
 </script>
@@ -17,22 +17,28 @@
 		<div class="flex flex-col justify-center basis-6/12">
 			<div class="space-y-4">
 				<h3>
-					<a {href}>{title}</a>
+					{#if href && link}
+						<a {href}>{title}</a>
+					{:else}
+						{title}
+					{/if}
 				</h3>
 				<p>
 					{description}
 				</p>
 			</div>
-			<div class="block mt-12 md:flex">
-				<Button variation="outline" title={link} {href} size="md" />
-			</div>
+			{#if href && link}
+				<div class="block mt-12 md:flex">
+					<Button variation="outline" title={link} {href} size="md" />
+				</div>
+			{/if}
 		</div>
 	</div>
 </article>
 
 <style lang="scss">
 	.card {
-		@apply mx-auto max-w-screen-xl px-4 xl:px-0;
+		@apply mx-auto max-w-screen-xl px-4 xl:px-2;
 	}
 	.card-content {
 		@apply flex gap-4 md:gap-8 lg:gap-16;

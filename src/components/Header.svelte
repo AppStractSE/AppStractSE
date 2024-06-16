@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { onDestroy, onMount } from 'svelte';
-	import Drawer from '../components/Drawer.svelte';
+	import Drawer from './Drawer.svelte';
 	let isOpen: boolean = false;
 	const handleToggle = () => {
 		isOpen = !isOpen;
@@ -32,7 +32,7 @@
 >
 	<nav class={isScrollClasses}>
 		<a href="/" on:click={() => (isOpen = false)}>
-			<img src="../../src/lib/images/appstract_logo_black.png" alt="Appstract" />
+			<img src="/images/appstract_logo_black.png" alt="Appstract" />
 			<h2>Appstract</h2>
 		</a>
 		<button on:click={handleToggle}>
@@ -51,7 +51,7 @@
 		@apply flex items-center gap-4;
 	}
 	header {
-		@apply transition-all duration-1000 z-[999] left-0 right-0 sticky top-0 p-0 xl:py-4 md:py-2 md:px-2 max-w-[1328px] mx-auto;
+		@apply transition-all duration-1000 z-[999] left-0 right-0 fixed top-0 p-0 xl:py-4 md:py-2 md:px-2 max-w-[1328px] mx-auto;
 	}
 	nav {
 		@apply flex items-center justify-between md:rounded px-4 transition-all duration-200 py-4;

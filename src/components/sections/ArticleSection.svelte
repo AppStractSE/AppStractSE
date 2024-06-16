@@ -27,7 +27,6 @@
 		}
 	];
 </script>
-
 <section class="space-y-12">
 	{#each articles as article, index}
 		<ArticleCardSection

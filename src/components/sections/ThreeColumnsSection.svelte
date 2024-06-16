@@ -21,7 +21,7 @@
 </script>
 
 <section>
-	<div class="max-w-screen-lg px-4 mx-auto space-y-4 xl:px-0">
+	<div class="max-w-screen-lg px-4 mx-auto space-y-4 xl:px-2">
 		<h2>Varför Appstract?</h2>
 		<!-- <p>
 			Appstract erbjuder en rad olika tjänster som passar alla behov. Allt från skräddarsydd
@@ -29,7 +29,7 @@
 			nivå.
 		</p> -->
 	</div>
-	<div class="max-w-screen-xl px-4 mx-auto xl:px-0">
+	<div class="max-w-screen-xl px-4 mx-auto xl:px-2">
 		<div class="grid justify-between grid-cols-1 gap-4 md:divide-x md:grid-cols-3">
 			{#each columnData as column}
 				<div class="px-2 py-4 space-y-6">

@@ -3,7 +3,7 @@
 	import '../app.scss';
 	import GlobalLoader from '../components/GlobalLoader.svelte';
 	import Footer from '../components/footer/Footer.svelte';
-	import Header from './Header.svelte';
+	import Header from '../components/Header.svelte';
 	import './styles.scss';
 	let mounted = false;
 	onMount(() => {

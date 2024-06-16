@@ -17,7 +17,7 @@
 			? 'opacity-100'
 			: 'opacity-0'}"
 	>
-		<img src="../../src/lib/images/appstract_logo_black.png" class="w-32 h-auto" alt="Appstract" />
+		<img src="/images/appstract_logo_black.png" class="w-32 h-auto" alt="Appstract" />
 	</div>
 </div>
 

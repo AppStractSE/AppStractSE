@@ -5,11 +5,11 @@
 
 	// Define the schema using Zod
 	const schema = z.object({
-		fullName: z.string().min(2, { message: 'Full name is too short' }),
-		email: z.string().email({ message: 'Invalid email address' }),
+		fullName: z.string().min(2, { message: 'Ange minst två bokstäver' }),
+		email: z.string().email({ message: 'Ange en giltig e-postadress' }),
 		businessName: z.string().optional(),
 		phoneNumber: z.string().optional(),
-		message: z.string().min(10, { message: 'Message is too short' })
+		message: z.string().min(10, { message: 'Ange minst tio tecken' })
 	});
 
 	let fullName = '';
@@ -50,7 +50,7 @@
 		<div class="flex gap-4">
 			<div class="flex-1">
 				<input
-					placeholder="Full name"
+					placeholder="För- och efternamn"
 					id="fullName"
 					type="text"
 					bind:value={fullName}
@@ -63,7 +63,7 @@
 
 			<div class="flex-1">
 				<input
-					placeholder="Email address"
+					placeholder="E-postadress"
 					id="email"
 					type="email"
 					bind:value={email}
@@ -77,7 +77,7 @@
 
 		<div>
 			<input
-				placeholder="Business name (optional)"
+				placeholder="Företagsnamn"
 				id="businessName"
 				type="text"
 				bind:value={businessName}
@@ -90,7 +90,7 @@
 
 		<div>
 			<input
-				placeholder="Phone number (optional)"
+				placeholder="Telefonnummer"
 				id="phoneNumber"
 				type="tel"
 				bind:value={phoneNumber}
@@ -103,7 +103,7 @@
 
 		<div>
 			<textarea
-				placeholder="Message"
+				placeholder="Meddelande"
 				id="message"
 				bind:value={message}
 				class={!errors.message ? inputClassNames : inputErrorClassNames}
