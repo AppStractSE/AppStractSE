@@ -1,6 +1,7 @@
 <script lang="ts">
 	import AutoScroll from 'embla-carousel-auto-scroll';
 	import emblaCarouselSvelte from 'embla-carousel-svelte';
+	import { services } from '../../../data/services';
 	import Card from '../../Card.svelte';
 
 	$: innerWidth = 0;
@@ -10,67 +11,6 @@
 		AutoScroll({ speed: 0.5, stopOnInteraction: false, stopOnMouseEnter: true })
 	];
 	$: plugins = smScreen ? mobilePlugins : desktopPlugins;
-	const slides = [
-		{
-			title: 'Webbutveckling',
-			slug: '/tjanster/webbutveckling',
-			description:
-				'Moderna och responsiva unika webbplatser som engagerar och konverterar, med fokus på användarupplevelse och prestanda.',
-			image: 'https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg'
-		},
-		{
-			title: 'Hosting och drift',
-			slug: '/tjanster/hosting-och-drift',
-			description:
-				'Säkra och pålitliga hostinglösningar för att hålla din webbplats uppe och snabbrörlig.',
-			image: 'https://images.pexels.com/photos/209151/pexels-photo-209151.jpeg'
-		},
-		{
-			title: 'Apputveckling',
-			slug: '/tjanster/apputveckling',
-			description: 'Skräddarsydda appar för iOS och Android som är användarvänliga och effektiva.',
-			image: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg'
-		},
-		{
-			title: 'Förbättrad design med AI',
-			slug: '/tjanster/forbattrad-design-med-ai',
-			description: 'Vi hjälper er lyfta er nuvarande design med hjälp av AI.',
-			image: 'https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg'
-		},
-		{
-			title: 'UI / UX Design',
-			slug: '/tjanster/ui-ux-design',
-			description:
-				'Designa användargränssnitt som är både vackra och intuitiva för en bättre användarupplevelse.',
-			image: 'https://images.pexels.com/photos/3585088/pexels-photo-3585088.jpeg'
-		},
-		{
-			title: 'Digital marknadsföring',
-			slug: '/tjanster/digital-marknadsforing',
-			description: 'Strategiska kampanjer för att öka din online-närvaro och driva konverteringar.',
-			image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg'
-		},
-		{
-			title: 'E-maildesign',
-			slug: '/tjanster/emaildesign',
-			description: 'Effektiva och engagerande e-postkampanjer som når din målgrupp.',
-			image: 'https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg'
-		},
-		{
-			title: 'SEO',
-			slug: '/tjanster/seo',
-			description:
-				'Få hjälp med att optimera din webbplats för att ranka högre på sökmotorer och på så sätt nå fler kunder.',
-			image: 'https://images.pexels.com/photos/218717/pexels-photo-218717.jpeg'
-		},
-		{
-			title: 'Sociala medier',
-			slug: '/tjanster/sociala-medier',
-			description:
-				'Bygg och hantera en stark närvaro på sociala medier för att engagera din publik.',
-			image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg'
-		}
-	];
 
 	let emblaApi: any;
 	let options: any = {
@@ -98,20 +38,20 @@
 
 <div class="embla" use:emblaCarouselSvelte={{ options, plugins }} on:emblaInit={onInit}>
 	<div class="embla__container">
-		{#each slides as slide, index}
+		{#each services as service, index}
 			<div class="embla__slide">
 				<Card
-					title={slide.title}
-					href={slide.slug}
-					description={slide.description}
-					image={slide.image}
+					title={service.title}
+					href={service.slug}
+					description={service.description}
+					image={service.image}
 				/>
 			</div>
 		{/each}
 	</div>
 	{#if smScreen}
 		<div class="embla__dots">
-			{#each slides as _, index}
+			{#each services as _, index}
 				<div
 					role="button"
 					tabindex="0"

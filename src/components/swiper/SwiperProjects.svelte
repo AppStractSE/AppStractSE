@@ -5,17 +5,10 @@
 	import 'swiper/css/navigation';
 	import { Navigation, Pagination } from 'swiper/modules';
 	import 'swiper/scss/pagination';
+	import type { Case } from '../../data/cases';
 	import Button from '../button/Button.svelte';
 
-	interface Project {
-		title: string;
-		description: string;
-		subtitle: string;
-		image: string;
-		href: string;
-	}
-
-	export let projects: Project[] = [];
+	export let cases: Case[] = [];
 	let swiper: Swiper;
 
 	onMount(() => {
@@ -39,28 +32,28 @@
 
 <div class="swiper mySwiper">
 	<div class="max-w-screen-xl mx-auto swiper-wrapper">
-		{#each projects as project, i}
+		{#each cases as item}
 			<div class="swiper-slide">
 				<div class="swiper-slide-content">
 					<div class="basis-5/12 aspect-[1] outline outline-4 rounded-md outline-[#697ba8]">
-						<img src={project.image} alt="SvelteKit" />
+						<img src={item.image} alt="SvelteKit" />
 					</div>
 					<div class="flex flex-col justify-center basis-7/12">
 						<div class="space-y-4">
 							<h4>
-								<a href={project.href}>
-									{project.subtitle}
+								<a href={item.slug}>
+									{item.client}
 								</a>
 							</h4>
 							<h3>
-								<a href={project.href}>{project.title}</a>
+								<a href={item.slug}>{item.title}</a>
 							</h3>
 							<p>
-								{project.description}
+								{item.shortDescription}
 							</p>
 						</div>
 						<div class="block mt-12 md:flex">
-							<Button variation="outline" title="Läs mer" href="/" size="md" />
+							<Button variation="outline" title="Läs mer" href={item.slug} size="md" />
 						</div>
 					</div>
 				</div>

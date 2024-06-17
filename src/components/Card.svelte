@@ -20,7 +20,7 @@
 			{description}
 		</p>
 		<div class="block mt-6 md:flex">
-			<Button variation="outline" title="Läs mer" href="/" size="md" />
+			<Button variation="outline" title="Läs mer" {href} size="md" />
 		</div>
 	</div>
 </a>
