@@ -14,17 +14,35 @@
 	<title>Appstract | {clientCase.client}</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
-
 <section class="my-24">
 	<div class="spacer"></div>
+	<a
+		href="https://www.{clientCase.url}"
+		target="_blank"
+		class="flex items-center justify-between grid-cols-3 gap-12 px-6 py-4 mx-auto mb-12 font-bold transition-all duration-200 ease-in-out scale-110 border hover:underline-offset-4 hover:underline hover:scale-125 rounded-xl w-fit"
+	>
+		<div class="flex gap-2">
+			<Icon icon="f7:lock-shield" />
+			<Icon icon="material-symbols-light:search" />
+		</div>
+		<div class="justify-self-center">
+			<p>{clientCase.url}</p>
+		</div>
+		<div class="justify-self-end">
+			<Icon icon="material-symbols-light:close" />
+		</div>
+	</a>
+</section>
+<section class="my-24">
 	<ArticleCardSection
 		title={clientCase.title}
 		description={clientCase.shortDescription}
-		image="https://placehold.co/600x400.png"
+		image="/images/cases/maleri-viskan/hero.png"
 	/>
 </section>
-<section class="flex items-start gap-12 max-w-screen-xl mx-auto relative my-24">
-	<div class="basis-2/12 pt-24 -mt-24 sticky top-0 h-fit">
+
+<section class="relative flex items-start max-w-screen-xl gap-12 mx-auto my-24">
+	<div class="sticky top-0 pt-24 -mt-24 basis-2/12 h-fit">
 		<div class="divide-y">
 			<div class="pb-4 space-y-2">
 				<h3>Klient</h3>
@@ -61,7 +79,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="basis-10/12 space-y-24">
+	<div class="space-y-24 basis-10/12">
 		<section>
 			<div class="space-y-4">
 				<h2>Behov</h2>
@@ -81,9 +99,9 @@
 				<p>{clientCase.description}</p>
 				<div>
 					<img
-						src="https://placehold.co/1200x700.png"
+						src="/images/cases/maleri-viskan/solution.png"
 						alt={clientCase.title}
-						class="w-full h-auto"
+						class="w-full h-auto rounded-md"
 					/>
 				</div>
 			</div>
@@ -104,6 +122,24 @@
 	</div>
 </section>
 <section class="my-24">
+	<a
+		href="https://www.{clientCase.url}"
+		target="_blank"
+		class="flex items-center justify-between grid-cols-3 gap-12 px-6 py-4 mx-auto mb-12 font-bold transition-all duration-200 ease-in-out scale-110 border hover:underline-offset-4 hover:underline hover:scale-125 rounded-xl w-fit"
+	>
+		<div class="flex gap-2">
+			<Icon icon="f7:lock-shield" />
+			<Icon icon="material-symbols-light:search" />
+		</div>
+		<div class="justify-self-center">
+			<p>{clientCase.url}</p>
+		</div>
+		<div class="justify-self-end">
+			<Icon icon="material-symbols-light:close" />
+		</div>
+	</a>
+</section>
+<section class="my-24">
 	<ArticleCardSection
 		rtl
 		title={clientCase.title}
@@ -111,6 +147,7 @@
 		image="https://placehold.co/600x400.png"
 	/>
 </section>
+
 <ContactSection />
 <ServicesSection />
 <ProjectsSection />
