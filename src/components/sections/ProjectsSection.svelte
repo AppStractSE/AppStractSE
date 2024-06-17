@@ -1,6 +1,6 @@
 <script lang="ts">
+	import { cases } from '../../data/cases';
 	import SwiperProjects from '../swiper/SwiperProjects.svelte';
-	import { projects } from '../swiper/projects';
 </script>
 
 <svelte:document />
@@ -11,7 +11,7 @@
 			<h2>Kundprojekt</h2>
 			<p>Få en inblick i hur vi jobbar med våra kunder. Från idé till färdig produkt.</p>
 		</div>
-		<SwiperProjects {projects} />
+		<SwiperProjects {cases} />
 	</div>
 </section>
 
