@@ -4,6 +4,7 @@
 	import ContactSection from '../../../components/sections/ContactSection.svelte';
 	import ProjectsSection from '../../../components/sections/ProjectsSection.svelte';
 	import ServicesSection from '../../../components/sections/ServicesSection.svelte';
+	import { services } from '../../../data/services';
 	export let data;
 	console.log(data);
 
@@ -14,63 +15,88 @@
 	<title>Appstract | {clientCase.client}</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
-
 <section class="my-24">
 	<div class="spacer"></div>
+	<a
+		href="https://www.{clientCase.url}"
+		target="_blank"
+		class="flex items-center justify-between grid-cols-3 gap-12 px-6 py-4 mx-auto mb-12 font-bold transition-all duration-200 ease-in-out scale-110 border hover:underline-offset-4 hover:underline hover:scale-125 rounded-xl w-fit"
+	>
+		<div class="flex gap-2">
+			<Icon icon="f7:lock-shield" />
+			<Icon icon="material-symbols-light:search" />
+		</div>
+		<div class="justify-self-center">
+			<p>{clientCase.url}</p>
+		</div>
+		<div class="justify-self-end">
+			<Icon icon="material-symbols-light:close" />
+		</div>
+	</a>
+</section>
+<section class="my-24">
 	<ArticleCardSection
 		title={clientCase.title}
 		description={clientCase.shortDescription}
-		image="https://placehold.co/600x400.png"
+		image="/images/cases/maleri-viskan/hero.png"
 	/>
 </section>
-<section class="flex items-start gap-12 max-w-screen-xl mx-auto relative my-24">
-	<div class="basis-2/12 pt-24 -mt-24 sticky top-0 h-fit">
+
+<section class="relative flex items-start max-w-screen-xl justify-between mx-auto my-24">
+	<div class="sticky top-0 pt-24 -mt-24 basis-2/12 h-fit">
 		<div class="divide-y">
 			<div class="pb-4 space-y-2">
 				<h3>Klient</h3>
 				<p>{clientCase.client}</p>
 			</div>
 			<div class="py-4 space-y-2">
-				<h3>Plats</h3>
-				<p>Marks kommun</p>
-			</div>
-			<div class="py-4 space-y-2">
 				<h3>Bransch</h3>
-				<p>Målerifirma</p>
+				<p>{clientCase.industry}</p>
 			</div>
 			<div class="py-4 space-y-2">
-				<h3>Uppdragstyp</h3>
-				<p>Webbutveckling, SEO</p>
+				<h3>Vårt arbete</h3>
+				{#each clientCase.tags as tag}
+					<p class="flex items-center gap-2 text-[#464646]">
+						<Icon icon="material-symbols-light:check" />
+						<a
+							href={services.find((x) => x.title === tag)?.slug}
+							class="hover:underline hover:underline-offset-4">{tag}</a
+						>
+					</p>
+				{/each}
 			</div>
 			<div class="pt-4 space-y-4">
 				<h3>Dela det här</h3>
 				<div class="flex items-center gap-2">
+                    <a href="#" class="text-xl">
+                        <Icon icon="basil:linkedin-outline" />
+                    </a>
+					<a href="#" class="text-xl">
+                        <Icon icon="iconoir:facebook" />
+					</a>
+                    <a href="#" class="text-xl">
+                        <Icon icon="pajamas:twitter" />
+                    </a>
 					<a href="#" class="text-2xl">
-						<Icon icon="icons8:chevron-up-round" />
+						<Icon icon="mdi-light:email" />
 					</a>
 					<a href="#" class="text-2xl">
-						<Icon icon="icons8:chevron-up-round" />
-					</a>
-					<a href="#" class="text-2xl">
-						<Icon icon="icons8:chevron-up-round" />
-					</a>
-					<a href="#" class="text-2xl">
-						<Icon icon="icons8:chevron-up-round" />
+						<Icon icon="ph:copy-light" />
 					</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="basis-10/12 space-y-24">
+	<div class="space-y-24 basis-9/12">
 		<section>
 			<div class="space-y-4">
 				<h2>Behov</h2>
-				<p>{clientCase.description}</p>
-				<div>
+				<p>{clientCase.needs}</p>
+				<div class="pt-4">
 					<img
 						src="https://placehold.co/1200x700.png"
 						alt={clientCase.title}
-						class="w-full h-auto"
+						class="w-full h-auto rounded-md"
 					/>
 				</div>
 			</div>
@@ -78,12 +104,12 @@
 		<section>
 			<div class="space-y-4">
 				<h2>Lösning</h2>
-				<p>{clientCase.description}</p>
-				<div>
+				<p>{clientCase.solution}</p>
+				<div class="pt-4">
 					<img
-						src="https://placehold.co/1200x700.png"
+						src="/images/cases/maleri-viskan/solution.png"
 						alt={clientCase.title}
-						class="w-full h-auto"
+						class="w-full h-auto rounded-md"
 					/>
 				</div>
 			</div>
@@ -91,8 +117,8 @@
 		<section>
 			<div class="space-y-4">
 				<h2>Resultat</h2>
-				<p>{clientCase.description}</p>
-				<div>
+				<p>{clientCase.result}</p>
+				<div class="pt-4">
 					<img
 						src="https://placehold.co/1200x700.png"
 						alt={clientCase.title}
@@ -102,6 +128,24 @@
 			</div>
 		</section>
 	</div>
+</section>
+<section class="my-24">
+	<a
+		href="https://www.{clientCase.url}"
+		target="_blank"
+		class="flex items-center justify-between grid-cols-3 gap-12 px-6 py-4 mx-auto mb-12 font-bold transition-all duration-200 ease-in-out scale-110 border hover:underline-offset-4 hover:underline hover:scale-125 rounded-xl w-fit"
+	>
+		<div class="flex gap-2">
+			<Icon icon="f7:lock-shield" />
+			<Icon icon="material-symbols-light:search" />
+		</div>
+		<div class="justify-self-center">
+			<p>{clientCase.url}</p>
+		</div>
+		<div class="justify-self-end">
+			<Icon icon="material-symbols-light:close" />
+		</div>
+	</a>
 </section>
 <section class="my-24">
 	<ArticleCardSection
@@ -111,6 +155,7 @@
 		image="https://placehold.co/600x400.png"
 	/>
 </section>
+
 <ContactSection />
 <ServicesSection />
 <ProjectsSection />
