@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
+	import Button from '../../../components/button/Button.svelte';
 	import ArticleCardSection from '../../../components/sections/ArticleCardSection.svelte';
 	import ContactSection from '../../../components/sections/ContactSection.svelte';
 	import ProjectsSection from '../../../components/sections/ProjectsSection.svelte';
@@ -15,26 +16,8 @@
 	<title>Appstract | {clientCase.client}</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
-<section class="my-24">
-	<div class="spacer"></div>
-	<a
-		href="https://www.{clientCase.url}"
-		target="_blank"
-		class="flex items-center justify-between grid-cols-3 gap-12 px-6 py-4 mx-auto mb-12 font-bold transition-all duration-200 ease-in-out scale-110 border hover:underline-offset-4 hover:underline hover:scale-125 rounded-xl w-fit"
-	>
-		<div class="flex gap-2">
-			<Icon icon="f7:lock-shield" />
-			<Icon icon="material-symbols-light:search" />
-		</div>
-		<div class="justify-self-center">
-			<p>{clientCase.url}</p>
-		</div>
-		<div class="justify-self-end">
-			<Icon icon="material-symbols-light:close" />
-		</div>
-	</a>
-</section>
-<section class="my-24">
+<section class="my-12 lg:my-24">
+	<div class="spacer" />
 	<ArticleCardSection
 		title={clientCase.title}
 		description={clientCase.shortDescription}
@@ -42,9 +25,11 @@
 	/>
 </section>
 
-<section class="relative flex items-start max-w-screen-xl justify-between mx-auto my-24">
-	<div class="sticky top-0 pt-24 -mt-24 basis-2/12 h-fit">
-		<div class="divide-y">
+<section
+	class="px-4 xl:px-0 relative flex-col-reverse lg:flex-row flex items-start max-w-screen-xl justify-between mx-auto my-12 lg:my-24"
+>
+	<div class="lg:sticky lg:top-0 lg:pt-24 mt-12 lg:-mt-24 lg:basis-2/12 w-full h-fit">
+		<div class="lg:divide-y">
 			<div class="pb-4 space-y-2">
 				<h3>Klient</h3>
 				<p>{clientCase.client}</p>
@@ -65,18 +50,18 @@
 					</p>
 				{/each}
 			</div>
-			<div class="pt-4 space-y-4">
+			<div class="py-4 space-y-4">
 				<h3>Dela det här</h3>
 				<div class="flex items-center gap-2">
-                    <a href="#" class="text-xl">
-                        <Icon icon="basil:linkedin-outline" />
-                    </a>
 					<a href="#" class="text-xl">
-                        <Icon icon="iconoir:facebook" />
+						<Icon icon="basil:linkedin-outline" />
 					</a>
-                    <a href="#" class="text-xl">
-                        <Icon icon="pajamas:twitter" />
-                    </a>
+					<a href="#" class="text-xl">
+						<Icon icon="iconoir:facebook" />
+					</a>
+					<a href="#" class="text-xl">
+						<Icon icon="pajamas:twitter" />
+					</a>
 					<a href="#" class="text-2xl">
 						<Icon icon="mdi-light:email" />
 					</a>
@@ -85,9 +70,12 @@
 					</a>
 				</div>
 			</div>
+			<div class="pt-4 space-y-4">
+				<Button external variation="outline" title="Besök sidan" href="https://www.{clientCase.url}" />
+			</div>
 		</div>
 	</div>
-	<div class="space-y-24 basis-9/12">
+	<div class="space-y-24 lg:basis-9/12">
 		<section>
 			<div class="space-y-4">
 				<h2>Behov</h2>
@@ -129,7 +117,8 @@
 		</section>
 	</div>
 </section>
-<section class="my-24">
+<!-- 
+<section class="my-12 lg:my-24">
 	<a
 		href="https://www.{clientCase.url}"
 		target="_blank"
@@ -147,7 +136,8 @@
 		</div>
 	</a>
 </section>
-<section class="my-24">
+ -->
+<section class="my-12 lg:my-24">
 	<ArticleCardSection
 		rtl
 		title={clientCase.title}

@@ -29,6 +29,6 @@
 		font-family: var(--font-esteban);
 	}
 	section {
-		@apply my-24;
+		@apply my-12 lg:my-24;
 	}
 </style>

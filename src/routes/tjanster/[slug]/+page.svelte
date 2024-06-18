@@ -104,6 +104,6 @@
 		font-family: var(--font-varela);
 	}
 	section {
-		@apply my-24;
+		@apply my-12 lg:my-24;
 	}
 </style>

@@ -43,6 +43,5 @@ nav {
 }
 
 .spacer {
-	height: 100px;
-	width: 100%;
+	@apply h-24 w-full;
 }
