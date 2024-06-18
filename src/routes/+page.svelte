@@ -29,7 +29,7 @@
 	<HeroSection />
 	<ThreeColumnsSection />
 	<ServicesSection />
-	<section class="my-24">
+	<section class="my-12 lg:my-24">
 		<ArticleCardSection
 			title="Estetiskt och stabilt"
 			description="Det räcker inte med en snygg webbsida – den måste också vara funktionell. Med vår expertis inom UI/UX Design och webbutveckling ser vi till att era digitala ytor inte bara är estetiskt tilltalande, utan även användarvänliga och konverterande. För er som vill ha mycket funktion på köpet erbjuder vi professionell WordPress- och WooCommerce-utveckling. Har ni behov av 100% skräddarsytt, erbjuder vi handbyggda plattformar i Laravel, REST-API och integrationer mot tredjepartssystem."

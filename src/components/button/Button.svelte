@@ -1,16 +1,26 @@
 <script lang="ts">
+	import Icon from '@iconify/svelte';
 	export let title = '';
 	export let variation: 'primary' | 'outline' = 'primary';
 	export let href = '/';
 	export let size: 'sm' | 'md' | 'lg' = 'md';
 	export let type: 'button' | 'a' = 'a';
 	export let onClick: () => void = () => {};
+	export let external = false;
 </script>
 
 <div class="btn btn-{variation} btn-{size}">
 	{#if type === 'button'}
 		<button on:click={onClick} type="button">{title}</button>
-	{:else}
+	{/if}
+	{#if type === 'a' && external}
+		<a {href} target="_blank"
+			><span class="flex gap-2 items-center justify-center"
+				>{title}<Icon icon="material-symbols-light:arrow-insert" class="rotate-90 text-xl" /></span
+			>
+		</a>
+	{/if}
+	{#if type === 'a' && !external}
 		<a {href}>{title}</a>
 	{/if}
 </div>
