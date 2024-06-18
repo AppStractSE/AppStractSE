@@ -1,4 +1,4 @@
-interface Service {
+export interface Service {
 	title: string;
 	slug: string;
 	description: string;
