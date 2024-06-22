@@ -1,7 +1,7 @@
 export const guides = [
 	{
 		title: 'How to create a new project',
-		slug: 'how-to-create-a-new-project',
+		slug: '/guider-och-ebocker/how-to-create-a-new-project',
 		content: `
             <p>Creating a new project is easy with SvelteKit. You can use the following command to create a new project:</p>
             <pre>
@@ -13,7 +13,7 @@ export const guides = [
 	},
 	{
 		title: 'How to create a new page',
-		slug: 'how-to-create-a-new-page',
+		slug: '/guider-och-ebocker/how-to-create-a-new-page',
 		content: `
             <p>Creating a new page is easy with SvelteKit. You can use the following command to create a new page:</p>
             <pre>
@@ -25,7 +25,7 @@ export const guides = [
 	},
 	{
 		title: 'How to create a new layout',
-		slug: 'how-to-create-a-new-layout',
+		slug: '/guider-och-ebocker/how-to-create-a-new-layout',
 		content: `
             <p>Creating a new layout is easy with SvelteKit. You can use the following command to create a new layout:</p>
             <pre>
@@ -37,7 +37,7 @@ export const guides = [
 	},
 	{
 		title: 'How to create a new component',
-		slug: 'how-to-create-a-new-component',
+		slug: '/guider-och-ebocker/how-to-create-a-new-component',
 		content: `
             <p>Creating a new component is easy with SvelteKit. You can use the following command to create a new component:</p>
             <pre>
@@ -49,7 +49,7 @@ export const guides = [
 	},
 	{
 		title: 'How to create a new store',
-		slug: 'how-to-create-a-new-store',
+		slug: '/guider-och-ebocker/how-to-create-a-new-store',
 		content: `
             <p>Creating a new store is easy with SvelteKit. You can use the following command to create a new store:</p>
             <pre>
@@ -61,7 +61,7 @@ export const guides = [
 	},
 	{
 		title: 'How to create a new service',
-		slug: 'how-to-create-a-new-service',
+		slug: '/guider-och-ebocker/how-to-create-a-new-service',
 		content: `
             <p>Creating a new service is easy with SvelteKit. You can use the following command to create a new service:</p>
             <pre>
@@ -73,7 +73,7 @@ export const guides = [
 	},
 	{
 		title: 'How to create a new adapter',
-		slug: 'how-to-create-a-new-adapter',
+		slug: '/guider-och-ebocker/how-to-create-a-new-adapter',
 		content: `
             <p>Creating a new adapter is easy with SvelteKit. You can use the following command to create a new adapter:</p>
             <pre>
@@ -85,7 +85,7 @@ export const guides = [
 	},
 	{
 		title: 'How to create a new hook',
-		slug: 'how-to-create-a-new-hook',
+		slug: '/guider-och-ebocker/how-to-create-a-new-hook',
 		content: `
             <p>Creating a new hook is easy with SvelteKit. You can use the following command to create a new hook:</p>
             <pre>
@@ -97,7 +97,7 @@ export const guides = [
 	},
 	{
 		title: 'How to create a new endpoint',
-		slug: 'how-to-create-a-new-endpoint',
+		slug: '/guider-och-ebocker/how-to-create-a-new-endpoint',
 		content: `
             <p>Creating a new endpoint is easy with SvelteKit. You can use the following command to create a new endpoint:</p>
             <pre>
