@@ -6,6 +6,8 @@
 	export let title = '';
 	export let description = '';
 	export let href = '';
+	export let buttonText = 'Läs mer';
+	export let subTitle = '';
 </script>
 
 <a {href} data-sveltekit-prefetch>
@@ -13,14 +15,13 @@
 		<img src={image} alt={title} />
 	</div>
 	<div class="flex flex-col flex-1 gap-4 px-8 pt-12 pb-8 2xl:px-6 2xl xl lg:py-6">
-		<h2>
-			{title}
-		</h2>
-		<p>
-			{description}
-		</p>
+		{#if subTitle}
+			<h6>{subTitle}</h6>
+		{/if}
+		<h2>{title}</h2>
+		<p>{description}</p>
 		<div class="block mt-6 md:flex">
-			<Button variation="outline" title="Läs mer" {href} size="md" />
+			<Button variation="outline" title={buttonText} {href} size="md" />
 		</div>
 	</div>
 </a>
@@ -29,6 +30,7 @@
 	img {
 		aspect-ratio: 4/3;
 		height: 100%;
+		overflow: hidden;
 		@apply transition-all duration-200 object-cover;
 	}
 	a {
@@ -38,6 +40,7 @@
 				@apply scale-105;
 			}
 			h2,
+			h6,
 			p {
 				@apply underline underline-offset-4;
 			}
@@ -50,7 +53,11 @@
 	}
 
 	p {
-		@apply text-sm tracking-wide flex-1 text-balance;
+		@apply flex-1 text-balance;
+	}
+	p,
+	h6 {
+		@apply text-sm tracking-wide;
 		font-family: var(--font-esteban);
 	}
 </style>

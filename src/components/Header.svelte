@@ -24,7 +24,6 @@
 	});
 </script>
 
-<Drawer {isOpen} on:clickAway={handleToggle} on:closeButton={handleToggle} />
 <header
 	class="duration-500 transition-all ease-in-out {mounted
 		? 'translate-y-0 opacity-100'
@@ -40,7 +39,7 @@
 		</button>
 	</nav>
 </header>
-
+<Drawer {isOpen} on:clickAway={handleToggle} on:closeButton={handleToggle} />
 <svelte:window bind:innerWidth bind:scrollY={y} />
 
 <style lang="scss">
