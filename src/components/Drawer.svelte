@@ -143,7 +143,7 @@
 <style>
 	.overlay {
 		@apply fixed w-screen h-full -mt-24 -ml-8 overflow-hidden ease-linear transition-all duration-500 backdrop-blur-md bg-opacity-80 bg-[#b6bacc] delay-200;
-		width: calc(100% + 16px);
+		width: calc(100% + 32px);
 		height: calc(100% + 64px);
 	}
 	.bleed {
