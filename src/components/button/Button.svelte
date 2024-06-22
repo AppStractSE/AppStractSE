@@ -15,8 +15,8 @@
 	{/if}
 	{#if type === 'a' && external}
 		<a {href} target="_blank"
-			><span class="flex gap-2 items-center justify-center"
-				>{title}<Icon icon="material-symbols-light:arrow-insert" class="rotate-90 text-xl" /></span
+			><span class="flex items-center justify-center gap-2"
+				>{title}<Icon icon="material-symbols-light:arrow-insert" class="text-xl rotate-90" /></span
 			>
 		</a>
 	{/if}
@@ -27,7 +27,7 @@
 
 <style lang="scss">
 	.btn {
-		@apply relative after:bg-[#464646] after:rounded-full after:inset-0 after:transition-all after:absolute after:w-full after:h-full after:z-[-1] z-[1];
+		@apply relative after:opacity-0 hover:after:opacity-100 after:bg-[#464646] after:rounded-full after:inset-0 after:transition-all after:absolute after:w-full after:h-full after:z-[-1] z-[1];
 	}
 	.btn a,
 	.btn button {

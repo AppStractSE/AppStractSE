@@ -18,7 +18,8 @@ export const cases: Case[] = [
 		industry: 'Målerifirma',
 		slug: '/cases/maleri-viskan',
 		url: 'maleriviskan.se',
-		title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		title:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 		shortDescription:
 			'Hos Måleri Viskan behövdes en digital totalrenovering. Vi fick äran att skapa en ny design och utveckla en ny webbplats med moderna tekniker och verktyg.',
 		description: 'Description 1',
@@ -72,6 +73,28 @@ export const cases: Case[] = [
 		description: 'Description 4',
 		image: 'https://via.placeholder.com/150',
 		tags: ['SEO', 'Webbutveckling', 'UI / UX Design', 'Hosting och drift', 'E-maildesign'],
+		solution: '',
+		needs: '',
+		result: ''
+	},
+	{
+		client: 'PropertEase',
+		industry: 'Property Management',
+		slug: '/cases/propertease',
+		url: 'propertease.se',
+		title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		shortDescription:
+			'En rad längre mening. PropertEase är en digital plattform för fastighetsförvaltning som erbjuder en rad tjänster för att underlätta för fastighetsägare. Vi fick äran att skapa både plattformen samt webbplatsen.',
+		description: 'Description 4',
+		image: 'https://via.placeholder.com/150',
+		tags: [
+			'Apputveckling',
+			'SEO',
+			'Webbutveckling',
+			'UI / UX Design',
+			'Hosting och drift',
+			'E-maildesign'
+		],
 		solution: '',
 		needs: '',
 		result: ''
