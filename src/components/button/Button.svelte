@@ -1,12 +1,14 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
-	export let title = '';
+	export let title: string = '';
+	export let icon: string = '';
 	export let variation: 'primary' | 'outline' = 'primary';
 	export let href = '/';
-	export let size: 'sm' | 'md' | 'lg' = 'md';
+	export let size: 'sm' | 'md' | 'lg' | 'rounded-pill' = 'md';
 	export let type: 'button' | 'a' = 'a';
 	export let onClick: () => void = () => {};
 	export let external = false;
+	export let hideExternalIcon = false;
 </script>
 
 <div class="btn btn-{variation} btn-{size}">
@@ -16,8 +18,12 @@
 	{#if type === 'a' && external}
 		<a {href} target="_blank"
 			><span class="flex items-center justify-center gap-2"
-				>{title}<Icon icon="material-symbols-light:arrow-insert" class="text-xl rotate-90" /></span
-			>
+				>{title}
+				<Icon {icon} />
+				{#if !hideExternalIcon}
+					<Icon icon="material-symbols-light:arrow-insert" class="text-xl rotate-90" />
+				{/if}
+			</span>
 		</a>
 	{/if}
 	{#if type === 'a' && !external}
@@ -55,5 +61,9 @@
 	.btn-lg a,
 	.btn-lg button {
 		@apply text-base px-8 py-3.5;
+	}
+	.btn-rounded-pill a,
+	.btn-rounded-pill button {
+		@apply rounded-full p-3;
 	}
 </style>
