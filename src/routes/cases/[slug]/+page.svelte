@@ -17,7 +17,7 @@
 <svelte:head>
 	<title>Appstract | {clientCase.client}</title>
 	<meta name="description" content="Svelte demo app" />
-	<meta property="og:image" content="/images/cases/maleri-viskan/hero.png" />
+	<meta property="og:image" content="https://www.youtube.com/img/desktop/yt_1200.png" />
 	<meta property="og:title" content="Testing meta content text" />
 </svelte:head>
 <section class="my-12 lg:my-24">
