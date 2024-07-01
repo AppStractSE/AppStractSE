@@ -17,8 +17,8 @@
 <svelte:head>
 	<title>Appstract | {clientCase.client}</title>
 	<meta name="description" content="Svelte demo app" />
-	<meta property="og:image" content="https://klingit.com/wp-content/uploads/2023/02/cover-foodora.png">
-	<meta property="og:title" content="“Incredible security with such broad competence and high design quality.”">
+	<meta property="og:image" content="/images/cases/maleri-viskan/hero.png" />
+	<meta property="og:title" content="Testing meta content text" />
 </svelte:head>
 <section class="my-12 lg:my-24">
 	<div class="spacer" />
