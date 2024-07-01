@@ -1,9 +1,10 @@
 <script>
+	import Card from '$lib/components/Card.svelte';
+	import BreadcrumbsSection from '$lib/components/global/sections/BreadcrumbsSection.svelte';
+	import ContactSection from '$lib/components/global/sections/ContactSection.svelte';
+	import ProjectsSection from '$lib/components/global/sections/ProjectsSection.svelte';
+	import { guides } from '$lib/data/guides';
 	import { onMount } from 'svelte';
-	import Card from '../../components/Card.svelte';
-	import ContactSection from '../../components/sections/ContactSection.svelte';
-	import ProjectsSection from '../../components/sections/ProjectsSection.svelte';
-	import { guides } from '../../data/guides';
 
 	let mounted = false;
 	onMount(() => {
@@ -27,13 +28,16 @@
 				kickstarta ditt varumärke, och mycket av innehållet är helt gratis.
 			</p>
 		</div>
-		<div class="grid max-w-screen-xl grid-cols-1 gap-4 mx-auto md:grid-cols-2 lg:grid-cols-3">
+		<BreadcrumbsSection />
+		<div
+			class="grid max-w-screen-xl grid-cols-1 gap-4 px-4 mx-auto md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:px-0"
+		>
 			{#each guides.sort((a, b) => a.title.localeCompare(b.title)) as guide}
 				<Card
 					title={guide.title}
 					href={guide.slug}
 					description={guide.content}
-					image=""
+					image={guide.image}
 				/>
 			{/each}
 		</div>
@@ -53,8 +57,5 @@
 		span {
 			@apply font-semibold;
 		}
-	}
-	section {
-		@apply my-12 lg:my-24;
 	}
 </style>

@@ -1,11 +1,13 @@
 <script lang="ts">
+	import Button from '$lib/components/button/Button.svelte';
+	import ShareSocials from '$lib/components/global/bits/ShareSocials.svelte';
+	import ArticleCardSection from '$lib/components/global/sections/ArticleCardSection.svelte';
+	import BreadcrumbsSection from '$lib/components/global/sections/BreadcrumbsSection.svelte';
+	import ContactSection from '$lib/components/global/sections/ContactSection.svelte';
+	import ProjectsSection from '$lib/components/global/sections/ProjectsSection.svelte';
+	import ServicesSection from '$lib/components/global/sections/ServicesSection.svelte';
+	import { services } from '$lib/data/services';
 	import Icon from '@iconify/svelte';
-	import Button from '../../../components/button/Button.svelte';
-	import ArticleCardSection from '../../../components/sections/ArticleCardSection.svelte';
-	import ContactSection from '../../../components/sections/ContactSection.svelte';
-	import ProjectsSection from '../../../components/sections/ProjectsSection.svelte';
-	import ServicesSection from '../../../components/sections/ServicesSection.svelte';
-	import { services } from '../../../data/services';
 	export let data;
 	console.log(data);
 
@@ -15,6 +17,8 @@
 <svelte:head>
 	<title>Appstract | {clientCase.client}</title>
 	<meta name="description" content="Svelte demo app" />
+	<meta property="og:image" content="https://klingit.com/wp-content/uploads/2023/02/cover-foodora.png">
+	<meta property="og:title" content="“Incredible security with such broad competence and high design quality.”">
 </svelte:head>
 <section class="my-12 lg:my-24">
 	<div class="spacer" />
@@ -23,12 +27,13 @@
 		description={clientCase.shortDescription}
 		image="/images/cases/maleri-viskan/hero.png"
 	/>
+	<BreadcrumbsSection />
 </section>
 
 <section
-	class="px-4 xl:px-0 relative flex-col-reverse lg:flex-row flex items-start max-w-screen-xl justify-between mx-auto my-12 lg:my-24"
+	class="relative flex flex-col-reverse items-start justify-between max-w-screen-xl px-4 mx-auto my-12 xl:px-0 lg:flex-row lg:my-24"
 >
-	<div class="lg:sticky lg:top-0 lg:pt-24 mt-12 lg:-mt-24 lg:basis-2/12 w-full h-fit">
+	<div class="w-full mt-12 lg:sticky lg:top-0 lg:pt-24 lg:-mt-24 lg:basis-2/12 h-fit">
 		<div class="lg:divide-y">
 			<div class="pb-4 space-y-2">
 				<h3>Klient</h3>
@@ -52,26 +57,17 @@
 			</div>
 			<div class="py-4 space-y-4">
 				<h3>Dela det här</h3>
-				<div class="flex items-center gap-2">
-					<a href="#" class="text-xl">
-						<Icon icon="basil:linkedin-outline" />
-					</a>
-					<a href="#" class="text-xl">
-						<Icon icon="iconoir:facebook" />
-					</a>
-					<a href="#" class="text-xl">
-						<Icon icon="pajamas:twitter" />
-					</a>
-					<a href="#" class="text-2xl">
-						<Icon icon="mdi-light:email" />
-					</a>
-					<a href="#" class="text-2xl">
-						<Icon icon="ph:copy-light" />
-					</a>
+				<div class="flex items-center gap-2 text-lg">
+					<ShareSocials />
 				</div>
 			</div>
 			<div class="pt-4 space-y-4">
-				<Button external variation="outline" title="Besök sidan" href="https://www.{clientCase.url}" />
+				<Button
+					external
+					variation="outline"
+					title="Besök sidan"
+					href="https://www.{clientCase.url}"
+				/>
 			</div>
 		</div>
 	</div>
@@ -117,26 +113,6 @@
 		</section>
 	</div>
 </section>
-<!-- 
-<section class="my-12 lg:my-24">
-	<a
-		href="https://www.{clientCase.url}"
-		target="_blank"
-		class="flex items-center justify-between grid-cols-3 gap-12 px-6 py-4 mx-auto mb-12 font-bold transition-all duration-200 ease-in-out scale-110 border hover:underline-offset-4 hover:underline hover:scale-125 rounded-xl w-fit"
-	>
-		<div class="flex gap-2">
-			<Icon icon="f7:lock-shield" />
-			<Icon icon="material-symbols-light:search" />
-		</div>
-		<div class="justify-self-center">
-			<p>{clientCase.url}</p>
-		</div>
-		<div class="justify-self-end">
-			<Icon icon="material-symbols-light:close" />
-		</div>
-	</a>
-</section>
- -->
 <section class="my-12 lg:my-24">
 	<ArticleCardSection
 		rtl

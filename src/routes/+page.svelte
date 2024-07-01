@@ -1,13 +1,13 @@
 <script lang="ts">
+	import ArticleCardSection from '$lib/components/global/sections/ArticleCardSection.svelte';
+	import ArticleSection from '$lib/components/global/sections/ArticleSection.svelte';
+	import ContactSection from '$lib/components/global/sections/ContactSection.svelte';
+	import HeroSection from '$lib/components/global/sections/HeroSection.svelte';
+	import ProjectsSection from '$lib/components/global/sections/ProjectsSection.svelte';
+	import ServicesSection from '$lib/components/global/sections/ServicesSection.svelte';
+	import ThreeColumnsSection from '$lib/components/global/sections/ThreeColumnsSection.svelte';
 	import { onMount } from 'svelte';
 	import { register } from 'swiper/element/bundle';
-	import ArticleCardSection from '../components/sections/ArticleCardSection.svelte';
-	import ArticleSection from '../components/sections/ArticleSection.svelte';
-	import ContactSection from '../components/sections/ContactSection.svelte';
-	import HeroSection from '../components/sections/HeroSection.svelte';
-	import ProjectsSection from '../components/sections/ProjectsSection.svelte';
-	import ServicesSection from '../components/sections/ServicesSection.svelte';
-	import ThreeColumnsSection from '../components/sections/ThreeColumnsSection.svelte';
 	register();
 	let mounted = false;
 	onMount(() => {
