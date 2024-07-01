@@ -13,13 +13,19 @@
 	onMount(() => {
 		mounted = true;
 	});
+	export let data;
+	console.log(data);
+	$: metadata = data.metadata;
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
-	<meta property="og:image" content="https://www.youtube.com/img/desktop/yt_1200.png" />
-	<meta property="og:title" content="Testing meta content text" />
+	<title>{metadata.title}</title>
+	<meta name="description" content={metadata.description} />
+	<meta property="og:title" content={metadata.ogTitle} />
+	<meta property="og:description" content={metadata.ogDescription} />
+	<meta property="og:image" content={metadata.ogImage} />
+	<meta property="og:url" content={metadata.ogUrl} />
+	<meta property="og:type" content={metadata.ogType} />
 </svelte:head>
 
 <main
