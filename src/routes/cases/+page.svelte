@@ -1,9 +1,10 @@
 <script>
+	import Card from '$lib/components/Card.svelte';
+	import BreadcrumbsSection from '$lib/components/global/sections/BreadcrumbsSection.svelte';
+	import ContactSection from '$lib/components/global/sections/ContactSection.svelte';
+	import ProjectsSection from '$lib/components/global/sections/ProjectsSection.svelte';
+	import { cases } from '$lib/data/cases';
 	import { onMount } from 'svelte';
-	import Card from '../../components/Card.svelte';
-	import ContactSection from '../../components/sections/ContactSection.svelte';
-	import ProjectsSection from '../../components/sections/ProjectsSection.svelte';
-	import { cases } from '../../data/cases';
 
 	let mounted = false;
 	onMount(() => {
@@ -26,7 +27,10 @@
 				hoppas att du blir inspirerad!
 			</p>
 		</div>
-		<div class="grid max-w-screen-xl grid-cols-3 gap-4 mx-auto">
+		<BreadcrumbsSection />
+		<div
+			class="grid max-w-screen-xl grid-cols-1 gap-4 px-4 mx-auto md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:px-0"
+		>
 			{#each cases.sort((a, b) => a.title.localeCompare(b.title)) as clientCase}
 				<Card
 					title={clientCase.title}

@@ -1,8 +1,8 @@
+import { guides } from '$lib/data/guides';
 import { error } from '@sveltejs/kit';
-import { guides } from '../../../data/guides.js';
 
 export const load = ({ params }) => {
-	const guide = guides.find((service) => service.slug === '/guider-och-ebocker/' + params.slug);
+	const guide = guides.find((guide) => guide.slug === '/guider-och-ebocker/' + params.slug);
 
 	if (!guide) throw error(404);
 	return { guide };
