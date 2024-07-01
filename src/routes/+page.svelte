@@ -18,6 +18,8 @@
 <svelte:head>
 	<title>Home</title>
 	<meta name="description" content="Svelte demo app" />
+	<meta property="og:image" content="https://www.youtube.com/img/desktop/yt_1200.png" />
+	<meta property="og:title" content="Testing meta content text" />
 </svelte:head>
 
 <main
