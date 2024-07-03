@@ -71,7 +71,7 @@
 			<div class="my-12">
 				<Socials />
 			</div>
-			<div class="my-12 mx-auto w-full h-[1px] bg-[#f3f1ff] bg-opacity-50"></div>
+			<div class="my-12 mx-auto w-full h-[1px] bg-white/50"></div>
 			<div class="flex flex-col justify-between gap-4 md:flex-row">
 				<p>© 2024 All Rights Reserved.</p>
 				<div class="flex divide-x">
@@ -95,7 +95,7 @@
 		@apply pt-4 w-full md:w-fit;
 	}
 	.content {
-		@apply py-12 bg-[#292929] text-white;
+		@apply py-12 text-white bg-[#363a50];
 	}
 
 	a {

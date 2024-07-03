@@ -31,13 +31,13 @@
 		aspect-ratio: 4/3;
 		height: 100%;
 		overflow: hidden;
-		@apply transition-all duration-200 object-cover;
+		@apply transition-all duration-200 object-cover opacity-70;
 	}
 	a {
-		@apply flex flex-col overflow-hidden bg-white border rounded-md h-full;
+		@apply flex flex-col overflow-hidden border rounded-md h-full bg-white;
 		&:hover {
 			img {
-				@apply scale-105;
+				@apply scale-105 opacity-100;
 			}
 			h2,
 			h6,

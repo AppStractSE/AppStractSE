@@ -35,12 +35,8 @@
 	<div class="embla__container">
 		{#each data as item, index}
 			<div class="embla__slide">
-				<div class="overflow-hidden rounded-md outline outline-1">
-					<img
-						src="https://placehold.co/768x768.png"
-						alt={item.title}
-						class="object-cover w-full h-full"
-					/>
+				<div>
+					<img src="https://placehold.co/768x768.png" alt={item.title} class="" />
 				</div>
 				<p class="subtitle">{item.title}</p>
 			</div>
@@ -63,14 +59,7 @@
 
 <style lang="scss">
 	.embla {
-		background: linear-gradient(
-			180deg,
-			rgba(243, 241, 255, 0) 0%,
-			rgba(220, 214, 255, 1) 45%,
-			rgba(220, 214, 255, 1) 55%,
-			rgba(243, 241, 255, 0) 100%
-		);
-		@apply overflow-hidden;
+		@apply overflow-hidden bg-gradient-to-b from-transparent via-sunglow-100 to-transparent;
 	}
 	.embla__container {
 		@apply px-4 items-stretch gap-4 flex;
@@ -82,12 +71,12 @@
 		height: unset;
 		@apply space-y-2 my-2;
 		img {
-			@apply transition-all duration-300 ease-in-out opacity-70;
+			@apply transition-all duration-300 ease-in-out opacity-70 object-cover w-full h-full rounded-md;
 		}
 		&:hover {
 			@apply underline;
 			img {
-				@apply scale-105 opacity-100;
+				@apply opacity-100;
 			}
 		}
 

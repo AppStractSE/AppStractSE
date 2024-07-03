@@ -1,8 +1,8 @@
 <script lang="ts">
+	import Card from '$lib/components/Card.svelte';
+	import { services } from '$lib/data/services';
 	import AutoScroll from 'embla-carousel-auto-scroll';
 	import emblaCarouselSvelte from 'embla-carousel-svelte';
-	import { services } from '$lib/data/services';
-	import Card from '$lib/components/Card.svelte';
 
 	$: innerWidth = 0;
 	$: smScreen = innerWidth < 1024;
@@ -66,14 +66,7 @@
 
 <style lang="scss">
 	.embla {
-		background: linear-gradient(
-			180deg,
-			rgba(243, 241, 255, 0) 0%,
-			rgba(220, 214, 255, 1) 45%,
-			rgba(220, 214, 255, 1) 55%,
-			rgba(243, 241, 255, 0) 100%
-		);
-		@apply my-12 overflow-hidden;
+		@apply my-12 overflow-hidden bg-gradient-to-b from-transparent via-sunglow-300 to-transparent;
 	}
 	.embla__container {
 		@apply px-4 items-stretch gap-4 flex;

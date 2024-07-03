@@ -1,7 +1,7 @@
 <script lang="ts">
+	import Button from '$lib/components/button/Button.svelte';
 	import { createEventDispatcher } from 'svelte';
 	import { z } from 'zod';
-	import Button from '$lib/components/button/Button.svelte';
 
 	// Define the schema using Zod
 	const schema = z.object({
@@ -41,7 +41,7 @@
 
 	let errorClassNames = 'mt-2 mb-4 max-h-full h-fit opacity-100';
 	let errorBaseClassNames = 'h-0 max-h-0 opacity-0';
-	let inputClassNames = 'border-black focus-within:border-blue-500';
+	let inputClassNames = 'border-black/25 focus-within:border-black/50';
 	let inputErrorClassNames = 'border-red-500 focus-within:border-red-700';
 </script>
 
@@ -134,10 +134,10 @@
 	input,
 	textarea {
 		font-family: var(--font-varela);
-		@apply block w-full p-4 text-black bg-[#f3f1ff] rounded border outline-none ring-0 text-base focus-within:bg-white transition-all duration-200 ease-in-out;
+		@apply block w-full p-4 bg-sunglow-50 rounded border outline-none ring-0 text-base focus-within:bg-sunglow-50 transition-all duration-200 ease-in-out;
 	}
 	::placeholder {
-		@apply text-black text-opacity-70;
+		@apply text-black/50;
 	}
 	button {
 		@apply p-2 text-white rounded;

@@ -20,10 +20,7 @@
 	--font-alegreya: 'Alegreya', serif;
 	--font-esteban: 'Esteban', serif;
 	--font-rubik: 'Rubik', sans-serif;
-	--color-text: #292929;
-	--default-bg: #f3f1ff;
 	font-family: var(--font-body);
-	color: var(--color-text);
 }
 
 * {
@@ -31,11 +28,9 @@
 }
 
 body {
-	background: var(--default-bg);
-	margin: 0;
-	padding: 0;
-	font-size: 18px;
+	@apply bg-sunglow-50 m-0 p-0 text-black;
 	line-height: 1.2;
+	font-size: 18px;
 }
 
 nav {

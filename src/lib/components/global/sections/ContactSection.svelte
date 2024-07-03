@@ -12,7 +12,7 @@
 						{`Vi på Appstract erbjuder professionella IT-lösningar utan förvirring eller dolda avgifter. Vår filosofi är att göra design tillgänglig och intuitiv för alla, utan en massa krångel!\n\nBoka ett digitalt möte med oss för att diskutera dina specifika behov. Under mötet kommer vi att introducera vår arbetsmetodik och berätta hur vi tror vi kan göra en positiv inverkan!\n\nHoppas vi hörs!`}
 					</p>
 				</div>
-				<div class="max-w-lg justify-self-end">
+				<div class="max-w-lg justify-self-center md:justify-self-end">
 					<ContactForm />
 				</div>
 			</div>
@@ -22,13 +22,7 @@
 
 <style lang="scss">
 	section {
-		background: linear-gradient(
-			180deg,
-			rgba(243, 241, 255, 0) 0%,
-			rgba(220, 214, 255, 1) 45%,
-			rgba(220, 214, 255, 1) 55%,
-			rgba(243, 241, 255, 0) 100%
-		);
+		@apply bg-gradient-to-b from-transparent via-sunglow-100 to-transparent my-12 lg:my-24;
 	}
 	h2 {
 		@apply text-3xl font-bold;

@@ -29,20 +29,13 @@
 				<Button variation="primary" title="Jag vill veta mer" href="/" size="lg" />
 			</div>
 		</div>
-		<div class="spacer bg-gradient-to-b from-transparent to-[#f3f1ff]"></div>
+		<div class="spacer bg-gradient-to-b from-transparent to-sunglow-50"></div>
 	</div>
 </section>
 
 <style lang="scss">
-	section:first-of-type {
-		min-height: 450px;
-		background: url('/images/hero.png');
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		text-align: center;
-		margin-top: 0 !important;
-		margin-bottom: 0 !important;
+	section {
+		@apply bg-gradient-to-br from-sunglow-100 to-sunglow-50;
 	}
 	.hero {
 		@apply max-w-screen-xl px-4 py-12 mx-auto space-y-12 lg:px-0 lg:py-32;

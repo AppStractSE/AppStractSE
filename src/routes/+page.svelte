@@ -5,7 +5,6 @@
 	import HeroSection from '$lib/components/global/sections/HeroSection.svelte';
 	import ProjectsSection from '$lib/components/global/sections/ProjectsSection.svelte';
 	import ServicesSection from '$lib/components/global/sections/ServicesSection.svelte';
-	import ThreeColumnsSection from '$lib/components/global/sections/ThreeColumnsSection.svelte';
 	import { onMount } from 'svelte';
 	import { register } from 'swiper/element/bundle';
 	register();
@@ -35,7 +34,6 @@
 >
 	<div class="spacer"></div>
 	<HeroSection />
-	<ThreeColumnsSection />
 	<ServicesSection />
 	<section class="my-12 lg:my-24">
 		<ArticleCardSection

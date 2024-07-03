@@ -46,13 +46,13 @@
 >
 	<!-- svelte-ignore a11y-click-events-have-key-events -->
 	<div
-		class="pt-16 md:pt-24 pb-6 md:pb-12 overflow-hidden ease-linear transition-all duration-500 backdrop-blur-md delay-200 fixed h-full px-2 md:px-8 w-full {isOpen
+		class="pt-16 md:pt-24 pb-6 md:pb-12 overflow-hidden ease-linear transition-all duration-500 backdrop-blur-sm delay-200 fixed h-full px-2 md:px-8 w-full {isOpen
 			? 'w-screen opacity-100'
 			: 'w-0 opacity-0'}"
 	>
 		<div class="overlay" on:click={handleClickAway} />
 		<div
-			class="relative flex items-center rounded overflow-scroll transition-all duration-1000 h-full transform mx-auto bg-[#fcfcff] backdrop-blur-md bg-opacity-90 max-w-[1312px] {isOpen
+			class="relative flex items-center rounded overflow-scroll transition-all duration-1000 h-full transform mx-auto bg-sunglow-50 max-w-[1312px] {isOpen
 				? 'opacity-100 translate-y-0'
 				: 'opacity-100 translate-y-full'}"
 		>
@@ -73,7 +73,13 @@
 
 <style lang="scss">
 	.overlay {
-		@apply fixed w-screen h-full -mt-24 -ml-8 overflow-hidden ease-linear transition-all duration-500 backdrop-blur-md bg-[#b0befb8a] delay-200;
+		background: radial-gradient(
+			circle,
+			rgba(0, 0, 0, 0) 0%,
+			rgba(0, 0, 0, 0) 40%,
+			rgba(0, 0, 0, 0.5) 100%
+		);
+		@apply fixed w-screen h-full -mt-24 -ml-8 overflow-hidden ease-linear transition-all duration-500 delay-200;
 		width: calc(100% + 32px);
 		height: calc(100% + 64px);
 	}
