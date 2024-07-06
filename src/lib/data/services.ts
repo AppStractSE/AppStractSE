@@ -1,7 +1,11 @@
 export interface Service {
 	title: string;
 	slug: string;
-	about: string;
+	about: {
+		title: string;
+		description: string;
+		image: string;
+	};
 	description: string;
 	image: string;
 	hero: {
@@ -23,8 +27,12 @@ export const services: Service[] = [
 	{
 		title: 'Webbutveckling',
 		slug: '/tjanster/webbutveckling',
-		about:
-			'I den digitala eran är en webbplats inte bara en online närvaro; det är en möjlighet att skapa en djup koppling med din målgrupp. Vårt fokus ligger på att skapa moderna och responsiva webbplatser som inte bara ser fantastiska ut, utan också levererar en intuitiv och engagerande användarupplevelse. Vi integrerar innovativt tänkande med praktiska funktioner för att säkerställa att varje webbplats vi skapar är anpassad efter dina unika behov och mål.',
+		about: {
+			title: 'Kvalitativ webbutveckling av Appstract',
+			description:
+				'I den digitala eran är en webbplats inte bara en online närvaro; det är en möjlighet att skapa en djup koppling med din målgrupp. Vårt fokus ligger på att skapa moderna och responsiva webbplatser som inte bara ser fantastiska ut, utan också levererar en intuitiv och engagerande användarupplevelse. Vi integrerar innovativt tänkande med praktiska funktioner för att säkerställa att varje webbplats vi skapar är anpassad efter dina unika behov och mål.',
+			image: 'https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg'
+		},
 		description:
 			'Moderna och responsiva unika webbplatser som engagerar och konverterar, med fokus på användarupplevelse och prestanda.',
 		image: 'https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg',
@@ -59,8 +67,12 @@ export const services: Service[] = [
 	},
 	{
 		title: 'Hosting och drift',
-		about:
-			'En pålitlig hostingpartner är avgörande för att din webbplats ska vara tillgänglig och snabb. Våra hostinglösningar är utformade för att maximera prestanda och säkerhet, samtidigt som de ger dig den flexibilitet du behöver för att växa och utvecklas. Vi erbjuder en rad hostingalternativ som passar alla behov och budgetar, från delad hosting till dedikerade servrar och molnbaserade lösningar.',
+		about: {
+			title: 'Pålitlig hosting för din webbplats',
+			description:
+				'En pålitlig hostingpartner är avgörande för att din webbplats ska vara tillgänglig och snabb. Våra hostinglösningar är utformade för att maximera prestanda och säkerhet, samtidigt som de ger dig den flexibilitet du behöver för att växa och utvecklas. Vi erbjuder en rad hostingalternativ som passar alla behov och budgetar, från delad hosting till dedikerade servrar och molnbaserade lösningar.',
+			image: 'https://images.pexels.com/photos/209151/pexels-photo-209151.jpeg'
+		},
 		slug: '/tjanster/hosting-och-drift',
 		description:
 			'Säkra och pålitliga hostinglösningar för att hålla din webbplats uppe och snabbrörlig.',
@@ -96,8 +108,12 @@ export const services: Service[] = [
 	},
 	{
 		title: 'Apputveckling',
-		about:
-			'Mobilapplikationer har blivit en viktig del av vår digitala vardag, och en anpassad app kan vara nyckeln till att differentiera ditt varumärke och engagera din målgrupp. Vårt team av erfarna apputvecklare skapar skräddarsydda appar för iOS och Android som är användarvänliga och effektiva. Vi fokuserar på att skapa innovativa mobilapplikationer som ger en sömlös användarupplevelse och hjälper dig att nå dina affärsmål.',
+		about: {
+			title: 'Skräddarsydda appar för iOS och Android',
+			description:
+				'Mobilapplikationer har blivit en viktig del av vår digitala vardag, och en anpassad app kan vara nyckeln till att differentiera ditt varumärke och engagera din målgrupp. Vårt team av erfarna apputvecklare skapar skräddarsydda appar för iOS och Android som är användarvänliga och effektiva. Vi fokuserar på att skapa innovativa mobilapplikationer som ger en sömlös användarupplevelse och hjälper dig att nå dina affärsmål.',
+			image: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg'
+		},
 		slug: '/tjanster/apputveckling',
 		description: 'Skräddarsydda appar för iOS och Android som är användarvänliga och effektiva.',
 		image: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg',
@@ -128,8 +144,12 @@ export const services: Service[] = [
 	},
 	{
 		title: 'Förbättrad design med AI',
-		about:
-			'AI-teknik har revolutionerat designprocessen och möjliggör nya sätt att skapa engagerande och personliga användarupplevelser. Vi kombinerar AI med designexpertis för att skapa webbplatser och appar som är både vackra och funktionella. Våra AI-drivna designlösningar hjälper dig att förbättra din nuvarande design och skapa en mer engagerande upplevelse för dina användare.',
+		about: {
+			title: 'Förbättra din design med AI-teknik',
+			description:
+				'AI-teknik har revolutionerat designprocessen och möjliggör nya sätt att skapa engagerande och personliga användarupplevelser. Vi kombinerar AI med designexpertis för att skapa webbplatser och appar som är både vackra och funktionella. Våra AI-drivna designlösningar hjälper dig att förbättra din nuvarande design och skapa en mer engagerande upplevelse för dina användare.',
+			image: 'https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg'
+		},
 		slug: '/tjanster/forbattrad-design-med-ai',
 		description: 'Vi hjälper er lyfta er nuvarande design med hjälp av AI.',
 		image: 'https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg',
@@ -162,8 +182,12 @@ export const services: Service[] = [
 	},
 	{
 		title: 'UI / UX Design',
-		about:
-			'Designen av användargränssnitt är avgörande för att skapa en positiv och minnesvärd användarupplevelse. Vårt fokus ligger på att kombinera estetik med funktionalitet, skapa användargränssnitt som inte bara är vackra utan också intuitiva. Vi strävar efter att skapa prototyper som testas och förfinas för att säkerställa att varje designbeslut är optimalt för din målgrupps behov och beteenden.',
+		about: {
+			title: 'Skapa vackra och intuitiva användargränssnitt',
+			description:
+				'Designen av användargränssnitt är avgörande för att skapa en positiv och minnesvärd användarupplevelse. Vårt fokus ligger på att kombinera estetik med funktionalitet, skapa användargränssnitt som inte bara är vackra utan också intuitiva. Vi strävar efter att skapa prototyper som testas och förfinas för att säkerställa att varje designbeslut är optimalt för din målgrupps behov och beteenden.',
+			image: 'https://images.pexels.com/photos/3585088/pexels-photo-3585088.jpeg'
+		},
 		slug: '/tjanster/ui-ux-design',
 		description:
 			'Designa användargränssnitt som är både vackra och intuitiva för en bättre användarupplevelse.',
@@ -199,8 +223,12 @@ export const services: Service[] = [
 	},
 	{
 		title: 'Digital marknadsföring',
-		about:
-			'I dagens digitala landskap är synlighet och engagemang avgörande för framgång. Vi utvecklar strategiska digitala marknadsföringskampanjer som ökar din online-närvaro och driver konverteringar. Genom att kombinera SEO, PPC och engagerande innehåll, skapar vi målinriktade kampanjer som når din målgrupp vid rätt tidpunkt och på rätt plats.',
+		about: {
+			title: 'Öka din online-närvaro med strategiska kampanjer',
+			description:
+				'I dagens digitala landskap är synlighet och engagemang avgörande för framgång. Vi utvecklar strategiska digitala marknadsföringskampanjer som ökar din online-närvaro och driver konverteringar. Genom att kombinera SEO, PPC och engagerande innehåll, skapar vi målinriktade kampanjer som når din målgrupp vid rätt tidpunkt och på rätt plats.',
+			image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg'
+		},
 		slug: '/tjanster/digital-marknadsforing',
 		description: 'Strategiska kampanjer för att öka din online-närvaro och driva konverteringar.',
 		image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg',
@@ -233,8 +261,12 @@ export const services: Service[] = [
 	},
 	{
 		title: 'E-maildesign',
-		about:
-			'E-postmarknadsföring är en kraftfull kanal för att nå och engagera din publik. Vårt team specialiserar sig på att skapa e-postkampanjer som inte bara når din målgrupp utan också ökar konverteringarna. Vi designar anpassade e-postmallar och automatiserade kampanjer som är optimerade för att leverera relevanta meddelanden och öka dina affärsresultat.',
+		about: {
+			title: 'Engagerande e-postkampanjer för att nå din målgrupp',
+			description:
+				'E-postmarknadsföring är en kraftfull kanal för att nå och engagera din publik. Vårt team specialiserar sig på att skapa e-postkampanjer som inte bara når din målgrupp utan också ökar konverteringarna. Vi designar anpassade e-postmallar och automatiserade kampanjer som är optimerade för att leverera relevanta meddelanden och öka dina affärsresultat.',
+			image: 'https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg'
+		},
 		slug: '/tjanster/emaildesign',
 		description: 'Effektiva och engagerande e-postkampanjer som når din målgrupp.',
 		image: 'https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg',
@@ -268,8 +300,12 @@ export const services: Service[] = [
 	},
 	{
 		title: 'SEO',
-		about:
-			'Optimering för sökmotorer är avgörande för att öka din webbplats synlighet och nå nya kunder online. Vi erbjuder omfattande SEO-tjänster, inklusive on-page optimering, länkbyggande och teknisk SEO, för att förbättra din ranking på sökmotorer. Vår strategi är att skapa hållbara resultat som ökar din webbplats auktoritet och attraherar organisk trafik.',
+		about: {
+			title: 'Optimera din webbplats för att ranka högre på sökmotorer',
+			description:
+				'Optimering för sökmotorer är avgörande för att öka din webbplats synlighet och nå nya kunder online. Vi erbjuder omfattande SEO-tjänster, inklusive on-page optimering, länkbyggande och teknisk SEO, för att förbättra din ranking på sökmotorer. Vår strategi är att skapa hållbara resultat som ökar din webbplats auktoritet och attraherar organisk trafik.',
+			image: 'https://images.pexels.com/photos/218717/pexels-photo-218717.jpeg'
+		},
 		slug: '/tjanster/seo',
 		description:
 			'Få hjälp med att optimera din webbplats för att ranka högre på sökmotorer och på så sätt nå fler kunder.',
@@ -306,8 +342,12 @@ export const services: Service[] = [
 	},
 	{
 		title: 'Sociala medier',
-		about:
-			'Bygg en stark och engagerad närvaro på sociala medier med våra skräddarsydda strategier och innehållsskapande. Vi erbjuder en omfattande hantering av sociala mediekampanjer som ökar din följares engagemang och konverteringar. Genom att skapa och distribuera relevant innehåll på rätt plattformar, hjälper vi dig att optimera din närvaro och maximera din marknadsföringseffektivitet.',
+		about: {
+			title: 'Bygg och hantera en stark närvaro på sociala medier',
+			description:
+				'Bygg en stark och engagerad närvaro på sociala medier med våra skräddarsydda strategier och innehållsskapande. Vi erbjuder en omfattande hantering av sociala mediekampanjer som ökar din följares engagemang och konverteringar. Genom att skapa och distribuera relevant innehåll på rätt plattformar, hjälper vi dig att optimera din närvaro och maximera din marknadsföringseffektivitet.',
+			image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg'
+		},
 		slug: '/tjanster/sociala-medier',
 		description: 'Bygg och hantera en stark närvaro på sociala medier för att engagera din publik.',
 		image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg',

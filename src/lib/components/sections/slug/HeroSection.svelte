@@ -17,7 +17,7 @@
 			? 'translate-y-0 opacity-100'
 			: 'translate-y-12 opacity-0'}"
 	>
-		<div class="spacer"></div>
+		<div class="spacer" />
 		<div class="hero">
 			<div class="space-y-6">
 				<h2>{title}</h2>
@@ -38,7 +38,7 @@
 		@apply bg-gradient-to-br from-sunglow-100 to-sunglow-50;
 	}
 	.hero {
-		@apply max-w-screen-xl px-4 py-12 mx-auto space-y-12 lg:px-0 lg:py-32;
+		@apply max-w-screen-xl px-4 py-12 mx-auto space-y-12 lg:px-0;
 		h2 {
 			@apply text-4xl;
 		}

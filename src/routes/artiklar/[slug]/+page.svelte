@@ -1,5 +1,5 @@
 <script lang="ts">
-	import BreadcrumbsSection from '$lib/components/global/sections/BreadcrumbsSection.svelte';
+	import BreadcrumbsBlock from '$lib/components/global/blocks/BreadcrumbsBlock.svelte';
 	import ContactSection from '$lib/components/global/sections/ContactSection.svelte';
 	import ProjectsSection from '$lib/components/global/sections/ProjectsSection.svelte';
 	import ServicesSection from '$lib/components/global/sections/ServicesSection.svelte';
@@ -15,7 +15,7 @@
 </svelte:head>
 
 <HeroSection title={guide.title} description={guide.description} />
-<BreadcrumbsSection />
+<BreadcrumbsBlock />
 <ServicesSection />
 <ProjectsSection />
 <ContactSection />
