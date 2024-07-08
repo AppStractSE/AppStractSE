@@ -81,7 +81,7 @@
 					<a href="/">
 						<p class="px-2">Användarvillkor</p>
 					</a>
-					<a href="/">
+					<a href="/sitemap">
 						<p class="pl-2">Sitemap</p>
 					</a>
 				</div>

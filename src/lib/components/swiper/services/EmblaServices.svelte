@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Card from '$lib/components/Card.svelte';
+	import DefaultCard from '$lib/components/cards/DefaultCard.svelte';
 	import { services } from '$lib/data/services';
 	import AutoScroll from 'embla-carousel-auto-scroll';
 	import emblaCarouselSvelte from 'embla-carousel-svelte';
@@ -40,7 +40,7 @@
 	<div class="embla__container">
 		{#each services as service, index}
 			<div class="embla__slide">
-				<Card
+				<DefaultCard
 					title={service.title}
 					href={service.slug}
 					description={service.description}

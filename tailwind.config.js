@@ -37,6 +37,7 @@ export default {
 					700: '#070A0D'
 				},
 				sunglow: {
+					25: '#FFFDF9',
 					50: '#FFF9EB',
 					100: '#FFF3D6',
 					200: '#FFEDC2',

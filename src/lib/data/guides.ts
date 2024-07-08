@@ -19,7 +19,7 @@ export const guides: Guide[] = [
                 </code>
             </pre>
         `,
-		image: 'https://via.placeholder.com/150'
+		image: '/images/guides/default.png'
 	},
 	{
 		title: 'Skapa nya sidor i SvelteKit',
@@ -33,7 +33,7 @@ export const guides: Guide[] = [
                 </code>
             </pre>
         `,
-		image: 'https://via.placeholder.com/150'
+		image: '/images/guides/default.png'
 	},
 	{
 		title: 'Utveckla anpassade layouter i SvelteKit',
@@ -47,7 +47,7 @@ export const guides: Guide[] = [
                 </code>
             </pre>
         `,
-		image: 'https://via.placeholder.com/150'
+		image: '/images/guides/default.png'
 	},
 	{
 		title: 'Bygg återanvändbara komponenter i SvelteKit',
@@ -61,7 +61,7 @@ export const guides: Guide[] = [
                 </code>
             </pre>
         `,
-		image: 'https://via.placeholder.com/150'
+		image: '/images/guides/default.png'
 	},
 	{
 		title: 'Implementera globala tillstånd med stores i SvelteKit',
@@ -75,7 +75,7 @@ export const guides: Guide[] = [
                 </code>
             </pre>
         `,
-		image: 'https://via.placeholder.com/150'
+		image: '/images/guides/default.png'
 	},
 	{
 		title: 'Skapa och integrera tjänster i SvelteKit',
@@ -89,7 +89,7 @@ export const guides: Guide[] = [
                 </code>
             </pre>
         `,
-		image: 'https://via.placeholder.com/150'
+		image: '/images/guides/default.png'
 	},
 	{
 		title: 'Använd adaptorer för externa datakällor i SvelteKit',
@@ -103,7 +103,7 @@ export const guides: Guide[] = [
                 </code>
             </pre>
         `,
-		image: 'https://via.placeholder.com/150'
+		image: '/images/guides/default.png'
 	},
 	{
 		title: 'Skapa anpassade hooks i SvelteKit',
@@ -117,7 +117,7 @@ export const guides: Guide[] = [
                 </code>
             </pre>
         `,
-		image: 'https://via.placeholder.com/150'
+		image: '/images/guides/default.png'
 	},
 	{
 		title: 'Implementera anpassade API-endpoints i SvelteKit',
@@ -131,6 +131,6 @@ export const guides: Guide[] = [
                 </code>
             </pre>
         `,
-		image: 'https://via.placeholder.com/150'
+		image: '/images/guides/default.png'
 	}
 ];

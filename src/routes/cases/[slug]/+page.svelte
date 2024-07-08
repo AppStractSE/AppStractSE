@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Button from '$lib/components/button/Button.svelte';
 	import Contact from '$lib/components/drawer/bits/Contact.svelte';
+	import EmblaCasesCarousel from '$lib/components/embla/EmblaCasesCarousel.svelte';
 	import ShareSocials from '$lib/components/global/bits/ShareSocials.svelte';
 	import BreadcrumbsBlock from '$lib/components/global/blocks/BreadcrumbsBlock.svelte';
 	import ProjectsSection from '$lib/components/global/sections/ProjectsSection.svelte';
@@ -8,6 +9,7 @@
 	import HeroSection from '$lib/components/unique/cases/HeroSection.svelte';
 	import { services } from '$lib/data/services';
 	import Icon from '@iconify/svelte';
+	import AutoScroll from 'embla-carousel-auto-scroll';
 	export let data;
 	console.log(data);
 
@@ -105,8 +107,8 @@
 				<p>{clientCase.result.description}</p>
 				<div class="pt-4">
 					<img
-						src="/images/cases/maleri-viskan/solution.png"
-						alt={clientCase.title}
+						src="/images/cases/maleri-viskan/mockup.png"
+						alt=""
 						class="w-full h-auto rounded-md"
 					/>
 				</div>
@@ -116,11 +118,59 @@
 </section>
 <section>
 	<div class="max-w-screen-xl px-4 mx-auto xl:px-0">
-		<img
-			class="object-cover object-center w-full h-full rounded-md max-h-[640px]"
-			src="/images/cases/maleri-viskan/solution.png"
-			alt=""
-		/>
+		<div class="relative overflow-hidden rounded-md bg-sky-600 aspect-video">
+			<div class="space-y-2 w-[150%] -rotate-12 absolute -top-12 md:-top-24 -left-24">
+				<EmblaCasesCarousel
+					slides={[
+						'/images/cases/maleri-viskan/printscreens/001.png',
+						'/images/cases/maleri-viskan/printscreens/002.png',
+						'/images/cases/maleri-viskan/printscreens/003.png',
+						'/images/cases/maleri-viskan/printscreens/004.png',
+						'/images/cases/maleri-viskan/printscreens/005.png'
+					]}
+					plugins={[
+						AutoScroll({
+							startDelay: 150,
+							stopOnInteraction: false,
+							speed: 0.25
+						})
+					]}
+				/>
+				<EmblaCasesCarousel
+					rtl
+					slides={[
+						'/images/cases/maleri-viskan/printscreens/002.png',
+						'/images/cases/maleri-viskan/printscreens/005.png',
+						'/images/cases/maleri-viskan/printscreens/004.png',
+						'/images/cases/maleri-viskan/printscreens/006.png',
+						'/images/cases/maleri-viskan/printscreens/003.png'
+					]}
+					plugins={[
+						AutoScroll({
+							startDelay: 0,
+							stopOnInteraction: false,
+							speed: 0.25
+						})
+					]}
+				/>
+				<EmblaCasesCarousel
+					slides={[
+						'/images/cases/maleri-viskan/printscreens/007.png',
+						'/images/cases/maleri-viskan/printscreens/006.png',
+						'/images/cases/maleri-viskan/printscreens/005.png',
+						'/images/cases/maleri-viskan/printscreens/004.png',
+						'/images/cases/maleri-viskan/printscreens/003.png'
+					]}
+					plugins={[
+						AutoScroll({
+							startDelay: 150,
+							stopOnInteraction: false,
+							speed: 0.25
+						})
+					]}
+				/>
+			</div>
+		</div>
 	</div>
 </section>
 <section class="max-w-screen-xl px-4 mx-auto my-12 lg:my-24 xl:px-0">

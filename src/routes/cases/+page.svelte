@@ -1,8 +1,8 @@
 <script>
-	import Card from '$lib/components/Card.svelte';
+	import DefaultCard from '$lib/components/cards/DefaultCard.svelte';
 	import BreadcrumbsBlock from '$lib/components/global/blocks/BreadcrumbsBlock.svelte';
 	import ContactSection from '$lib/components/global/sections/ContactSection.svelte';
-	import ProjectsSection from '$lib/components/global/sections/ProjectsSection.svelte';
+	import ServicesSection from '$lib/components/global/sections/ServicesSection.svelte';
 	import { cases } from '$lib/data/cases';
 	import { onMount } from 'svelte';
 
@@ -29,10 +29,10 @@
 		</div>
 		<BreadcrumbsBlock />
 		<div
-			class="grid max-w-screen-xl grid-cols-1 gap-4 px-4 mx-auto md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:px-0"
+			class="grid max-w-screen-xl grid-cols-1 gap-4 px-4 mx-auto md:grid-cols-2 lg:grid-cols-3 xl:px-0"
 		>
 			{#each cases.sort((a, b) => a.title.localeCompare(b.title)) as clientCase}
-				<Card
+				<DefaultCard
 					title={clientCase.title}
 					subTitle={clientCase.client}
 					href={clientCase.slug}
@@ -43,7 +43,7 @@
 			{/each}
 		</div>
 	</section>
-	<ProjectsSection />
+	<ServicesSection />
 	<ContactSection />
 </main>
 

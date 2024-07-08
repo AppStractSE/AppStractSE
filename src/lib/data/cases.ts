@@ -35,7 +35,7 @@ export const cases: Case[] = [
 		shortDescription:
 			'Hos Måleri Viskan behövdes en digital totalrenovering. Vi fick äran att skapa en ny design och utveckla en ny webbplats med moderna tekniker och verktyg.',
 		description: 'Description 1',
-		image: 'https://via.placeholder.com/150',
+		image: '/images/cases/maleri-viskan/profile.png',
 		tags: ['SEO', 'Webbutveckling', 'UI / UX Design', 'Hosting och drift'],
 		solution: {
 			title: 'Lösning',
@@ -68,7 +68,7 @@ export const cases: Case[] = [
 		shortDescription:
 			'Hos Karl-Alfred Gym behövdes en digital totalrenovering. Vi fick äran att skapa en ny design och utveckla en ny webbplats med moderna tekniker och verktyg.',
 		description: 'Description 2',
-		image: 'https://via.placeholder.com/150',
+		image: '/images/cases/maleri-viskan/profile.png',
 		tags: ['SEO', 'Webbutveckling', 'UI / UX Design', 'Hosting och drift'],
 		solution: {
 			title: 'Lösning',
@@ -101,7 +101,7 @@ export const cases: Case[] = [
 		shortDescription:
 			'Hos Elina Wellness behövdes en digital totalrenovering. Vi fick äran att skapa en ny design och utveckla en ny webbplats med moderna tekniker och verktyg.',
 		description: 'Description 3',
-		image: 'https://via.placeholder.com/150',
+		image: '/images/cases/maleri-viskan/profile.png',
 		tags: ['SEO', 'Webbutveckling', 'UI / UX Design', 'Hosting och drift'],
 		solution: {
 			title: 'Lösning',
@@ -134,7 +134,7 @@ export const cases: Case[] = [
 		shortDescription:
 			'Hos Rosers Catering behövdes en digital totalrenovering. Vi fick äran att skapa en ny design och utveckla en ny webbplats med moderna tekniker och verktyg.',
 		description: 'Description 4',
-		image: 'https://via.placeholder.com/150',
+		image: '/images/cases/maleri-viskan/profile.png',
 		tags: ['SEO', 'Webbutveckling', 'UI / UX Design', 'Hosting och drift', 'E-maildesign'],
 		solution: {
 			title: 'Lösning',
@@ -167,7 +167,7 @@ export const cases: Case[] = [
 		shortDescription:
 			'En rad längre mening. PropertEase är en digital plattform för fastighetsförvaltning som erbjuder en rad tjänster för att underlätta för fastighetsägare. Vi fick äran att skapa både plattformen samt webbplatsen.',
 		description: 'Description 4',
-		image: 'https://via.placeholder.com/150',
+		image: '/images/cases/maleri-viskan/profile.png',
 		tags: [
 			'Apputveckling',
 			'SEO',

@@ -11,7 +11,7 @@
 <div class="space-y-4">
 	{#each data as item}
 		<a href={item.slug} class="group">
-			<img src="https://placehold.co/768x768.png" />
+			<img src={item.image} />
 			<p>{item.title}</p>
 		</a>
 	{/each}

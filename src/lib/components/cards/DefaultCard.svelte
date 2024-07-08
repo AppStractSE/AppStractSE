@@ -34,7 +34,7 @@
 		@apply transition-all duration-200 object-cover opacity-70;
 	}
 	a {
-		@apply flex flex-col overflow-hidden border rounded-md h-full bg-white;
+		@apply flex flex-col overflow-hidden border rounded-md h-full bg-sunglow-25;
 		&:hover {
 			img {
 				@apply scale-105 opacity-100;

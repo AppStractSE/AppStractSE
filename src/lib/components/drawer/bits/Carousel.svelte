@@ -36,7 +36,7 @@
 		{#each data as item, index}
 			<div class="embla__slide">
 				<div>
-					<img src="https://placehold.co/768x768.png" alt={item.title} class="" />
+					<img src={item.image} alt={item.title} class="" />
 				</div>
 				<p class="subtitle">{item.title}</p>
 			</div>
