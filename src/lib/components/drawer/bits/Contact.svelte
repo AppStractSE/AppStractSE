@@ -14,12 +14,13 @@
 		</div>
 	</div>
 	<div class="video-container">
-		<video
-			src="https://videos.pexels.com/video-files/18069232/18069232-uhd_2560_1440_24fps.mp4"
-			autoplay
-			loop
-			muted
-		/>
+		<video autoplay muted loop playsinline>
+			<source
+				src="https://videos.pexels.com/video-files/18069232/18069232-uhd_2560_1440_24fps.mp4"
+				type="video/mp4"
+				class="rounded-xl"
+			/>
+		</video>
 	</div>
 </div>
 
