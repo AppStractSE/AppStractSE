@@ -1,6 +1,6 @@
 <script>
-	import Card from '$lib/components/Card.svelte';
-	import BreadcrumbsSection from '$lib/components/global/sections/BreadcrumbsSection.svelte';
+	import DefaultCard from '$lib/components/cards/DefaultCard.svelte';
+	import BreadcrumbsBlock from '$lib/components/global/blocks/BreadcrumbsBlock.svelte';
 	import ContactSection from '$lib/components/global/sections/ContactSection.svelte';
 	import ProjectsSection from '$lib/components/global/sections/ProjectsSection.svelte';
 	import { articles } from '$lib/data/articles';
@@ -26,12 +26,12 @@
 				guider.
 			</p>
 		</div>
-		<BreadcrumbsSection />
+		<BreadcrumbsBlock />
 		<div
-			class="grid max-w-screen-xl grid-cols-1 gap-4 px-4 mx-auto md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:px-0"
+			class="grid max-w-screen-xl grid-cols-1 gap-4 px-4 mx-auto md:grid-cols-2 lg:grid-cols-3 xl:px-0"
 		>
 			{#each articles.sort((a, b) => a.title.localeCompare(b.title)) as article}
-				<Card
+				<DefaultCard
 					title={article.title}
 					href={article.slug}
 					description={article.content}
@@ -40,6 +40,7 @@
 			{/each}
 		</div>
 	</section>
+
 	<ProjectsSection />
 	<ContactSection />
 </main>

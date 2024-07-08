@@ -35,7 +35,7 @@
 		{#each cases as item}
 			<div class="swiper-slide">
 				<div class="swiper-slide-content">
-					<div class="basis-5/12 aspect-[1] outline outline-4 rounded-md outline-[#697ba8]">
+					<div class="basis-5/12 aspect-[1] rounded-md overflow-hidden">
 						<img src={item.image} alt="SvelteKit" />
 					</div>
 					<div class="flex flex-col justify-center basis-7/12">

@@ -25,7 +25,7 @@
 
 <style lang="scss">
 	.block {
-		@apply flex flex-col-reverse rounded outline-1 outline md:grid md:grid-cols-6 place-items-center;
+		@apply flex flex-col-reverse rounded outline-1 outline-black/25 outline md:grid md:grid-cols-6 place-items-center;
 	}
 
 	.content {

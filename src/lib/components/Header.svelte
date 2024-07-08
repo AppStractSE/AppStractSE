@@ -9,7 +9,9 @@
 	let y = 0;
 	$: isScroll = y > 0;
 	$: isScrollClasses =
-		isScroll || isOpen ? 'bg-[#ece9ff] backdrop-blur-md bg-opacity-80' : 'bg-transparent';
+		isScroll || isOpen
+			? 'bg-sunglow-100/50 md:bg-sunglow-100/25 backdrop-blur-md '
+			: 'bg-transparent';
 	$: innerWidth = 0;
 	$: smScreen = innerWidth < 768;
 	$: $page.route.id, (isOpen = false);
@@ -56,11 +58,11 @@
 		@apply flex items-center justify-between md:rounded px-4 transition-all duration-200 py-4;
 	}
 	h2 {
-		@apply text-lg md:text-xl lowercase font-bold text-[#292929];
+		@apply text-lg md:text-xl lowercase font-bold;
 		font-family: var(--font-varela);
 	}
 	button {
-		@apply hover:underline-offset-4 hover:underline uppercase text-base transition-all duration-200 ease-in-out text-[#292929];
+		@apply hover:underline-offset-4 hover:underline uppercase text-base transition-all duration-200 ease-in-out;
 		font-family: var(--font-varela);
 	}
 </style>

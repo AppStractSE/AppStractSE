@@ -7,7 +7,7 @@
 		<a href={service.slug}>
 			<div class="flex items-stretch gap-4">
 				<!-- svelte-ignore a11y-missing-attribute -->
-				<img src="https://placehold.co/768x768.png" class="rounded outline-1 outline max-h-16" />
+				<img src={service.image} class="object-cover w-16 h-16 rounded aspect-square outline outline-1" />
 				<div class="space-y-2">
 					<h6>{service.title}</h6>
 					<p>{service.description}</p>

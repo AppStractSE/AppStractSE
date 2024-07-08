@@ -36,7 +36,7 @@
 
 <style lang="scss">
 	.btn {
-		@apply relative after:opacity-0 hover:after:opacity-100 after:bg-[#464646] after:rounded-full after:inset-0 after:transition-all after:absolute after:w-full after:h-full after:z-[-1] z-[1];
+		@apply relative after:opacity-0 hover:after:opacity-100 after:bg-black after:rounded-full after:inset-0 after:transition-all after:absolute after:w-full after:h-full after:z-[-1] z-[1];
 	}
 	.btn a,
 	.btn button {
@@ -45,12 +45,12 @@
 	}
 	.btn-primary a,
 	.btn-primary button {
-		@apply text-white bg-[#697ba8];
+		@apply bg-blue-700 text-white;
 	}
 
 	.btn-outline a,
 	.btn-outline button {
-		@apply text-black bg-[#ece9ff] outline outline-1;
+		@apply text-black bg-white outline outline-1 outline-black/25;
 	}
 
 	.btn-sm a,

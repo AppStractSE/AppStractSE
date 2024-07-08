@@ -31,6 +31,6 @@
 	}
 
 	img {
-		@apply opacity-70 group-hover:opacity-100 transition-all duration-200 ease-in-out rounded-md max-h-24 outline outline-1;
+		@apply opacity-70 group-hover:opacity-100 transition-all duration-200 ease-in-out rounded-md max-h-24 outline outline-1 outline-black/25;
 	}
 </style>

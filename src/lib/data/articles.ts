@@ -16,7 +16,7 @@ export const articles: Article[] = [
 		slug: '/artiklar/artificiell-intelligens-framtiden-webbutveckling',
 		description:
 			'Utforska hur AI förändrar landskapet för webbutveckling och nya möjligheter det öppnar.',
-		image: 'https://via.placeholder.com/150',
+		image: '/images/articles/default.png',
 		tags: ['Artificiell Intelligens', 'Maskininlärning', 'Webbutveckling', 'Trender'],
 		url: 'https://example.com/artificiell-intelligens-framtiden-webbutveckling',
 		content: `
@@ -29,7 +29,7 @@ export const articles: Article[] = [
 		slug: '/artiklar/progressiva-webbapplikationer-framtiden-mobila-webbplatser',
 		description:
 			'Lär dig hur progressiva webbapplikationer (PWA) kan förbättra prestanda och användarupplevelse på mobila enheter.',
-		image: 'https://via.placeholder.com/150',
+		image: '/images/articles/default.png',
 		tags: ['Progressiva Web Apps', 'Webbutveckling', 'Mobilutveckling', 'Trender'],
 		url: 'https://example.com/progressiva-webbapplikationer-framtiden-mobila-webbplatser',
 		content: `
@@ -42,7 +42,7 @@ export const articles: Article[] = [
 		slug: '/artiklar/responsiv-design-basta-praxis-fler-skarmar',
 		description:
 			'Utforska bästa praxis för att skapa responsiva webbplatser som fungerar felfritt på olika enheter och skärmstorlekar.',
-		image: 'https://via.placeholder.com/150',
+		image: '/images/articles/default.png',
 		tags: ['Responsiv Design', 'Webbutveckling', 'UI / UX Design', 'Trender'],
 		url: 'https://example.com/responsiv-design-basta-praxis-fler-skarmar',
 		content: `
@@ -55,7 +55,7 @@ export const articles: Article[] = [
 		slug: '/artiklar/headless-cms-framtiden-innehallshanteringssystem',
 		description:
 			'Upptäck fördelarna med headless CMS och hur det revolutionerar sättet vi skapar och levererar innehåll på webben.',
-		image: 'https://via.placeholder.com/150',
+		image: '/images/articles/default.png',
 		tags: ['Headless CMS', 'Webbutveckling', 'Content Management', 'Trender'],
 		url: 'https://example.com/headless-cms-framtiden-innehallshanteringssystem',
 		content: `
@@ -68,7 +68,7 @@ export const articles: Article[] = [
 		slug: '/artiklar/optimering-core-web-vitals-forbattra-prestanda',
 		description:
 			'Lär dig hur Core Web Vitals kan påverka din webbplats prestanda och hur du optimerar för bättre användarupplevelse.',
-		image: 'https://via.placeholder.com/150',
+		image: '/images/articles/default.png',
 		tags: ['Core Web Vitals', 'Webbutveckling', 'Prestandaoptimering', 'Trender'],
 		url: 'https://example.com/optimering-core-web-vitals-forbattra-prestanda',
 		content: `
@@ -81,7 +81,7 @@ export const articles: Article[] = [
 		slug: '/artiklar/sakerhetstrender-webbutveckling-hantera-hot-sarbarheter',
 		description:
 			'Utforska de senaste säkerhetstrenderna inom webbutveckling och hur du skyddar din webbapplikation mot nya hot.',
-		image: 'https://via.placeholder.com/150',
+		image: '/images/articles/default.png',
 		tags: ['Webbutveckling', 'Säkerhet', 'Trender', 'Cybersäkerhet'],
 		url: 'https://example.com/sakerhetstrender-webbutveckling-hantera-hot-sarbarheter',
 		content: `
@@ -94,7 +94,7 @@ export const articles: Article[] = [
 		slug: '/artiklar/webbteknologier-framtidens-e-handel',
 		description:
 			'Upptäck de senaste webbteknologierna som driver framtidens e-handelsupplevelse och kundengagemang.',
-		image: 'https://via.placeholder.com/150',
+		image: '/images/articles/default.png',
 		tags: ['E-handel', 'Webbutveckling', 'Trender', 'Kundupplevelse'],
 		url: 'https://example.com/webbteknologier-framtidens-e-handel',
 		content: `
@@ -107,7 +107,7 @@ export const articles: Article[] = [
 		slug: '/artiklar/webbdesign-inkludering-tillgangliga-upplevelser',
 		description:
 			'Lär dig att integrera tillgänglighetsprinciper i din webbdesign för att skapa inkluderande digitala upplevelser för alla användare.',
-		image: 'https://via.placeholder.com/150',
+		image: '/images/articles/default.png',
 		tags: ['Tillgänglighet', 'Webbutveckling', 'UI / UX Design', 'Trender'],
 		url: 'https://example.com/webbdesign-inkludering-tillgangliga-upplevelser',
 		content: `
@@ -120,7 +120,7 @@ export const articles: Article[] = [
 		slug: '/artiklar/designa-morkt-lage-basta-praxis-modern-anvandarupplevelse',
 		description:
 			'Upptäck bästa praxis för att designa webbplatser och appar för mörkt läge, som är populärt bland moderna användare.',
-		image: 'https://via.placeholder.com/150',
+		image: '/images/articles/default.png',
 		tags: ['UI Design', 'UX Design', 'Webbutveckling', 'Trender'],
 		url: 'https://example.com/designa-morkt-lage-basta-praxis-modern-anvandarupplevelse',
 		content: `
@@ -133,7 +133,7 @@ export const articles: Article[] = [
 		slug: '/artiklar/hallbar-webbutveckling-bygga-grona-energieffektiva-webbplatser',
 		description:
 			'Utforska principer för hållbar webbutveckling och hur du kan minska din webbplats miljöpåverkan.',
-		image: 'https://via.placeholder.com/150',
+		image: '/images/articles/default.png',
 		tags: ['Hållbarhet', 'Webbutveckling', 'Grön Teknik', 'Trender'],
 		url: 'https://example.com/hallbar-webbutveckling-bygga-grona-energieffektiva-webbplatser',
 		content: `
@@ -146,7 +146,7 @@ export const articles: Article[] = [
 		slug: '/artiklar/blockchain-teknologi-webbutveckling-decentraliserade-webb',
 		description:
 			'Utforska hur blockchain-teknologi kan förändra webbutvecklingslandskapet genom decentraliserade applikationer (dApps).',
-		image: 'https://via.placeholder.com/150',
+		image: '/images/articles/default.png',
 		tags: ['Blockchain', 'Webbutveckling', 'Kryptokurrency', 'Trender'],
 		url: 'https://example.com/blockchain-teknologi-webbutveckling-decentraliserade-webb',
 		content: `

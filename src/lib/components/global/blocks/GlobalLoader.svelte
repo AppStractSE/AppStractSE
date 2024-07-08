@@ -13,11 +13,11 @@
 
 <div>
 	<div
-		class="fixed top-0 left-0 z-50 flex items-center justify-center w-full h-full bg-[#f3f1ff] transition-all duration-200 animate-pulse {mounted
+		class="fixed top-0 left-0 z-50 flex items-center justify-center w-full h-full bg-sunglow-100 transition-all duration-200 {mounted
 			? 'opacity-100'
 			: 'opacity-0'}"
 	>
-		<img src="/images/appstract_logo_black.png" class="w-32 h-auto" alt="Appstract" />
+		<img src="/images/appstract_logo_black.png" class="w-32 h-auto animate-pulse" alt="Appstract" />
 	</div>
 </div>
 

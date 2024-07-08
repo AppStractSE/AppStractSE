@@ -82,7 +82,7 @@
 		@apply absolute z-50 top-[50%] right-12 xl:right-8 transform translate-x-[50%] translate-y-[-50%];
 	}
 	.mouse__container {
-		@apply w-8 h-14 border border-[#292929] rounded-3xl relative;
+		@apply w-6 h-12 border border-[#292929] rounded-3xl relative;
 	}
 	.mouse__dot {
 		@apply absolute mx-auto bg-black rounded-full left-0 right-0 animate-pulse;
@@ -128,6 +128,6 @@
 		height: 13px;
 	}
 	.embla__progress__bar {
-		@apply top-0 left-0 bottom-0 absolute w-full bg-[#d7d9ec];
+		@apply top-0 left-0 bottom-0 absolute w-full bg-sunglow-200;
 	}
 </style>

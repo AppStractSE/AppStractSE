@@ -1,6 +1,11 @@
 export interface Service {
 	title: string;
 	slug: string;
+	about: {
+		title: string;
+		description: string;
+		image: string;
+	};
 	description: string;
 	image: string;
 	hero: {
@@ -22,301 +27,354 @@ export const services: Service[] = [
 	{
 		title: 'Webbutveckling',
 		slug: '/tjanster/webbutveckling',
+		about: {
+			title: 'Kvalitativ webbutveckling av Appstract',
+			description:
+				'I den digitala eran är en webbplats inte bara en online närvaro; det är en möjlighet att skapa en djup koppling med din målgrupp. Vårt fokus ligger på att skapa moderna och responsiva webbplatser som inte bara ser fantastiska ut, utan också levererar en intuitiv och engagerande användarupplevelse. Vi integrerar innovativt tänkande med praktiska funktioner för att säkerställa att varje webbplats vi skapar är anpassad efter dina unika behov och mål.',
+			image: 'https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg'
+		},
 		description:
 			'Moderna och responsiva unika webbplatser som engagerar och konverterar, med fokus på användarupplevelse och prestanda.',
 		image: 'https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg',
 		hero: {
-			image: '',
-			description: ''
+			image: 'https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg',
+			description:
+				'Vi skapar skräddarsydda webbplatser som levererar en överlägsen användarupplevelse och hög prestanda.'
 		},
 		article: {
-			title: 'Article Title',
-			description: 'Article Description',
-			image: '',
-			alt: 'Article Alt'
+			title: 'Fördelarna med Webbutveckling',
+			description:
+				'Upptäck hur en modern och responsiv webbplats kan öka ditt företags synlighet och kundengagemang.',
+			image: 'https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg',
+			alt: 'Webbutveckling'
 		},
 		what_we_do: [
 			{
-				title: 'What we do Title',
-				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae'
+				title: 'Responsiv Design',
+				description: 'Vi säkerställer att din webbplats ser bra ut och fungerar på alla enheter.'
 			},
 			{
-				title: 'What we do Title 2',
+				title: 'Prestandaoptimering',
 				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae 2'
+					'Vi optimerar din webbplats för snabb laddning och bästa möjliga användarupplevelse.'
 			},
 			{
-				title: 'What we do Title 3',
+				title: 'Användarupplevelse',
 				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae 3'
+					'Vi designar med fokus på användarvänlighet för att maximera engagemang och konverteringar.'
 			}
 		]
 	},
 	{
 		title: 'Hosting och drift',
+		about: {
+			title: 'Pålitlig hosting för din webbplats',
+			description:
+				'En pålitlig hostingpartner är avgörande för att din webbplats ska vara tillgänglig och snabb. Våra hostinglösningar är utformade för att maximera prestanda och säkerhet, samtidigt som de ger dig den flexibilitet du behöver för att växa och utvecklas. Vi erbjuder en rad hostingalternativ som passar alla behov och budgetar, från delad hosting till dedikerade servrar och molnbaserade lösningar.',
+			image: 'https://images.pexels.com/photos/209151/pexels-photo-209151.jpeg'
+		},
 		slug: '/tjanster/hosting-och-drift',
 		description:
 			'Säkra och pålitliga hostinglösningar för att hålla din webbplats uppe och snabbrörlig.',
 		image: 'https://images.pexels.com/photos/209151/pexels-photo-209151.jpeg',
 		hero: {
-			image: '',
-			description: ''
+			image: 'https://images.pexels.com/photos/209151/pexels-photo-209151.jpeg',
+			description:
+				'Våra hostinglösningar garanterar hög tillgänglighet och prestanda för din webbplats.'
 		},
 		article: {
-			title: 'Article Title',
-			description: 'Article Description',
-			image: '',
-			alt: 'Article Alt'
+			title: 'Fördelarna med Professionell Hosting',
+			description:
+				'Lär dig varför det är viktigt att välja en pålitlig hostingpartner för din webbplats.',
+			image: 'https://images.pexels.com/photos/209151/pexels-photo-209151.jpeg',
+			alt: 'Hosting och drift'
 		},
 		what_we_do: [
 			{
-				title: 'What we do Title',
+				title: 'Säker Hosting',
 				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae'
+					'Vi erbjuder hostinglösningar med hög säkerhet för att skydda din webbplats och data.'
 			},
 			{
-				title: 'What we do Title 2',
+				title: '24/7 Övervakning',
 				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae 2'
+					'Vi övervakar din webbplats dygnet runt för att säkerställa att den alltid är tillgänglig.'
 			},
 			{
-				title: 'What we do Title 3',
-				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae 3'
+				title: 'Snabb Laddningstid',
+				description: 'Våra servrar är optimerade för snabb laddningstid och hög prestanda.'
 			}
 		]
 	},
 	{
 		title: 'Apputveckling',
+		about: {
+			title: 'Skräddarsydda appar för iOS och Android',
+			description:
+				'Mobilapplikationer har blivit en viktig del av vår digitala vardag, och en anpassad app kan vara nyckeln till att differentiera ditt varumärke och engagera din målgrupp. Vårt team av erfarna apputvecklare skapar skräddarsydda appar för iOS och Android som är användarvänliga och effektiva. Vi fokuserar på att skapa innovativa mobilapplikationer som ger en sömlös användarupplevelse och hjälper dig att nå dina affärsmål.',
+			image: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg'
+		},
 		slug: '/tjanster/apputveckling',
 		description: 'Skräddarsydda appar för iOS och Android som är användarvänliga och effektiva.',
 		image: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg',
 		hero: {
-			image: '',
-			description: ''
+			image: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg',
+			description: 'Vi skapar innovativa mobilapplikationer som ger en sömlös användarupplevelse.'
 		},
 		article: {
-			title: 'Article Title',
-			description: 'Article Description',
-			image: '',
-			alt: 'Article Alt'
+			title: 'Fördelarna med Apputveckling',
+			description: 'Upptäck hur en anpassad app kan förbättra din verksamhet och kundengagemang.',
+			image: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg',
+			alt: 'Apputveckling'
 		},
 		what_we_do: [
 			{
-				title: 'What we do Title',
-				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae'
+				title: 'iOS och Android',
+				description: 'Vi utvecklar appar för både iOS och Android plattformar.'
 			},
 			{
-				title: 'What we do Title 2',
-				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae 2'
+				title: 'Användarvänlig Design',
+				description: 'Våra appar är designade för att vara intuitiva och lätta att använda.'
 			},
 			{
-				title: 'What we do Title 3',
-				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae 3'
+				title: 'Integration med Backend',
+				description: 'Vi säkerställer att din app är fullt integrerad med ditt befintliga system.'
 			}
 		]
 	},
 	{
 		title: 'Förbättrad design med AI',
+		about: {
+			title: 'Förbättra din design med AI-teknik',
+			description:
+				'AI-teknik har revolutionerat designprocessen och möjliggör nya sätt att skapa engagerande och personliga användarupplevelser. Vi kombinerar AI med designexpertis för att skapa webbplatser och appar som är både vackra och funktionella. Våra AI-drivna designlösningar hjälper dig att förbättra din nuvarande design och skapa en mer engagerande upplevelse för dina användare.',
+			image: 'https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg'
+		},
 		slug: '/tjanster/forbattrad-design-med-ai',
 		description: 'Vi hjälper er lyfta er nuvarande design med hjälp av AI.',
 		image: 'https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg',
 		hero: {
-			image: '',
-			description: ''
+			image: 'https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg',
+			description:
+				'Med AI-teknik kan vi förbättra din nuvarande design och skapa en mer engagerande upplevelse.'
 		},
 		article: {
-			title: 'Article Title',
-			description: 'Article Description',
-			image: '',
-			alt: 'Article Alt'
+			title: 'AI-drivna Designförbättringar',
+			description: 'Lär dig hur AI kan förbättra din webbplats design och användarupplevelse.',
+			image: 'https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg',
+			alt: 'Förbättrad design med AI'
 		},
 		what_we_do: [
 			{
-				title: 'What we do Title',
-				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae'
+				title: 'AI Optimering',
+				description: 'Vi använder AI för att analysera och optimera din webbplats design.'
 			},
 			{
-				title: 'What we do Title 2',
+				title: 'Personalisering',
 				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae 2'
+					'AI-teknik möjliggör personalisering av användarupplevelsen baserat på användarbeteenden.'
 			},
 			{
-				title: 'What we do Title 3',
-				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae 3'
+				title: 'A/B-testning',
+				description: 'Vi använder AI för att genomföra A/B-testning och förbättra designval.'
 			}
 		]
 	},
 	{
 		title: 'UI / UX Design',
+		about: {
+			title: 'Skapa vackra och intuitiva användargränssnitt',
+			description:
+				'Designen av användargränssnitt är avgörande för att skapa en positiv och minnesvärd användarupplevelse. Vårt fokus ligger på att kombinera estetik med funktionalitet, skapa användargränssnitt som inte bara är vackra utan också intuitiva. Vi strävar efter att skapa prototyper som testas och förfinas för att säkerställa att varje designbeslut är optimalt för din målgrupps behov och beteenden.',
+			image: 'https://images.pexels.com/photos/3585088/pexels-photo-3585088.jpeg'
+		},
 		slug: '/tjanster/ui-ux-design',
 		description:
 			'Designa användargränssnitt som är både vackra och intuitiva för en bättre användarupplevelse.',
 		image: 'https://images.pexels.com/photos/3585088/pexels-photo-3585088.jpeg',
 		hero: {
-			image: '',
-			description: ''
+			image: 'https://images.pexels.com/photos/3585088/pexels-photo-3585088.jpeg',
+			description:
+				'Vi skapar användargränssnitt som kombinerar estetik med funktionalitet för en optimal användarupplevelse.'
 		},
 		article: {
-			title: 'Article Title',
-			description: 'Article Description',
-			image: '',
-			alt: 'Article Alt'
+			title: 'Fördelarna med UI/UX Design',
+			description:
+				'Upptäck hur bra UI/UX design kan förbättra användarupplevelsen och öka konverteringarna.',
+			image: 'https://images.pexels.com/photos/3585088/pexels-photo-3585088.jpeg',
+			alt: 'UI / UX Design'
 		},
 		what_we_do: [
 			{
-				title: 'What we do Title',
-				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae'
+				title: 'Användargränssnitt',
+				description: 'Vi designar användargränssnitt som är estetiskt tilltalande och lättanvända.'
 			},
 			{
-				title: 'What we do Title 2',
+				title: 'Användarupplevelse',
 				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae 2'
+					'Vår designprocess fokuserar på att skapa en sömlös och engagerande användarupplevelse.'
 			},
 			{
-				title: 'What we do Title 3',
+				title: 'Prototyping',
 				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae 3'
+					'Vi skapar prototyper för att testa och förbättra designkoncept innan implementering.'
 			}
 		]
 	},
 	{
 		title: 'Digital marknadsföring',
+		about: {
+			title: 'Öka din online-närvaro med strategiska kampanjer',
+			description:
+				'I dagens digitala landskap är synlighet och engagemang avgörande för framgång. Vi utvecklar strategiska digitala marknadsföringskampanjer som ökar din online-närvaro och driver konverteringar. Genom att kombinera SEO, PPC och engagerande innehåll, skapar vi målinriktade kampanjer som når din målgrupp vid rätt tidpunkt och på rätt plats.',
+			image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg'
+		},
 		slug: '/tjanster/digital-marknadsforing',
 		description: 'Strategiska kampanjer för att öka din online-närvaro och driva konverteringar.',
 		image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg',
 		hero: {
-			image: '',
-			description: ''
+			image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg',
+			description:
+				'Vi skapar digitala marknadsföringsstrategier som ökar din synlighet online och driver trafik till din webbplats.'
 		},
 		article: {
-			title: 'Article Title',
-			description: 'Article Description',
-			image: '',
-			alt: 'Article Alt'
+			title: 'Effektiv Digital Marknadsföring',
+			description:
+				'Lär dig hur strategiska digitala kampanjer kan öka din räckvidd och konverteringar.',
+			image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg',
+			alt: 'Digital marknadsföring'
 		},
 		what_we_do: [
 			{
-				title: 'What we do Title',
-				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae'
+				title: 'SEO',
+				description: 'Vi optimerar din webbplats för att förbättra dess ranking på sökmotorer.'
 			},
 			{
-				title: 'What we do Title 2',
-				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae 2'
+				title: 'PPC Kampanjer',
+				description: 'Vi skapar och hanterar betalda kampanjer för att maximera din avkastning.'
 			},
 			{
-				title: 'What we do Title 3',
-				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae 3'
+				title: 'Innehållsmarknadsföring',
+				description: 'Vi utvecklar engagerande innehåll som attraherar och behåller din målgrupp.'
 			}
 		]
 	},
 	{
 		title: 'E-maildesign',
+		about: {
+			title: 'Engagerande e-postkampanjer för att nå din målgrupp',
+			description:
+				'E-postmarknadsföring är en kraftfull kanal för att nå och engagera din publik. Vårt team specialiserar sig på att skapa e-postkampanjer som inte bara når din målgrupp utan också ökar konverteringarna. Vi designar anpassade e-postmallar och automatiserade kampanjer som är optimerade för att leverera relevanta meddelanden och öka dina affärsresultat.',
+			image: 'https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg'
+		},
 		slug: '/tjanster/emaildesign',
 		description: 'Effektiva och engagerande e-postkampanjer som når din målgrupp.',
 		image: 'https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg',
 		hero: {
-			image: '',
-			description: ''
+			image: 'https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg',
+			description: 'Vi skapar e-postkampanjer som engagerar din målgrupp och ökar konverteringarna.'
 		},
 		article: {
-			title: 'Article Title',
-			description: 'Article Description',
-			image: '',
-			alt: 'Article Alt'
+			title: 'Framgångsrik E-postmarknadsföring',
+			description:
+				'Upptäck hur du kan använda e-postmarknadsföring för att nå och engagera din målgrupp effektivt.',
+			image: 'https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg',
+			alt: 'E-maildesign'
 		},
 		what_we_do: [
 			{
-				title: 'What we do Title',
-				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae'
+				title: 'E-postmallar',
+				description: 'Vi designar anpassade e-postmallar som representerar ditt varumärke.'
 			},
 			{
-				title: 'What we do Title 2',
+				title: 'Automatiserade Kampanjer',
 				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae 2'
+					'Vi skapar automatiserade e-postkampanjer för att engagera din publik vid rätt tidpunkt.'
 			},
 			{
-				title: 'What we do Title 3',
+				title: 'Analyser och Rapportering',
 				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae 3'
+					'Vi tillhandahåller detaljerade analyser för att mäta framgången av dina e-postkampanjer.'
 			}
 		]
 	},
 	{
 		title: 'SEO',
+		about: {
+			title: 'Optimera din webbplats för att ranka högre på sökmotorer',
+			description:
+				'Optimering för sökmotorer är avgörande för att öka din webbplats synlighet och nå nya kunder online. Vi erbjuder omfattande SEO-tjänster, inklusive on-page optimering, länkbyggande och teknisk SEO, för att förbättra din ranking på sökmotorer. Vår strategi är att skapa hållbara resultat som ökar din webbplats auktoritet och attraherar organisk trafik.',
+			image: 'https://images.pexels.com/photos/218717/pexels-photo-218717.jpeg'
+		},
 		slug: '/tjanster/seo',
 		description:
 			'Få hjälp med att optimera din webbplats för att ranka högre på sökmotorer och på så sätt nå fler kunder.',
 		image: 'https://images.pexels.com/photos/218717/pexels-photo-218717.jpeg',
 		hero: {
-			image: '',
-			description: ''
+			image: 'https://images.pexels.com/photos/218717/pexels-photo-218717.jpeg',
+			description:
+				'Vi hjälper dig att förbättra din webbplats ranking på sökmotorer för att öka trafiken och nå fler kunder.'
 		},
 		article: {
-			title: 'Article Title',
-			description: 'Article Description',
-			image: '',
-			alt: 'Article Alt'
+			title: 'Fördelarna med SEO',
+			description:
+				'Lär dig hur SEO kan förbättra din synlighet online och driva mer organisk trafik till din webbplats.',
+			image: 'https://images.pexels.com/photos/218717/pexels-photo-218717.jpeg',
+			alt: 'SEO'
 		},
 		what_we_do: [
 			{
-				title: 'What we do Title',
+				title: 'On-Page Optimering',
 				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae'
+					'Vi optimerar innehållet på din webbplats för att förbättra dess sökmotorranking.'
 			},
 			{
-				title: 'What we do Title 2',
+				title: 'Länkbyggande',
 				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae 2'
+					'Vi bygger högkvalitativa länkar för att öka din webbplats auktoritet och ranking.'
 			},
 			{
-				title: 'What we do Title 3',
+				title: 'Teknisk SEO',
 				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae 3'
+					'Vi genomför tekniska SEO-audits och optimeringar för att förbättra din webbplats prestanda.'
 			}
 		]
 	},
 	{
 		title: 'Sociala medier',
+		about: {
+			title: 'Bygg och hantera en stark närvaro på sociala medier',
+			description:
+				'Bygg en stark och engagerad närvaro på sociala medier med våra skräddarsydda strategier och innehållsskapande. Vi erbjuder en omfattande hantering av sociala mediekampanjer som ökar din följares engagemang och konverteringar. Genom att skapa och distribuera relevant innehåll på rätt plattformar, hjälper vi dig att optimera din närvaro och maximera din marknadsföringseffektivitet.',
+			image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg'
+		},
 		slug: '/tjanster/sociala-medier',
 		description: 'Bygg och hantera en stark närvaro på sociala medier för att engagera din publik.',
 		image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg',
 		hero: {
-			image: '',
-			description: ''
+			image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg',
+			description:
+				'Vi hjälper dig att bygga och hantera en stark närvaro på sociala medier för att engagera din publik.'
 		},
 		article: {
-			title: 'Article Title',
-			description: 'Article Description',
-			image: '',
-			alt: 'Article Alt'
+			title: 'Effektiv Marknadsföring på Sociala Medier',
+			description:
+				'Lär dig hur du kan använda sociala medier för att nå och engagera din målgrupp.',
+			image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg',
+			alt: 'Sociala medier'
 		},
 		what_we_do: [
 			{
-				title: 'What we do Title',
-				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae'
+				title: 'Sociala Mediestrategier',
+				description: 'Vi utvecklar strategier för att optimera din närvaro på sociala medier.'
 			},
 			{
-				title: 'What we do Title 2',
-				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae 2'
+				title: 'Innehållsskapande',
+				description: 'Vi skapar engagerande innehåll som resonerar med din målgrupp.'
 			},
 			{
-				title: 'What we do Title 3',
-				description:
-					'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, consequuntur. Obcaecati ipsam maxime vel velit rem asperiores distinctio eaque, a aperiam eius quidem iste. Soluta magnam facilis inventore aliquam repudiandae 3'
+				title: 'Kampanjhantering',
+				description: 'Vi hanterar dina sociala mediekampanjer för att maximera deras effektivitet.'
 			}
 		]
 	}

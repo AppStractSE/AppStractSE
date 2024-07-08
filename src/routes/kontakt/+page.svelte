@@ -1,6 +1,6 @@
 <script>
 	import ContactForm from '$lib/components/forms/ContactForm.svelte';
-	import BreadcrumbsSection from '$lib/components/global/sections/BreadcrumbsSection.svelte';
+	import BreadcrumbsBlock from '$lib/components/global/blocks/BreadcrumbsBlock.svelte';
 	import ServicesSection from '$lib/components/global/sections/ServicesSection.svelte';
 	import { onMount } from 'svelte';
 
@@ -17,7 +17,7 @@
 			: 'translate-y-12 opacity-0'}"
 	>
 		<div class="spacer"></div>
-		<BreadcrumbsSection />
+		<BreadcrumbsBlock />
 		<div class="px-4 py-12 mx-auto space-y-8 xl:px-2">
 			<div class="max-w-screen-xl mx-auto">
 				<div class="grid gap-12 md:grid-cols-2">
