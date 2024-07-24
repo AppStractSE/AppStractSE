@@ -22,14 +22,12 @@
 
 <style lang="scss">
 	section {
-		@apply bg-gradient-to-b from-transparent via-sunglow-100 to-transparent my-12 lg:my-24;
+		@apply bg-gradient-to-b from-transparent via-blueberry-50 to-transparent my-12 lg:my-24;
 	}
 	h2 {
 		@apply text-3xl font-bold;
-		font-family: var(--font-varela);
 	}
 	p {
 		@apply text-base leading-tight text-balance whitespace-pre-line;
-		font-family: var(--font-esteban);
 	}
 </style>

@@ -6,6 +6,7 @@
 	import GridBlock from '$lib/components/drawer/blocks/GridBlock.svelte';
 	import ServicesBlock from '$lib/components/drawer/blocks/ServicesBlock.svelte';
 	import SocialBlock from '$lib/components/drawer/blocks/SocialBlock.svelte';
+	import { navigation } from '$lib/data/navigation';
 	import { createEventDispatcher, onMount } from 'svelte';
 
 	const dispatch = createEventDispatcher();
@@ -52,7 +53,7 @@
 	>
 		<div class="overlay" on:click={handleClickAway} />
 		<div
-			class="relative flex items-center rounded overflow-scroll transition-all duration-1000 h-full transform mx-auto bg-sunglow-50 max-w-[1312px] {isOpen
+			class="relative flex items-center rounded overflow-scroll transition-all duration-1000 h-full transform mx-auto bg-blueberry-50 max-w-[1312px] {isOpen
 				? 'opacity-100 translate-y-0'
 				: 'opacity-100 translate-y-full'}"
 		>
@@ -63,6 +64,15 @@
 					<ContactBlock />
 					<ServicesBlock />
 					<CarouselBlock />
+					<section>
+						<div class="grid grid-cols-1 gap-6 px-4 xl:px-8 md:grid-cols-2 xl:grid-cols-3">
+							{#each navigation as navigation}
+								<a href={navigation.href} class="hover:underline hover:underline-offset-4 w-fit">
+									<h3>{navigation.title}</h3>
+								</a>
+							{/each}
+						</div>
+					</section>
 					<SocialBlock />
 				</DrawerBlocks>
 				<Fade position="bottom" />

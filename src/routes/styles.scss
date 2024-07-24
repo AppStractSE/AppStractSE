@@ -1,26 +1,15 @@
-@import '@fontsource/fira-mono';
-@import '@fontsource/bebas-neue';
-@import '@fontsource/oswald';
-@import '@fontsource/oleo-script';
-@import '@fontsource-variable/josefin-sans';
+@import '@fontsource-variable/open-sans';
+@import '@fontsource/lato';
 @import '@fontsource/varela-round';
-@import '@fontsource/esteban';
-@import '@fontsource-variable/alegreya';
-@import '@fontsource-variable/rubik/wght-italic.css';
+@import '@fontsource-variable/inter';
 
 :root {
-	--font-body: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	--font-mono: 'Fira Mono', monospace;
-	--font-bebas: 'Bebas Neue', sans-serif;
-	--font-oswald: 'Oswald', sans-serif;
-	--font-oleo: 'Oleo Script', system-ui;
-	--font-josefin: 'Josefin Sans', sans-serif;
-	--font-varela: 'Varela Round', sans-serif;
-	--font-alegreya: 'Alegreya', serif;
-	--font-esteban: 'Esteban', serif;
-	--font-rubik: 'Rubik', sans-serif;
-	font-family: var(--font-body);
+	--font-open-sans: 'Open Sans', sans-serif;
+	--font-inter: 'Inter Variable', sans-serif;
+	--font-lato: 'Lato', sans-serif;
+	--font-varela-round: 'Varela Round', sans-serif;
+	--primary-text-color: #262A2C;
+	font-family: var(--font-open-sans);
 }
 
 * {
@@ -28,15 +17,60 @@
 }
 
 body {
-	@apply bg-sunglow-50 m-0 p-0 text-black;
+	@apply bg-blueberry-25 m-0 p-0;
 	line-height: 1.2;
-	font-size: 18px;
-}
-
-nav {
-	font-family: var(--font-varela);
+	font-size: 16px;
+	color: var(--primary-text-color);
 }
 
 .spacer {
 	@apply h-12 md:h-24 w-full;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn,
+button {
+	@apply tracking-wide;
+	font-family: var(--font-lato);
+}
+
+p,
+label,
+input,
+textarea,
+::placeholder {
+	font-family: var(--font-inter);
+}
+
+p {
+	@apply text-base leading-normal;
+}
+
+h1 {
+	@apply text-3xl lg:text-5xl font-semibold;
+}
+
+h2 {
+	@apply text-3xl lg:text-4xl font-bold;
+}
+
+h3 {
+	@apply text-2xl lg:text-3xl font-bold;
+}
+
+h4 {
+	@apply text-xl lg:text-2xl font-bold;
+}
+
+h5 {
+	@apply text-lg lg:text-xl font-bold;
+}
+
+h6 {
+	@apply text-base lg:text-lg font-bold;
 }

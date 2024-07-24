@@ -41,7 +41,6 @@
 	.btn a,
 	.btn button {
 		@apply text-center relative block w-full h-full rounded-full hover:-translate-x-1.5 hover:-translate-y-1 transition-all ease-[cubic-bezier(0,2,1,2)];
-		font-family: var(--font-varela);
 	}
 	.btn-primary a,
 	.btn-primary button {

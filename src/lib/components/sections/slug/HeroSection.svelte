@@ -26,41 +26,26 @@
 				</p>
 			</div>
 			<div class="flex items-center max-w-2xl mx-auto mt-16 justify-evenly">
-				<Button variation="primary" title="Jag vill veta mer" href="/" size="lg" />
+				<Button
+					variation="primary"
+					title="Det räcker, jag vill snacka med er!"
+					href="/kontakt"
+					size="lg"
+				/>
 			</div>
 		</div>
-		<div class="spacer bg-gradient-to-b from-transparent to-sunglow-50"></div>
+		<div class="spacer bg-gradient-to-b from-transparent to-blueberry-50"></div>
 	</div>
 </section>
 
 <style lang="scss">
 	section {
-		@apply bg-gradient-to-br from-sunglow-100 to-sunglow-50;
+		@apply bg-gradient-to-br from-blueberry-100 to-blueberry-50;
 	}
 	.hero {
-		@apply max-w-screen-xl px-4 py-12 mx-auto space-y-12 lg:px-0;
-		h2 {
-			@apply text-4xl;
-		}
-		h2,
-		p {
-			@apply lg:text-center;
-		}
+		@apply max-w-screen-xl px-4 py-12 mx-auto space-y-12 lg:px-0 text-center;
 		p {
 			@apply max-w-4xl lg:mx-auto text-lg text-balance;
 		}
-	}
-	h2 {
-		@apply text-3xl font-bold;
-		font-family: var(--font-varela);
-	}
-
-	p {
-		@apply text-base leading-normal;
-		font-family: var(--font-esteban);
-	}
-	h3 {
-		@apply text-lg font-bold;
-		font-family: var(--font-varela);
 	}
 </style>

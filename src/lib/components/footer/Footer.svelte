@@ -95,7 +95,7 @@
 		@apply pt-4 w-full md:w-fit;
 	}
 	.content {
-		@apply py-12 text-white bg-[#363a50];
+		@apply py-12 bg-blueberry-100;
 	}
 
 	a {
@@ -104,7 +104,6 @@
 
 	p {
 		@apply text-xxs font-light text-balance;
-		font-family: var(--font-varela);
 	}
 
 	form {
@@ -112,7 +111,6 @@
 	}
 
 	input {
-		font-family: var(--font-varela);
 		@apply min-w-64 block w-full p-4 text-[#f3f1ff] bg-transparent rounded border border-[#f3f1ff] outline-none ring-0 text-base focus-within:bg-transparent transition-all duration-200 ease-in-out;
 	}
 

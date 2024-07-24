@@ -15,30 +15,30 @@
 	$: article = data.article;
 
 	export let clientCase = {
-		title: 'Maleri Viskan',
-		client: 'Maleri Viskan',
+		title: 'Måleri Viskan',
+		client: 'Måleri Viskan',
 		industry: 'Måleri',
 		tags: ['Webbutveckling', 'Grafisk design', 'SEO'],
 		needs: {
 			title: 'Behov',
-			intro: 'Maleri Viskan behövde en ny webbplats',
+			intro: 'Måleri Viskan behövde en ny webbplats',
 			description:
-				'Maleri Viskan är ett måleriföretag som behövde en ny webbplats för att kunna nå ut till fler kunder. De ville ha en modern och användarvänlig webbplats som visar upp deras tidigare projekt och tjänster.'
+				'Måleri Viskan är ett måleriföretag som behövde en ny webbplats för att kunna nå ut till fler kunder. De ville ha en modern och användarvänlig webbplats som visar upp deras tidigare projekt och tjänster.'
 		},
 		solution: {
 			title: 'Lösning',
 			intro: 'En modern och användarvänlig webbplats',
 			description:
-				'Vi skapade en modern och användarvänlig webbplats som visar upp Maleri Viskans tidigare projekt och tjänster. Vi fokuserade på att skapa en webbplats som är enkel att navigera och som ger besökarna en bra överblick över företagets tjänster.'
+				'Vi skapade en modern och användarvänlig webbplats som visar upp Måleri Viskans tidigare projekt och tjänster. Vi fokuserade på att skapa en webbplats som är enkel att navigera och som ger besökarna en bra överblick över företagets tjänster.'
 		},
 		result: {
 			title: 'Resultat',
 			intro: 'En webbplats som genererar fler kunder',
 			description:
-				'Med den nya webbplatsen har Maleri Viskan kunnat nå ut till fler kunder och öka sin försäljning. De har fått positiv respons från sina kunder och har sett en ökning av antalet förfrågningar.'
+				'Med den nya webbplatsen har Måleri Viskan kunnat nå ut till fler kunder och öka sin försäljning. De har fått positiv respons från sina kunder och har sett en ökning av antalet förfrågningar.'
 		},
-		url: 'maleriviskan.se',
-		image: '/images/cases/maleri-viskan/hero.png'
+		url: 'Måleriviskan.se',
+		image: '/images/cases/Måleri-viskan/hero.png'
 	};
 
 	const randomArticles = getRandomItems(articles, 3);
@@ -53,7 +53,7 @@
 <HeroSection
 	title={article.title}
 	description={article.description}
-	image="/images/cases/maleri-viskan/hero.png"
+	image="/images/cases/Måleri-viskan/hero.png"
 />
 <BreadcrumbsBlock />
 
@@ -64,11 +64,11 @@
 		<section>
 			<div class="space-y-4">
 				<h2>{clientCase.needs.title}</h2>
-				<p class="font-bold">{clientCase.needs.intro}</p>
+				<h6 class="font-bold">{clientCase.needs.intro}</h6>
 				<p>{clientCase.needs.description}</p>
 				<div class="pt-4">
 					<img
-						src="/images/cases/maleri-viskan/solution.png"
+						src="/images/cases/Måleri-viskan/solution.png"
 						alt={clientCase.title}
 						class="w-full h-auto rounded-md"
 					/>
@@ -78,11 +78,11 @@
 		<section>
 			<div class="space-y-4">
 				<h2>{clientCase.solution.title}</h2>
-				<p class="font-bold">{clientCase.solution.intro}</p>
+				<h6 class="font-bold">{clientCase.solution.intro}</h6>
 				<p>{clientCase.solution.description}</p>
 				<div class="pt-4">
 					<img
-						src="/images/cases/maleri-viskan/solution.png"
+						src="/images/cases/Måleri-viskan/solution.png"
 						alt={clientCase.title}
 						class="w-full h-auto rounded-md"
 					/>
@@ -92,11 +92,11 @@
 		<section>
 			<div class="space-y-4">
 				<h2>{clientCase.result.title}</h2>
-				<p class="font-bold">{clientCase.result.intro}</p>
+				<h6 class="font-bold">{clientCase.result.intro}</h6>
 				<p>{clientCase.result.description}</p>
 				<div class="pt-4">
 					<img
-						src="/images/cases/maleri-viskan/solution.png"
+						src="/images/cases/Måleri-viskan/solution.png"
 						alt={clientCase.title}
 						class="w-full h-auto rounded-md"
 					/>
@@ -107,15 +107,15 @@
 	<div class="w-full mt-12 lg:sticky lg:top-0 lg:pt-24 lg:-mt-24 lg:basis-2/12 h-fit">
 		<div class="px-4 lg:divide-y xl:px-0">
 			<div class="pb-4 space-y-2">
-				<h3>Klient</h3>
+				<h6>Klient</h6>
 				<p class="text-xs">{clientCase.client}</p>
 			</div>
 			<div class="py-4 space-y-2">
-				<h3>Bransch</h3>
+				<h6>Bransch</h6>
 				<p class="text-xs">{clientCase.industry}</p>
 			</div>
 			<div class="py-4 space-y-2">
-				<h3>Vårt arbete</h3>
+				<h6>Vårt arbete</h6>
 				{#each clientCase.tags as tag}
 					<p class="flex items-center gap-2 text-[#464646]">
 						<Icon icon="material-symbols-light:check" />
@@ -127,7 +127,7 @@
 				{/each}
 			</div>
 			<div class="py-4 space-y-4">
-				<h3>Dela det här</h3>
+				<h6>Dela det här</h6>
 				<div class="flex items-center gap-2 text-lg">
 					<ShareSocials />
 				</div>
@@ -142,9 +142,9 @@
 	/>
 </section>
 <section class="max-w-screen-xl px-4 mx-auto space-y-4 xl:px-0">
-	<h6>Läs våra andra artiklar</h6>
+	<h5>Läs våra andra artiklar</h5>
 
-	<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+	<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
 		{#each randomArticles as randomArticle}
 			<CleanCard
 				image={randomArticle.image}
@@ -156,23 +156,3 @@
 	</div>
 </section>
 <ContactSection />
-
-<style lang="scss">
-	h2 {
-		@apply text-3xl font-bold;
-		font-family: var(--font-varela);
-	}
-
-	p {
-		@apply leading-normal;
-		font-family: var(--font-esteban);
-	}
-	h3 {
-		@apply text-base font-bold;
-		font-family: var(--font-varela);
-	}
-	h6 {
-		@apply text-base font-bold;
-		font-family: var(--font-varela);
-	}
-</style>

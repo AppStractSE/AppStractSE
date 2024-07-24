@@ -18,10 +18,10 @@
 	});
 </script>
 
-<nav aria-label="breadcrumb">
+<nav aria-label="breadcrumb" class="px-4 overflow-x-scroll no-scrollbar xl:px-0">
 	<a href="/"> Home </a>
 	{#each $breadcrumbs as path, index}
-		<Icon icon="ei:chevron-right" class="text-xl" />
+		<Icon icon="ei:chevron-right" class="text-xl min-w-fit" />
 		<a href={path} class:active={index === $breadcrumbs.length - 1}>
 			{findTitle(path)}
 		</a>
@@ -33,6 +33,9 @@
 		@apply flex items-center;
 	}
 	a {
-		@apply text-xxs hover:underline;
+		@apply text-xs hover:underline min-w-fit;
+	}
+	.active {
+		@apply opacity-80;
 	}
 </style>

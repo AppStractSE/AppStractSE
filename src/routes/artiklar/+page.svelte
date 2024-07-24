@@ -48,11 +48,9 @@
 <style lang="scss">
 	h2 {
 		@apply lg:text-center text-3xl lg:text-4xl text-balance;
-		font-family: var(--font-varela);
 	}
 	p {
 		@apply max-w-4xl lg:mx-auto text-lg lg:text-center text-balance;
-		font-family: var(--font-esteban);
 		span {
 			@apply font-semibold;
 		}

@@ -22,7 +22,13 @@ export interface Service {
 		title: string;
 		description: string;
 	}[];
+	process: {
+		title: string;
+		description: string;
+		image: string;
+	}[];
 }
+
 export const services: Service[] = [
 	{
 		title: 'Webbutveckling',
@@ -62,6 +68,27 @@ export const services: Service[] = [
 				title: 'Användarupplevelse',
 				description:
 					'Vi designar med fokus på användarvänlighet för att maximera engagemang och konverteringar.'
+			}
+		],
+		process: [
+			{
+				title: 'Planering',
+				description:
+					'Vi arbetar tillsammans med dig för att förstå dina behov och mål för webbplatsen.',
+				image: 'https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg'
+			},
+			{
+				title: 'Design',
+				description:
+					'Vi skapar en visuell design som representerar ditt varumärke och engagerar din målgrupp.',
+				image:
+					'https://pigment.se/wp-content/uploads/2023/10/pigment-webbyra-case-at-abba-the-museum-950x699.jpg'
+			},
+			{
+				title: 'Utveckling',
+				description:
+					'Våra erfarna utvecklare bygger en kvalitativ webbplats som uppfyller dina behov och krav.',
+				image: 'https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg'
 			}
 		]
 	},
@@ -104,6 +131,26 @@ export const services: Service[] = [
 				title: 'Snabb Laddningstid',
 				description: 'Våra servrar är optimerade för snabb laddningstid och hög prestanda.'
 			}
+		],
+		process: [
+			{
+				title: 'Behovsanalys',
+				description:
+					'Vi analyserar dina behov och krav för att rekommendera den bästa hostinglösningen för dig.',
+				image: 'https://images.pexels.com/photos/209151/pexels-photo-209151.jpeg'
+			},
+			{
+				title: 'Implementering',
+				description:
+					'Vi implementerar och konfigurerar din hostinglösning för att säkerställa hög prestanda och säkerhet.',
+				image: 'https://images.pexels.com/photos/209151/pexels-photo-209151.jpeg'
+			},
+			{
+				title: 'Support',
+				description:
+					'Vårt team av hostingexperter finns tillgängliga för att ge support och hjälp när du behöver det.',
+				image: 'https://images.pexels.com/photos/209151/pexels-photo-209151.jpeg'
+			}
 		]
 	},
 	{
@@ -139,6 +186,25 @@ export const services: Service[] = [
 			{
 				title: 'Integration med Backend',
 				description: 'Vi säkerställer att din app är fullt integrerad med ditt befintliga system.'
+			}
+		],
+		process: [
+			{
+				title: 'Planering',
+				description: 'Vi arbetar tillsammans med dig för att förstå dina behov och mål för appen.',
+				image: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg'
+			},
+			{
+				title: 'Design',
+				description:
+					'Vi skapar en användarvänlig design som är estetiskt tilltalande och funktionell.',
+				image: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg'
+			},
+			{
+				title: 'Utveckling',
+				description:
+					'Våra erfarna utvecklare skapar en kvalitativ app som uppfyller dina behov och krav.',
+				image: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg'
 			}
 		]
 	},
@@ -177,6 +243,26 @@ export const services: Service[] = [
 			{
 				title: 'A/B-testning',
 				description: 'Vi använder AI för att genomföra A/B-testning och förbättra designval.'
+			}
+		],
+		process: [
+			{
+				title: 'Analys',
+				description:
+					'Vi använder AI för att analysera din nuvarande design och identifiera förbättringsmöjligheter.',
+				image: 'https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg'
+			},
+			{
+				title: 'Optimering',
+				description:
+					'Vi använder AI för att optimera din design och skapa en mer engagerande användarupplevelse.',
+				image: 'https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg'
+			},
+			{
+				title: 'Testning',
+				description:
+					'Vi genomför A/B-testning och analyserar resultaten för att förbättra designval och konverteringar.',
+				image: 'https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg'
 			}
 		]
 	},
@@ -219,6 +305,26 @@ export const services: Service[] = [
 				description:
 					'Vi skapar prototyper för att testa och förbättra designkoncept innan implementering.'
 			}
+		],
+		process: [
+			{
+				title: 'Forskning',
+				description:
+					'Vi genomför användarundersökningar och analyser för att förstå målgruppens behov och beteenden.',
+				image: 'https://images.pexels.com/photos/3585088/pexels-photo-3585088.jpeg'
+			},
+			{
+				title: 'Design',
+				description:
+					'Vi skapar estetiskt tilltalande och intuitiva användargränssnitt baserat på forskningsresultaten.',
+				image: 'https://images.pexels.com/photos/3585088/pexels-photo-3585088.jpeg'
+			},
+			{
+				title: 'Testning',
+				description:
+					'Vi testar och förfinar designkoncept genom prototyper för att säkerställa optimal användarupplevelse.',
+				image: 'https://images.pexels.com/photos/3585088/pexels-photo-3585088.jpeg'
+			}
 		]
 	},
 	{
@@ -256,6 +362,26 @@ export const services: Service[] = [
 			{
 				title: 'Innehållsmarknadsföring',
 				description: 'Vi utvecklar engagerande innehåll som attraherar och behåller din målgrupp.'
+			}
+		],
+		process: [
+			{
+				title: 'Strategi',
+				description:
+					'Vi utvecklar en skräddarsydd digital marknadsföringsstrategi för att nå dina affärsmål.',
+				image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg'
+			},
+			{
+				title: 'Genomförande',
+				description:
+					'Vi implementerar strategin genom att skapa och distribuera kampanjer som når din målgrupp.',
+				image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg'
+			},
+			{
+				title: 'Optimering',
+				description:
+					'Vi analyserar och optimerar kampanjerna för att maximera deras effektivitet och avkastning.',
+				image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg'
 			}
 		]
 	},
@@ -295,6 +421,25 @@ export const services: Service[] = [
 				title: 'Analyser och Rapportering',
 				description:
 					'Vi tillhandahåller detaljerade analyser för att mäta framgången av dina e-postkampanjer.'
+			}
+		],
+		process: [
+			{
+				title: 'Design',
+				description: 'Vi designar anpassade e-postmallar som representerar ditt varumärke.',
+				image: 'https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg'
+			},
+			{
+				title: 'Automatisering',
+				description:
+					'Vi skapar automatiserade e-postkampanjer för att engagera din publik vid rätt tidpunkt.',
+				image: 'https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg'
+			},
+			{
+				title: 'Rapportering',
+				description:
+					'Vi tillhandahåller detaljerade analyser för att mäta framgången av dina e-postkampanjer.',
+				image: 'https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg'
 			}
 		]
 	},
@@ -338,6 +483,26 @@ export const services: Service[] = [
 				description:
 					'Vi genomför tekniska SEO-audits och optimeringar för att förbättra din webbplats prestanda.'
 			}
+		],
+		process: [
+			{
+				title: 'SEO-audit',
+				description:
+					'Vi genomför en grundlig analys av din webbplats för att identifiera SEO-möjligheter.',
+				image: 'https://images.pexels.com/photos/218717/pexels-photo-218717.jpeg'
+			},
+			{
+				title: 'Optimering',
+				description:
+					'Vi optimerar din webbplats innehåll, struktur och länkprofil för att förbättra dess ranking.',
+				image: 'https://images.pexels.com/photos/218717/pexels-photo-218717.jpeg'
+			},
+			{
+				title: 'Rapportering',
+				description:
+					'Vi tillhandahåller detaljerade rapporter om din webbplats ranking och trafik för att mäta framgång.',
+				image: 'https://images.pexels.com/photos/218717/pexels-photo-218717.jpeg'
+			}
 		]
 	},
 	{
@@ -375,6 +540,26 @@ export const services: Service[] = [
 			{
 				title: 'Kampanjhantering',
 				description: 'Vi hanterar dina sociala mediekampanjer för att maximera deras effektivitet.'
+			}
+		],
+		process: [
+			{
+				title: 'Strategiutveckling',
+				description:
+					'Vi skapar en skräddarsydd strategi för att optimera din närvaro på sociala medier.',
+				image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg'
+			},
+			{
+				title: 'Innehållsskapande',
+				description:
+					'Vi skapar engagerande innehåll som resonerar med din målgrupp och ökar engagemanget.',
+				image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg'
+			},
+			{
+				title: 'Kampanjhantering',
+				description:
+					'Vi hanterar och optimerar dina sociala mediekampanjer för att maximera deras effektivitet.',
+				image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg'
 			}
 		]
 	}

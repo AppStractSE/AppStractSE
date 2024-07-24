@@ -47,57 +47,61 @@
 
 <div class="w-full">
 	<form>
-		<div class="flex gap-4">
-			<div class="flex-1">
-				<input
-					placeholder="För- och efternamn"
-					id="fullName"
-					type="text"
-					bind:value={fullName}
-					class={!errors.fullName ? inputClassNames : inputErrorClassNames}
-				/>
-				<div class="error {errors.fullName ? errorClassNames : errorBaseClassNames}">
-					{errors.fullName ? errors.fullName[0] : ''}
-				</div>
-			</div>
-
-			<div class="flex-1">
-				<input
-					placeholder="E-postadress"
-					id="email"
-					type="email"
-					bind:value={email}
-					class={!errors.email ? inputClassNames : inputErrorClassNames}
-				/>
-				<div class="error {errors.email ? errorClassNames : errorBaseClassNames}">
-					{errors.email ? errors.email[0] : ''}
-				</div>
-			</div>
-		</div>
-
+		<h6>
+			Skicka in dina uppgifter via formuläret nedan. Vi ser fram emot att återkoppla till dig
+			snarast!
+		</h6>
 		<div>
 			<input
-				placeholder="Företagsnamn"
-				id="businessName"
+				placeholder="För- och efternamn"
+				id="fullName"
 				type="text"
-				bind:value={businessName}
-				class={!errors.businessName ? inputClassNames : inputErrorClassNames}
+				bind:value={fullName}
+				class={!errors.fullName ? inputClassNames : inputErrorClassNames}
 			/>
-			<div class="error {errors.businessName ? errorClassNames : errorBaseClassNames}">
-				{errors.businessName ? errors.businessName[0] : ''}
+			<div class="error {errors.fullName ? errorClassNames : errorBaseClassNames}">
+				{errors.fullName ? errors.fullName[0] : ''}
 			</div>
 		</div>
 
 		<div>
 			<input
-				placeholder="Telefonnummer"
-				id="phoneNumber"
-				type="tel"
-				bind:value={phoneNumber}
-				class={!errors.phoneNumber ? inputClassNames : inputErrorClassNames}
+				placeholder="E-postadress"
+				id="email"
+				type="email"
+				bind:value={email}
+				class={!errors.email ? inputClassNames : inputErrorClassNames}
 			/>
-			<div class="error {errors.phoneNumber ? errorClassNames : errorBaseClassNames}">
-				{errors.phoneNumber ? errors.phoneNumber[0] : ''}
+			<div class="error {errors.email ? errorClassNames : errorBaseClassNames}">
+				{errors.email ? errors.email[0] : ''}
+			</div>
+		</div>
+
+		<div class="flex gap-4">
+			<div>
+				<input
+					placeholder="Företagsnamn"
+					id="businessName"
+					type="text"
+					bind:value={businessName}
+					class={!errors.businessName ? inputClassNames : inputErrorClassNames}
+				/>
+				<div class="error {errors.businessName ? errorClassNames : errorBaseClassNames}">
+					{errors.businessName ? errors.businessName[0] : ''}
+				</div>
+			</div>
+
+			<div>
+				<input
+					placeholder="Telefonnummer"
+					id="phoneNumber"
+					type="tel"
+					bind:value={phoneNumber}
+					class={!errors.phoneNumber ? inputClassNames : inputErrorClassNames}
+				/>
+				<div class="error {errors.phoneNumber ? errorClassNames : errorBaseClassNames}">
+					{errors.phoneNumber ? errors.phoneNumber[0] : ''}
+				</div>
 			</div>
 		</div>
 
@@ -112,12 +116,19 @@
 				{errors.message ? errors.message[0] : ''}
 			</div>
 		</div>
+		<p class="text-sm">
+			Genom att klicka på skicka godkänner du vår{' '}<a
+				href="/integritetspolicy"
+				target="_blank"
+				class="underline underline-offset-4">integritetspolicy</a
+			>
+		</p>
 		<div>
 			<Button
 				variation="primary"
 				size="lg"
 				type="button"
-				title="Hör av er så fort ni kan!"
+				title="Skicka meddelande"
 				onClick={handleSubmit}
 			/>
 		</div>
@@ -133,8 +144,7 @@
 	}
 	input,
 	textarea {
-		font-family: var(--font-varela);
-		@apply block w-full p-4 bg-sunglow-50 rounded border outline-none ring-0 text-base focus-within:bg-sunglow-50 transition-all duration-200 ease-in-out;
+		@apply block w-full p-4 bg-white rounded-xl border outline-none ring-0 text-base focus-within:bg-white transition-all duration-200 ease-in-out;
 	}
 	::placeholder {
 		@apply text-black/50;

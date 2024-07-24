@@ -26,7 +26,7 @@
 
 <style lang="scss">
 	.block {
-		@apply flex flex-col-reverse rounded outline-1 outline-black/25 outline md:grid md:grid-cols-6 place-items-center;
+		@apply flex flex-col-reverse rounded outline-1 outline-black/25 outline md:grid md:grid-cols-6 place-items-center bg-gradient-to-l from-blueberry-25 to-blueberry-50;
 	}
 
 	.content {
@@ -45,12 +45,7 @@
 		@apply object-cover w-full h-full;
 	}
 
-	h6 {
-		@apply text-base font-bold;
-		font-family: var(--font-varela);
-	}
 	p {
-		@apply text-sm font-light text-balance;
-		font-family: var(--font-esteban);
+		@apply text-balance;
 	}
 </style>

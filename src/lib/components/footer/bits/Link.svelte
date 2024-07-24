@@ -7,7 +7,6 @@
 
 <style lang="scss">
 	a {
-		@apply hover:underline block text-sm font-light w-fit;
-		font-family: var(--font-varela);
+		@apply hover:underline block text-base font-light w-fit;
 	}
 </style>

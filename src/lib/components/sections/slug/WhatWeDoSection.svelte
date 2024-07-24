@@ -3,7 +3,7 @@
 </script>
 
 <section>
-	<div class="max-w-screen-xl mx-auto">
+	<div class="max-w-screen-xl px-4 mx-auto xl:px-0">
 		<h2 class="mb-12">Det här gör vi inom {service.title}</h2>
 		<div class="grid justify-between grid-cols-1 gap-12 md:grid-cols-3">
 			{#each service.what_we_do as step, index}
@@ -24,15 +24,12 @@
 	}
 	h2 {
 		@apply text-3xl font-bold;
-		font-family: var(--font-varela);
 	}
 
 	p {
 		@apply text-base leading-normal;
-		font-family: var(--font-esteban);
 	}
 	h3 {
 		@apply text-lg font-bold;
-		font-family: var(--font-varela);
 	}
 </style>

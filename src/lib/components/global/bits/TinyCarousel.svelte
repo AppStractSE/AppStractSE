@@ -20,8 +20,12 @@
 	<div class="embla__container">
 		<slot />
 	</div>
-	<div class="absolute top-0 left-0 w-4 h-full bg-gradient-to-r from-sunglow-100 to-transparent" />
-	<div class="absolute top-0 right-0 w-4 h-full bg-gradient-to-l from-sunglow-100 to-transparent" />
+	<div
+		class="absolute top-0 left-0 w-4 h-full bg-gradient-to-r from-blueberry-100 to-transparent"
+	/>
+	<div
+		class="absolute top-0 right-0 w-4 h-full bg-gradient-to-l from-blueberry-100 to-transparent"
+	/>
 </div>
 
 <style lang="scss">

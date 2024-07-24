@@ -7,7 +7,10 @@
 		<a href={service.slug}>
 			<div class="flex items-stretch gap-4">
 				<!-- svelte-ignore a11y-missing-attribute -->
-				<img src={service.image} class="object-cover w-16 h-16 rounded aspect-square outline outline-1" />
+				<img
+					src={service.image}
+					class="object-cover w-16 h-16 rounded aspect-square outline outline-1"
+				/>
 				<div class="space-y-2">
 					<h6>{service.title}</h6>
 					<p>{service.description}</p>
@@ -31,11 +34,9 @@
 		}
 	}
 	h6 {
-		@apply font-bold text-sm;
-		font-family: var(--font-varela);
+		@apply font-bold text-base;
 	}
 	p {
 		@apply text-xs font-light text-balance;
-		font-family: var(--font-esteban);
 	}
 </style>

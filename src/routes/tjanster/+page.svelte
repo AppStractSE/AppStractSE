@@ -19,7 +19,7 @@
 >
 	<section>
 		<div class="spacer"></div>
-		<div class="max-w-screen-lg px-4 mx-auto mb-24 space-y-4 text-center xl:px-2">
+		<div class="max-w-screen-lg px-4 mx-auto mb-24 space-y-6 text-center xl:px-2">
 			<h2>En komplett lösning för alla behov</h2>
 			<p>
 				Appstract erbjuder en rad olika tjänster som passar alla behov. Allt från skräddarsydd
@@ -29,7 +29,7 @@
 		</div>
 		<BreadcrumbsBlock />
 		<div
-			class="grid max-w-screen-xl grid-cols-1 gap-4 px-4 mx-auto md:grid-cols-2 lg:grid-cols-3 xl:px-0"
+			class="grid max-w-screen-xl grid-cols-1 gap-6 px-4 mx-auto md:grid-cols-2 lg:grid-cols-3 xl:px-0"
 		>
 			{#each services.sort((a, b) => a.title.localeCompare(b.title)) as service}
 				<DefaultCard
@@ -47,15 +47,10 @@
 
 <style lang="scss">
 	h2 {
-		@apply lg:text-center text-3xl lg:text-4xl text-balance;
-		font-family: var(--font-varela);
+		@apply lg:text-center text-balance;
 	}
 	p {
-		@apply max-w-4xl lg:mx-auto text-lg lg:text-center text-balance;
-		font-family: var(--font-esteban);
-		span {
-			@apply font-semibold;
-		}
+		@apply max-w-4xl lg:mx-auto text-xl lg:text-center text-balance;
 	}
 	section {
 		@apply my-12 lg:my-24;

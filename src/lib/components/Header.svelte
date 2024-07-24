@@ -10,7 +10,7 @@
 	$: isScroll = y > 0;
 	$: isScrollClasses =
 		isScroll || isOpen
-			? 'bg-sunglow-100/50 md:bg-sunglow-100/25 backdrop-blur-md '
+			? 'bg-blueberry-100/50 md:bg-blueberry-100/25 backdrop-blur-md '
 			: 'bg-transparent';
 	$: innerWidth = 0;
 	$: smScreen = innerWidth < 768;
@@ -37,7 +37,9 @@
 			<h2>Appstract</h2>
 		</a>
 		<button on:click={handleToggle}>
-			{isOpen ? 'Stäng' : 'Meny'}
+			<p>
+				{isOpen ? 'Stäng' : 'Meny'}
+			</p>
 		</button>
 	</nav>
 </header>
@@ -59,10 +61,9 @@
 	}
 	h2 {
 		@apply text-lg md:text-xl lowercase font-bold;
-		font-family: var(--font-varela);
+		font-family: var(--font-varela-round);
 	}
 	button {
 		@apply hover:underline-offset-4 hover:underline uppercase text-base transition-all duration-200 ease-in-out;
-		font-family: var(--font-varela);
 	}
 </style>
