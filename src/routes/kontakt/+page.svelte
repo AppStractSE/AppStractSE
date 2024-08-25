@@ -2,6 +2,7 @@
 	import ContactForm from '$lib/components/forms/ContactForm.svelte';
 	import BreadcrumbsBlock from '$lib/components/global/blocks/BreadcrumbsBlock.svelte';
 	import ServicesSection from '$lib/components/global/sections/ServicesSection.svelte';
+	import ReviewsSection from '$lib/components/sections/slug/ReviewsSection.svelte';
 	import { onMount } from 'svelte';
 
 	let mounted = false;
@@ -36,23 +37,17 @@
 	</div>
 </section>
 <ServicesSection />
+<ReviewsSection />
 
 <style lang="scss">
-	h2 {
-		@apply text-3xl font-bold;
-		font-family: var(--font-varela);
-	}
 	p {
 		@apply text-base leading-tight text-balance whitespace-pre-line;
-		font-family: var(--font-esteban);
 	}
-	section:first-of-type {
-		background: url('/images/hero.png');
+	section {
 		min-height: 90vh;
 		background-size: 100% 100%;
 		background-position: center;
 		background-repeat: no-repeat;
-		margin-top: 0 !important;
-		margin-bottom: 0 !important;
+		@apply my-0 bg-gradient-to-b from-blueberry-100 to-transparent;
 	}
 </style>

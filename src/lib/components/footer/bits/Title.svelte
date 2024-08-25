@@ -9,6 +9,5 @@
 <style lang="scss">
 	h6 {
 		@apply text-lg;
-		font-family: var(--font-varela);
 	}
 </style>

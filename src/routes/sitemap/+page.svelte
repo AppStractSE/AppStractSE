@@ -64,10 +64,8 @@
 <style lang="scss">
 	h6 {
 		@apply text-xl font-bold;
-		font-family: var(--font-varela);
 	}
 	a {
-		@apply text-sm text-balance leading-normal hover:underline;
-		font-family: var(--font-esteban);
+		@apply text-base text-balance leading-normal hover:underline;
 	}
 </style>

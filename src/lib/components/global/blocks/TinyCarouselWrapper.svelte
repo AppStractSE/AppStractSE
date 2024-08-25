@@ -26,7 +26,7 @@
 	{#each mdScreen ? dataCopy : data as slide}
 		<div class="embla__slide">
 			<div
-				class="px-4 py-2.5 bg-sunglow-100 text-xs outline outline-1 outline-black/25 rounded-full flex items-center gap-2"
+				class="px-4 py-2.5 bg-blueberry-100 text-xs outline outline-1 outline-black/25 rounded-full flex items-center gap-2"
 			>
 				<Icon icon={slide.icon} class="text-xl" />{slide.title}
 			</div>

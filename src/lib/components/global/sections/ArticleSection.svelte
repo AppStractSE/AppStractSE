@@ -44,11 +44,9 @@
 <style lang="scss">
 	h2 {
 		@apply text-3xl font-bold;
-		font-family: var(--font-varela);
 	}
 
 	p {
 		@apply text-base leading-normal;
-		font-family: var(--font-esteban);
 	}
 </style>

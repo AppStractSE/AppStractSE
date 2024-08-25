@@ -19,7 +19,7 @@
 >
 	<section>
 		<div class="spacer"></div>
-		<div class="max-w-screen-lg px-4 mx-auto mb-24 space-y-4 text-center xl:px-2">
+		<div class="max-w-screen-lg px-4 mx-auto mb-24 space-y-6 text-center xl:px-2">
 			<h2>Appstracts guider och e-böcker</h2>
 			<p>
 				Behöver du hjälp med att komma igång med att skapa ditt varumärke, men vill prova-på-själv?
@@ -30,7 +30,7 @@
 		</div>
 		<BreadcrumbsBlock />
 		<div
-			class="grid max-w-screen-xl grid-cols-1 gap-4 px-4 mx-auto md:grid-cols-2 lg:grid-cols-3 xl:px-0"
+			class="grid max-w-screen-xl grid-cols-1 gap-6 px-4 mx-auto md:grid-cols-2 lg:grid-cols-3 xl:px-0"
 		>
 			{#each guides.sort((a, b) => a.title.localeCompare(b.title)) as guide}
 				<DefaultCard
@@ -48,12 +48,11 @@
 
 <style lang="scss">
 	h2 {
-		@apply lg:text-center text-3xl lg:text-4xl text-balance;
-		font-family: var(--font-varela);
+		@apply lg:text-center text-balance;
 	}
+
 	p {
-		@apply max-w-4xl lg:mx-auto text-lg lg:text-center text-balance;
-		font-family: var(--font-esteban);
+		@apply max-w-4xl lg:mx-auto text-xl lg:text-center text-balance;
 		span {
 			@apply font-semibold;
 		}

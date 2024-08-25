@@ -16,7 +16,7 @@
 			<p class="">{description}</p>
 		</div>
 		<div
-			class="relative w-full py-4 overflow-hidden rounded-md bg-sky-600 md:basis-7/12 basis-full aspect-video"
+			class="relative w-full py-4 overflow-hidden rounded-md bg-blueberry-600 md:basis-7/12 basis-full aspect-video"
 		>
 			<div class="space-y-4 w-[150%] -rotate-12 aspect-video absolute -top-8 -left-48">
 				<EmblaCasesCarousel
@@ -81,7 +81,7 @@
 		@apply space-y-2 my-2;
 	}
 	section {
-		@apply py-12 md:py-24 bg-sunglow-300;
+		@apply py-12 md:py-24 bg-blueberry-300;
 	}
 
 	img {
@@ -90,11 +90,9 @@
 
 	h2 {
 		@apply text-3xl font-bold;
-		font-family: var(--font-varela);
 	}
 
 	p {
 		@apply md:text-lg text-base text-balance leading-normal;
-		font-family: var(--font-esteban);
 	}
 </style>

@@ -29,12 +29,11 @@
 		</div>
 		<BreadcrumbsBlock />
 		<div
-			class="grid max-w-screen-xl grid-cols-1 gap-4 px-4 mx-auto md:grid-cols-2 lg:grid-cols-3 xl:px-0"
+			class="grid max-w-screen-xl grid-cols-1 gap-6 px-4 mx-auto md:grid-cols-2 lg:grid-cols-3 xl:px-0"
 		>
 			{#each cases.sort((a, b) => a.title.localeCompare(b.title)) as clientCase}
 				<DefaultCard
-					title={clientCase.title}
-					subTitle={clientCase.client}
+					title={clientCase.client}
 					href={clientCase.slug}
 					buttonText="Gå till kundcase"
 					description={clientCase.shortDescription}
@@ -50,11 +49,9 @@
 <style lang="scss">
 	h2 {
 		@apply lg:text-center text-3xl lg:text-4xl text-balance;
-		font-family: var(--font-varela);
 	}
 	p {
 		@apply max-w-4xl lg:mx-auto text-lg lg:text-center text-balance;
-		font-family: var(--font-esteban);
 		span {
 			@apply font-semibold;
 		}

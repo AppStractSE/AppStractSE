@@ -3,7 +3,6 @@
 	import Checkbox from '$lib/components/footer/bits/Checkbox.svelte';
 	import Link from '$lib/components/footer/bits/Link.svelte';
 	import Title from '$lib/components/footer/bits/Title.svelte';
-	import { guides } from '$lib/data/guides';
 	import { navigation } from '$lib/data/navigation';
 	import { services } from '$lib/data/services';
 	import Socials from '../drawer/bits/Socials.svelte';
@@ -17,15 +16,26 @@
 </script>
 
 <footer>
-	<img
-		src="/images/appstract_text.png"
-		alt="Appstract"
-		class="w-full max-w-screen-xl px-4 mx-auto xl:px-2"
-	/>
 	<div class="content">
 		<div class="max-w-screen-xl px-4 mx-auto xl:px-2">
-			<div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3 xl:flex xl:justify-between">
-				<div class="space-y-4 xl:basis-4/12">
+			<div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
+				<div class="space-y-4">
+					<Title title="Appstract" />
+					<div class="space-y-4">
+						{#each navigation as nav}
+							<Link href={nav.href} title={nav.title} />
+						{/each}
+					</div>
+				</div>
+				<div class="space-y-4">
+					<Title title="Tjänster" />
+					<div class="space-y-4">
+						{#each services as service}
+							<Link href={service.slug} title={service.title} />
+						{/each}
+					</div>
+				</div>
+				<div class="space-y-4">
 					<Title title="Prenumerera på vårt nyhetsbrev" />
 					<p>Få de senaste nyheterna och uppdateringarna direkt till din inkorg.</p>
 					<form>
@@ -43,33 +53,12 @@
 						</div>
 					</form>
 				</div>
-				<div class="flex-1 space-y-4">
-					<Title title="Appstract" />
-					<div class="space-y-4">
-						{#each navigation as nav}
-							<Link href={nav.href} title={nav.title} />
-						{/each}
-					</div>
-				</div>
-				<div class="flex-1 space-y-4">
-					<Title title="Tjänster" />
-					<div class="space-y-4">
-						{#each services as service}
-							<Link href={service.slug} title={service.title} />
-						{/each}
-					</div>
-				</div>
-				<div class="flex-1 space-y-4">
-					<Title title="Guider & e-böcker" />
-					<div class="space-y-4">
-						{#each guides as guide}
-							<Link href={guide.slug} title={guide.title} />
-						{/each}
-					</div>
-				</div>
 			</div>
 			<div class="my-12">
-				<Socials />
+				<div class="space-y-4">
+					<Title title="Följ oss på sociala medier" />
+					<Socials />
+				</div>
 			</div>
 			<div class="my-12 mx-auto w-full h-[1px] bg-white/50"></div>
 			<div class="flex flex-col justify-between gap-4 md:flex-row">
@@ -91,11 +80,14 @@
 </footer>
 
 <style lang="scss">
+	footer {
+		@apply border-t;
+	}
 	.btn-container {
 		@apply pt-4 w-full md:w-fit;
 	}
 	.content {
-		@apply py-12 text-white bg-[#363a50];
+		@apply py-12 bg-[#fcfcff];
 	}
 
 	a {
@@ -104,7 +96,6 @@
 
 	p {
 		@apply text-xxs font-light text-balance;
-		font-family: var(--font-varela);
 	}
 
 	form {
@@ -112,12 +103,13 @@
 	}
 
 	input {
-		font-family: var(--font-varela);
-		@apply min-w-64 block w-full p-4 text-[#f3f1ff] bg-transparent rounded border border-[#f3f1ff] outline-none ring-0 text-base focus-within:bg-transparent transition-all duration-200 ease-in-out;
-	}
-
-	::placeholder {
-		@apply text-white text-opacity-70;
+		&:focus {
+			@apply border-black;
+		}
+		&::placeholder {
+			@apply text-opacity-70;
+		}
+		@apply border-black/50 min-w-64 block w-full p-4 bg-transparent rounded border outline-none ring-0 text-base focus-within:bg-transparent transition-all duration-200 ease-in-out;
 	}
 
 	button {

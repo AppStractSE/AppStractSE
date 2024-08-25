@@ -4,7 +4,6 @@
 	export let title = '';
 	export let description = '';
 	export let href = '';
-	export let buttonText = 'Läs mer';
 	export let subTitle = '';
 </script>
 
@@ -16,8 +15,12 @@
 		{#if subTitle}
 			<h6>{subTitle}</h6>
 		{/if}
-		<h2 class="group-hover:underline underline-offset-4">{title}</h2>
-		<p>{description}</p>
+		{#if title}
+			<h5 class="group-hover:underline underline-offset-4">{title}</h5>
+		{/if}
+		{#if description}
+			<p>{description}</p>
+		{/if}
 	</div>
 </a>
 
@@ -37,17 +40,7 @@
 		}
 	}
 
-	h2 {
-		@apply text-xl;
-		font-family: var(--font-varela);
-	}
-
 	p {
 		@apply flex-1 text-balance;
-	}
-	p,
-	h6 {
-		@apply text-sm tracking-wide;
-		font-family: var(--font-esteban);
 	}
 </style>

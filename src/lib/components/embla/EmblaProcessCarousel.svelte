@@ -92,11 +92,9 @@
 	}
 	h2 {
 		@apply text-3xl font-bold;
-		font-family: var(--font-varela);
 	}
 	p {
 		@apply text-base leading-normal text-balance;
-		font-family: var(--font-esteban);
 	}
 	.embla {
 		@apply my-4 max-w-screen-xl mx-auto relative px-4 xl:px-2;
@@ -128,6 +126,6 @@
 		height: 13px;
 	}
 	.embla__progress__bar {
-		@apply top-0 left-0 bottom-0 absolute w-full bg-sunglow-200;
+		@apply top-0 left-0 bottom-0 absolute w-full bg-blueberry-100;
 	}
 </style>

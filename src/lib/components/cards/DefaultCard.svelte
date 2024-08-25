@@ -14,14 +14,14 @@
 	<div class="overflow-hidden aspect-[4/3]">
 		<img src={image} alt={title} />
 	</div>
-	<div class="flex flex-col flex-1 gap-4 px-8 pt-12 pb-8 2xl:px-6 2xl xl lg:py-6">
+	<div class="flex flex-col flex-1 gap-2 px-4 py-8">
 		{#if subTitle}
 			<h6>{subTitle}</h6>
 		{/if}
-		<h2>{title}</h2>
+		<h5>{title}</h5>
 		<p>{description}</p>
 		<div class="block mt-6 md:flex">
-			<Button variation="outline" title={buttonText} {href} size="md" />
+			<Button variation="outline" title={buttonText} {href} size="lg" />
 		</div>
 	</div>
 </a>
@@ -31,33 +31,23 @@
 		aspect-ratio: 4/3;
 		height: 100%;
 		overflow: hidden;
-		@apply transition-all duration-200 object-cover opacity-70;
+		@apply transition-all duration-200 object-cover lg:opacity-70;
 	}
 	a {
-		@apply flex flex-col overflow-hidden border rounded-md h-full bg-sunglow-25;
+		@apply flex flex-col overflow-hidden rounded-md h-full bg-white;
 		&:hover {
 			img {
-				@apply scale-105 opacity-100;
+				@apply lg:scale-105 opacity-100;
 			}
-			h2,
+			h5,
 			h6,
 			p {
-				@apply underline underline-offset-4;
+				@apply lg:underline lg:underline-offset-4;
 			}
 		}
 	}
 
-	h2 {
-		@apply text-xl;
-		font-family: var(--font-varela);
-	}
-
 	p {
 		@apply flex-1 text-balance;
-	}
-	p,
-	h6 {
-		@apply text-sm tracking-wide;
-		font-family: var(--font-esteban);
 	}
 </style>

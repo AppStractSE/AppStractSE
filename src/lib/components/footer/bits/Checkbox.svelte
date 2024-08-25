@@ -21,9 +21,6 @@
 		display: none;
 		visibility: hidden;
 	}
-	label {
-		font-family: var(--font-varela);
-	}
 
 	.checkmark {
 		position: absolute;

@@ -30,8 +30,7 @@
 	}
 
 	p {
-		@apply text-sm font-bold;
-		font-family: var(--font-varela);
+		@apply text-base font-bold;
 	}
 
 	img {

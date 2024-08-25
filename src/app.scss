@@ -6,17 +6,33 @@
     box-sizing: border-box;
 }
 
-.swiper-pagination-bullet {
-    transition: all 0.3s ease-in-out !important;
+.splide__pagination__page {
+    transition: width 0.3s ease-in-out !important;
     width: 13px !important;
     height: 13px !important;
     border-radius: 10px !important;
-    background: #6a789e !important;
+    transform: scale(1);
+    @apply bg-stone-400;
 }
 
-.swiper-pagination-bullet-active {
-    background-color: #6a789e !important;
+.splide__pagination__page.is-active {
     width: 41px !important;
     height: 13px !important;
-    border-radius: 999px !important;
+    transform: scale(1);
+    @apply bg-stone-600 rounded-full;
+}
+
+.splide__pagination {
+    position: relative;
+    gap: 4px;
+    margin-top: 3rem;
+}
+
+.no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }

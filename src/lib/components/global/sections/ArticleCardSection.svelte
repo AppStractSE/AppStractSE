@@ -34,7 +34,7 @@
 			</div>
 			{#if href && link}
 				<div class="block mt-12 md:flex">
-					<Button variation="outline" title={link} {href} size="md" />
+					<Button variation="outline" title={link} {href} size="lg" />
 				</div>
 			{/if}
 		</div>
@@ -53,29 +53,5 @@
 	}
 	img {
 		@apply w-full h-full max-w-full rounded-md;
-	}
-	h4 {
-		@apply uppercase tracking-wider text-xxs;
-	}
-	h2,
-	h3 {
-		font-family: var(--font-varela);
-	}
-	h4,
-	p {
-		font-family: var(--font-esteban);
-	}
-	h2 {
-		@apply text-2xl font-bold;
-	}
-	h3 {
-		@apply text-lg font-bold;
-	}
-	p {
-		@apply text-base text-balance leading-normal;
-	}
-	.swiper-pagination {
-		@apply my-8;
-		position: unset;
 	}
 </style>
