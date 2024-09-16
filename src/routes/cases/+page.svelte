@@ -37,7 +37,7 @@
 					href={clientCase.slug}
 					buttonText="Gå till kundcase"
 					description={clientCase.shortDescription}
-					image={clientCase.image}
+					image={clientCase.heroImage}
 				/>
 			{/each}
 		</div>

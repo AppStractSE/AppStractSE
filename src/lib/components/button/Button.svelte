@@ -5,13 +5,19 @@
 	export let variation: 'primary' | 'outline' = 'primary';
 	export let href = '/';
 	export let size: 'sm' | 'md' | 'lg' | 'rounded-pill' = 'md';
-	export let type: 'button' | 'a' = 'a';
+	export let type: 'submit' | 'button' | 'a' = 'a';
 	export let onClick: () => void = () => {};
 	export let external = false;
 	export let hideExternalIcon = false;
 </script>
 
 <div class="btn btn-{variation} btn-{size}">
+	{#if type === 'submit'}
+		<button on:click={onClick} type="submit"
+			>{title}
+			<Icon {icon} />
+		</button>
+	{/if}
 	{#if type === 'button'}
 		<button on:click={onClick} type="button"
 			>{title}
@@ -40,7 +46,7 @@
 	}
 	.btn a,
 	.btn button {
-		@apply text-center relative block w-full h-full rounded-full hover:-translate-x-1.5 hover:-translate-y-1 transition-all ease-[cubic-bezier(0,2,1,2)];
+		@apply text-center relative block w-full h-full rounded-full hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all ease-[cubic-bezier(0,2,1,2)];
 	}
 	.btn-primary a,
 	.btn-primary button {

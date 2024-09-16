@@ -9,9 +9,7 @@
 	let y = 0;
 	$: isScroll = y > 0;
 	$: isScrollClasses =
-		isScroll || isOpen
-			? 'bg-blueberry-100/50 md:bg-blueberry-100/25 backdrop-blur-md '
-			: 'bg-transparent';
+		isScroll || isOpen ? 'bg-ivory-100/50 md:bg-ivory-100/50 backdrop-blur-md ' : 'bg-transparent';
 	$: innerWidth = 0;
 	$: smScreen = innerWidth < 768;
 	$: $page.route.id, (isOpen = false);

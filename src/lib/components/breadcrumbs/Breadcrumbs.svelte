@@ -18,7 +18,7 @@
 	});
 </script>
 
-<nav aria-label="breadcrumb" class="px-4 overflow-x-scroll no-scrollbar xl:px-0">
+<nav aria-label="breadcrumb" class="relative z-10 px-4 overflow-x-scroll no-scrollbar xl:px-0">
 	<a href="/"> Home </a>
 	{#each $breadcrumbs as path, index}
 		<Icon icon="ei:chevron-right" class="text-xl min-w-fit" />

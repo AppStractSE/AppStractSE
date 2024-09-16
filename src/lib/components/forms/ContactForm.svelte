@@ -1,10 +1,12 @@
 <script lang="ts">
 	import Button from '$lib/components/button/Button.svelte';
 	import { createEventDispatcher } from 'svelte';
+	import toast from 'svelte-french-toast';
 	import { z } from 'zod';
 
 	// Define the schema using Zod
 	const schema = z.object({
+		'form-name': z.string().optional(),
 		fullName: z.string().min(2, { message: 'Ange minst två bokstäver' }),
 		email: z.string().email({ message: 'Ange en giltig e-postadress' }),
 		businessName: z.string().optional(),
@@ -21,7 +23,19 @@
 
 	const dispatch = createEventDispatcher();
 
-	const handleSubmit = () => {
+	// Helper to format the data for URL encoding
+	const encodeFormData = (data: Record<string, any>) => {
+		return Object.keys(data)
+			.map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+			.join('&');
+	};
+
+	const handleSubmit = (event: Event) => {
+		event.preventDefault(); // Prevent the form from refreshing the page
+
+		// Reset errors
+		errors = {};
+
 		const result = schema.safeParse({
 			fullName,
 			email,
@@ -30,13 +44,57 @@
 			message
 		});
 
-		if (result.success) {
-			// Form is valid, dispatch event or handle form submission
-			dispatch('submit', result.data);
-		} else {
-			// Form is invalid, update errors
-			errors = result.error.flatten().fieldErrors;
+		if (!result.success) {
+			// Collect errors for display
+			result.error.errors.forEach((err) => {
+				const field = err.path[0];
+				if (!errors[field]) {
+					errors[field] = [];
+				}
+				errors[field].push(err.message);
+			});
+			return;
 		}
+
+		const formData = {
+			'form-name': 'contact-form',
+			fullName,
+			email,
+			businessName,
+			phoneNumber,
+			message
+		};
+
+		toast
+			.promise(
+				fetch('/forms.html', {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+					body: encodeFormData(formData)
+				}),
+				{
+					loading: 'Skickar meddelande...',
+					success: 'Meddelande skickat! Vi återkommer så snart vi kan.',
+					error: 'Något gick fel med att skicka meddelandet. Försök igen.'
+				},
+				{
+					success: {
+						duration: 8000,
+						icon: '💪'
+					}
+				}
+			)
+			.catch((error) => {
+				console.log(error.message);
+			})
+			.then(() => {
+				console.log('Form submitted');
+				fullName = '';
+				email = '';
+				businessName = '';
+				phoneNumber = '';
+				message = '';
+			});
 	};
 
 	let errorClassNames = 'mt-2 mb-4 max-h-full h-fit opacity-100';
@@ -46,7 +104,9 @@
 </script>
 
 <div class="w-full">
-	<form>
+	<form on:submit={handleSubmit} name="contact-form">
+		<input type="hidden" name="required-field" value="contact-form" />
+
 		<h6>
 			Skicka in dina uppgifter via formuläret nedan. Vi ser fram emot att återkoppla till dig
 			snarast!
@@ -117,20 +177,13 @@
 			</div>
 		</div>
 		<p class="text-sm">
-			Genom att klicka på skicka godkänner du vår{' '}<a
-				href="/integritetspolicy"
-				target="_blank"
-				class="underline underline-offset-4">integritetspolicy</a
-			>
+			Genom att klicka på skicka godkänner du vår{' '}
+			<a href="/integritetspolicy" target="_blank" class="underline underline-offset-4">
+				integritetspolicy
+			</a>.
 		</p>
 		<div>
-			<Button
-				variation="primary"
-				size="lg"
-				type="button"
-				title="Skicka meddelande"
-				onClick={handleSubmit}
-			/>
+			<Button variation="primary" size="lg" type="submit" title="Skicka meddelande" />
 		</div>
 	</form>
 </div>

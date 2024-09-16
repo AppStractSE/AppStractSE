@@ -20,11 +20,9 @@
 	<div class="embla__container">
 		<slot />
 	</div>
+	<div class="absolute top-0 left-0 w-4 h-full bg-gradient-to-r from-ivory-100/90 to-transparent" />
 	<div
-		class="absolute top-0 left-0 w-4 h-full bg-gradient-to-r from-blueberry-100 to-transparent"
-	/>
-	<div
-		class="absolute top-0 right-0 w-4 h-full bg-gradient-to-l from-blueberry-100 to-transparent"
+		class="absolute top-0 right-0 w-4 h-full bg-gradient-to-l from-ivory-100/90 to-transparent"
 	/>
 </div>
 

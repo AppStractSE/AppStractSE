@@ -38,7 +38,7 @@
 			nivå.
 		</p>
 	</div>
-	<div class="my-12 bg-gradient-to-b from-transparent via-blueberry-100 to-transparent">
+	<div class="py-12 bg-gradient-to-b from-transparent via-ivory-100 to-transparent">
 		<SplideWrapper {options} {extensions} {slides}>
 			<DefaultCard
 				let:slide

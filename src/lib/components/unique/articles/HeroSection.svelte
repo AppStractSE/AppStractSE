@@ -21,7 +21,7 @@
 
 <style lang="scss">
 	section {
-		@apply py-12 md:py-24 bg-blueberry-100;
+		@apply py-12 md:py-24;
 	}
 
 	img {

@@ -53,7 +53,7 @@
 	>
 		<div class="overlay" on:click={handleClickAway} />
 		<div
-			class="relative flex items-center rounded overflow-scroll transition-all duration-1000 h-full transform mx-auto bg-blueberry-50 max-w-[1312px] {isOpen
+			class="bg-ivory-50/95 relative flex items-center rounded overflow-scroll transition-all duration-1000 h-full transform mx-auto max-w-[1312px] {isOpen
 				? 'opacity-100 translate-y-0'
 				: 'opacity-100 translate-y-full'}"
 		>

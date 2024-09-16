@@ -31,7 +31,7 @@ export const cases: Case[] = [
 		slug: '/cases/maleri-viskan',
 		url: 'maleriviskan.se',
 		title:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+			'Välrenommerad målerifirma med decennier av erfarenhet inom både inomhus- och utomhusmålning, tapetsering och renovering',
 		shortDescription:
 			'Hos Måleri Viskan behövdes en digital totalrenovering. Vi fick äran att skapa en ny design och utveckla en ny webbplats med moderna tekniker och verktyg.',
 		description: 'Description 1',
@@ -162,7 +162,7 @@ export const cases: Case[] = [
 		client: 'PropertEase',
 		industry: 'Property Management',
 		slug: '/cases/propertease',
-		url: 'propertease.se',
+		url: '',
 		title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 		shortDescription:
 			'En rad längre mening. PropertEase är en digital plattform för fastighetsförvaltning som erbjuder en rad tjänster för att underlätta för fastighetsägare. Vi fick äran att skapa både plattformen samt webbplatsen.',

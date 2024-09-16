@@ -1,11 +1,5 @@
 <script lang="ts">
-	import {
-		articleRoutes,
-		caseRoutes,
-		guideRoutes,
-		navigationRoutes,
-		serviceRoutes
-	} from '$lib/data/sitemap';
+	import { articleRoutes, caseRoutes, navigationRoutes, serviceRoutes } from '$lib/data/sitemap';
 	import { onMount } from 'svelte';
 
 	let mounted = false;
@@ -28,15 +22,6 @@
 		<h6>Tjänster</h6>
 		<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-12 lg:gap-y-2">
 			{#each serviceRoutes as page}
-				<a href={page.slug}>{page.title}</a>
-			{/each}
-		</div>
-	</div>
-
-	<div class="space-y-4">
-		<h6>Guides</h6>
-		<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-12 lg:gap-y-2">
-			{#each guideRoutes as page}
 				<a href={page.slug}>{page.title}</a>
 			{/each}
 		</div>

@@ -5,6 +5,7 @@
 	import { onDestroy, onMount } from 'svelte';
 	import '../app.scss';
 	import './styles.scss';
+	import { Toaster } from 'svelte-french-toast';
 	let mounted = false;
 	onMount(() => {
 		setTimeout(() => {
@@ -39,6 +40,7 @@
 	<Header />
 	<slot />
 	<Footer />
+	<Toaster />
 {:else}
 	<GlobalLoader />
 {/if}
