@@ -25,7 +25,7 @@
 					{description}
 				</p>
 			</div>
-			<div class="flex items-center max-w-2xl mx-auto mt-16 justify-evenly">
+			<div class="btn-container">
 				<Button
 					variation="primary"
 					title="Det räcker, jag vill snacka med er!"
@@ -34,18 +34,21 @@
 				/>
 			</div>
 		</div>
-		<div class="spacer bg-gradient-to-b from-transparent to-blueberry-50"></div>
+		<div class="spacer bg-gradient-to-b from-ivory-100 to-ivory-50"></div>
 	</div>
 </section>
 
 <style lang="scss">
 	section {
-		@apply bg-gradient-to-br from-blueberry-100 to-blueberry-50;
+		@apply bg-ivory-100;
 	}
 	.hero {
 		@apply max-w-screen-xl px-4 py-12 mx-auto space-y-12 lg:px-0 text-center;
 		p {
 			@apply max-w-4xl lg:mx-auto text-lg text-balance;
 		}
+	}
+	.btn-container {
+		@apply flex items-center max-w-2xl mx-auto mt-16 justify-evenly;
 	}
 </style>

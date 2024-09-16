@@ -2,7 +2,7 @@
 	import CleanCard from '$lib/components/cards/CleanCard.svelte';
 	import CarouselHeader from '$lib/components/drawer/bits/CarouselHeader.svelte';
 	import SplideWrapper from '$lib/components/splide/SplideWrapper.svelte';
-	import { guides } from '$lib/data/guides';
+	import { articles } from '$lib/data/articles';
 	import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 	const options = {
 		arrows: false,
@@ -25,11 +25,11 @@
 	};
 
 	const extensions = { AutoScroll };
-	const slides: any[] = guides;
+	const slides: any[] = articles;
 </script>
 
 <div class="space-y-8">
-	<CarouselHeader title="Läs våra guider, gjorda för att inspirera och kickstarta" />
+	<CarouselHeader title="Läs våra artiklar, gjorda för att inspirera och kickstarta" />
 	<SplideWrapper {options} {extensions} {slides}>
 		<CleanCard
 			let:slide

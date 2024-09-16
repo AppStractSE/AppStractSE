@@ -22,9 +22,5 @@ export const navigation: NavigationItem[] = [
 	{
 		title: 'Artiklar',
 		href: '/artiklar'
-	},
-	{
-		title: 'Guider och e-böcker',
-		href: '/guider-och-ebocker'
 	}
 ];

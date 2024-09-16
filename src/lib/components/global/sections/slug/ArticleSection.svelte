@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ArticleCardSection from '../../global/sections/ArticleCardSection.svelte';
+	import ArticleCardSection from '../ArticleCardSection.svelte';
 	export let service;
 </script>
 

@@ -49,7 +49,6 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<!-- <HeroSection title={guide.title} description={guide.description} /> -->
 <HeroSection
 	title={article.title}
 	description={article.description}

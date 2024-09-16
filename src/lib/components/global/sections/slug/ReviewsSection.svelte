@@ -51,7 +51,7 @@
 </script>
 
 <section>
-	<div class="max-w-screen-xl py-12 mx-auto space-y-12">
+	<div class="max-w-screen-xl pb-12 mx-auto space-y-12">
 		<h2 class="text-center">Lyssna inte på oss, lyssna på våra kunder!</h2>
 	</div>
 	<SplideWrapper {options} {extensions} {slides}>
@@ -75,7 +75,7 @@
 
 <style lang="scss">
 	section {
-		@apply bg-gradient-to-b from-transparent via-blueberry-50 to-transparent;
+		@apply my-12 lg:my-24;
 	}
 	a {
 		@apply hover:underline hover:underline-offset-4;

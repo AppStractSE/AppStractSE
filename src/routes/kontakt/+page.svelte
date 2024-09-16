@@ -2,7 +2,7 @@
 	import ContactForm from '$lib/components/forms/ContactForm.svelte';
 	import BreadcrumbsBlock from '$lib/components/global/blocks/BreadcrumbsBlock.svelte';
 	import ServicesSection from '$lib/components/global/sections/ServicesSection.svelte';
-	import ReviewsSection from '$lib/components/sections/slug/ReviewsSection.svelte';
+	import ReviewsSection from '$lib/components/global/sections/slug/ReviewsSection.svelte';
 	import { onMount } from 'svelte';
 
 	let mounted = false;
@@ -28,7 +28,7 @@
 							{`Vi på Appstract erbjuder professionella IT-lösningar utan förvirring eller dolda avgifter. Vår filosofi är att göra design tillgänglig och intuitiv för alla, utan en massa krångel!\n\nBoka ett digitalt möte med oss för att diskutera dina specifika behov. Under mötet kommer vi att introducera vår arbetsmetodik och berätta hur vi tror vi kan göra en positiv inverkan!\n\nHoppas vi hörs!`}
 						</p>
 					</div>
-					<div class="max-w-lg justify-self-end">
+					<div class="max-w-lg justify-self-center md:justify-self-end">
 						<ContactForm />
 					</div>
 				</div>
@@ -45,9 +45,6 @@
 	}
 	section {
 		min-height: 90vh;
-		background-size: 100% 100%;
-		background-position: center;
-		background-repeat: no-repeat;
-		@apply my-0 bg-gradient-to-b from-blueberry-100 to-transparent;
+		@apply my-0 bg-gradient-to-b from-ivory-100 to-transparent;
 	}
 </style>

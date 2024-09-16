@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Button from '$lib/components/button/Button.svelte';
-	import Checkbox from '$lib/components/footer/bits/Checkbox.svelte';
 	import Link from '$lib/components/footer/bits/Link.svelte';
 	import Title from '$lib/components/footer/bits/Title.svelte';
 	import { navigation } from '$lib/data/navigation';
@@ -46,8 +45,12 @@
 							bind:value={email}
 							class={!errors.email ? inputClassNames : inputErrorClassNames}
 						/>
-
-						<Checkbox />
+						<p>
+							Genom att klicka skicka så bekräftar du att du har läst och förstått vår <a
+								href="/integritetspolicy"
+								class="underline">integritetspolicy</a
+							>.
+						</p>
 						<div class="btn-container">
 							<Button title="Prenumerera" variation="outline" />
 						</div>
@@ -60,7 +63,7 @@
 					<Socials />
 				</div>
 			</div>
-			<div class="my-12 mx-auto w-full h-[1px] bg-white/50"></div>
+			<div class="my-12 mx-auto w-full h-[1px] bg-ivory-100/50"></div>
 			<div class="flex flex-col justify-between gap-4 md:flex-row">
 				<p>© 2024 All Rights Reserved.</p>
 				<div class="flex divide-x">
@@ -81,13 +84,13 @@
 
 <style lang="scss">
 	footer {
-		@apply border-t;
+		@apply border-t bg-[#212121] text-white mt-24;
 	}
 	.btn-container {
 		@apply pt-4 w-full md:w-fit;
 	}
 	.content {
-		@apply py-12 bg-[#fcfcff];
+		@apply py-12;
 	}
 
 	a {
@@ -104,12 +107,12 @@
 
 	input {
 		&:focus {
-			@apply border-black;
+			@apply border-white;
 		}
 		&::placeholder {
-			@apply text-opacity-70;
+			@apply text-white/70;
 		}
-		@apply border-black/50 min-w-64 block w-full p-4 bg-transparent rounded border outline-none ring-0 text-base focus-within:bg-transparent transition-all duration-200 ease-in-out;
+		@apply border-white/50 min-w-64 block w-full p-4 bg-transparent rounded-xl border outline-none ring-0 text-base focus-within:bg-transparent transition-all duration-200 ease-in-out;
 	}
 
 	button {

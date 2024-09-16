@@ -4,10 +4,10 @@
 	import ContactSection from '$lib/components/global/sections/ContactSection.svelte';
 	import ProjectsSection from '$lib/components/global/sections/ProjectsSection.svelte';
 	import ServicesSection from '$lib/components/global/sections/ServicesSection.svelte';
-	import ArticleSection from '$lib/components/sections/slug/ArticleSection.svelte';
-	import HeroSection from '$lib/components/sections/slug/HeroSection.svelte';
-	import ReviewsSection from '$lib/components/sections/slug/ReviewsSection.svelte';
-	import WhatWeDoSection from '$lib/components/sections/slug/WhatWeDoSection.svelte';
+	import ArticleSection from '$lib/components/global/sections/slug/ArticleSection.svelte';
+	import HeroSection from '$lib/components/global/sections/slug/HeroSection.svelte';
+	import ReviewsSection from '$lib/components/global/sections/slug/ReviewsSection.svelte';
+	import WhatWeDoSection from '$lib/components/global/sections/slug/WhatWeDoSection.svelte';
 	export let data;
 	$: service = data.service;
 </script>

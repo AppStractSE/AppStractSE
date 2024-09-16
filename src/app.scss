@@ -11,21 +11,25 @@
     width: 13px !important;
     height: 13px !important;
     border-radius: 10px !important;
-    transform: scale(1);
-    @apply bg-stone-400;
+    transform: scale(1) !important;
+    background-color: #a8a29e !important;
+    /* Equivalent to bg-stone-400 */
 }
 
 .splide__pagination__page.is-active {
     width: 41px !important;
     height: 13px !important;
-    transform: scale(1);
-    @apply bg-stone-600 rounded-full;
+    transform: scale(1) !important;
+    background-color: #525252 !important;
+    /* bg-stone-600 */
+    border-radius: 9999px !important;
+    /* rounded-full */
 }
 
 .splide__pagination {
-    position: relative;
+    position: relative !important;
     gap: 4px;
-    margin-top: 3rem;
+    margin-top: 3rem !important;
 }
 
 .no-scrollbar {
