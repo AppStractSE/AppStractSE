@@ -11,7 +11,7 @@ const Footer = () => {
   const footerlinks = [
     { name: "Tjänster", href: "/tjanster" },
     { name: "Om Appstract", href: "/om-oss" },
-    { name: "Offertförfrågan", href: "/offertforfragan" },
+    { name: "Kontakt", href: "/kontakt" },
   ];
   const currentYear = new Date().getFullYear();
   return (
