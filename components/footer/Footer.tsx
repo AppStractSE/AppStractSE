@@ -19,7 +19,7 @@ const Footer = () => {
       <div className="max-page-width flex flex-col gap-8 px-4 sm:px-8 pb-8 pt-32 md:gap-16">
         <div className="justify-center flex">
           <Link href="/" className="relative block h-auto w-12">
-            <Image priority quality={100} className="!relative" fill alt="Logo" src="/stamp.png" />
+            <Image priority quality={100} className="relative!" fill alt="Logo" src="/stamp.png" />
           </Link>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-12">
