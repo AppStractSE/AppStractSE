@@ -1,3 +1,0 @@
-<div class="space-y-24">
-	<slot />
-</div>
