@@ -1,5 +1,6 @@
 "use client";
 
+import { services } from "@/data/services";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,7 +17,6 @@ type Step = {
 };
 
 type StepSectionProps = {
-  steps: Step[];
   options?: IntersectionOptions;
 };
 
@@ -32,9 +32,9 @@ const useActiveStep = (stepsLength: number, options: IntersectionOptions = {}) =
   return { refs, activeIndex };
 };
 
-const ServicesSection = ({ steps, options }: StepSectionProps) => {
+const ServicesSection = ({ options }: StepSectionProps) => {
   const [manualStep, setManualStep] = useState<number | null>(null);
-  const { refs, activeIndex } = useActiveStep(steps.length, {
+  const { refs, activeIndex } = useActiveStep(services.length, {
     rootMargin: "-20% 0px -20% 0px",
     threshold: 0,
     ...options,
@@ -56,7 +56,7 @@ const ServicesSection = ({ steps, options }: StepSectionProps) => {
           </Button>
         </div>
         <div className="flex flex-col gap-12 lg:gap-16">
-          {steps.map((step, index) => {
+          {services.map((service, index) => {
             const [ref] = refs[index];
             const isActive = current === index;
             return (
@@ -65,14 +65,14 @@ const ServicesSection = ({ steps, options }: StepSectionProps) => {
                 key={index}
                 className={twMerge(
                   "scroll-mt-32 items-center transition-all duration-300 ease-in-out gap-4 lg:gap-6 flex flex-col group",
-                  isActive ? "opacity-100 translate-x-0" : "opacity-25 blur-xs translate-x-8",
+                  isActive ? "opacity-100" : "opacity-25 blur-xs",
                 )}
                 onMouseEnter={() => setManualStep(index)}
                 onMouseLeave={() => setManualStep(null)}
               >
                 <div className="h-auto w-full">
                   <Image
-                    src="/placehold.png"
+                    src={service.image}
                     fill
                     alt="Hero Image"
                     className="relative! object-cover rounded-md max-h-80 lg:max-h-[400px]"
@@ -81,13 +81,9 @@ const ServicesSection = ({ steps, options }: StepSectionProps) => {
                 <div className="flex items-center gap-8">
                   <div className="flex w-full flex-col justify-start gap-2">
                     <h3 ref={ref} className="text-balance text-xl">
-                      {step.title}
+                      {service.title}
                     </h3>
-                    <p className="text-base antialiased">
-                      Brand, business & experience design We design experiences that close the gap
-                      between what your customers expect and what your business delivers, creating
-                      meaningful connections that drive growth.
-                    </p>
+                    <p className="text-base antialiased">{service.description}</p>
                   </div>
                   <ArrowRight
                     size={42}
