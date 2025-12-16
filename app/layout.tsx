@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Appstract",
-    description: "Precision In The Air",
+    description: "Konkreta lösningar på abstrakta problem | Appstract",
     url: "/",
     siteName: "Appstract",
     images: [

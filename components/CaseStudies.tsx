@@ -1,38 +1,39 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 import { Button } from "./ui/button";
 
 const CaseStudies = () => {
   const cases = [
     {
-      title: "Case Study 1",
+      title: "Rosers",
       description: "Description for case study 1",
-      image: "/placehold.png",
+      image: "/mockup2.png",
       href: "/",
     },
     {
       title: "Case Study 2",
       description: "Description for case study 2",
-      image: "/placehold.png",
+      image: "/mockup2.png",
       href: "/",
     },
     {
       title: "Case Study 3",
       description: "Description for case study 3",
-      image: "/placehold.png",
+      image: "/mockup3.png",
       href: "/",
     },
     {
       title: "Case Study 4",
       description: "Description for case study 4",
-      image: "/placehold.png",
+      image: "/mockup6.png",
       href: "/",
     },
     {
       title: "Case Study 5",
       description: "Description for case study 5",
-      image: "/placehold.png",
+      image: "/mockup5.png",
       href: "/",
     },
   ];
@@ -66,10 +67,11 @@ const CaseStudies = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 items-stretch gap-x-4 gap-y-8 md:grid-cols-2">
+        <div className="grid grid-cols-1 items-stretch gap-x-4 gap-y-12 md:grid-cols-2">
           {cases.map((caseStudy, index) => (
-            <div
+            <Link
               key={index}
+              href="/"
               className={twMerge(
                 "flex flex-col gap-2 group",
                 index === 0 ? "col-span-2" : "col-span-2 md:col-span-1",
@@ -85,7 +87,9 @@ const CaseStudies = () => {
                   src={caseStudy.image}
                   fill
                   alt={caseStudy.title}
-                  className="relative! object-cover max-w-full rounded-md"
+                  quality={100}
+                  priority={true}
+                  className="relative! object-cover max-w-full rounded-md transition-all duration-200 ease-in-out opacity-90 group-hover:opacity-100"
                 />
               </div>
               <div className="flex gap-4 items-center">
@@ -98,7 +102,7 @@ const CaseStudies = () => {
                   <p className="text-base opacity-50">{caseStudy.description}</p>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
         {/* <div className="col-span-2 md:col-span-1">
