@@ -70,8 +70,6 @@ const HeroSection = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
           <CarouselDots />
         </Carousel>
       </div>
