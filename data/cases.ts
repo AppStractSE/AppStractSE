@@ -5,6 +5,7 @@ export const cases = [
     image: "/mockup2.png",
     href: "/",
     id: "rosers",
+    serviceIds: ["seo", "webb", "design", "content"]
   },
   {
     title: "Case Study 2",
@@ -12,6 +13,7 @@ export const cases = [
     image: "/mockup2.png",
     href: "/",
     id: "case-study-2",
+    serviceIds: ["webb"]
   },
   {
     title: "Case Study 3",
@@ -19,6 +21,7 @@ export const cases = [
     image: "/mockup3.png",
     href: "/",
     id: "case-study-3",
+    serviceIds: ["webb"]
   },
   {
     title: "Case Study 4",
@@ -26,6 +29,7 @@ export const cases = [
     image: "/mockup.png",
     href: "/",
     id: "case-study-4",
+    serviceIds: ["webb"]
   },
   {
     title: "Case Study 5",
@@ -33,5 +37,6 @@ export const cases = [
     image: "/mockup.png",
     href: "/",
     id: "case-study-5",
+    serviceIds: ["webb"]
   },
 ];

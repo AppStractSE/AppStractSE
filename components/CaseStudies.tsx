@@ -1,3 +1,4 @@
+import { cases } from "@/data/cases";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,39 +6,6 @@ import { twMerge } from "tailwind-merge";
 import { Button } from "./ui/button";
 
 const CaseStudies = () => {
-  const cases = [
-    {
-      title: "Rosers",
-      description: "Description for case study 1",
-      image: "/mockup2.png",
-      href: "/",
-    },
-    {
-      title: "Case Study 2",
-      description: "Description for case study 2",
-      image: "/mockup2.png",
-      href: "/",
-    },
-    {
-      title: "Case Study 3",
-      description: "Description for case study 3",
-      image: "/mockup3.png",
-      href: "/",
-    },
-    {
-      title: "Case Study 4",
-      description: "Description for case study 4",
-      image: "/mockup6.png",
-      href: "/",
-    },
-    {
-      title: "Case Study 5",
-      description: "Description for case study 5",
-      image: "/mockup5.png",
-      href: "/",
-    },
-  ];
-
   return (
     <section>
       <div className="max-page-width px-4 sm:px-8 py-12 md:py-24 flex flex-col gap-12">
@@ -71,7 +39,7 @@ const CaseStudies = () => {
           {cases.map((caseStudy, index) => (
             <Link
               key={index}
-              href="/"
+              href={"/case/" + caseStudy.id}
               className={twMerge(
                 "flex flex-col gap-2 group",
                 index === 0 ? "col-span-2" : "col-span-2 md:col-span-1",
@@ -79,7 +47,7 @@ const CaseStudies = () => {
             >
               <div
                 className={twMerge(
-                  "lg:h-[500px]",
+                  "lg:h-[500px] relative",
                   index === 0 ? "max-h-160 lg:max-h-max xl:h-[700px]" : "",
                 )}
               >
@@ -91,6 +59,13 @@ const CaseStudies = () => {
                   priority={true}
                   className="relative! object-cover max-w-full rounded-md transition-all duration-200 ease-in-out opacity-90 group-hover:opacity-100"
                 />
+                <div className="absolute bottom-2 left-2 flex gap-1">
+                  {caseStudy.serviceIds.map((serviceId, index) => (
+                    <div key={index} className="rounded-full text-[10px] px-2 py-1 bg-background">
+                      {serviceId.charAt(0).toUpperCase() + serviceId.slice(1)}
+                    </div>
+                  ))}
+                </div>
               </div>
               <div className="flex gap-4 items-center">
                 <ArrowRight

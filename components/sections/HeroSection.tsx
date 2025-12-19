@@ -6,14 +6,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { Button } from "../ui/button";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselDots,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "../ui/carousel";
+import { Carousel, CarouselContent, CarouselDots, CarouselItem } from "../ui/carousel";
 
 const HeroSection = () => {
   const images = ["/mockup.png", "/mockup2.png", "/mockup3.png", "/mockup4.png", "/mockup5.png"];
