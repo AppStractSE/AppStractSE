@@ -92,7 +92,7 @@ const Menu = ({ isOpen, setIsOpen }: Props) => {
                   <h6 className="text-lg font-medium md:text-center">Cases</h6>
                   <div className="grid grid-cols-2 gap-x-4 md:gap-x-12 gap-y-4">
                     {Array.from({ length: 4 }).map((_, index) => (
-                      <Link key={index} href="/om-oss" className="flex items-center gap-2 group">
+                      <Link key={index} href="/case" className="flex items-center gap-2 group">
                         <Image
                           src="/placehold2.png"
                           width={64}
@@ -120,7 +120,7 @@ const Menu = ({ isOpen, setIsOpen }: Props) => {
                   <h6 className="text-lg font-medium md:text-center">Cases</h6>
                   <div className="grid grid-cols-2 gap-x-4 md:gap-x-12 gap-y-4">
                     {Array.from({ length: 4 }).map((_, index) => (
-                      <Link key={index} href="/om-oss" className="flex items-center gap-2 group">
+                      <Link key={index} href="/case" className="flex items-center gap-2 group">
                         <Image
                           src="/placehold2.png"
                           width={64}
@@ -163,7 +163,7 @@ const Menu = ({ isOpen, setIsOpen }: Props) => {
                   <h6 className="text-lg font-medium">Tjänster</h6>
                   <div className="grid grid-cols-2 gap-x-12 gap-y-3">
                     {Array.from({ length: 4 }).map((_, index) => (
-                      <Link key={index} href="/om-oss" className="flex items-center gap-2 group">
+                      <Link key={index} href="/case" className="flex items-center gap-2 group">
                         <Image
                           src="/placehold.png"
                           width={80}

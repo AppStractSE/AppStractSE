@@ -86,13 +86,13 @@ const Header = () => {
                   <Button variant="ghost">Tjänster</Button>
                 </Link>
                 <Link
-                  href="/om-oss"
+                  href="/case"
                   className={twMerge(buttonBaseClasses, "hidden sm:block md:hidden lg:block")}
                 >
                   <Button variant="ghost">Case</Button>
                 </Link>
                 <Link
-                  href="/om-oss"
+                  href="/case"
                   className={twMerge(buttonBaseClasses, "hidden sm:block md:hidden lg:block")}
                 >
                   <Button variant="ghost">Kontakt</Button>

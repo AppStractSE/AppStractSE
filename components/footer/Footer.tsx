@@ -10,7 +10,7 @@ import Link from "next/link";
 const Footer = () => {
   const footerlinks = [
     { name: "Tjänster", href: "/tjanster" },
-    { name: "Om Appstract", href: "/om-oss" },
+    { name: "Om Appstract", href: "/case" },
     { name: "Kontakt", href: "/kontakt" },
   ];
   const currentYear = new Date().getFullYear();
