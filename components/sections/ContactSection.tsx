@@ -1,11 +1,16 @@
 "use client";
 
 import { Copy } from "lucide-react";
+import { useState } from "react";
 import { Button } from "../ui/button";
+import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 
 const ContactSection = () => {
+  const [open, setOpen] = useState(false);
   const copyToClipboard = (text: string) => {
     navigator.clipboard.writeText(text);
+    setOpen(true);
+    setTimeout(() => setOpen(false), 1500);
   };
 
   return (
@@ -19,14 +24,23 @@ const ContactSection = () => {
             </h4>
           </div>
           <p className="text-sm inline-flex items-center gap-4">
-            <span className="opacity-50">
+            <span className="opacity-50 hover:opacity-100">
               <a href="mailto:info@appstract.se">info@appstract.se</a>
             </span>{" "}
-            <Copy
-              size={28}
-              className="rounded-full opacity-50 hover:opacity-100 p-1.5 border border-foreground hover:text-background hover:bg-foreground"
-              onClick={() => copyToClipboard("info@appstract.se")}
-            />
+            <Tooltip open={open} onOpenChange={() => {}}>
+              <TooltipTrigger asChild>
+                <Button
+                  variant="ghost"
+                  onClick={() => copyToClipboard("info@appstract.se")}
+                  className="rounded-full opacity-50 hover:opacity-100 p-1.5! border border-foreground hover:text-background hover:bg-foreground cursor-pointer"
+                >
+                  <Copy />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>Kopierad</span>
+              </TooltipContent>
+            </Tooltip>
           </p>
         </div>
         <div className="flex flex-col gap-12">
