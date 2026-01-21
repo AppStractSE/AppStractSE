@@ -4,6 +4,19 @@ export const services = [
     title: "Webb",
     description: "Skapande av responsiva och användarvänliga webbplatser och webbapplikationer.",
     image: "/mockup2.png",
+    tags: [
+      "Webbutveckling",
+      "UX/UI",
+      "Responsiv design",
+      "Prestandaoptimering",
+      "Tillgänglighet",
+      "CMS",
+      "E-handelslösningar",
+      "Analyssystem",
+      "Säkerhet",
+      "Underhåll",
+      "Support",
+    ],
   },
   {
     id: "app",
@@ -11,12 +24,26 @@ export const services = [
     description:
       "Utveckling av mobilapplikationer för iOS och Android med fokus på prestanda och användarupplevelse.",
     image: "/mockup3.png",
+    tags: [
+      "iOS",
+      "Android",
+      "React Native",
+      "Flutter",
+      "UX/UI",
+      "Prestandaoptimering",
+      "Push-notiser",
+      "Analyssystem",
+      "Säkerhet",
+      "Underhåll",
+      "Support",
+    ],
   },
   {
     id: "design",
     title: "Design",
     description: "Design av intuitiva och attraktiva användargränssnitt för digitala produkter.",
     image: "/mockup4.png",
+    tags: ["UX", "UI", "Figma", "Prototyping", "Användartester", "Grafisk design", "Branding"],
   },
   {
     id: "content",
@@ -24,5 +51,6 @@ export const services = [
     description:
       "Utveckling av innehållsstrategier som engagerar målgrupper och stärker varumärkesnärvaro.",
     image: "/mockup5.png",
+    tags: ["Innehållsstrategi", "Copywriting", "SEO", "Sociala medier", "Bloggar", "Nyhetsbrev"],
   },
 ];
