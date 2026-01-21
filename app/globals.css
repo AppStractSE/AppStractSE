@@ -76,7 +76,7 @@
   --sidebar-accent-foreground: oklch(28.908% 0.00003 271.152);
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(77.628% 0.00009 271.152);
-  --max-page-width: 1440px;
+  --max-page-width: 1320px;
 }
 
 
@@ -94,7 +94,7 @@
   @apply container mx-auto;
 }
 
-@media (width >= 64rem) {
+@media (width >=64rem) {
   .max-page-width {
     max-width: var(--max-page-width);
   }

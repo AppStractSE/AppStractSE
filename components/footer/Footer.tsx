@@ -71,7 +71,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="border-background/25" />
-      <div className="flex flex-col justify-between gap-4 md:flex-row md:items-center max-page-width py-8 px-4">
+      <div className="flex flex-col justify-between gap-4 md:flex-row md:items-center max-page-width py-8 px-4 sm:px-8">
         <div className="flex gap-8">
           <a
             href="https://www.appstract.se"

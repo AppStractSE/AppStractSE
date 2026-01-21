@@ -26,7 +26,7 @@ const Menu = ({ isOpen, setIsOpen }: Props) => {
       <DrawerTrigger asChild>
         <Button
           variant="ghost"
-          className="text-xs md:text-sm tracking-wide transition-all duration-100 ease-in-out bg-foreground text-background cursor-pointer"
+          className="text-xs md:text-sm tracking-wide transition-all duration-100 ease-in-out bg-foreground text-background cursor-pointer bg-foreground/90 rounded-full hover:bg-foreground hover:text-background"
         >
           {isOpen ? "Stäng" : "Meny"}
         </Button>
