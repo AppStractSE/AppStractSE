@@ -101,7 +101,7 @@ const Header = () => {
                   </Button>
                 </Link>
                 <Link
-                  href="/case"
+                  href="/kontakt"
                   className={twMerge(buttonBaseClasses, "hidden sm:block md:hidden lg:block")}
                 >
                   <Button
