@@ -1,30 +1,30 @@
-import { cases } from "@/data/cases";
+import { services } from "@/data/services";
 import { redirect } from "next/navigation";
 import { twMerge } from "tailwind-merge";
 export async function generateStaticParams() {
-  return cases.map((caseItem) => ({
-    id: caseItem.id,
+  return services.map((service) => ({
+    id: service.id,
   }));
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function generateMetadata({ params }: any) {
   const param = await params;
-  const caseItem = cases.find((caseItem) => caseItem.id === param.id);
-  if (!caseItem) redirect("/404");
+  const service = services.find((service) => service.id === param.id);
+  if (!service) redirect("/404");
   return {
-    title: caseItem.title,
+    title: service.title,
     openGraph: {
-      title: `Appstract | ${caseItem.title}`,
-      description: caseItem.description,
-      url: `/vara-tjanster/${caseItem.id}`,
+      title: `Appstract | ${service.title}`,
+      description: service.description,
+      url: `/vara-tjanster/${service.id}`,
       siteName: "Appstract",
       images: [
         {
-          url: `/${caseItem.image}`,
+          url: `/${service.image}`,
           width: 1200,
           height: 630,
-          alt: `Appstract | ${caseItem.title}`,
+          alt: `Appstract | ${service.title}`,
         },
       ],
       locale: "sv_SE",
@@ -36,21 +36,21 @@ export async function generateMetadata({ params }: any) {
       title: "Appstract",
       images: [
         {
-          url: `/${caseItem.image}`,
+          url: `/${service.image}`,
           width: 1200,
           height: 630,
-          alt: `Appstract | ${caseItem.title}`,
+          alt: `Appstract | ${service.title}`,
         },
       ],
-      description: caseItem.description,
+      description: service.description,
     },
   };
 }
 
 export default async function Page({ params }: { params: Promise<{ id: string }> }) {
   const param = await params;
-  const caseItem = cases.find((caseItem) => caseItem.id === param.id);
-  if (!caseItem) redirect("/404");
+  const service = services.find((service) => service.id === param.id);
+  if (!service) redirect("/404");
 
   return (
     <div>
@@ -63,14 +63,11 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
         )}
       >
         <h1 className="text-balance text-3xl md:text-4xl lg:text-5xl leading-tight text-foreground md:w-2/3">
-          Webbyrån som förverkligar abstrakta idéer och skapar digitala hållbara lösningar.
+          {service.title}
         </h1>
         <div className="flex flex-col gap-8 md:w-2/3">
           <h6 className="whitespace-pre-line text-balance text-base lg:text-xl">
-            Alla förtjänar att synas. Som fullservicebyrå skapar vi digitala plattformar som fångar
-            essensen av ert varumärke, skapar marknadsföringsstrategier som engagerar målgrupper och
-            bygger långsiktiga relationer. Vi tar abstrakta koncept och omvandlar dem till konkreta
-            resultat.
+            {service.description}
           </h6>
         </div>
       </div>
