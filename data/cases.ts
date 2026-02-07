@@ -1,42 +1,42 @@
 export const cases = [
   {
     title: "Rosers",
-    description: "Description for case study 1",
+    description: "Global gastronomi i världsklass",
     image: "/mockup2.png",
     href: "/",
     id: "rosers",
-    serviceIds: ["seo", "webb", "design", "content"]
+    serviceIds: ["seo", "webb", "design", "content"],
   },
   {
-    title: "Case Study 2",
-    description: "Description for case study 2",
-    image: "/mockup2.png",
-    href: "/",
-    id: "case-study-2",
-    serviceIds: ["webb"]
-  },
-  {
-    title: "Case Study 3",
-    description: "Description for case study 3",
+    title: "Elina Wellness",
+    description: "Hälsa och välmående för kropp och själ",
     image: "/mockup3.png",
     href: "/",
-    id: "case-study-3",
-    serviceIds: ["webb"]
+    id: "elina-wellness",
+    serviceIds: ["seo", "webb", "design"],
   },
   {
-    title: "Case Study 4",
-    description: "Description for case study 4",
-    image: "/mockup.png",
+    title: "TC Elservice",
+    description: "Elektriska lösningar för moderna hem",
+    image: "/mockup3.png",
     href: "/",
-    id: "case-study-4",
-    serviceIds: ["webb"]
+    id: "tc-elservice",
+    serviceIds: ["seo", "webb", "design"],
   },
   {
-    title: "Case Study 5",
-    description: "Description for case study 5",
-    image: "/mockup.png",
+    title: "Måleri Viskan",
+    description: "Professionellt måleri med kvalitet och precision",
+    image: "/maleriviskan.jpg",
     href: "/",
-    id: "case-study-5",
-    serviceIds: ["webb"]
+    id: "maleri-viskan",
+    serviceIds: ["seo", "webb", "design"],
+  },
+  {
+    title: "Karl-Alfred Gym",
+    description: "Ett gym med lång historia och stark lokal förankring",
+    image: "/ka-gym.png",
+    href: "/",
+    id: "karl-alfred-gym",
+    serviceIds: ["seo", "webb", "design"],
   },
 ];

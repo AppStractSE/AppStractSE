@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: any) {
     openGraph: {
       title: `Appstract | ${caseItem.title}`,
       description: caseItem.description,
-      url: `/vara-tjanster/${caseItem.id}`,
+      url: `/cases/${caseItem.id}`,
       siteName: "Appstract",
       images: [
         {
@@ -58,9 +58,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
         <img alt="" className="w-full h-full object-cover" src="/mockup2.png" />
       </div>
       <div
-        className={twMerge(
-          "gap-8 max-page-width px-4 sm:px-8 my-12 md:my-24 flex flex-col items-center justify-center text-center",
-        )}
+        className="gap-8 max-page-width px-4 sm:px-8 my-12 md:my-24 flex flex-col items-center justify-center text-center"
       >
         <h1 className="text-balance text-3xl md:text-4xl lg:text-5xl leading-tight text-foreground md:w-2/3">
           Webbyrån som förverkligar abstrakta idéer och skapar digitala hållbara lösningar.
