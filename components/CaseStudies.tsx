@@ -1,3 +1,5 @@
+"use client";
+
 import { cases } from "@/data/cases";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,15 +17,19 @@ const CaseStudies = () => {
         <div className="grid grid-cols-1 items-stretch gap-x-6 gap-y-12 md:grid-cols-2">
           {cases.map((caseStudy, index) => (
             <Link
+              onClick={(e) => {
+                e.preventDefault();
+              }}
               key={index}
-              href={"/case/" + caseStudy.id}
+              // href={"/case/" + caseStudy.id}
+              href={{}}
               className="flex flex-col gap-2 group hover:-translate-y-1 transition-all duration-300 ease-in-out group col-span-2 md:col-span-1"
             >
               <div className="lg:h-[500px]">
                 <div className="overflow-hidden h-full relative rounded-sm w-full">
                   <div className="absolute inset-0 transition-all duration-500 ease-in-out group-hover:bg-foreground/50 z-50 flex items-center justify-center">
                     <div className="text-background translate-y-full opacity-0 will-change-transform transition-all duration-500 ease-in-out group-hover:translate-y-1/2 group-hover:opacity-100">
-                      Gå till case
+                      Kommer snart
                     </div>
                   </div>
                   <Image
