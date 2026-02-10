@@ -8,14 +8,6 @@ export const cases = [
     serviceIds: ["seo", "webb", "design", "content"],
   },
   {
-    title: "Elina Wellness",
-    description: "Hälsa och välmående för kropp och själ",
-    image: "/mockup3.png",
-    href: "/",
-    id: "elina-wellness",
-    serviceIds: ["seo", "webb", "design"],
-  },
-  {
     title: "TC Elservice",
     description: "Elektriska lösningar för moderna hem",
     image: "/mockup3.png",

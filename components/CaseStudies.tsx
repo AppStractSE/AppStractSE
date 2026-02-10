@@ -1,7 +1,6 @@
 import { cases } from "@/data/cases";
 import Image from "next/image";
 import Link from "next/link";
-import { twMerge } from "tailwind-merge";
 
 const CaseStudies = () => {
   return (
@@ -18,17 +17,9 @@ const CaseStudies = () => {
             <Link
               key={index}
               href={"/case/" + caseStudy.id}
-              className={twMerge(
-                "flex flex-col gap-2 group hover:-translate-y-1 transition-all duration-300 ease-in-out group",
-                index === 0 ? "col-span-2" : "col-span-2 md:col-span-1",
-              )}
+              className="flex flex-col gap-2 group hover:-translate-y-1 transition-all duration-300 ease-in-out group col-span-2 md:col-span-1"
             >
-              <div
-                className={twMerge(
-                  "lg:h-[500px]",
-                  index === 0 ? "max-h-160 lg:max-h-max xl:h-[700px]" : "",
-                )}
-              >
+              <div className="lg:h-[500px]">
                 <div className="overflow-hidden h-full relative rounded-sm w-full">
                   <div className="absolute inset-0 transition-all duration-500 ease-in-out group-hover:bg-foreground/50 z-50 flex items-center justify-center">
                     <div className="text-background translate-y-full opacity-0 will-change-transform transition-all duration-500 ease-in-out group-hover:translate-y-1/2 group-hover:opacity-100">
@@ -57,22 +48,6 @@ const CaseStudies = () => {
             </Link>
           ))}
         </div>
-        {/* <div className="col-span-2 md:col-span-1">
-          <Image
-            src="/placehold.png"
-            fill
-            alt="Hero Image"
-            className="relative! object-cover max-w-full"
-          />
-        </div>
-        <div className="col-span-2 md:col-span-1">
-          <Image
-            src="/placehold.png"
-            fill
-            alt="Hero Image"
-            className="relative! object-cover max-w-full"
-          />
-        </div> */}
       </div>
     </section>
   );
